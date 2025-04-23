@@ -155,6 +155,50 @@
         .purple-text {
             color: #8B5CF6;
         }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #8B5CF6, #2563EB);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #8B5CF6, #2563EB);
+        }
+
+        .hes-card {
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .hes-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        .blob-shape {
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        }
+
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(139, 92, 246, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(139, 92, 246, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(139, 92, 246, 0);
+            }
+        }
     </style>
 </head>
 
@@ -577,310 +621,668 @@
             <div class="text-center max-w-4xl mx-auto mb-16">
                 <span
                     class="inline-block mb-4 px-4 py-2 rounded-full bg-purple-100 text-purple-700 text-sm font-medium">
-                    COMPREHENSIVE CLINIC SOLUTIONS
+                    ADVANCED DIAGNOSTIC TOOLS
                 </span>
                 <h2 class="text-4xl md:text-5xl font-bold mb-6">
-                    <span class="gradient-text">AI Smart Clinic</span> Ecosystem
+                    <span class="gradient-text">Diagnostic Portfolio</span>
                 </h2>
                 <p class="text-gray-600 text-lg">
-                    Our modular solutions address diverse healthcare delivery scenarios with cutting-edge technology and
-                    flexible configurations.
+                    Our comprehensive diagnostic tools deliver hospital-grade accuracy in portable, user-friendly
+                    formats
+                    suitable for any healthcare setting.
                 </p>
             </div>
 
-            <!-- Solution 1: Kiosk -->
-            <div class="flex flex-col lg:flex-row items-center gap-12 mb-20">
-                <div class="lg:w-1/2">
-                    <div class="relative rounded-xl overflow-hidden h-80 lg:h-96 w-full">
-                        <img src="https://images.unsplash.com/photo-1581093450021-4a7360e9a7e6?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                            alt="Health Kiosk" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
-                            <h3 class="text-white text-2xl font-bold">Basic Health Monitoring</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+                <!-- Pocket-Sized Ultrasound -->
+                <div class="card-3 p-8 rounded-xl shadow-md hover-scale">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-wave-square text-purple-600 text-xl"></i>
+                        </div>
+                        <h3 class="solution-header text-xl font-bold text-gray-800">Pocket-Sized Ultrasound</h3>
+                    </div>
+
+                    <p class="text-gray-600 mb-6">
+                        Advanced, compact ultrasound technology delivering high-resolution imaging for a wide range of
+                        examinations.
+                    </p>
+
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-lungs text-blue-500 mt-1 mr-3"></i>
+                            <span>Lung examinations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-heartbeat text-blue-500 mt-1 mr-3"></i>
+                            <span>Cardiac assessments</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-stomach text-blue-500 mt-1 mr-3"></i>
+                            <span>Abdominal scans</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-baby text-blue-500 mt-1 mr-3"></i>
+                            <span>Pregnancy monitoring</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-bone text-blue-500 mt-1 mr-3"></i>
+                            <span>Musculoskeletal evaluations</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Portable ECG Monitors -->
+                <div class="card-3 p-8 rounded-xl shadow-md hover-scale">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-heartbeat text-purple-600 text-xl"></i>
+                        </div>
+                        <h3 class="solution-header text-xl font-bold text-gray-800">Portable ECG Monitors</h3>
+                    </div>
+
+                    <p class="text-gray-600 mb-6">
+                        Instant 12-lead ECG reports via Bluetooth-enabled devices for comprehensive cardiac monitoring.
+                    </p>
+
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-chart-line text-blue-500 mt-1 mr-3"></i>
+                            <span>Clinical-grade cardiac monitoring</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-broadcast-tower text-blue-500 mt-1 mr-3"></i>
+                            <span>Immediate transmission to healthcare providers</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-robot text-blue-500 mt-1 mr-3"></i>
+                            <span>Automated preliminary analysis</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-history text-blue-500 mt-1 mr-3"></i>
+                            <span>Historical data comparison</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-file-medical-alt text-blue-500 mt-1 mr-3"></i>
+                            <span>Integration with patient records</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Rapid Test Kits -->
+                <div class="card-3 p-8 rounded-xl shadow-md hover-scale">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-vial text-purple-600 text-xl"></i>
+                        </div>
+                        <h3 class="solution-header text-xl font-bold text-gray-800">Rapid Test Kits</h3>
+                    </div>
+
+                    <p class="text-gray-600 mb-6">
+                        Detect a wide range of conditions in under 10 minutes with our comprehensive test kits.
+                    </p>
+
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-virus text-blue-500 mt-1 mr-3"></i>
+                            <span>Infectious diseases (malaria, dengue, COVID-19)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-heartbeat text-blue-500 mt-1 mr-3"></i>
+                            <span>Chronic condition markers (HbA1c, cholesterol)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-apple-alt text-blue-500 mt-1 mr-3"></i>
+                            <span>Nutritional status indicators (hemoglobin, vitamin levels)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-baby text-blue-500 mt-1 mr-3"></i>
+                            <span>Pregnancy and fertility testing</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-pills text-blue-500 mt-1 mr-3"></i>
+                            <span>Drug screening</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Dry Lab & Immuno Assay -->
+                <div class="card-3 p-8 rounded-xl shadow-md hover-scale">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-flask text-purple-600 text-xl"></i>
+                        </div>
+                        <h3 class="solution-header text-xl font-bold text-gray-800">Dry Lab & Immuno Assay</h3>
+                    </div>
+
+                    <p class="text-gray-600 mb-6">
+                        Our comprehensive biochemical analyzer delivers laboratory-quality results for critical health
+                        indicators.
+                    </p>
+
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-liver text-blue-500 mt-1 mr-3"></i>
+                            <span>Liver function tests</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-kidneys text-blue-500 mt-1 mr-3"></i>
+                            <span>Kidney function assessment</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-chart-pie text-blue-500 mt-1 mr-3"></i>
+                            <span>Lipid profiles</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-candy-cane text-blue-500 mt-1 mr-3"></i>
+                            <span>Glucose monitoring</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-vials text-blue-500 mt-1 mr-3"></i>
+                            <span>Hormone level testing & therapeutic drug monitoring</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Hematology Analysis -->
+                <div class="card-3 p-8 rounded-xl shadow-md hover-scale">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-tint text-purple-600 text-xl"></i>
+                        </div>
+                        <h3 class="solution-header text-xl font-bold text-gray-800">Hematology Analysis</h3>
+                    </div>
+
+                    <p class="text-gray-600 mb-6">
+                        Compact blood analysis capabilities providing comprehensive hematological assessments.
+                    </p>
+
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-vial text-blue-500 mt-1 mr-3"></i>
+                            <span>Complete blood count (CBC)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-microscope text-blue-500 mt-1 mr-3"></i>
+                            <span>White blood cell differential</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-mortar-pestle text-blue-500 mt-1 mr-3"></i>
+                            <span>Platelet count and assessment</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-dna text-blue-500 mt-1 mr-3"></i>
+                            <span>Hemoglobin concentration</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-percentage text-blue-500 mt-1 mr-3"></i>
+                            <span>Hematocrit values</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Urine Analysis -->
+                <div class="card-3 p-8 rounded-xl shadow-md hover-scale">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center mr-4">
+                            <i class="fas fa-flask-vial text-purple-600 text-xl"></i>
+                        </div>
+                        <h3 class="solution-header text-xl font-bold text-gray-800">Urine Analysis</h3>
+                    </div>
+
+                    <p class="text-gray-600 mb-6">
+                        Automated urinalysis providing rapid screening for multiple health conditions.
+                    </p>
+
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <i class="fas fa-bacterium text-blue-500 mt-1 mr-3"></i>
+                            <span>Urinary tract infections</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-kidneys text-blue-500 mt-1 mr-3"></i>
+                            <span>Kidney function</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-syringe text-blue-500 mt-1 mr-3"></i>
+                            <span>Diabetes management</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-baby text-blue-500 mt-1 mr-3"></i>
+                            <span>Pregnancy complications</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-liver text-blue-500 mt-1 mr-3"></i>
+                            <span>Liver function assessment</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- <section class="max-w-[1500px] mx-auto px-2 ">
+
+        <div class="text-center max-w-4xl mx-auto mb-16 mt-20">
+            <span class="inline-block mb-4 px-4 py-2 rounded-full bg-purple-100 text-purple-700 text-sm font-medium">
+                COMPREHENSIVE CLINIC SOLUTIONS
+            </span>
+            <h2 class="text-4xl md:text-5xl font-bold mb-6">
+                <span class="gradient-text">AI Smart Clinic</span> Ecosystem
+            </h2>
+            <p class="text-gray-600 text-lg">
+                Our modular solutions address diverse healthcare delivery scenarios with cutting-edge technology and
+                flexible configurations.
+            </p>
+        </div>
+
+        <div class="flex flex-col lg:flex-row items-center gap-12 mb-20">
+            <div class="lg:w-1/2">
+                <div class="relative rounded-xl overflow-hidden h-80 lg:h-96 w-full">
+                    <img src="/api/placeholder/800/600" alt="Health Kiosk" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
+                        <h3 class="text-white text-2xl font-bold">Basic Health Monitoring</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/2">
+                <div class="card-3 p-8 rounded-xl shadow-md hover-scale">
+                    <h3 class="solution-header text-2xl font-bold mb-6 text-gray-800">Telth Kiosk</h3>
+                    <p class="text-gray-600 mb-6">
+                        Our entry-level solution for basic health monitoring and initial assessments with doctors
+                        always available through telehealth.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4 mb-8">
+                        <div class="flex items-center bg-blue-50 px-3 py-2 rounded-lg">
+                            <i class="fas fa-user-md text-blue-500 mr-2"></i>
+                            <span class="text-sm font-medium">Telehealth</span>
+                        </div>
+                        <div class="flex items-center bg-blue-50 px-3 py-2 rounded-lg">
+                            <i class="fas fa-heartbeat text-blue-500 mr-2"></i>
+                            <span class="text-sm font-medium">Monitoring</span>
+                        </div>
+                        <div class="flex items-center bg-blue-50 px-3 py-2 rounded-lg">
+                            <i class="fas fa-x-ray text-blue-500 mr-2"></i>
+                            <span class="text-sm font-medium">Basic Imaging</span>
+                        </div>
+                        <div class="flex items-center bg-blue-50 px-3 py-2 rounded-lg">
+                            <i class="fas fa-first-aid text-blue-500 mr-2"></i>
+                            <span class="text-sm font-medium">Urgent Care</span>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-3 flex items-center">
+                                <i class="fas fa-cogs text-blue-500 mr-2"></i> Variants Available
+                            </h4>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="flex items-start">
+                                    <i class="fas fa-stethoscope text-green-500 mt-1 mr-3"></i>
+                                    <span class="text-gray-700 text-sm">Master Health Examination System</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-users text-purple-500 mt-1 mr-3"></i>
+                                    <span class="text-gray-700 text-sm">Family Care Kiosk</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-ambulance text-red-500 mt-1 mr-3"></i>
+                                    <span class="text-gray-700 text-sm">Urgent Care Kiosk</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-clinic-medical text-blue-500 mt-1 mr-3"></i>
+                                    <span class="text-gray-700 text-sm">Healthcare Solutions</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="bg-blue-50 rounded-lg p-4 border border-blue-200">
+                            <h4 class="font-semibold text-blue-700 mb-2">Community Impact</h4>
+                            <p class="text-gray-700 text-sm">Provides accessible entry-point healthcare for
+                                preventive care and early detection in convenient locations</p>
                         </div>
                     </div>
                 </div>
-                <div class="lg:w-1/2">
-                    <div class="card-3 p-8 rounded-xl shadow-md hover-scale">
-                        <h3 class="solution-header text-2xl font-bold mb-6 text-gray-800">Telth Kiosk</h3>
-                        <p class="text-gray-600 mb-6">
-                            Our entry-level solution for basic health monitoring and initial assessments with doctors
-                            always
-                            available through telehealth.
-                        </p>
+            </div>
+        </div>
 
-                        <div class="flex flex-wrap gap-4 mb-8">
-                            <div class="flex items-center bg-blue-50 px-3 py-2 rounded-lg">
-                                <i class="fas fa-user-md text-blue-500 mr-2"></i>
-                                <span class="text-sm font-medium">Telehealth</span>
-                            </div>
-                            <div class="flex items-center bg-blue-50 px-3 py-2 rounded-lg">
-                                <i class="fas fa-heartbeat text-blue-500 mr-2"></i>
-                                <span class="text-sm font-medium">Monitoring</span>
-                            </div>
-                            <div class="flex items-center bg-blue-50 px-3 py-2 rounded-lg">
-                                <i class="fas fa-x-ray text-blue-500 mr-2"></i>
-                                <span class="text-sm font-medium">Basic Imaging</span>
-                            </div>
-                            <div class="flex items-center bg-blue-50 px-3 py-2 rounded-lg">
-                                <i class="fas fa-first-aid text-blue-500 mr-2"></i>
-                                <span class="text-sm font-medium">Urgent Care</span>
+        <div class="flex flex-col lg:flex-row items-center gap-12 mb-20">
+            <div class="lg:w-1/2 order-1 lg:order-2">
+                <div class="relative rounded-xl overflow-hidden h-80 lg:h-96 w-full">
+                    <img src="/api/placeholder/800/600" alt="Multi-Specialty Clinic" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
+                        <h3 class="text-white text-2xl font-bold">Specialized Care</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="lg:w-1/2 order-2 lg:order-1">
+                <div class="card-3 p-8 rounded-xl shadow-md hover-scale">
+                    <h3 class="solution-header text-2xl font-bold mb-6 text-gray-800">Telth Multi-Specialty Clinic
+                    </h3>
+                    <p class="text-gray-600 mb-6">
+                        A compact, fully-equipped healthcare setup providing broad diagnostic and treatment services
+                        across multiple specialties.
+                    </p>
+
+                    <div class="flex flex-wrap gap-4 mb-8">
+                        <div class="flex items-center bg-blue-50 px-3 py-2 rounded-lg">
+                            <i class="fas fa-heart text-blue-500 mr-2"></i>
+                            <span class="text-sm font-medium">Cardiology</span>
+                        </div>
+                        <div class="flex items-center bg-blue-50 px-3 py-2 rounded-lg">
+                            <i class="fas fa-bone text-blue-500 mr-2"></i>
+                            <span class="text-sm font-medium">Orthopedics</span>
+                        </div>
+                        <div class="flex items-center bg-blue-50 px-3 py-2 rounded-lg">
+                            <i class="fas fa-allergies text-blue-500 mr-2"></i>
+                            <span class="text-sm font-medium">Dermatology</span>
+                        </div>
+                        <div class="flex items-center bg-blue-50 px-3 py-2 rounded-lg">
+                            <i class="fas fa-brain text-blue-500 mr-2"></i>
+                            <span class="text-sm font-medium">Neurology</span>
+                        </div>
+                    </div>
+
+                    <div class="space-y-6">
+                        <div>
+                            <h4 class="font-semibold text-gray-800 mb-3 flex items-center">
+                                <i class="fas fa-cogs text-blue-500 mr-2"></i> Key Features
+                            </h4>
+                            <div class="grid md:grid-cols-2 gap-4">
+                                <div class="flex items-start">
+                                    <i class="fas fa-microscope text-green-500 mt-1 mr-3"></i>
+                                    <span class="text-gray-700 text-sm">Comprehensive Diagnostics</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-procedures text-purple-500 mt-1 mr-3"></i>
+                                    <span class="text-gray-700 text-sm">Specialized Treatments</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-vector-square text-red-500 mt-1 mr-3"></i>
+                                    <span class="text-gray-700 text-sm">Compact Setup</span>
+                                </div>
+                                <div class="flex items-start">
+                                    <i class="fas fa-video text-blue-500 mt-1 mr-3"></i>
+                                    <span class="text-gray-700 text-sm">Telehealth Integration</span>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="space-y-6">
-                            <div>
-                                <h4 class="font-semibold text-gray-800 mb-3 flex items-center">
-                                    <i class="fas fa-cogs text-blue-500 mr-2"></i> Variants Available
-                                </h4>
-                                <div class="grid md:grid-cols-2 gap-4">
-                                    <div class="flex items-start">
-                                        <i class="fas fa-stethoscope text-green-500 mt-1 mr-3"></i>
-                                        <span class="text-gray-700 text-sm">Master Health Examination System</span>
-                                    </div>
-                                    <div class="flex items-start">
-                                        <i class="fas fa-users text-purple-500 mt-1 mr-3"></i>
-                                        <span class="text-gray-700 text-sm">Family Care Kiosk</span>
-                                    </div>
-                                    <div class="flex items-start">
-                                        <i class="fas fa-ambulance text-red-500 mt-1 mr-3"></i>
-                                        <span class="text-gray-700 text-sm">Urgent Care Kiosk</span>
-                                    </div>
-                                    <div class="flex items-start">
-                                        <i class="fas fa-clinic-medical text-blue-500 mt-1 mr-3"></i>
-                                        <span class="text-gray-700 text-sm">Healthcare Solutions</span>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="bg-blue-50 rounded-lg p-4 border border-blue-200">
+                            <h4 class="font-semibold text-blue-700 mb-2">Patient Benefits</h4>
+                            <p class="text-gray-700 text-sm">Access specialized care without visiting multiple
+                                facilities, with lower costs by eliminating long-distance travel</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
 
-                            <div class="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                                <h4 class="font-semibold text-blue-700 mb-2">Community Impact</h4>
-                                <p class="text-gray-700 text-sm">Provides accessible entry-point healthcare for
-                                    preventive
-                                    care and early detection in convenient locations</p>
+    <section class="relative py-20 overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute -top-40 -right-40 w-96 h-96 bg-purple-200 opacity-20 rounded-full blur-3xl"></div>
+        <div class="absolute -bottom-40 -left-40 w-96 h-96 bg-blue-200 opacity-20 rounded-full blur-3xl"></div>
+
+        <div class="container mx-auto px-6 relative z-10">
+            <!-- Header Section -->
+            <div class="flex flex-col md:flex-row items-center mb-16">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <div
+                        class="inline-block rounded-full bg-purple-100 px-4 py-2 text-sm font-medium text-purple-700 mb-4">
+                        FLAGSHIP PRODUCT <span
+                            class="ml-1 text-xs bg-purple-200 px-2 py-0.5 rounded-full">PATENT-PENDING</span>
+                    </div>
+
+                    <h2 class="text-4xl md:text-5xl font-bold mb-6 leading-tight">
+                        Telth <span class="gradient-text">Health Examination System</span> (HES)
+                    </h2>
+
+                    <p class="text-gray-600 text-lg mb-8">
+                        Our innovative, tablet-based diagnostic platform forms the core of our portable healthcare
+                        ecosystem, enabling seamless integration of multiple diagnostic tools through a single
+                        interface.
+                    </p>
+
+                    <div class="flex gap-4">
+                        <a href="#"
+                            class="gradient-bg px-6 py-3 rounded-full text-white font-medium inline-flex items-center shadow-lg hover:shadow-xl transition-shadow">
+                            <span>Request Demo</span>
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                        <a href="#"
+                            class="bg-white border border-purple-300 px-6 py-3 rounded-full text-purple-700 font-medium inline-flex items-center hover:bg-purple-50 transition-colors">
+                            <span>Product Specs</span>
+                            <i class="fas fa-file-alt ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:w-1/2 md:pl-8">
+                    <div class="relative">
+                        <div
+                            class="blob-shape bg-gradient-to-br from-purple-500 to-blue-500 w-72 h-72 mx-auto opacity-10 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+                        </div>
+
+                        <div
+                            class="relative bg-white rounded-2xl shadow-2xl p-4 border border-gray-100 mx-auto max-w-sm pulse-animation">
+                            <img src="https://image.made-in-china.com/202f0j00zMCYJHWdngkU/Hes-7-Diagnostic-E-Health-Portable-ECG-Tablet-Medical-Telemedicine-Equipment.webp"
+                                alt="Telth HES Device" class="rounded-xl w-full">
+
+                            <div
+                                class="absolute -bottom-3 -right-3 bg-purple-600 text-white text-xs rounded-full h-16 w-16 flex items-center justify-center font-bold transform rotate-12 border-4 border-white">
+                                NEW
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Solution 2: Multi-Specialty Clinic -->
-            <div class="flex flex-col lg:flex-row items-center gap-12 mb-20">
-                <div class="lg:w-1/2 order-1 lg:order-2">
-                    <div class="relative rounded-xl overflow-hidden h-80 lg:h-96 w-full">
-                        <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                            alt="Multi-Specialty Clinic" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
-                            <h3 class="text-white text-2xl font-bold">Specialized Care</h3>
+            <!-- Craft Your Own HES Section -->
+            <div class="bg-white  p-8 mb-20">
+                <div class="text-center mb-10">
+                    <h3 class="text-2xl md:text-3xl font-bold mb-4">Craft Your Own <span
+                            class="gradient-text">HES</span>
+                    </h3>
+                    <p class="text-gray-600 max-w-3xl mx-auto">
+                        Tailor your device by selecting specific modules and accessories needed for your practice. This
+                        customization ensures you have exactly the tools required for your unique healthcare scenarios.
+                    </p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Scenario 1 -->
+                    <div class="hes-card bg-white border border-gray-100 shadow-md">
+                        <div class="h-28 gradient-bg flex items-center justify-center">
+                            <i class="fas fa-home text-white text-4xl"></i>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-lg mb-3">Home Healthcare</h4>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Perfect for providers delivering care directly to patients' homes, with portable
+                                diagnostics
+                                and telehealth capabilities.
+                            </p>
+                            <a href="#"
+                                class="text-purple-600 text-sm font-medium inline-flex items-center hover:text-purple-800 transition-colors">
+                                <span>View Configuration</span>
+                                <i class="fas fa-chevron-right ml-1 text-xs"></i>
+                            </a>
                         </div>
                     </div>
-                </div>
-                <div class="lg:w-1/2 order-2 lg:order-1">
-                    <div class="card-3 p-8 rounded-xl shadow-md hover-scale">
-                        <h3 class="solution-header text-2xl font-bold mb-6 text-gray-800">Telth Multi-Specialty Clinic
-                        </h3>
-                        <p class="text-gray-600 mb-6">
-                            A compact, fully-equipped healthcare setup providing broad diagnostic and treatment services
-                            across multiple specialties.
-                        </p>
 
-                        <div class="flex flex-wrap gap-4 mb-8">
-                            <div class="flex items-center bg-blue-50 px-3 py-2 rounded-lg">
-                                <i class="fas fa-heart text-blue-500 mr-2"></i>
-                                <span class="text-sm font-medium">Cardiology</span>
-                            </div>
-                            <div class="flex items-center bg-blue-50 px-3 py-2 rounded-lg">
-                                <i class="fas fa-bone text-blue-500 mr-2"></i>
-                                <span class="text-sm font-medium">Orthopedics</span>
-                            </div>
-                            <div class="flex items-center bg-blue-50 px-3 py-2 rounded-lg">
-                                <i class="fas fa-allergies text-blue-500 mr-2"></i>
-                                <span class="text-sm font-medium">Dermatology</span>
-                            </div>
-                            <div class="flex items-center bg-blue-50 px-3 py-2 rounded-lg">
-                                <i class="fas fa-brain text-blue-500 mr-2"></i>
-                                <span class="text-sm font-medium">Neurology</span>
-                            </div>
+                    <!-- Scenario 2 -->
+                    <div class="hes-card bg-white border border-gray-100 shadow-md">
+                        <div class="h-28 gradient-bg flex items-center justify-center">
+                            <i class="fas fa-clinic-medical text-white text-4xl"></i>
                         </div>
-
-                        <div class="space-y-6">
-                            <div>
-                                <h4 class="font-semibold text-gray-800 mb-3 flex items-center">
-                                    <i class="fas fa-cogs text-blue-500 mr-2"></i> Key Features
-                                </h4>
-                                <div class="grid md:grid-cols-2 gap-4">
-                                    <div class="flex items-start">
-                                        <i class="fas fa-microscope text-green-500 mt-1 mr-3"></i>
-                                        <span class="text-gray-700 text-sm">Comprehensive Diagnostics</span>
-                                    </div>
-                                    <div class="flex items-start">
-                                        <i class="fas fa-procedures text-purple-500 mt-1 mr-3"></i>
-                                        <span class="text-gray-700 text-sm">Specialized Treatments</span>
-                                    </div>
-                                    <div class="flex items-start">
-                                        <i class="fas fa-vector-square text-red-500 mt-1 mr-3"></i>
-                                        <span class="text-gray-700 text-sm">Compact Setup</span>
-                                    </div>
-                                    <div class="flex items-start">
-                                        <i class="fas fa-video text-blue-500 mt-1 mr-3"></i>
-                                        <span class="text-gray-700 text-sm">Telehealth Integration</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                                <h4 class="font-semibold text-blue-700 mb-2">Patient Benefits</h4>
-                                <p class="text-gray-700 text-sm">Access specialized care without visiting multiple
-                                    facilities, with lower costs by eliminating long-distance travel</p>
-                            </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-lg mb-3">Remote Clinics</h4>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Designed for healthcare facilities in underserved or remote areas with limited
+                                infrastructure and specialist access.
+                            </p>
+                            <a href="#"
+                                class="text-purple-600 text-sm font-medium inline-flex items-center hover:text-purple-800 transition-colors">
+                                <span>View Configuration</span>
+                                <i class="fas fa-chevron-right ml-1 text-xs"></i>
+                            </a>
                         </div>
                     </div>
-                </div>
-            </div>
 
-            <!-- Solution 3: Mobile Clinic -->
-            <div class="flex flex-col lg:flex-row items-center gap-12 mb-20">
-                <div class="lg:w-1/2">
-                    <div class="relative rounded-xl overflow-hidden h-80 lg:h-96 w-full">
-                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                            alt="Mobile Clinic" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
-                            <h3 class="text-white text-2xl font-bold">Healthcare on the Move</h3>
+                    <!-- Scenario 3 -->
+                    <div class="hes-card bg-white border border-gray-100 shadow-md">
+                        <div class="h-28 gradient-bg flex items-center justify-center">
+                            <i class="fas fa-users text-white text-4xl"></i>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-lg mb-3">Community Health</h4>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Optimized for NGOs and public health initiatives conducting health camps and community
+                                screening programs.
+                            </p>
+                            <a href="#"
+                                class="text-purple-600 text-sm font-medium inline-flex items-center hover:text-purple-800 transition-colors">
+                                <span>View Configuration</span>
+                                <i class="fas fa-chevron-right ml-1 text-xs"></i>
+                            </a>
                         </div>
                     </div>
-                </div>
-                <div class="lg:w-1/2">
-                    <div class="card-3 p-8 rounded-xl shadow-md hover-scale">
-                        <h3 class="solution-header text-2xl font-bold mb-6 text-gray-800">Telth Mobile Clinic</h3>
-                        <p class="text-gray-600 mb-6">
-                            Fully equipped mobile units bringing high-quality healthcare directly to underserved and
-                            remote
-                            communities.
-                        </p>
 
-                        <div class="flex flex-wrap gap-4 mb-8">
-                            <div class="flex items-center bg-blue-50 px-3 py-2 rounded-lg">
-                                <i class="fas fa-stethoscope text-blue-500 mr-2"></i>
-                                <span class="text-sm font-medium">Consultations</span>
-                            </div>
-                            <div class="flex items-center bg-blue-50 px-3 py-2 rounded-lg">
-                                <i class="fas fa-vial text-blue-500 mr-2"></i>
-                                <span class="text-sm font-medium">Diagnostics</span>
-                            </div>
-                            <div class="flex items-center bg-blue-50 px-3 py-2 rounded-lg">
-                                <i class="fas fa-syringe text-blue-500 mr-2"></i>
-                                <span class="text-sm font-medium">Vaccinations</span>
-                            </div>
-                            <div class="flex items-center bg-blue-50 px-3 py-2 rounded-lg">
-                                <i class="fas fa-heartbeat text-blue-500 mr-2"></i>
-                                <span class="text-sm font-medium">Check-ups</span>
-                            </div>
+                    <!-- Scenario 4 -->
+                    <div class="hes-card bg-white border border-gray-100 shadow-md">
+                        <div class="h-28 gradient-bg flex items-center justify-center">
+                            <i class="fas fa-ambulance text-white text-4xl"></i>
                         </div>
-
-                        <div class="space-y-6">
-                            <div>
-                                <h4 class="font-semibold text-gray-800 mb-3 flex items-center">
-                                    <i class="fas fa-cogs text-blue-500 mr-2"></i> Advanced Features
-                                </h4>
-                                <div class="grid md:grid-cols-2 gap-4">
-                                    <div class="flex items-start">
-                                        <i class="fas fa-bolt text-yellow-500 mt-1 mr-3"></i>
-                                        <span class="text-gray-700 text-sm">Latest medical equipment</span>
-                                    </div>
-                                    <div class="flex items-start">
-                                        <i class="fas fa-wifi text-blue-500 mt-1 mr-3"></i>
-                                        <span class="text-gray-700 text-sm">Telehealth integration</span>
-                                    </div>
-                                    <div class="flex items-start">
-                                        <i class="fas fa-truck text-gray-500 mt-1 mr-3"></i>
-                                        <span class="text-gray-700 text-sm">Designed for rural access</span>
-                                    </div>
-                                    <div class="flex items-start">
-                                        <i class="fas fa-user-md text-green-500 mt-1 mr-3"></i>
-                                        <span class="text-gray-700 text-sm">Specialist consultations</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                                <h4 class="font-semibold text-blue-700 mb-2">Community Impact</h4>
-                                <p class="text-gray-700 text-sm">Reduces healthcare disparities by delivering essential
-                                    services to populations with limited medical infrastructure</p>
-                            </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-lg mb-3">Emergency Response</h4>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Ruggedized configuration for first responders and disaster management teams requiring
+                                rapid
+                                diagnostics.
+                            </p>
+                            <a href="#"
+                                class="text-purple-600 text-sm font-medium inline-flex items-center hover:text-purple-800 transition-colors">
+                                <span>View Configuration</span>
+                                <i class="fas fa-chevron-right ml-1 text-xs"></i>
+                            </a>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Solution 4: Smart Hub -->
-            <div class="flex flex-col lg:flex-row items-center gap-12 mb-20">
-                <div class="lg:w-1/2 order-1 lg:order-2">
-                    <div class="relative rounded-xl overflow-hidden h-80 lg:h-96 w-full">
-                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                            alt="Smart Hub" class="w-full h-full object-cover">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent flex items-end p-6">
-                            <h3 class="text-white text-2xl font-bold">Centralized Healthcare</h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="lg:w-1/2 order-2 lg:order-1">
-                    <div class="card-3 p-8 rounded-xl shadow-md hover-scale">
-                        <h3 class="solution-header text-2xl font-bold mb-6 text-gray-800">Telth Multi-Specialty Smart
-                            Hub
-                        </h3>
-                        <p class="text-gray-600 mb-6">
-                            Our most comprehensive healthcare solution, serving as a centralized point for advanced
-                            diagnostics and specialty care coordination.
-                        </p>
+            <!-- Key Features Section -->
+            <div class="flex flex-col lg:flex-row gap-10">
+                <div class="lg:w-1/2">
+                    <div class="relative">
+                        <div class="absolute -top-10 -left-10 w-32 h-32 bg-purple-400 opacity-10 rounded-full"></div>
+                        <div class="absolute -bottom-10 -right-10 w-40 h-40 bg-blue-400 opacity-10 rounded-full"></div>
 
-                        <div class="flex flex-wrap gap-4 mb-8">
-                            <div class="flex items-center bg-blue-50 px-3 py-2 rounded-lg">
-                                <i class="fas fa-hub text-blue-500 mr-2"></i>
-                                <span class="text-sm font-medium">Centralized Hub</span>
-                            </div>
-                            <div class="flex items-center bg-blue-50 px-3 py-2 rounded-lg">
-                                <i class="fas fa-mri text-blue-500 mr-2"></i>
-                                <span class="text-sm font-medium">Advanced Diagnostics</span>
-                            </div>
-                            <div class="flex items-center bg-blue-50 px-3 py-2 rounded-lg">
-                                <i class="fas fa-network-wired text-blue-500 mr-2"></i>
-                                <span class="text-sm font-medium">Care Coordination</span>
-                            </div>
-                            <div class="flex items-center bg-blue-50 px-3 py-2 rounded-lg">
-                                <i class="fas fa-robot text-blue-500 mr-2"></i>
-                                <span class="text-sm font-medium">AI Integration</span>
-                            </div>
-                        </div>
+                        <div class="relative border border-gray-200 rounded-2xl overflow-hidden">
+                            <img src="https://images.unsplash.com/photo-1666886573212-2de95596d509?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                                alt="HES Features" class="w-full">
 
-                        <div class="space-y-6">
-                            <div>
-                                <h4 class="font-semibold text-gray-800 mb-3 flex items-center">
-                                    <i class="fas fa-cogs text-blue-500 mr-2"></i> Key Features
-                                </h4>
-                                <div class="grid md:grid-cols-2 gap-4">
-                                    <div class="flex items-start">
-                                        <i class="fas fa-clinic-medical text-green-500 mt-1 mr-3"></i>
-                                        <span class="text-gray-700 text-sm">One-stop healthcare solution</span>
+                            <!-- Tech Specs Overlay -->
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
+                                <div class="flex justify-between mb-4">
+                                    <div class="flex items-center">
+                                        <div class="h-3 w-3 rounded-full bg-green-400 mr-2 animate-pulse"></div>
+                                        <span class="text-white text-sm">Active Status</span>
                                     </div>
-                                    <div class="flex items-start">
-                                        <i class="fas fa-laptop-medical text-purple-500 mt-1 mr-3"></i>
-                                        <span class="text-gray-700 text-sm">Full diagnostic capabilities</span>
+                                    <span class="text-white text-sm font-mono">v2.1</span>
+                                </div>
+
+                                <div class="flex flex-wrap gap-4">
+                                    <div
+                                        class="px-3 py-1.5 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs font-medium">
+                                        8+ Hours Battery
                                     </div>
-                                    <div class="flex items-start">
-                                        <i class="fas fa-calendar-check text-red-500 mt-1 mr-3"></i>
-                                        <span class="text-gray-700 text-sm">Specialty referrals</span>
+                                    <div
+                                        class="px-3 py-1.5 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs font-medium">
+                                        WiFi/4G/5G
                                     </div>
-                                    <div class="flex items-start">
-                                        <i class="fas fa-cloud text-blue-500 mt-1 mr-3"></i>
-                                        <span class="text-gray-700 text-sm">Cloud-based records</span>
+                                    <div
+                                        class="px-3 py-1.5 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs font-medium">
+                                        Cloud Sync
+                                    </div>
+                                    <div
+                                        class="px-3 py-1.5 bg-white/20 backdrop-blur-sm rounded-full text-white text-xs font-medium">
+                                        AI Powered
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                </div>
 
-                            <div class="bg-blue-50 rounded-lg p-4 border border-blue-200">
-                                <h4 class="font-semibold text-blue-700 mb-2">Patient Benefits</h4>
-                                <p class="text-gray-700 text-sm">Comprehensive care with diagnostic tests, treatments
+                <div class="lg:w-1/2">
+                    <h3 class="text-2xl font-bold mb-6">Key Features</h3>
+
+                    <div class="space-y-6">
+                        <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-md flex">
+                            <div
+                                class="w-12 h-12 rounded-full gradient-bg flex-shrink-0 flex items-center justify-center mr-4">
+                                <i class="fas fa-tablet-alt text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-2">Intuitive Touchscreen Interface</h4>
+                                <p class="text-gray-600 text-sm">User-friendly design requiring minimal training, with
+                                    simplified workflows for rapid testing and diagnosis.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-md flex">
+                            <div
+                                class="w-12 h-12 rounded-full gradient-bg flex-shrink-0 flex items-center justify-center mr-4">
+                                <i class="fas fa-wifi text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-2">Comprehensive Connectivity</h4>
+                                <p class="text-gray-600 text-sm">Multiple connection options including Bluetooth, WiFi,
                                     and
-                                    specialist consultations in one location, saving time and reducing travel</p>
+                                    cellular networks ensure you're always connected regardless of location.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-md flex">
+                            <div
+                                class="w-12 h-12 rounded-full gradient-bg flex-shrink-0 flex items-center justify-center mr-4">
+                                <i class="fas fa-cloud text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-2">Cloud Synchronization</h4>
+                                <p class="text-gray-600 text-sm">Seamless integration with Telth's P3DSC AI platform for
+                                    remote analytics, clinical decision support, and secure data storage.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-md flex">
+                            <div
+                                class="w-12 h-12 rounded-full gradient-bg flex-shrink-0 flex items-center justify-center mr-4">
+                                <i class="fas fa-battery-full text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-2">8+ Hours Battery Life</h4>
+                                <p class="text-gray-600 text-sm">Extended power capacity for all-day operation in
+                                    off-grid
+                                    environments, with quick-charge technology.</p>
+                            </div>
+                        </div>
+
+                        <div class="bg-white p-6 rounded-xl border border-gray-100 shadow-md flex">
+                            <div
+                                class="w-12 h-12 rounded-full gradient-bg flex-shrink-0 flex items-center justify-center mr-4">
+                                <i class="fas fa-suitcase-medical text-white"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold mb-2">Portable Design</h4>
+                                <p class="text-gray-600 text-sm">Lightweight, durable construction with protective
+                                    carrying
+                                    case for maximum mobility in any healthcare setting.</p>
                             </div>
                         </div>
                     </div>
@@ -889,263 +1291,8 @@
         </div>
     </section>
 
-    <section class="max-w-[1500px] mx-auto px-4 py-10">
-        <div class="text-center mb-16">
-            <h2 class="text-4xl font-bold text-gray-800 mb-4">Ideal For</h2>
-            <div class="w-24 h-1 bg-indigo-600 mx-auto rounded-full"></div>
-        </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-
-            <!-- Hospitals & Medical Centers -->
-            <div class="bg-white rounded-2xl shadow-lg idealfor_card border border-gray-100">
-                <div class="p-8">
-                    <div class="flex items-center mb-6">
-                        <div class="idealfor_icon_wrapper">
-                            <div
-                                class="idealfor_icon_bg w-14 h-14 flex items-center justify-center rounded-full shadow-lg">
-                                <i class="fas fa-hospital text-xl text-white"></i>
-                            </div>
-                        </div>
-                        <h3 class="text-xl font-bold ml-4 text-gray-800">Hospitals & Medical Centers</h3>
-                    </div>
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 mt-1.5 mr-3">
-                                <div class="idealfor_list_dot rounded-full"></div>
-                            </div>
-                            <span>Extend your reach to rural and remote areas</span>
-                        </li>
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 mt-1.5 mr-3">
-                                <div class="idealfor_list_dot rounded-full"></div>
-                            </div>
-                            <span>Establish satellite facilities with minimal infrastructure investment</span>
-                        </li>
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 mt-1.5 mr-3">
-                                <div class="idealfor_list_dot rounded-full"></div>
-                            </div>
-                            <span>Reduce congestion in main facilities while maintaining care standards</span>
-                        </li>
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 mt-1.5 mr-3">
-                                <div class="idealfor_list_dot rounded-full"></div>
-                            </div>
-                            <span>Create specialized care points for chronic disease management</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Corporate Campuses -->
-            <div class="bg-white rounded-2xl shadow-lg idealfor_card border border-gray-100">
-                <div class="p-8">
-                    <div class="flex items-center mb-6">
-                        <div class="idealfor_icon_wrapper">
-                            <div
-                                class="idealfor_icon_bg w-14 h-14 flex items-center justify-center rounded-full shadow-lg">
-                                <i class="fas fa-building text-xl text-white"></i>
-                            </div>
-                        </div>
-                        <h3 class="text-xl font-bold ml-4 text-gray-800">Corporate Campuses</h3>
-                    </div>
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 mt-1.5 mr-3">
-                                <div class="idealfor_list_dot rounded-full"></div>
-                            </div>
-                            <span>Provide on-site employee healthcare services</span>
-                        </li>
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 mt-1.5 mr-3">
-                                <div class="idealfor_list_dot rounded-full"></div>
-                            </div>
-                            <span>Reduce absenteeism through preventive care and early intervention</span>
-                        </li>
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 mt-1.5 mr-3">
-                                <div class="idealfor_list_dot rounded-full"></div>
-                            </div>
-                            <span>Enhance employee wellness programs with medical-grade monitoring</span>
-                        </li>
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 mt-1.5 mr-3">
-                                <div class="idealfor_list_dot rounded-full"></div>
-                            </div>
-                            <span>Create data-driven health initiatives based on aggregated insights</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Healthcare Entrepreneurs -->
-            <div class="bg-white rounded-2xl shadow-lg idealfor_card border border-gray-100">
-                <div class="p-8">
-                    <div class="flex items-center mb-6">
-                        <div class="idealfor_icon_wrapper">
-                            <div
-                                class="idealfor_icon_bg w-14 h-14 flex items-center justify-center rounded-full shadow-lg">
-                                <i class="fas fa-rocket text-xl text-white"></i>
-                            </div>
-                        </div>
-                        <h3 class="text-xl font-bold ml-4 text-gray-800">Healthcare Entrepreneurs</h3>
-                    </div>
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 mt-1.5 mr-3">
-                                <div class="idealfor_list_dot rounded-full"></div>
-                            </div>
-                            <span>Launch a healthcare startup with minimal infrastructure requirements</span>
-                        </li>
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 mt-1.5 mr-3">
-                                <div class="idealfor_list_dot rounded-full"></div>
-                            </div>
-                            <span>Scale operations incrementally as the patient base grows</span>
-                        </li>
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 mt-1.5 mr-3">
-                                <div class="idealfor_list_dot rounded-full"></div>
-                            </div>
-                            <span>Offer specialized services with a lower initial investment</span>
-                        </li>
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 mt-1.5 mr-3">
-                                <div class="idealfor_list_dot rounded-full"></div>
-                            </div>
-                            <span>Leverage our technology while building your healthcare brand</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Government Initiatives -->
-            <div class="bg-white rounded-2xl shadow-lg idealfor_card border border-gray-100">
-                <div class="p-8">
-                    <div class="flex items-center mb-6">
-                        <div class="idealfor_icon_wrapper">
-                            <div
-                                class="idealfor_icon_bg w-14 h-14 flex items-center justify-center rounded-full shadow-lg">
-                                <i class="fas fa-landmark text-xl text-white"></i>
-                            </div>
-                        </div>
-                        <h3 class="text-xl font-bold ml-4 text-gray-800">Government Initiatives</h3>
-                    </div>
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 mt-1.5 mr-3">
-                                <div class="idealfor_list_dot rounded-full"></div>
-                            </div>
-                            <span>Deploy in public spaces for community health programs</span>
-                        </li>
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 mt-1.5 mr-3">
-                                <div class="idealfor_list_dot rounded-full"></div>
-                            </div>
-                            <span>Establish healthcare access points in underserved regions</span>
-                        </li>
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 mt-1.5 mr-3">
-                                <div class="idealfor_list_dot rounded-full"></div>
-                            </div>
-                            <span>Implement efficient health screening for large populations</span>
-                        </li>
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 mt-1.5 mr-3">
-                                <div class="idealfor_list_dot rounded-full"></div>
-                            </div>
-                            <span>Create sustainable healthcare delivery models in resource-limited settings</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- NGOs & Humanitarian Organizations -->
-            <div class="bg-white rounded-2xl shadow-lg idealfor_card border border-gray-100">
-                <div class="p-8">
-                    <div class="flex items-center mb-6">
-                        <div class="idealfor_icon_wrapper">
-                            <div
-                                class="idealfor_icon_bg w-14 h-14 flex items-center justify-center rounded-full shadow-lg">
-                                <i class="fas fa-hands-helping text-xl text-white"></i>
-                            </div>
-                        </div>
-                        <h3 class="text-xl font-bold ml-4 text-gray-800">NGOs & Humanitarian Organizations</h3>
-                    </div>
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 mt-1.5 mr-3">
-                                <div class="idealfor_list_dot rounded-full"></div>
-                            </div>
-                            <span>Deliver essential healthcare services to underserved populations</span>
-                        </li>
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 mt-1.5 mr-3">
-                                <div class="idealfor_list_dot rounded-full"></div>
-                            </div>
-                            <span>Maintain consistent care standards across different deployment areas</span>
-                        </li>
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 mt-1.5 mr-3">
-                                <div class="idealfor_list_dot rounded-full"></div>
-                            </div>
-                            <span>Collect and analyze health data to guide future initiatives</span>
-                        </li>
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 mt-1.5 mr-3">
-                                <div class="idealfor_list_dot rounded-full"></div>
-                            </div>
-                            <span>Maximize the impact of limited healthcare resources</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Fitness & Lifestyle Clubs -->
-            <div class="bg-white rounded-2xl shadow-lg idealfor_card border border-gray-100">
-                <div class="p-8">
-                    <div class="flex items-center mb-6">
-                        <div class="idealfor_icon_wrapper">
-                            <div
-                                class="idealfor_icon_bg w-14 h-14 flex items-center justify-center rounded-full shadow-lg">
-                                <i class="fas fa-dumbbell text-xl text-white"></i>
-                            </div>
-                        </div>
-                        <h3 class="text-xl font-bold ml-4 text-gray-800">Fitness & Lifestyle Clubs</h3>
-                    </div>
-                    <ul class="space-y-4">
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 mt-1.5 mr-3">
-                                <div class="idealfor_list_dot rounded-full"></div>
-                            </div>
-                            <span>Integrate healthcare and wellness solutions for members</span>
-                        </li>
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 mt-1.5 mr-3">
-                                <div class="idealfor_list_dot rounded-full"></div>
-                            </div>
-                            <span>Offer medical-grade health assessments alongside fitness programs</span>
-                        </li>
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 mt-1.5 mr-3">
-                                <div class="idealfor_list_dot rounded-full"></div>
-                            </div>
-                            <span>Create personalized wellness journeys based on clinical insights</span>
-                        </li>
-                        <li class="flex items-start">
-                            <div class="flex-shrink-0 mt-1.5 mr-3">
-                                <div class="idealfor_list_dot rounded-full"></div>
-                            </div>
-                            <span>Differentiate your facility with comprehensive health management capabilities</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
+    <!-- Key features section -->
     <div class="max-w-[1500px] mx-auto px-4 py-12 md:py-16">
         <div class="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
             <!-- Left Side - Features Content -->
@@ -1281,6 +1428,7 @@
         </div>
     </div>
 
+    <!-- Selection cta section -->
     <div class="w-full my-20 overflow-hidden max-w-[1500px] mx-auto px-4">
         <div class="selection_card w-full rounded-2xl overflow-hidden relative">
             <!-- Background Design Elements -->
@@ -1393,6 +1541,7 @@
         </div>
     </div>
 
+    <!-- Why choose us -->
     <div class="max-w-[1500px] mx-auto px-4 py-16">
         <!-- Badge and Heading -->
         <div class="mb-12">
@@ -1412,51 +1561,52 @@
                     <i class="fas fa-puzzle-piece text-gray-800 text-xl"></i>
                 </div>
                 <h3 class="text-2xl font-bold mb-4">Seamless Integration</h3>
-                <p class="text-gray-700">
-                    <li>White-labeling options to align with your organizational identity</li>
-                    <li>Customizable user interfaces and patient-facing materials</li>
-                    <li>Branded patient portals and mobile applications</li>
-                    <li>Personalized reporting and documentation templates</li>
-                    </ul>
-            </div>
-
-            <!-- Flexible Business Models -->
-            <div class="bg-gray-100 rounded-xl p-8">
-                <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-6">
-                    <i class="fas fa-chart-line text-gray-800 text-xl"></i>
-                </div>
-                <h3 class="text-2xl font-bold mb-4">Flexible Business Models</h3>
                 <ul class="space-y-3 text-gray-700">
-                    <li>Revenue-sharing arrangements based on service utilization</li>
-                    <li>Pay-per-use options for diagnostic services and consultations</li>
-                    <li>Subscription models for ongoing operation and maintenance</li>
-                    <li>Custom financial models to align with your organizational structure</li>
+                    <li>All devices can be integrated into Telth Minute Labs and Kiosks based on specific requirements
+                    </li>
+                    <li>Create a comprehensive diagnostic ecosystem</li>
+                    <li>Connect with existing healthcare infrastructure</li>
+                    <li>Unified platform for all diagnostic needs</li>
                 </ul>
             </div>
 
-            <!-- Flexible Learning Schedules (Blue Box) -->
+            <!-- Enhanced Patient Experience -->
+            <div class="bg-gray-100 rounded-xl p-8">
+                <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-user-plus text-gray-800 text-xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4">Enhanced Patient Experience</h3>
+                <ul class="space-y-3 text-gray-700">
+                    <li>Reduce patient wait times significantly</li>
+                    <li>Eliminate the need for multiple facility visits</li>
+                    <li>Improve satisfaction and adherence to treatment plans</li>
+                    <li>Simplified patient journey from diagnosis to treatment</li>
+                </ul>
+            </div>
+
+            <!-- Data-Driven Insights (Blue Box) -->
             <div class="bg-indigo-800 rounded-xl p-8 text-white row-span-2">
                 <div class="w-14 h-14 bg-white bg-opacity-20 rounded-full flex items-center justify-center mb-6">
-                    <i class="fas fa-calendar-alt text-white text-xl"></i>
+                    <i class="fas fa-brain text-white text-xl"></i>
                 </div>
-                <h3 class="text-2xl font-bold mb-4">Seamless Integration</h3>
+                <h3 class="text-2xl font-bold mb-4">Data-Driven Insights</h3>
 
                 <p class="mb-6">
-                    At AI Smart Clinic, we understand the importance of integrating with your existing systems. Our
-                    solutions are designed to work seamlessly with your current infrastructure.
+                    Our advanced AI platform transforms diagnostic data into actionable insights, empowering healthcare
+                    providers with unprecedented analytical capabilities.
                 </p>
 
                 <ul class="space-y-3 text-white text-opacity-90">
-                    <li>Remote monitoring and synchronization with central hospital systems</li>
-                    <li>Interoperability with major electronic health record platforms</li>
-                    <li>Integration with insurance and payment processing systems</li>
-                    <li>Compatibility with third-party diagnostic equipment and software</li>
+                    <li>Automatic synchronization with our P3DSE AI platform</li>
+                    <li>Advanced analytics and predictive modeling</li>
+                    <li>Continuous improvement of diagnostic accuracy</li>
+                    <li>Population health trends and insights</li>
                 </ul>
 
                 <div class="mt-10">
                     <a href="#"
                         class="inline-flex items-center px-6 py-3 rounded-full bg-purple-600 hover:bg-purple-700 transition-colors text-white font-medium">
-                        Start Free Trial
+                        Explore Analytics
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20"
                             fill="currentColor">
                             <path fill-rule="evenodd"
@@ -1467,38 +1617,37 @@
                 </div>
             </div>
 
-            <!-- High Impact Courses (Large Box) -->
+            <!-- Sanitization and Safety (Large Box) -->
             <div class="bg-gray-100 rounded-xl p-8 md:col-span-2">
                 <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-6">
-                    <i class="fas fa-bullseye text-gray-800 text-xl"></i>
+                    <i class="fas fa-shield-virus text-gray-800 text-xl"></i>
                 </div>
-                <h3 class="text-2xl font-bold mb-4">Comprehensive Support</h3>
+                <h3 class="text-2xl font-bold mb-4">Sanitization and Safety</h3>
 
                 <p class="mb-4 text-gray-700">
-                    AI Smart Clinic offers complete support services to ensure your clinic operates smoothly. Our
-                    dedicated
-                    team is always available to assist with any technical or operational needs.
+                    Patient safety is our top priority. We've engineered our diagnostic solutions with comprehensive
+                    infection control measures to ensure the highest standards of hygiene.
                 </p>
 
                 <ul class="space-y-3 text-gray-700">
-                    <li>24/7 technical assistance and troubleshooting</li>
-                    <li>Regular maintenance and calibration services</li>
-                    <li>Staff training and certification programs</li>
-                    <li>Performance analytics and optimization recommendations</li>
+                    <li>Hygienic single-use components for critical contact points</li>
+                    <li>Disposable kits to ensure patient safety</li>
+                    <li>Minimize cross-contamination risks in multi-patient settings</li>
+                    <li>Easy-to-clean surfaces with antimicrobial properties</li>
                 </ul>
             </div>
 
-            <!-- Continuous Innovation -->
-            <div class="bg-gray-100 rounded-xl p-8 w-full">
+            <!-- Remote Management -->
+            <div class="bg-gray-100 rounded-xl p-8">
                 <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-6">
-                    <i class="fas fa-lightbulb text-gray-800 text-xl"></i>
+                    <i class="fas fa-wifi text-gray-800 text-xl"></i>
                 </div>
-                <h3 class="text-2xl font-bold mb-4">Continuous Innovation</h3>
+                <h3 class="text-2xl font-bold mb-4">Remote Management</h3>
                 <ul class="space-y-3 text-gray-700">
-                    <li>Regular software updates with enhanced features and capabilities</li>
-                    <li>AI model improvements based on aggregated, anonymized clinical data</li>
-                    <li>Expandable hardware capabilities through modular design</li>
-                    <li>Adaptation to evolving healthcare standards and practices</li>
+                    <li>Monitor device performance in real-time</li>
+                    <li>Update software remotely as new features become available</li>
+                    <li>Troubleshoot issues quickly without on-site visits</li>
+                    <li>Maximize uptime and operational efficiency</li>
                 </ul>
             </div>
         </div>

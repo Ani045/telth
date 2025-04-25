@@ -18,7 +18,197 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="main.css" type="text/css">
     <style>
+        .heading {
 
+            letter-spacing: -0.02em;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #1a56db 0%, #3b82f6 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .border-gradient {
+            position: relative;
+        }
+
+        .border-gradient::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 4px;
+            height: 100%;
+            background: linear-gradient(180deg, #1a56db 0%, #3b82f6 100%);
+        }
+
+        .service-card {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+            transition: transform 0.2s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            background: linear-gradient(135deg, #1a56db 0%, #3b82f6 100%);
+        }
+
+        .btn-primary {
+            background: linear-gradient(90deg, #1a56db 0%, #3b82f6 100%);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+        }
+
+        .btn-outline {
+            border: 2px solid #3b82f6;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline:hover {
+            background-color: rgba(59, 130, 246, 0.1);
+        }
+
+        .section-divider {
+            height: 4px;
+            background: linear-gradient(90deg, #1a56db 0%, #3b82f6 100%);
+            width: 100px;
+            margin: 0 auto;
+        }
+    </style>
+
+    <style>
+        .faq-item.active .faq-content {
+            max-height: 300px;
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        .faq-item.active {
+            border-color: #818cf8;
+            /* indigo-400 */
+            box-shadow: 0 4px 14px rgba(99, 102, 241, 0.2);
+        }
+
+        .faq-item:hover {
+            border-color: #a5b4fc;
+            /* indigo-300 */
+        }
+
+        .faq-item.active:hover {
+            border-color: #6366f1;
+            /* indigo-500 */
+        }
+
+        .bg-pattern {
+            background-image: url("https://img.freepik.com/premium-photo/high-quality-abstract-hexagon-colorful-background-design_851755-7979.jpg?w=1800");
+            width: 100%;
+        }
+    </style>
+
+    <style>
+        /* Unique class names to prevent conflicts */
+        .career-hexagon {
+            width: 60px;
+            height: 60px;
+            clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+
+        .career-divider {
+            height: 4px;
+            width: 80px;
+            background: linear-gradient(90deg, #4f46e5, #818cf8);
+            border-radius: 2px;
+            margin: 1rem auto;
+            position: relative;
+        }
+
+        .career-divider:after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            background: #4f46e5;
+            border-radius: 50%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            opacity: 0.2;
+        }
+
+        .career-icon {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+
+        .career-bullet {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+        .career-cta {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .career-cta:after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -60%;
+            width: 200%;
+            height: 200%;
+            background: rgba(255, 255, 255, 0.1);
+            transform: rotate(30deg);
+            transition: all 0.3s ease;
+        }
+
+        .career-cta:hover:after {
+            left: 100%;
+        }
+
+        /* Card hover effects */
+        .career-card:hover {
+            /* transform: translateY(-5px); */
+        }
+
+        .cm-card:hover .career-cta {
+            box-shadow: 0 10px 15px -3px rgba(59, 130, 246, 0.3);
+        }
+
+        .ccm-card:hover .career-cta {
+            box-shadow: 0 10px 15px -3px rgba(79, 70, 229, 0.3);
+        }
+    </style>
+
+    <style>
+        /* Minimal CSS using Tailwind-like classes */
+        .why-telth-tab {
+            transition: all 0.3s ease;
+        }
+
+        .active-telth-tab {
+            border-color: #c4b5fd;
+            background: linear-gradient(to right, #f5f3ff, #e0e7ff);
+            box-shadow: 0 4px 6px -1px rgba(167, 139, 250, 0.1), 0 2px 4px -1px rgba(167, 139, 250, 0.06);
+        }
+
+        .why-telth-section {
+            scroll-margin-top: 2rem;
+        }
     </style>
 </head>
 
@@ -599,7 +789,7 @@
                 <div id="healthcare-tab"
                     class="tab-content active opacity-100 transition-opacity duration-500 h-full w-full">
                     <div class="relative h-full">
-                        <img src="assets/images/banners/cm-banner.png" alt="Healthcare Professionals"
+                        <img src="assets/banners/cm.png" alt="Healthcare Professionals"
                             class="w-full h-full object-cover object-center" loading="lazy">
 
                         <div class="absolute inset-0 flex items-center px-8 md:px-12 lg:px-16">
@@ -645,7 +835,7 @@
                 <div id="corporate-tab"
                     class="tab-content hidden opacity-0 transition-opacity duration-500 h-full w-full">
                     <div class="relative h-full">
-                        <img src="assets/images/home/corporate-slide.png" alt="Corporate Solutions"
+                        <img src="assets/banners/ccm.png" alt="Corporate Solutions"
                             class="w-full h-full object-cover object-center" loading="lazy">
 
                         <div class="absolute inset-0 flex items-center px-8 md:px-12 lg:px-16">

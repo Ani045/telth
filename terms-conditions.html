@@ -181,6 +181,8 @@
     </nav>
 
     <div class="h-20 fixed z-20 w-full bg-gradient-to-b from-gray-100 to-transparent"></div>
+
+
     <!-- Full Screen Menu Overlay -->
     <div x-data="{ isOpen: false }" x-show="isOpen" x-transition:enter="transition ease-out duration-300"
         x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
@@ -545,13 +547,11 @@
 
                 <!-- Quick Links -->
                 <div class="mt-12 pt-12 border-t border-gray-200">
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8">
-                        <span class="tooltip">
-                            <span class="text-gray-400 text-sm transition-colors disabled-link">
-                                Mobile Healthcare
-                            </span>
-                            <span class="tooltiptext">Coming Soon</span>
-                        </span>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
+                        <a href="/privacy-policy.html"
+                            class="text-violet-700 hover:text-violet-900 text-sm transition-colors">
+                            Privacy Policy
+                        </a>
                         <span class="tooltip">
                             <span class="text-gray-400 text-sm transition-colors disabled-link">
                                 Financial Services
@@ -570,12 +570,10 @@
                             </span>
                             <span class="tooltiptext">Under Development</span>
                         </span>
-                        <span class="tooltip">
-                            <span class="text-gray-400 text-sm transition-colors disabled-link">
-                                Locations
-                            </span>
-                            <span class="tooltiptext">Coming Soon</span>
-                        </span>
+                        <a href="/terms-conditions.html"
+                            class="text-violet-700 hover:text-violet-900 text-sm transition-colors">
+                            Terms and Conditions
+                        </a>
                         <a href="/contact-us.html"
                             class="text-violet-700 hover:text-violet-900 text-sm transition-colors">
                             Contact
@@ -1169,7 +1167,7 @@
                             Book Appointment
                         </a>
                         <a href="/emergency-care"
-                            class="px-6 py-2.5 text-sm duration-300 font-medium bg-gradient-to-r from-indigo-300 to-violet-300 hover:from-indigo-400 hover:to-violet-400 text-black rounded-lg transition-all  shadow-lg shadow-purple-900/10">
+                            class="px-6 py-2.5 text-sm duration-300 font-medium bg-gradient-to-r from-indigo-300 to-violet-300 hover:from-indigo-400 hover:to-violet-400 text-black rounded-lg transition-all shadow-lg shadow-purple-900/10">
                             Emergency Care
                         </a>
                     </div>
@@ -1183,15 +1181,17 @@
                 <!-- Brand Section -->
                 <div class="lg:col-span-2">
                     <a href="/" class="inline-block mb-6">
-                        <span
-                            class="text-3xl font-bold bg-gradient-to-r from-purple-800 to-indigo-600 bg-clip-text text-transparent">
-                            Telth.care
-                        </span>
+                        <div class="flex items-center">
+                            <img src="assets/telth.png" alt="telth" class="w-8 h-8 mr-2">
+                            <span
+                                class="text-3xl font-bold bg-gradient-to-r from-purple-800 to-indigo-600 bg-clip-text text-transparent">
+                                Telth.care
+                            </span>
+                        </div>
                     </a>
                     <p class="text-black/60 text-base leading-relaxed mb-8 max-w-md">
                         Pioneering the future of healthcare through innovative technology solutions, bringing
-                        exceptional
-                        care directly to your doorstep.
+                        exceptional care directly to your doorstep.
                     </p>
                     <div class="flex items-center gap-4">
                         <a href="https://linkedin.com/company/telthcare"
@@ -1222,118 +1222,151 @@
                 </div>
 
                 <!-- Links Grid -->
-                <div class="lg:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-8">
-                    <!-- Healthcare -->
+                <div class="lg:col-span-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Navigation Links -->
                     <div class="space-y-6">
-                        <h3 class="text-purple-800 text-sm font-semibold uppercase tracking-wider">Healthcare</h3>
+                        <h3 class="text-purple-800 text-sm font-semibold uppercase tracking-wider">Navigation</h3>
                         <ul class="space-y-4">
                             <li>
-                                <a href="/solutions/care2home"
+                                <a href="/index.html"
                                     class="text-black/60 hover:text-black text-sm transition-colors inline-block">
-                                    Care2Home
+                                    Home
                                 </a>
                             </li>
                             <li>
-                                <a href="/solutions/health-card"
-                                    class="text-black/60 hover:text-black text-sm transition-colors inline-block">
-                                    Health Card
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/solutions/smart-hubs"
-                                    class="text-black/60 hover:text-black text-sm transition-colors inline-block">
-                                    Smart Hubs
-                                </a>
-                            </li>
-                            <li>
-                                <a href="/solutions/diagnostics"
-                                    class="text-black/60 hover:text-black text-sm transition-colors inline-block">
-                                    Diagnostics
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-
-                    <!-- Company -->
-                    <div class="space-y-6">
-                        <h3 class="text-indigo-700 text-sm font-semibold uppercase tracking-wider">Company</h3>
-                        <ul class="space-y-4">
-                            <li>
-                                <a href="/about"
+                                <a href="/about-us.html"
                                     class="text-black/60 hover:text-black text-sm transition-colors inline-block">
                                     About Us
                                 </a>
                             </li>
                             <li>
-                                <a href="/careers"
+                                <a href="/care-provider.html"
                                     class="text-black/60 hover:text-black text-sm transition-colors inline-block">
-                                    Careers
+                                    Care Providers
                                 </a>
                             </li>
                             <li>
-                                <a href="/contact"
+                                <a href="/contact-us.html"
                                     class="text-black/60 hover:text-black text-sm transition-colors inline-block">
                                     Contact
                                 </a>
                             </li>
-                            <li>
-                                <a href="/blogs"
-                                    class="text-black/60 hover:text-black text-sm transition-colors inline-block">
-                                    Blog
-                                </a>
-                            </li>
                         </ul>
                     </div>
 
-                    <!-- Resources -->
+                    <!-- Services -->
                     <div class="space-y-6">
-                        <h3 class="text-violet-700 text-sm font-semibold uppercase tracking-wider">Resources</h3>
+                        <h3 class="text-indigo-700 text-sm font-semibold uppercase tracking-wider">Services</h3>
                         <ul class="space-y-4">
                             <li>
-                                <a href="/documentation"
+                                <a href="/turnkey.html"
                                     class="text-black/60 hover:text-black text-sm transition-colors inline-block">
-                                    Documentation
+                                    Turnkey Solutions
                                 </a>
                             </li>
                             <li>
-                                <a href="/help"
+                                <a href="/ai-smart-clinic.html"
                                     class="text-black/60 hover:text-black text-sm transition-colors inline-block">
-                                    Help Center
+                                    AI Smart Clinics
                                 </a>
                             </li>
                             <li>
-                                <a href="/community"
+                                <a href="/advanced-diagnostic-devices.html"
                                     class="text-black/60 hover:text-black text-sm transition-colors inline-block">
-                                    Community
+                                    Advanced Diagnostics
                                 </a>
                             </li>
                             <li>
-                                <a href="/resources"
+                                <a href="/compact-diagnostic-devices.html"
                                     class="text-black/60 hover:text-black text-sm transition-colors inline-block">
-                                    Resources
+                                    Compact Diagnostics
                                 </a>
                             </li>
                         </ul>
                     </div>
-                </div>
 
-                <!-- Newsletter -->
-                <div class="lg:col-span-1">
-                    <div class="p-6 bg-indigo-100 rounded-2xl backdrop-blur-sm border border-violet-100 w-full">
-                        <h3 class="text-indigo-800 text-sm font-semibold uppercase tracking-wider mb-4">Stay Updated
-                        </h3>
-                        <p class="text-black/60 text-sm mb-6">
-                            Subscribe for the latest healthcare innovations.
-                        </p>
-                        <form action="/newsletter/subscribe" method="POST" class="space-y-3">
+                    <!-- Innovation Hub -->
+                    <div class="space-y-6">
+                        <h3 class="text-violet-700 text-sm font-semibold uppercase tracking-wider">Innovation Hub</h3>
 
-                            <input type="email" name="email" required placeholder="Enter your email"
-                                class="w-full px-4 py-2.5 bg-white border border-purple-200 rounded-lg text-sm text-black placeholder-purple-300 focus:outline-none focus:border-violet-400 transition-colors">
-                            <button type="submit"
-                                class="w-full px-4 py-2.5 bg-violet-500 hover:bg-violet-600 text-white text-sm font-medium rounded-lg transition-colors">
-                                Subscribe
-                            </button>
-                        </form>
+                        <!-- Technology Showcase -->
+                        <div
+                            class="bg-gradient-to-br from-indigo-50 to-purple-50 rounded-xl p-4 border border-violet-100">
+                            <div class="grid grid-cols-2 gap-3">
+                                <a href="/ai-smart-clinic.html" class="group">
+                                    <div
+                                        class="rounded-lg bg-white/70 p-3 text-center hover:bg-violet-100 transition-all h-full flex flex-col justify-between">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="h-6 w-6 mx-auto text-indigo-600 mb-2" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                                        </svg>
+                                        <span class="text-xs font-medium text-black/70 group-hover:text-black/90">AI
+                                            Smart
+                                            Clinics</span>
+                                    </div>
+                                </a>
+                                <a href="/advanced-diagnostic-devices.html" class="group">
+                                    <div
+                                        class="rounded-lg bg-white/70 p-3 text-center hover:bg-violet-100 transition-all h-full flex flex-col justify-between">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="h-6 w-6 mx-auto text-violet-600 mb-2" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
+                                        </svg>
+                                        <span
+                                            class="text-xs font-medium text-black/70 group-hover:text-black/90">Advanced
+                                            Diagnostics</span>
+                                    </div>
+                                </a>
+                                <a href="/compact-diagnostic-devices.html" class="group">
+                                    <div
+                                        class="rounded-lg bg-white/70 p-3 text-center hover:bg-violet-100 transition-all h-full flex flex-col justify-between">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="h-6 w-6 mx-auto text-purple-600 mb-2" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                                        </svg>
+                                        <span
+                                            class="text-xs font-medium text-black/70 group-hover:text-black/90">Compact
+                                            Diagnostics</span>
+                                    </div>
+                                </a>
+                                <a href="/turnkey.html" class="group">
+                                    <div
+                                        class="rounded-lg bg-white/70 p-3 text-center hover:bg-violet-100 transition-all h-full flex flex-col justify-between">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            class="h-6 w-6 mx-auto text-indigo-600 mb-2" fill="none" viewBox="0 0 24 24"
+                                            stroke="currentColor">
+                                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                                d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4" />
+                                        </svg>
+                                        <span
+                                            class="text-xs font-medium text-black/70 group-hover:text-black/90">Turnkey
+                                            Solutions</span>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <!-- Healthcare Hotline -->
+                        <!-- <div
+                                class="mt-4 text-center py-3 px-4 bg-gradient-to-r from-violet-600 to-indigo-600 rounded-lg group hover:from-violet-700 hover:to-indigo-700 transition-all shadow-sm">
+                                <a href="tel:+18008008000" class="flex items-center justify-center gap-3 text-white">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                    </svg>
+                                    <div class="flex flex-col items-start">
+                                        <span class="text-xs text-white/90">24/7 Healthcare Hotline</span>
+                                        <span class="text-sm font-medium">1-800-800-8000</span>
+                                    </div>
+                                </a>
+                            </div> -->
                     </div>
                 </div>
             </div>
@@ -1345,8 +1378,10 @@
                         &copy; 2025 Telth.care. All rights reserved.
                     </div>
                     <div class="flex flex-wrap justify-center gap-x-8 gap-y-2 text-sm text-black/40">
-                        <a href="/privacy" class="hover:text-purple-700 transition-colors">Privacy</a>
-                        <a href="/terms" class="hover:text-indigo-700 transition-colors">Terms</a>
+                        <a href="/privacy-policy.html" class="hover:text-purple-700 transition-colors">Privacy
+                            Policy</a>
+                        <a href="/terms-conditions.html" class="hover:text-indigo-700 transition-colors">Terms &
+                            Conditions</a>
                         <a href="/security" class="hover:text-violet-700 transition-colors">Security</a>
                         <a href="/cookies" class="hover:text-purple-700 transition-colors">Cookies</a>
                     </div>

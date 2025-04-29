@@ -18,6 +18,34 @@
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link rel="stylesheet" href="main.css" type="text/css">
     <style>
+.purple-gradient {
+            background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+        }
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 25px -5px rgba(109, 40, 217, 0.1), 0 10px 10px -5px rgba(109, 40, 217, 0.04);
+        }
+        .number-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 18px;
+            color: white;
+        }
+        .progress-line {
+            height: 3px;
+            background: linear-gradient(90deg, #8b5cf6 0%, #ddd5f7 100%);
+        }
+
+
+
         .healthcare-cutout {
             background-image: url('https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80');
             background-size: cover;
@@ -846,6 +874,86 @@
             </div>
         </div>
     </div>
+
+
+    <section class="py-16 px-4 md:px-8 lg:px-16">
+        <div class="max-w-6xl mx-auto">
+            <!-- Section Header -->
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Implementation Made Simple</h2>
+                <div class="w-24 h-1 purple-gradient mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Our streamlined process ensures a smooth transition and successful implementation of your program.
+                </p>
+            </div>
+            
+            <!-- Implementation Steps -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Step 1: Assessment -->
+                <div class="bg-white rounded-xl p-6 shadow-lg card-hover border-t-4 border-purple-600">
+                    <div class="flex items-center mb-6">
+                        <div class="number-circle purple-gradient mr-4">1</div>
+                        <div class="progress-line flex-grow"></div>
+                    </div>
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-clipboard-check text-2xl text-purple-600 mr-4 mt-1"></i>
+                        <h3 class="text-xl font-bold text-gray-800">Assessment</h3>
+                    </div>
+                    <p class="text-gray-600 pl-10">
+                    Analysis of your workforce needs.
+                    </p>
+                </div>
+                
+                <!-- Step 2: Customization -->
+                <div class="bg-white rounded-xl p-6 shadow-lg card-hover border-t-4 border-purple-600">
+                    <div class="flex items-center mb-6">
+                        <div class="number-circle purple-gradient mr-4">2</div>
+                        <div class="progress-line flex-grow"></div>
+                    </div>
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-tools text-2xl text-purple-600 mr-4 mt-1"></i>
+                        <h3 class="text-xl font-bold text-gray-800">Customization</h3>
+                    </div>
+                    <p class="text-gray-600 pl-10">
+                        Tailored program design.
+                    </p>
+                </div>
+                
+                <!-- Step 3: Implementation -->
+                <div class="bg-white rounded-xl p-6 shadow-lg card-hover border-t-4 border-purple-600">
+                    <div class="flex items-center mb-6">
+                        <div class="number-circle purple-gradient mr-4">3</div>
+                        <div class="progress-line flex-grow"></div>
+                    </div>
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-rocket text-2xl text-purple-600 mr-4 mt-1"></i>
+                        <h3 class="text-xl font-bold text-gray-800">Implementation</h3>
+                    </div>
+                    <p class="text-gray-600 pl-10">
+                        Smooth 30-60 day rollout.
+                    </p>
+                </div>
+                
+                <!-- Step 4: Measurement -->
+                <div class="bg-white rounded-xl p-6 shadow-lg card-hover border-t-4 border-purple-600">
+                    <div class="flex items-center mb-6">
+                        <div class="number-circle purple-gradient mr-4">4</div>
+                        <div class="w-0"></div>
+                    </div>
+                    <div class="flex items-start mb-4">
+                        <i class="fas fa-chart-line text-2xl text-purple-600 mr-4 mt-1"></i>
+                        <h3 class="text-xl font-bold text-gray-800">Measurement</h3>
+                    </div>
+                    <p class="text-gray-600 pl-10">
+                        Regular reporting on outcomes and ROI.
+                    </p>
+                </div>
+            </div>
+            
+            
+        
+        </div>
+    </section>
 
     <section class="pb-16 pt-8 px-4 md:px-8 lg:px-16 container mx-auto">
         <!-- Header -->

@@ -155,6 +155,86 @@
         .purple-text {
             color: #8B5CF6;
         }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #8B5CF6, #2563EB);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .gradient-bg {
+            background: linear-gradient(135deg, #8B5CF6, #2563EB);
+        }
+
+        .hes-card {
+            border-radius: 1rem;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .hes-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+        }
+
+        .blob-shape {
+            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+        }
+
+        .pulse-animation {
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(139, 92, 246, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(139, 92, 246, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(139, 92, 246, 0);
+            }
+        }
+    </style>
+    <style>
+        .purple-gradient {
+            background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+        }
+
+        .solution-card {
+            transition: all 0.3s ease;
+        }
+
+        .solution-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(109, 40, 217, 0.1), 0 10px 10px -5px rgba(109, 40, 217, 0.04);
+        }
+
+        .img-filter-purple {
+            filter: drop-shadow(0 4px 6px rgba(109, 40, 217, 0.1));
+        }
+
+        .image-container {
+            overflow: hidden;
+            border-radius: 12px;
+        }
+
+        .image-container img {
+            transition: transform 0.5s ease;
+        }
+
+        .solution-row:hover .image-container img {
+            transform: scale(1.05);
+        }
+
+        .accent-bar {
+            width: 4px;
+            background: linear-gradient(180deg, #8b5cf6 0%, #6d28d9 100%);
+        }
     </style>
 </head>
 
@@ -690,7 +770,7 @@
     </div>
     <div class="h-20"></div>
 
-    <!-- Hero section -->
+
     <section class="relative overflow-hidden pt-12 md:pt-16">
         <div class="container mx-auto px-6">
             <div class="flex flex-col lg:flex-row items-center gap-10">
@@ -699,33 +779,30 @@
                     <div
                         class="inline-flex items-center mb-6 px-3 py-1.5 rounded-full bg-white text-purple-700 text-xs font-medium tracking-wider shadow-sm border border-purple-100">
                         <span class="w-2 h-2 mr-2 bg-purple-500 rounded-full"></span>
-                        Smart Healthcare Solutions
+                        Compact Diagnostic Devices
                     </div>
 
                     <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
-                        <span class="gradient-highlight">Smart Wearables & IoMT Solutions:</span><br>
-                        <span class="text-gray-800">Turnkey Solutions</span>
+                        <span class="gradient-highlight">Care plans - Patients:</span><br>
+                        <span class="text-gray-800">Healthcare That Revolves Around You</span>
                     </h1>
 
                     <p class="text-gray-600 mb-8 max-w-3xl text-lg leading-relaxed">
-                        Empower patients with real-time health tracking and AI-driven insights through our comprehensive
-                        Internet of Medical
-                        Things (IoMT) ecosystem. By providing sophisticated monitoring tools and intelligent analytics,
-                        we're transforming
-                        healthcare from reactive to proactive, enabling personalized care plans that adapt to individual
-                        health patterns and
-                        needs.
+                        Experience more convenient, personalized healthcare with smart devices and services designed to
+                        put you at the center of
+                        your health journey.
+
                     </p>
 
                     <div class="flex flex-col sm:flex-row gap-4 z-50">
                         <button
                             class="px-6 py-3.5 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg font-medium hover:shadow-lg transition-all duration-300 hover:opacity-90">
-                            Get Started
+                            Take Control of Your Health
                         </button>
-                        <button
+                        <!-- <button
                             class="px-6 py-3.5 bg-white text-gray-700 rounded-lg font-medium border border-gray-200 hover:bg-gray-50 transition-all duration-300 hover:shadow-sm">
                             Watch Demo
-                        </button>
+                        </button> -->
                     </div>
                 </div>
 
@@ -766,620 +843,417 @@
             <!-- Trust indicators -->
             <div class="mt-16 pt-8 border-t border-gray-200">
                 <!-- <p class="text-center text-gray-500 text-sm mb-6">TRUSTED BY LEADING HEALTHCARE PROVIDERS</p>
-                <div class="flex flex-wrap justify-center gap-8 md:gap-12 opacity-70">
-                    <div class="text-gray-700 font-medium">Mayo Clinic</div>
-                    <div class="text-gray-700 font-medium">Kaiser Permanente</div>
-                    <div class="text-gray-700 font-medium">Cleveland Clinic</div>
-                    <div class="text-gray-700 font-medium">Johns Hopkins</div>
-                </div> -->
+                        <div class="flex flex-wrap justify-center gap-8 md:gap-12 opacity-70">
+                            <div class="text-gray-700 font-medium">Mayo Clinic</div>
+                            <div class="text-gray-700 font-medium">Kaiser Permanente</div>
+                            <div class="text-gray-700 font-medium">Cleveland Clinic</div>
+                            <div class="text-gray-700 font-medium">Johns Hopkins</div>
+                        </div> -->
             </div>
         </div>
     </section>
 
-    <!-- About us section -->
-    <section class="relative py-16 bg-gradient-to-br from-gray-50 to-white overflow-hidden">
-        <!-- Background Elements -->
-        <div
-            class="absolute top-0 left-1/4 w-96 h-96 bg-purple-100 rounded-full opacity-20 -translate-x-1/2 -translate-y-1/2">
-        </div>
-        <div
-            class="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-100 rounded-full opacity-20 translate-x-1/2 translate-y-1/2">
-        </div>
-
-        <div class="container mx-auto px-4 relative z-10">
-            <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
-                <!-- Left Column - Text Content -->
-                <div class="lg:w-1/2">
-                    <div>
-                        <div
-                            class="inline-block px-4 py-1.5 mb-5 rounded-full bg-purple-100 text-purple-700 text-sm font-medium">
-                            ABOUT IOMT
-                        </div>
-                        <h2 class="text-3xl md:text-4xl font-bold mb-6 leading-tight text-gray-900">
-                            Our IoMT Ecosystem
-                        </h2>
-                        <p class="text-gray-600 text-lg mb-8 leading-relaxed">
-                            Our interconnected system of smart medical devices creates a seamless flow of health data
-                            between patients and
-                            healthcare providers, enabling timely interventions and ongoing care optimization.
-
-                        </p>
-
-                        <div class="mt-6">
-                            <a href="#"
-                                class="px-6 py-3 bg-indigo-600 text-white font-medium rounded-full inline-flex items-center hover:bg-indigo-700 mr-4">
-                                <span>Learn More</span>
-                                <i class="fas fa-arrow-right ml-2"></i>
-                            </a>
-                            <a href="#"
-                                class="px-6 py-3 border border-indigo-200 text-indigo-600 font-medium rounded-full inline-flex items-center hover:bg-indigo-50">
-                                <span>Our Solutions</span>
-                                <i class="fas fa-external-link-alt ml-2"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Column - Image -->
-                <div class="lg:w-1/2 relative">
-                    <div class="bg-white p-3 rounded-2xl shadow-lg">
-                        <!-- Main image -->
-                        <div class="rounded-xl overflow-hidden">
-                            <img src="/api/placeholder/800/500" alt="IOMT" class="w-full h-full object-cover">
-                        </div>
-
-                        <!-- Decorative elements -->
-                        <div class="absolute -top-4 -right-4 w-16 h-16 bg-indigo-100 rounded-full opacity-50"></div>
-                        <div class="absolute -bottom-4 -left-4 w-16 h-16 bg-purple-100 rounded-full opacity-50"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="w-full bg-gradient-to-b from-gray-50 to-white py-16">
-        <div class="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Header Section -->
+    <section class="py-16 px-4 md:px-8 lg:px-16">
+        <div class="container mx-auto">
+            <!-- Section Header -->
             <div class="text-center mb-16">
-                <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-3">
-                    <span class="bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-blue-500">Telth Smart
-                        Wearables Portfolio</span>
-                </h1>
-                <p class="text-xl text-purple-600 font-medium max-w-2xl mx-auto">
-                    Advanced Health Monitoring Solutions for Better Patient Outcomes
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Patient-Centered Solutions</h2>
+                <div class="w-24 h-1 purple-gradient mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Innovative healthcare tools designed with you in mind, making health management simpler and more
+                    accessible.
                 </p>
-                <div class="mt-6 h-1 w-20 bg-gradient-to-r from-purple-500 to-blue-400 mx-auto rounded-full"></div>
             </div>
 
-            <!-- CGM Section -->
-            <div class="why-telth-section mb-20 flex flex-col lg:flex-row items-center gap-8">
-                <!-- Content -->
-                <div class="lg:w-1/2">
-                    <div class="flex items-center mb-6">
-                        <div
-                            class="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-100 to-blue-100 flex items-center justify-center mr-4 shadow-sm">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
-                            </svg>
-                        </div>
-                        <h2 class="text-2xl md:text-3xl font-bold text-gray-800">Telth CGM (Continuous Glucose Monitor)
-                        </h2>
-                    </div>
-
-                    <div class="space-y-4">
-                        <button onclick="telthShowFeature('cgm1')"
-                            class="why-telth-tab flex items-start w-full p-4 rounded-xl transition-all hover:bg-gradient-to-r from-purple-50 to-blue-50 border border-transparent hover:border-purple-100 active-telth-tab">
-                            <span class="w-4 h-4 bg-purple-600 rounded-full mt-1 mr-3 flex-shrink-0"></span>
-                            <div>
-                                <h3 class="text-lg font-semibold text-gray-800 text-left">Real-time glucose monitoring
-                                </h3>
-                                <p class="text-gray-600 mt-1 text-sm">No more frequent finger pricks with continuous
-                                    readings</p>
-                            </div>
-                        </button>
-
-                        <button onclick="telthShowFeature('cgm2')"
-                            class="why-telth-tab flex items-start w-full p-4 rounded-xl transition-all hover:bg-gradient-to-r from-purple-50 to-blue-50 border border-transparent hover:border-purple-100">
-                            <span class="w-4 h-4 bg-purple-600 rounded-full mt-1 mr-3 flex-shrink-0"></span>
-                            <div>
-                                <h3 class="text-lg font-semibold text-gray-800 text-left">Advanced trend analysis</h3>
-                                <p class="text-gray-600 mt-1 text-sm">Identifies patterns and potential concerns in
-                                    glucose
-                                    levels</p>
-                            </div>
-                        </button>
-
-                        <button onclick="telthShowFeature('cgm3')"
-                            class="why-telth-tab flex items-start w-full p-4 rounded-xl transition-all hover:bg-gradient-to-r from-purple-50 to-blue-50 border border-transparent hover:border-purple-100">
-                            <span class="w-4 h-4 bg-purple-600 rounded-full mt-1 mr-3 flex-shrink-0"></span>
-                            <div>
-                                <h3 class="text-lg font-semibold text-gray-800 text-left">Predictive alerts</h3>
-                                <p class="text-gray-600 mt-1 text-sm">Warnings for impending hypoglycemia or
-                                    hyperglycemia
-                                </p>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Image -->
+            <!-- Solutions as Wide Cards with Alternating Layout -->
+            <div class="space-y-8">
+                <!-- Solution 1: Smart Health Monitors -->
                 <div
-                    class="lg:w-1/2 relative rounded-xl overflow-hidden shadow-xl h-80 lg:h-96 bg-gradient-to-br from-purple-50 to-blue-50">
-                    <img id="cgm1-img"
-                        src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                        alt="Continuous Glucose Monitor"
-                        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-100">
-                    <img id="cgm2-img"
-                        src="https://images.unsplash.com/photo-1521747116042-5a810fda9664?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                        alt="Glucose trend analysis"
-                        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0">
-                    <img id="cgm3-img"
-                        src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                        alt="Predictive alerts"
-                        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                </div>
-            </div>
-
-            <!-- Cardio Section (Alternate layout) -->
-            <div class="why-telth-section mb-20 flex flex-col lg:flex-row-reverse items-center gap-8">
-                <!-- Content -->
-                <div class="lg:w-1/2">
-                    <div class="flex items-center mb-6">
-                        <div
-                            class="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-100 to-blue-100 flex items-center justify-center mr-4 shadow-sm">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
-                            </svg>
+                    class="solution-card bg-purple-50 border border-purple-200 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+                    <div class="flex flex-col md:flex-row">
+                        <!-- Image (Left on desktop) -->
+                        <div class="md:w-2/5">
+                            <div class="h-full">
+                                <img src="/api/placeholder/600/500" alt="Smart Health Monitors"
+                                    class="w-full h-full object-cover">
+                            </div>
                         </div>
-                        <h2 class="text-2xl md:text-3xl font-bold text-gray-800">Telth Cardio (Chest Band)</h2>
-                    </div>
 
-                    <div class="space-y-4">
-                        <button onclick="telthShowFeature('cardio1')"
-                            class="why-telth-tab flex items-start w-full p-4 rounded-xl transition-all hover:bg-gradient-to-r from-purple-50 to-blue-50 border border-transparent hover:border-purple-100 active-telth-tab">
-                            <span class="w-4 h-4 bg-purple-600 rounded-full mt-1 mr-3 flex-shrink-0"></span>
-                            <div>
-                                <h3 class="text-lg font-semibold text-gray-800 text-left">Clinical-grade ECG monitoring
-                                </h3>
-                                <p class="text-gray-600 mt-1 text-sm">Continuous cardiac monitoring with high accuracy
-                                </p>
+                        <!-- Content (Right on desktop) -->
+                        <div class="md:w-3/5 p-6 md:p-8">
+                            <div class="flex items-center mb-4">
+                                <div
+                                    class="w-10 h-10 rounded-full purple-gradient flex items-center justify-center mr-3">
+                                    <i class="fas fa-heartbeat text-lg text-white"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-800">Smart Health Monitors</h3>
                             </div>
-                        </button>
-
-                        <button onclick="telthShowFeature('cardio2')"
-                            class="why-telth-tab flex items-start w-full p-4 rounded-xl transition-all hover:bg-gradient-to-r from-purple-50 to-blue-50 border border-transparent hover:border-purple-100">
-                            <span class="w-4 h-4 bg-purple-600 rounded-full mt-1 mr-3 flex-shrink-0"></span>
-                            <div>
-                                <h3 class="text-lg font-semibold text-gray-800 text-left">HRV analysis</h3>
-                                <p class="text-gray-600 mt-1 text-sm">Stress and recovery assessment through heart rate
-                                    variability</p>
-                            </div>
-                        </button>
-
-                        <button onclick="telthShowFeature('cardio3')"
-                            class="why-telth-tab flex items-start w-full p-4 rounded-xl transition-all hover:bg-gradient-to-r from-purple-50 to-blue-50 border border-transparent hover:border-purple-100">
-                            <span class="w-4 h-4 bg-purple-600 rounded-full mt-1 mr-3 flex-shrink-0"></span>
-                            <div>
-                                <h3 class="text-lg font-semibold text-gray-800 text-left">Arrhythmia detection</h3>
-                                <p class="text-gray-600 mt-1 text-sm">Automatic classification of cardiac irregularities
-                                </p>
-                            </div>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Image -->
-                <div
-                    class="lg:w-1/2 relative rounded-xl overflow-hidden shadow-xl h-80 lg:h-96 bg-gradient-to-br from-purple-50 to-blue-50">
-                    <img id="cardio1-img"
-                        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                        alt="ECG monitoring"
-                        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-100">
-                    <img id="cardio2-img"
-                        src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                        alt="HRV analysis"
-                        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0">
-                    <img id="cardio3-img"
-                        src="https://images.unsplash.com/photo-1552664730-d307ca884978?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                        alt="Arrhythmia detection"
-                        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
-                </div>
-            </div>
-
-            <!-- Smart Watch Section (Original layout) -->
-            <div class="why-telth-section flex flex-col lg:flex-row items-center gap-8">
-                <!-- Content -->
-                <div class="lg:w-1/2">
-                    <div class="flex items-center mb-6">
-                        <div
-                            class="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-100 to-blue-100 flex items-center justify-center mr-4 shadow-sm">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-purple-600" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
-                            </svg>
+                            <p class="text-gray-700 mb-6">
+                                Track your vital health information with easy-to-use wearable devices that measure
+                                important
+                                indicators like heart rate, blood glucose, and activity levels to help you and your
+                                doctor
+                                make better health decisions.
+                            </p>
+                            <button
+                                class="bg-white text-purple-600 border border-purple-300 font-medium py-2 px-5 rounded-lg hover:bg-purple-600 hover:text-white transition-colors">
+                                Learn more <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
                         </div>
-                        <h2 class="text-2xl md:text-3xl font-bold text-gray-800">Telth Smart Watch with Care Plan</h2>
-                    </div>
-
-                    <div class="grid md:grid-cols-2 gap-4">
-                        <button onclick="telthShowFeature('watch1')"
-                            class="why-telth-tab flex items-start w-full p-4 rounded-xl transition-all hover:bg-gradient-to-r from-purple-50 to-blue-50 border border-transparent hover:border-purple-100 active-telth-tab">
-                            <span class="w-4 h-4 bg-purple-600 rounded-full mt-1 mr-3 flex-shrink-0"></span>
-                            <div>
-                                <h3 class="text-lg font-semibold text-gray-800 text-left">Personalized care plans</h3>
-                                <p class="text-gray-600 mt-1 text-sm">Medication reminders and health goal tracking</p>
-                            </div>
-                        </button>
-
-                        <button onclick="telthShowFeature('watch2')"
-                            class="why-telth-tab flex items-start w-full p-4 rounded-xl transition-all hover:bg-gradient-to-r from-purple-50 to-blue-50 border border-transparent hover:border-purple-100">
-                            <span class="w-4 h-4 bg-purple-600 rounded-full mt-1 mr-3 flex-shrink-0"></span>
-                            <div>
-                                <h3 class="text-lg font-semibold text-gray-800 text-left">Comprehensive vital monitoring
-                                </h3>
-                                <p class="text-gray-600 mt-1 text-sm">Heart rate, SpO2, skin temperature and more</p>
-                            </div>
-                        </button>
-
-                        <button onclick="telthShowFeature('watch3')"
-                            class="why-telth-tab flex items-start w-full p-4 rounded-xl transition-all hover:bg-gradient-to-r from-purple-50 to-blue-50 border border-transparent hover:border-purple-100">
-                            <span class="w-4 h-4 bg-purple-600 rounded-full mt-1 mr-3 flex-shrink-0"></span>
-                            <div>
-                                <h3 class="text-lg font-semibold text-gray-800 text-left">Safety features</h3>
-                                <p class="text-gray-600 mt-1 text-sm">Fall detection with emergency alerts and GPS
-                                    location
-                                </p>
-                            </div>
-                        </button>
-
-                        <button onclick="telthShowFeature('watch4')"
-                            class="why-telth-tab flex items-start w-full p-4 rounded-xl transition-all hover:bg-gradient-to-r from-purple-50 to-blue-50 border border-transparent hover:border-purple-100">
-                            <span class="w-4 h-4 bg-purple-600 rounded-full mt-1 mr-3 flex-shrink-0"></span>
-                            <div>
-                                <h3 class="text-lg font-semibold text-gray-800 text-left">Activity tracking</h3>
-                                <p class="text-gray-600 mt-1 text-sm">Personalized insights for sleep and exercise</p>
-                            </div>
-                        </button>
-
-                        <button onclick="telthShowFeature('watch5')"
-                            class="why-telth-tab flex items-start w-full p-4 rounded-xl transition-all hover:bg-gradient-to-r from-purple-50 to-blue-50 border border-transparent hover:border-purple-100 md:col-span-2">
-                            <span class="w-4 h-4 bg-purple-600 rounded-full mt-1 mr-3 flex-shrink-0"></span>
-                            <div>
-                                <h3 class="text-lg font-semibold text-gray-800 text-left">Care team communication</h3>
-                                <p class="text-gray-600 mt-1 text-sm">Direct contact with healthcare providers from your
-                                    wrist</p>
-                            </div>
-                        </button>
                     </div>
                 </div>
 
-                <!-- Image -->
+                <!-- Solution 2: Neighborhood Health Kiosks -->
                 <div
-                    class="lg:w-1/2 relative rounded-xl overflow-hidden shadow-xl h-80 lg:h-96 bg-gradient-to-br from-purple-50 to-blue-50">
-                    <img id="watch1-img"
-                        src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                        alt="Smart Watch"
-                        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-100">
-                    <img id="watch2-img"
-                        src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                        alt="Vital monitoring"
-                        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0">
-                    <img id="watch3-img"
-                        src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                        alt="Safety features"
-                        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0">
-                    <img id="watch4-img"
-                        src="https://images.unsplash.com/photo-1527689368864-3a821dbccc34?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                        alt="Activity tracking"
-                        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0">
-                    <img id="watch5-img"
-                        src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80"
-                        alt="Care team communication"
-                        class="absolute inset-0 w-full h-full object-cover transition-opacity duration-300 opacity-0">
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent"></div>
+                    class="solution-card bg-indigo-50 border border-indigo-200 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+                    <div class="flex flex-col md:flex-row-reverse">
+                        <!-- Image (Right on desktop) -->
+                        <div class="md:w-2/5">
+                            <div class="h-full">
+                                <img src="/api/placeholder/600/500" alt="Neighborhood Health Kiosks"
+                                    class="w-full h-full object-cover">
+                            </div>
+                        </div>
+
+                        <!-- Content (Left on desktop) -->
+                        <div class="md:w-3/5 p-6 md:p-8">
+                            <div class="flex items-center mb-4">
+                                <div
+                                    class="w-10 h-10 rounded-full purple-gradient flex items-center justify-center mr-3">
+                                    <i class="fas fa-clinic-medical text-lg text-white"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-800">Neighborhood Health Kiosks</h3>
+                            </div>
+                            <p class="text-gray-700 mb-6">
+                                Visit convenient locations in your community for quick health check-ups, basic testing,
+                                and
+                                virtual doctor visits without the need for appointments or long travel times.
+                            </p>
+                            <button
+                                class="bg-white text-purple-600 border border-purple-300 font-medium py-2 px-5 rounded-lg hover:bg-purple-600 hover:text-white transition-colors">
+                                Find a kiosk <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Solution 3: Virtual Care Services -->
+                <div
+                    class="solution-card bg-blue-50 border border-blue-200 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+                    <div class="flex flex-col md:flex-row">
+                        <!-- Image (Left on desktop) -->
+                        <div class="md:w-2/5">
+                            <div class="h-full">
+                                <img src="/api/placeholder/600/500" alt="Virtual Care Services"
+                                    class="w-full h-full object-cover">
+                            </div>
+                        </div>
+
+                        <!-- Content (Right on desktop) -->
+                        <div class="md:w-3/5 p-6 md:p-8">
+                            <div class="flex items-center mb-4">
+                                <div
+                                    class="w-10 h-10 rounded-full purple-gradient flex items-center justify-center mr-3">
+                                    <i class="fas fa-video text-lg text-white"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-800">Virtual Care Services</h3>
+                            </div>
+                            <p class="text-gray-700 mb-6">
+                                Connect with healthcare providers through secure video visits when you need advice,
+                                follow-up care, or prescription renewals without leaving home.
+                            </p>
+                            <button
+                                class="bg-white text-purple-600 border border-purple-300 font-medium py-2 px-5 rounded-lg hover:bg-purple-600 hover:text-white transition-colors">
+                                Schedule a visit <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Solution 4: Personal Health Dashboard -->
+                <div
+                    class="solution-card bg-violet-50 border border-violet-200 rounded-xl overflow-hidden shadow-md hover:shadow-lg transition-all">
+                    <div class="flex flex-col md:flex-row-reverse">
+                        <!-- Image (Right on desktop) -->
+                        <div class="md:w-2/5">
+                            <div class="h-full">
+                                <img src="/api/placeholder/600/500" alt="Personal Health Dashboard"
+                                    class="w-full h-full object-cover">
+                            </div>
+                        </div>
+
+                        <!-- Content (Left on desktop) -->
+                        <div class="md:w-3/5 p-6 md:p-8">
+                            <div class="flex items-center mb-4">
+                                <div
+                                    class="w-10 h-10 rounded-full purple-gradient flex items-center justify-center mr-3">
+                                    <i class="fas fa-chart-line text-lg text-white"></i>
+                                </div>
+                                <h3 class="text-2xl font-bold text-gray-800">Personal Health Dashboard</h3>
+                            </div>
+                            <p class="text-gray-700 mb-6">
+                                View all your health information in one secure place, including test results, medication
+                                schedules, and personalized health recommendations from your care team.
+                            </p>
+                            <button
+                                class="bg-white text-purple-600 border border-purple-300 font-medium py-2 px-5 rounded-lg hover:bg-purple-600 hover:text-white transition-colors">
+                                Access dashboard <i class="fas fa-arrow-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
+
+            <!-- CTA Card -->
+            <!-- <div class="mt-16">
+                <div class="bg-white rounded-xl shadow-lg p-8 text-center">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-4">Ready to take control of your health?</h3>
+                    <p class="text-gray-600 mb-6 max-w-2xl mx-auto">
+                        Our integrated solutions work together to provide you with a seamless healthcare experience.
+                    </p>
+                    <button
+                        class="purple-gradient text-white font-medium py-3 px-8 rounded-lg hover:opacity-90 transition-opacity inline-flex items-center">
+                        Get Started <i class="fas fa-chevron-right ml-2"></i>
+                    </button>
+                </div>
+            </div> -->
         </div>
     </section>
 
-    <!-- Selection Methodology - page breaker -->
-    <div class="w-full my-20 overflow-hidden max-w-[1500px] mx-auto px-4">
-        <div class="selection_card w-full rounded-2xl overflow-hidden relative">
-            <!-- Background Design Elements -->
-            <div class="selection_dots top-10 right-10">
-                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <pattern id="dots" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
-                        <circle fill="white" cx="5" cy="5" r="1"></circle>
-                    </pattern>
-                    <rect x="0" y="0" width="100" height="100" fill="url(#dots)"></rect>
-                </svg>
+    <section class="py-8 px-4  container mx-auto">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Health Management Made Easier</h2>
+            <div class="w-20 h-1 bg-purple-600 mx-auto mb-6"></div>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                Our solutions address your most important health needs with innovative approaches designed around you.
+            </p>
+        </div>
+
+        <!-- Table-like Header Row -->
+        <div class="grid grid-cols-2 bg-purple-600 text-white rounded-t-lg overflow-hidden">
+            <div class="p-4 font-bold text-lg text-center">
+                <span class="hidden md:inline">Your </span>Health Need
+            </div>
+            <div class="p-4 font-bold text-lg text-center">
+                How We Help
+            </div>
+        </div>
+
+        <!-- Row 1: Chronic Conditions -->
+        <div class="grid grid-cols-2 bg-white border-l border-r border-gray-200 hover:bg-purple-50 transition-colors">
+            <!-- Left column -->
+            <div class="p-6 border-b border-r border-gray-200 flex items-center">
+                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mr-4 flex-shrink-0">
+                    <i class="fas fa-heartbeat text-purple-600"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-800 text-lg">Chronic Conditions</h3>
+                </div>
             </div>
 
-            <div class="selection_blob bottom-0 left-0 bg-white"></div>
-            <div class="selection_blob top-0 right-0 bg-white"></div>
-
-            <!-- Content -->
-            <div class="relative z-10 py-14 px-8 md:px-16">
-                <div class="flex flex-col md:flex-row items-start md:items-center gap-6 mb-10">
-                    <div class="selection_icon_glow">
-                        <i class="fas fa-chess-king text-white text-5xl"></i>
+            <!-- Right column -->
+            <div class="p-6 border-b border-gray-200">
+                <div class="flex flex-col sm:flex-row sm:items-center">
+                    <div class="mb-2 sm:mb-0 sm:mr-3 text-purple-600">
+                        <i class="fas fa-chart-line"></i>
                     </div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">Selection Methodology</h2>
+                    <p class="text-gray-600">Continuous monitoring, medication tracking, and easier provider
+                        communication
+                    </p>
                 </div>
+            </div>
+        </div>
 
-                <div class="text-white opacity-90 text-lg mb-10 max-w-3xl">
-                    Our experts work with you to determine the optimal clinic configuration based on:
+        <!-- Row 2: Preventive Care -->
+        <div class="grid grid-cols-2 bg-white border-l border-r border-gray-200 hover:bg-purple-50 transition-colors">
+            <!-- Left column -->
+            <div class="p-6 border-b border-r border-gray-200 flex items-center">
+                <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-4 flex-shrink-0">
+                    <i class="fas fa-shield-alt text-green-600"></i>
                 </div>
+                <div>
+                    <h3 class="font-bold text-gray-800 text-lg">Preventive Care</h3>
+                </div>
+            </div>
 
-                <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-12 gap-y-8">
-                    <!-- Physical Setting Analysis -->
-                    <div class="selection_item p-4 rounded-lg">
-                        <div class="flex items-start gap-4">
-                            <div
-                                class="selection_item_icon flex-shrink-0 w-12 h-12 bg-indigo-300 bg-opacity-30 rounded-full flex items-center justify-center">
-                                <i class="fas fa-building text-white text-xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-white text-lg mb-2">Physical Setting Analysis</h3>
-                                <p class="text-indigo-100">Space availability, accessibility, and infrastructure
-                                    considerations</p>
+            <!-- Right column -->
+            <div class="p-6 border-b border-gray-200">
+                <div class="flex flex-col sm:flex-row sm:items-center">
+                    <div class="mb-2 sm:mb-0 sm:mr-3 text-green-600">
+                        <i class="fas fa-calendar-check"></i>
+                    </div>
+                    <p class="text-gray-600">Convenient screenings, personalized health alerts, wellness guidance</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 3: Urgent Care Needs -->
+        <div class="grid grid-cols-2 bg-white border-l border-r border-gray-200 hover:bg-purple-50 transition-colors">
+            <!-- Left column -->
+            <div class="p-6 border-b border-r border-gray-200 flex items-center">
+                <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center mr-4 flex-shrink-0">
+                    <i class="fas fa-first-aid text-red-600"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-800 text-lg">Urgent Care Needs</h3>
+                </div>
+            </div>
+
+            <!-- Right column -->
+            <div class="p-6 border-b border-gray-200">
+                <div class="flex flex-col sm:flex-row sm:items-center">
+                    <div class="mb-2 sm:mb-0 sm:mr-3 text-red-600">
+                        <i class="fas fa-stopwatch"></i>
+                    </div>
+                    <p class="text-gray-600">Quick access to providers, shorter wait times, faster test results</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Row 4: Ongoing Wellness -->
+        <div
+            class="grid grid-cols-2 bg-white border-l border-r border-b border-gray-200 rounded-b-lg hover:bg-purple-50 transition-colors">
+            <!-- Left column -->
+            <div class="p-6 border-r border-gray-200 flex items-center">
+                <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4 flex-shrink-0">
+                    <i class="fas fa-running text-blue-600"></i>
+                </div>
+                <div>
+                    <h3 class="font-bold text-gray-800 text-lg">Ongoing Wellness</h3>
+                </div>
+            </div>
+
+            <!-- Right column -->
+            <div class="p-6">
+                <div class="flex flex-col sm:flex-row sm:items-center">
+                    <div class="mb-2 sm:mb-0 sm:mr-3 text-blue-600">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <p class="text-gray-600">Activity tracking, health goal setting, and progress monitoring</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="mt-10 text-center">
+            <button
+                class="bg-purple-600 hover:bg-purple-700 text-white font-medium py-3 px-8 rounded-lg transition-colors inline-flex items-center">
+                Explore Our Solutions
+                <i class="fas fa-arrow-right ml-2"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <div class="container mx-auto px-4 py-12 md:py-16">
+        <div class="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
+            <!-- Left Side - Features Content -->
+            <div class="w-full lg:w-1/2" x-data="{ activeTab: null }">
+                <div class="mb-6">
+                    <span class="features_badge mb-2 ">WHY CHOOSE CARE2HOME</span>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mt-3">
+                        Professional Home Healthcare Solutions
+                    </h1>
+                </div>
+                <!-- Collapsible Features -->
+                <div class="space-y-4">
+                    <!-- Professional Care at Home -->
+                    <div class="border border-gray-200 rounded-lg bg-white overflow-hidden">
+                        <div @click="activeTab = activeTab === 1 ? null : 1"
+                            class="features_accordion_header flex justify-between items-center p-5 bg-white cursor-pointer hover:bg-gray-50 transition-colors">
+                            <h3 class="text-lg font-semibold text-gray-800">Professional Care at Home</h3>
+                            <span class="features_chevron" :class="{'transform rotate-180': activeTab === 1}">
+                                <i class="fas fa-chevron-down text-gray-500"></i>
+                            </span>
+                        </div>
+                        <div x-show="activeTab === 1" x-collapse x-cloak>
+                            <div class="px-5 pb-5">
+                                <p class="text-gray-600">
+                                    Receive clinical-grade healthcare without traveling to facilities. Our expert
+                                    healthcare
+                                    professionals bring top-quality medical care directly to your doorstep.
+                                </p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Patient Demographics Assessment -->
-                    <div class="selection_item p-4 rounded-lg">
-                        <div class="flex items-start gap-4">
-                            <div
-                                class="selection_item_icon flex-shrink-0 w-12 h-12 bg-indigo-300 bg-opacity-30 rounded-full flex items-center justify-center">
-                                <i class="fas fa-users text-white text-xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-white text-lg mb-2">Patient Demographics Assessment</h3>
-                                <p class="text-indigo-100">Volume, flow patterns, and specific population needs</p>
+                    <!-- Personalized Attention -->
+                    <div class="border border-gray-200 rounded-lg bg-white overflow-hidden">
+                        <div @click="activeTab = activeTab === 2 ? null : 2"
+                            class="features_accordion_header flex justify-between items-center p-5 bg-white cursor-pointer hover:bg-gray-50 transition-colors">
+                            <h3 class="text-lg font-semibold text-gray-800">Personalized Attention</h3>
+                            <span class="features_chevron" :class="{'transform rotate-180': activeTab === 2}">
+                                <i class="fas fa-chevron-down text-gray-500"></i>
+                            </span>
+                        </div>
+                        <div x-show="activeTab === 2" x-collapse x-cloak>
+                            <div class="px-5 pb-5">
+                                <p class="text-gray-600">
+                                    One-on-one care tailored to your specific health needs. We create individualized
+                                    care
+                                    plans that address your unique medical requirements and personal preferences.
+                                </p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Community Health Profile -->
-                    <div class="selection_item p-4 rounded-lg">
-                        <div class="flex items-start gap-4">
-                            <div
-                                class="selection_item_icon flex-shrink-0 w-12 h-12 bg-indigo-300 bg-opacity-30 rounded-full flex items-center justify-center">
-                                <i class="fas fa-chart-pie text-white text-xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-white text-lg mb-2">Community Health Profile</h3>
-                                <p class="text-indigo-100">Predominant health concerns and service gaps in the target
-                                    community</p>
+                    <!-- Reduced Hospital Visits -->
+                    <div class="border border-gray-200 rounded-lg bg-white overflow-hidden">
+                        <div @click="activeTab = activeTab === 3 ? null : 3"
+                            class="features_accordion_header flex justify-between items-center p-5 bg-white cursor-pointer hover:bg-gray-50 transition-colors">
+                            <h3 class="text-lg font-semibold text-gray-800">Reduced Hospital Visits</h3>
+                            <span class="features_chevron" :class="{'transform rotate-180': activeTab === 3}">
+                                <i class="fas fa-chevron-down text-gray-500"></i>
+                            </span>
+                        </div>
+                        <div x-show="activeTab === 3" x-collapse x-cloak>
+                            <div class="px-5 pb-5">
+                                <p class="text-gray-600">
+                                    Effectively manage chronic conditions and recovery with fewer facility visits. Our
+                                    comprehensive home care approach minimizes the need for frequent hospital trips.
+                                </p>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Business Objectives Alignment -->
-                    <div class="selection_item p-4 rounded-lg">
-                        <div class="flex items-start gap-4">
-                            <div
-                                class="selection_item_icon flex-shrink-0 w-12 h-12 bg-indigo-300 bg-opacity-30 rounded-full flex items-center justify-center">
-                                <i class="fas fa-bullseye text-white text-xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-white text-lg mb-2">Business Objectives Alignment</h3>
-                                <p class="text-indigo-100">Revenue models, growth plans, and operational constraints</p>
+                    <!-- Family Peace of Mind -->
+                    <div class="border border-gray-200 rounded-lg bg-white overflow-hidden">
+                        <div @click="activeTab = activeTab === 4 ? null : 4"
+                            class="features_accordion_header flex justify-between items-center p-5 bg-white cursor-pointer hover:bg-gray-50 transition-colors">
+                            <h3 class="text-lg font-semibold text-gray-800">Family Peace of Mind</h3>
+                            <span class="features_chevron" :class="{'transform rotate-180': activeTab === 4}">
+                                <i class="fas fa-chevron-down text-gray-500"></i>
+                            </span>
+                        </div>
+                        <div x-show="activeTab === 4" x-collapse x-cloak>
+                            <div class="px-5 pb-5">
+                                <p class="text-gray-600">
+                                    Keep loved ones informed and involved in the care process. Our transparent
+                                    communication
+                                    ensures families are always up-to-date with their loved one's healthcare journey.
+                                </p>
                             </div>
                         </div>
                     </div>
+                </div>
+            </div>
 
-                    <!-- Healthcare Ecosystem Integration -->
-                    <div class="selection_item p-4 rounded-lg">
-                        <div class="flex items-start gap-4">
-                            <div
-                                class="selection_item_icon flex-shrink-0 w-12 h-12 bg-indigo-300 bg-opacity-30 rounded-full flex items-center justify-center">
-                                <i class="fas fa-network-wired text-white text-xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-white text-lg mb-2">Healthcare Ecosystem Integration</h3>
-                                <p class="text-indigo-100">Coordination with existing healthcare resources and referral
-                                    networks</p>
-                            </div>
-                        </div>
+            <!-- Right Side - Image Placeholder -->
+            <div class="w-full lg:w-1/2 sticky top-8">
+                <div class="bg-gray-200 rounded-lg flex items-center justify-center"
+                    style="height: 550px; min-height: 550px;">
+                    <div class="text-center">
+                        <p class="text-gray-500">Image Placeholder</p>
+                        <p class="text-gray-400 text-sm">(Healthcare visualization will appear here)</p>
                     </div>
-
-                    <!-- Additional visual element -->
-                    <!-- <div class="selection_item p-4 rounded-lg md:col-span-1 flex items-center justify-center">
-                        <img src="/api/placeholder/400/320" alt="Selection methodology illustration"
-                            class="rounded-lg max-w-full h-auto opacity-80" />
-                    </div> -->
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Why choose us -->
-    <div class="container mx-auto px-4 pb-16">
-        <!-- Badge and Heading -->
-        <div class="mb-12">
-            <div class="inline-block rounded-full bg-gray-100 px-4 py-2 text-sm font-medium text-gray-800 mb-6">
-                KEY SYSTEM BENEFITS
-            </div>
-            <h2 class="text-4xl md:text-5xl font-bold">
-                Why <span class="purple-text">AI Smart Clinic</span> is The Right Choice for You
-            </h2>
-        </div>
 
-        <!-- Features Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Clinical Intelligence -->
-            <div class="bg-gray-100 rounded-xl p-8">
-                <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-6">
-                    <i class="fas fa-brain text-gray-800 text-xl"></i>
-                </div>
-                <h3 class="text-2xl font-bold mb-4">Clinical Intelligence</h3>
-                <ul class="space-y-3 text-gray-700">
-                    <li>Custom Alert Thresholds: Configure notifications based on individual patient needs</li>
-                    <li>AI-Driven Pattern Recognition: Identify subtle health trends before they become problems</li>
-                    <li>Clinical Decision Support: Augment provider judgment with data-driven insights</li>
-                    <li>Condition-Specific Analytics: Specialized algorithms for various health conditions</li>
-                    <li>Comparative Analysis: Benchmark against population norms or personal baselines</li>
-                </ul>
-            </div>
 
-            <!-- Management Efficiency -->
-            <div class="bg-gray-100 rounded-xl p-8">
-                <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-6">
-                    <i class="fas fa-chart-line text-gray-800 text-xl"></i>
-                </div>
-                <h3 class="text-2xl font-bold mb-4">Management Efficiency</h3>
-                <ul class="space-y-3 text-gray-700">
-                    <li>Multi-User Dashboards: Monitor and manage 100+ devices from a single interface</li>
-                    <li>Role-Based Access Controls: Customize information visibility for different team members</li>
-                    <li>Batch Configuration: Update settings across multiple devices simultaneously</li>
-                    <li>Automated Reporting: Generate compliance and outcomes documentation</li>
-                    <li>Inventory Management: Track device deployment, battery status, and maintenance needs</li>
-                </ul>
-            </div>
-
-            <!-- Deployment Flexibility (Blue Box) -->
-            <div class="bg-indigo-800 rounded-xl p-8 text-white row-span-2">
-                <div class="w-14 h-14 bg-white bg-opacity-20 rounded-full flex items-center justify-center mb-6">
-                    <i class="fas fa-calendar-alt text-white text-xl"></i>
-                </div>
-                <h3 class="text-2xl font-bold mb-4">Deployment Flexibility</h3>
-
-                <p class="mb-6">
-                    At AI Smart Clinic, we understand the importance of flexible deployment to meet your unique
-                    organizational needs.
-                </p>
-
-                <ul class="space-y-3 text-white text-opacity-90">
-                    <li>Modular Pricing: Start with as few as 10 devices and scale to 10,000+</li>
-                    <li>Phased Implementation: Roll out capabilities based on organizational readiness</li>
-                    <li>Integration Options: Connect with existing EHR systems and clinical workflows</li>
-                    <li>Training Support: Comprehensive onboarding for both clinical staff and patients</li>
-                    <li>Customization Capabilities: Tailor solution components to specific use cases</li>
-                </ul>
-
-                <div class="mt-10">
-                    <a href="#"
-                        class="inline-flex items-center px-6 py-3 rounded-full bg-purple-600 hover:bg-purple-700 transition-colors text-white font-medium">
-                        Start Free Trial
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" viewBox="0 0 20 20"
-                            fill="currentColor">
-                            <path fill-rule="evenodd"
-                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
-                                clip-rule="evenodd" />
-                        </svg>
-                    </a>
-                </div>
-            </div>
-
-            <!-- Data Security & Compliance (Large Box) -->
-            <div class="bg-gray-100 rounded-xl p-8 md:col-span-2">
-                <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-6">
-                    <i class="fas fa-shield-alt text-gray-800 text-xl"></i>
-                </div>
-                <h3 class="text-2xl font-bold mb-4">Data Security & Compliance</h3>
-
-                <p class="mb-4 text-gray-700">
-                    AI Smart Clinic prioritizes the highest standards of data protection and regulatory compliance to
-                    ensure
-                    the confidentiality and integrity of patient information.
-                </p>
-
-                <ul class="space-y-3 text-gray-700">
-                    <li>HIPAA-Compliant Infrastructure: End-to-end encryption of all patient data</li>
-                    <li>Secure Authentication: Multi-factor verification for access control</li>
-                    <li>Audit Trails: Comprehensive logging of all system interactions</li>
-                    <li>Data Sovereignty Options: Regional storage compliance for global deployments</li>
-                    <li>Regular Security Updates: Continuous protection against emerging threats</li>
-                </ul>
-            </div>
-
-            <!-- Continuous Innovation -->
-            <div class="bg-gray-100 rounded-xl p-8 w-full">
-                <div class="w-14 h-14 bg-white rounded-full flex items-center justify-center mb-6">
-                    <i class="fas fa-lightbulb text-gray-800 text-xl"></i>
-                </div>
-                <h3 class="text-2xl font-bold mb-4">Continuous Innovation</h3>
-                <ul class="space-y-3 text-gray-700">
-                    <li>Regular software updates with enhanced features and capabilities</li>
-                    <li>AI model improvements based on aggregated, anonymized clinical data</li>
-                    <li>Expandable hardware capabilities through modular design</li>
-                    <li>Adaptation to evolving healthcare standards and practices</li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-    <!-- Steps section -->
-    <section class="w-full bg-white py-12">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Header -->
-            <div class="text-center mb-10">
-                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Your Journey Starts Here</h2>
-                <p class="text-purple-600 font-medium">3 Simple Steps to Begin</p>
-                <div class="mx-auto w-16 h-1 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full mt-3"></div>
-            </div>
-
-            <!-- Steps Cards -->
-            <div class="grid md:grid-cols-3 gap-5">
-                <!-- Step 1 -->
-                <div
-                    class="group bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 hover:border-purple-200 hover:bg-purple-50 transform hover:-translate-y-1">
-                    <div class="flex items-center mb-4">
-                        <div
-                            class="bg-purple-100 text-purple-800 font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3 group-hover:bg-purple-600 group-hover:text-white transition-colors">
-                            1</div>
-                        <h3 class="font-bold text-gray-800 group-hover:text-purple-700 transition-colors">Consultation
-                        </h3>
-                    </div>
-                    <p class="text-sm text-gray-600">Share your needs via our 5-minute form</p>
-                </div>
-
-                <!-- Step 2 -->
-                <div
-                    class="group bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 hover:border-purple-200 hover:bg-purple-50 transform hover:-translate-y-1">
-                    <div class="flex items-center mb-4">
-                        <div
-                            class="bg-purple-100 text-purple-800 font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3 group-hover:bg-purple-600 group-hover:text-white transition-colors">
-                            2</div>
-                        <h3 class="font-bold text-gray-800 group-hover:text-purple-700 transition-colors">Customization
-                        </h3>
-                    </div>
-                    <p class="text-sm text-gray-600">Tailor hardware/software with our engineers</p>
-                </div>
-
-                <!-- Step 3 -->
-                <div
-                    class="group bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 hover:border-purple-200 hover:bg-purple-50 transform hover:-translate-y-1">
-                    <div class="flex items-center mb-4">
-                        <div
-                            class="bg-purple-100 text-purple-800 font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3 group-hover:bg-purple-600 group-hover:text-white transition-colors">
-                            3</div>
-                        <h3 class="font-bold text-gray-800 group-hover:text-purple-700 transition-colors">Launch</h3>
-                    </div>
-                    <p class="text-sm text-gray-600">Train your team and go live</p>
-                </div>
-            </div>
-
-            <!-- CTA Button -->
-            <div class="text-center mt-10">
-                <button
-                    class="px-8 py-3 bg-gradient-to-r from-purple-600 to-purple-800 text-white font-medium rounded-full shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2">
-                    Contact Now
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <!-- Footer -->
     <footer class="relative bg-[#F4F4F8] overflow-hidden">
         <!-- Decorative Elements -->
         <div class="absolute inset-0 pointer-events-none">
@@ -1614,19 +1488,19 @@
 
                         <!-- Healthcare Hotline -->
                         <!-- <div
-                                class="mt-4 text-center py-3 px-4 bg-gradient-to-r from-violet-600 to-indigo-600 rounded-lg group hover:from-violet-700 hover:to-indigo-700 transition-all shadow-sm">
-                                <a href="tel:+18008008000" class="flex items-center justify-center gap-3 text-white">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                        stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                            d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-                                    </svg>
-                                    <div class="flex flex-col items-start">
-                                        <span class="text-xs text-white/90">24/7 Healthcare Hotline</span>
-                                        <span class="text-sm font-medium">1-800-800-8000</span>
-                                    </div>
-                                </a>
-                            </div> -->
+                            class="mt-4 text-center py-3 px-4 bg-gradient-to-r from-violet-600 to-indigo-600 rounded-lg group hover:from-violet-700 hover:to-indigo-700 transition-all shadow-sm">
+                            <a href="tel:+18008008000" class="flex items-center justify-center gap-3 text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                                </svg>
+                                <div class="flex flex-col items-start">
+                                    <span class="text-xs text-white/90">24/7 Healthcare Hotline</span>
+                                    <span class="text-sm font-medium">1-800-800-8000</span>
+                                </div>
+                            </a>
+                        </div> -->
                     </div>
                 </div>
             </div>
@@ -1650,74 +1524,6 @@
         </div>
     </footer>
 
-
-
-    <script>
-        // JavaScript for accordion functionality
-        document.addEventListener('DOMContentLoaded', function () {
-            const accordionHeaders = document.querySelectorAll('.features_accordion_header');
-
-            // Open the first accordion by default
-            const firstAccordionContent = document.querySelector('.features_accordion_content');
-            const firstChevron = document.querySelector('.features_chevron');
-            firstAccordionContent.classList.add('active');
-            firstChevron.classList.add('active');
-
-            accordionHeaders.forEach(header => {
-                header.addEventListener('click', function () {
-                    const content = this.nextElementSibling;
-                    const chevron = this.querySelector('.features_chevron');
-
-                    // Toggle active class
-                    content.classList.toggle('active');
-                    chevron.classList.toggle('active');
-                });
-            });
-        });
-    </script>
-    <script>
-        // Unique function names to prevent conflicts
-        function telthShowFeature(featureId) {
-            // Remove active class from all tabs in the same section
-            const section = document.querySelector(`[onclick="telthShowFeature('${featureId}')"]`).closest(
-                '.why-telth-section');
-            section.querySelectorAll('.why-telth-tab').forEach(tab => {
-                tab.classList.remove('active-telth-tab', 'border-purple-300', 'bg-gradient-to-r');
-                tab.classList.add('border-transparent');
-            });
-
-            // Add active class to clicked tab
-            const activeTab = document.querySelector(`[onclick="telthShowFeature('${featureId}')"]`);
-            activeTab.classList.add('active-telth-tab', 'border-purple-300', 'bg-gradient-to-r', 'from-purple-50',
-                'to-blue-50');
-            activeTab.classList.remove('border-transparent');
-
-            // Hide all images in the same section
-            const imageContainer = section.querySelector('.relative');
-            imageContainer.querySelectorAll('img').forEach(img => {
-                img.classList.add('opacity-0');
-                img.classList.remove('opacity-100');
-            });
-
-            // Show the selected image
-            const activeImage = document.getElementById(`${featureId}-img`);
-            if (activeImage) {
-                activeImage.classList.remove('opacity-0');
-                activeImage.classList.add('opacity-100');
-            }
-        }
-
-        // Initialize first tabs as active
-        document.addEventListener('DOMContentLoaded', function () {
-            document.querySelectorAll('.why-telth-tab').forEach((tab, index) => {
-                if (index === 0) {
-                    tab.classList.add('active-telth-tab', 'border-purple-300', 'bg-gradient-to-r',
-                        'from-purple-50', 'to-blue-50');
-                    tab.classList.remove('border-transparent');
-                }
-            });
-        });
-    </script>
 </body>
 
 </html>

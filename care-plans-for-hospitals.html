@@ -1276,6 +1276,122 @@
             </div>
         </section>
         
+        <div class="container mx-auto px-4 py-12 md:py-16">
+            <div class="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
+                <!-- Left Side - Features Content -->
+                <div class="w-full lg:w-1/2" x-data="{ activeTab: null }">
+                    <div class="mb-6">
+                        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mt-3">
+                            Hospital Operational Benefits
+                        </h1>
+                    </div>
+        
+                    <!-- Collapsible Features -->
+                    <div class="space-y-4">
+                        <!-- Predictable Revenue Streams -->
+                        <div class="border border-gray-200 rounded-lg bg-white overflow-hidden">
+                            <div @click="activeTab = activeTab === 1 ? null : 1"
+                                class="features_accordion_header flex justify-between items-center p-5 bg-white">
+                                <h3 class="text-lg font-semibold text-gray-800">Predictable Revenue Streams</h3>
+                                <span class="features_chevron" :class="{'transform rotate-180': activeTab === 1}">
+                                    <i class="fas fa-chevron-down text-gray-500"></i>
+                                </span>
+                            </div>
+                            <div x-show="activeTab === 1" x-collapse x-cloak>
+                                <div class="px-5 pb-5">
+                                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                                        <li>Better financial forecasting with pre-funded care</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Reduced Accounts Receivable -->
+                        <div class="border border-gray-200 rounded-lg bg-white overflow-hidden">
+                            <div @click="activeTab = activeTab === 2 ? null : 2"
+                                class="features_accordion_header flex justify-between items-center p-5 bg-white">
+                                <h3 class="text-lg font-semibold text-gray-800">Reduced Accounts Receivable</h3>
+                                <span class="features_chevron" :class="{'transform rotate-180': activeTab === 2}">
+                                    <i class="fas fa-chevron-down text-gray-500"></i>
+                                </span>
+                            </div>
+                            <div x-show="activeTab === 2" x-collapse x-cloak>
+                                <div class="px-5 pb-5">
+                                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                                        <li>Minimize outstanding patient balances</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Decreased Collection Costs -->
+                        <div class="border border-gray-200 rounded-lg bg-white overflow-hidden">
+                            <div @click="activeTab = activeTab === 3 ? null : 3"
+                                class="features_accordion_header flex justify-between items-center p-5 bg-white">
+                                <h3 class="text-lg font-semibold text-gray-800">Decreased Collection Costs</h3>
+                                <span class="features_chevron" :class="{'transform rotate-180': activeTab === 3}">
+                                    <i class="fas fa-chevron-down text-gray-500"></i>
+                                </span>
+                            </div>
+                            <div x-show="activeTab === 3" x-collapse x-cloak>
+                                <div class="px-5 pb-5">
+                                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                                        <li>Less need for follow-up billing and collections</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Simplified Reconciliation -->
+                        <div class="border border-gray-200 rounded-lg bg-white overflow-hidden">
+                            <div @click="activeTab = activeTab === 4 ? null : 4"
+                                class="features_accordion_header flex justify-between items-center p-5 bg-white">
+                                <h3 class="text-lg font-semibold text-gray-800">Simplified Reconciliation</h3>
+                                <span class="features_chevron" :class="{'transform rotate-180': activeTab === 4}">
+                                    <i class="fas fa-chevron-down text-gray-500"></i>
+                                </span>
+                            </div>
+                            <div x-show="activeTab === 4" x-collapse x-cloak>
+                                <div class="px-5 pb-5">
+                                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                                        <li>Easier accounting with standardized payment processing</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <!-- Enhanced Reporting -->
+                        <div class="border border-gray-200 rounded-lg bg-white overflow-hidden">
+                            <div @click="activeTab = activeTab === 5 ? null : 5"
+                                class="features_accordion_header flex justify-between items-center p-5 bg-white">
+                                <h3 class="text-lg font-semibold text-gray-800">Enhanced Reporting</h3>
+                                <span class="features_chevron" :class="{'transform rotate-180': activeTab === 5}">
+                                    <i class="fas fa-chevron-down text-gray-500"></i>
+                                </span>
+                            </div>
+                            <div x-show="activeTab === 5" x-collapse x-cloak>
+                                <div class="px-5 pb-5">
+                                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                                        <li>Better insights into service utilization and revenue patterns</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Right Side - Image (Fixed Height) -->
+                <div class="w-full lg:w-1/2 sticky top-8">
+                    <div class="bg-gray-200 rounded-lg flex items-center justify-center"
+                        style="height: 550px; min-height: 550px;">
+                        <div class="text-center">
+                            <p class="text-gray-500">Image Placeholder</p>
+                            <p class="text-gray-400 text-sm">(Your Care2Home process visualization will appear here)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         
 
         <section
@@ -1368,79 +1484,93 @@
 
     
         
-        <section class="py-10 px-4 sm:px-6 lg:px-8 bg-gray-50 relative">
-            <!-- Stage Platform -->
-            <div class="max-w-7xl mx-auto bg-white rounded-3xl border overflow-hidden relative z-10">
-                <!-- Stage Edge Lighting -->
-                <div class="absolute -inset-1 bg-gradient-to-r from-yellow-400 to-red-500 rounded-xl opacity-20 blur"></div>
-        
-                <div class="relative bg-white rounded-xl p-8 sm:p-12">
-                    <!-- Spotlight Effect -->
-                    <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full bg-yellow-100 filter blur-3xl opacity-30"></div>
-        
-                    <div class="text-center mb-12 relative z-10">
-                        <h2 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">
-                            <span class="block">Clinical Benefits</span>
-                        </h2>
-                        <div class="mt-4 h-1 w-24 bg-violet-600 mx-auto rounded-full"></div>
+<section class="py-10 px-4 sm:px-6 lg:px-8 bg-gray-50 relative">
+    <!-- Stage Platform -->
+    <div class="max-w-7xl mx-auto bg-white rounded-3xl border overflow-hidden relative z-10">
+        <!-- Stage Edge Lighting -->
+        <div class="absolute -inset-1 bg-gradient-to-r from-yellow-400 to-red-500 rounded-xl opacity-20 blur"></div>
+
+        <div class="relative bg-white rounded-xl p-8 sm:p-12">
+            <!-- Spotlight Effect -->
+            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full bg-yellow-100 filter blur-3xl opacity-30"></div>
+
+            <div class="text-center mb-12 relative z-10">
+                <h2 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">
+                    <span class="block">Patient Experience Enhancement</span>
+                </h2>
+                <div class="mt-4 h-1 w-24 bg-violet-600 mx-auto rounded-full"></div>
+            </div>
+
+            <div class="grid gap-8 md:grid-cols-2">
+                <!-- Benefit 1 -->
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 bg-violet-100 rounded-lg p-3 mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4" />
+                        </svg>
                     </div>
-        
-                    <div class="grid gap-8 md:grid-cols-2">
-                        <!-- Benefit 1 -->
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 bg-violet-100 rounded-lg p-3 mr-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-bold text-gray-900 mb-1">Faster Diagnosis</h3>
-                                <p class="text-gray-600">On-site testing with rapid results for immediate clinical decisions</p>
-                            </div>
-                        </div>
-        
-                        <!-- Benefit 2 -->
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 bg-violet-100 rounded-lg p-3 mr-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-bold text-gray-900 mb-1">Comprehensive Patient View</h3>
-                                <p class="text-gray-600">Integrated data from multiple diagnostic sources in one interface</p>
-                            </div>
-                        </div>
-        
-                        <!-- Benefit 3 -->
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 bg-violet-100 rounded-lg p-3 mr-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-bold text-gray-900 mb-1">Evidence-Based Protocols</h3>
-                                <p class="text-gray-600">AI-assisted clinical decision support based on the latest guidelines</p>
-                            </div>
-                        </div>
-        
-                        <!-- Benefit 4 -->
-                        <div class="flex items-start">
-                            <div class="flex-shrink-0 bg-violet-100 rounded-lg p-3 mr-4">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
-                                </svg>
-                            </div>
-                            <div>
-                                <h3 class="text-lg font-bold text-gray-900 mb-1">Continuity of Care</h3>
-                                <p class="text-gray-600">Seamless information flow between in-person and remote interactions</p>
-                            </div>
-                        </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Transparent Cost Structure</h3>
+                        <p class="text-gray-600">Clear presentation of healthcare expenses</p>
+                    </div>
+                </div>
+
+                <!-- Benefit 2 -->
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 bg-violet-100 rounded-lg p-3 mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Financial Peace of Mind</h3>
+                        <p class="text-gray-600">Patients know their care is pre-funded</p>
+                    </div>
+                </div>
+
+                <!-- Benefit 3 -->
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 bg-violet-100 rounded-lg p-3 mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Simplified Check-in/Check-out</h3>
+                        <p class="text-gray-600">No complex billing procedures at discharge</p>
+                    </div>
+                </div>
+
+                <!-- Benefit 4 -->
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 bg-violet-100 rounded-lg p-3 mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m2-4h.01" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Reduced Financial Stress</h3>
+                        <p class="text-gray-600">Less anxiety about unexpected healthcare costs</p>
+                    </div>
+                </div>
+
+                <!-- Benefit 5 -->
+                <div class="flex items-start">
+                    <div class="flex-shrink-0 bg-violet-100 rounded-lg p-3 mr-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="text-lg font-bold text-gray-900 mb-1">Flexible Payment Options</h3>
+                        <p class="text-gray-600">Various ways to fund healthcare needs</p>
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
+
         
 
 

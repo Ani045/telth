@@ -318,10 +318,7 @@
             </div>
         </div>
     </nav>
-
     <div class="h-20 fixed z-20 w-full bg-gradient-to-b from-gray-100 to-transparent"></div>
-
-
     <!-- Full Screen Menu Overlay -->
     <div x-data="{ isOpen: false }" x-show="isOpen" x-transition:enter="transition ease-out duration-300"
         x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
@@ -338,11 +335,11 @@
             <div class="container mx-auto px-6 py-12">
                 <!-- Header -->
                 <div class="flex justify-between items-center mb-12">
-                    <div
+                    <a href="/index.html"
                         class="text-3xl font-bold bg-gradient-to-r from-violet-900 to-indigo-900 bg-clip-text text-transparent flex items-center">
                         <img src="assets/telth.png" alt="telth" class="w-10 h-10 mb-2 mr-2">
                         Telth.care
-                    </div>
+                    </a>
                     <button type="button" x-on:click="isOpen = false"
                         class="group p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg"
@@ -369,60 +366,48 @@
                                 Solutions
                             </h3>
                             <div class="space-y-4 flex flex-col">
-                                <span class="tooltip">
+                                <a href="/corporates.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Corporates</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Corporates</span>
+                                </a>
+                                <a href="/government-sector.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Government</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Government</span>
+                                </a>
                                 <a href="/care-provider.html"
                                     class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
                                         class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
                                     <span>Care Providers</span>
                                 </a>
-                                <span class="tooltip">
+                                <a href="/clinics-hospitals.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Clinics/Hospitals</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Clinics/Hospitals</span>
+                                </a>
+                                <a href="/NGOs.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>NGOs</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>NGOs</span>
+                                </a>
+                                <a href="/patients.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Patients</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Patients</span>
+                                </a>
+                                <a href="/insurance-providers.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Insurance Providers</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Insurance Providers</span>
+                                </a>
                             </div>
                         </div>
 
@@ -438,30 +423,24 @@
                                 Technologies
                             </h3>
                             <div class="space-y-4 flex flex-col">
-                                <span class="tooltip">
+                                <a href="/p3dsc.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>P3DSC</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Care Providers</span>
+                                </a>
+                                <a href="/digidoc.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Digidoc</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Digidoc</span>
+                                </a>
+                                <a href="/root-cloud.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Root Cloud</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Root Cloud</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -503,74 +482,56 @@
                                         class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
                                     <span>Compact Diagnostic Devices</span>
                                 </a>
-                                <span class="tooltip">
+                                <a href="/smart-wearables-and-iomt-solutions.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300 ml-4">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link ml-4">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Smart Wearables & IoMT</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Smart wearabables & IOMT Solutions</span>
+                                </a>
+                                <a href="/care2home.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Care2Home</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Care2home</span>
+                                </a>
+                                <a href="/care-plan.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Care Plans</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Care Plans</span>
+                                </a>
+                                <a href="/care-plans-for-hospitals.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300 ml-4">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link ml-4">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Hospitals</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>For Hospitals</span>
+                                </a>
+                                <a href="/care-plan-for-patients.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300 ml-4 ">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link ml-4">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Patients</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>For Patients</span>
+                                </a>
+                                <a href="/health-and-wealth-card.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Health and Wealth Card</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Health & Wealth Card</span>
+                                </a>
+                                <a href="/mobile-clinic.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Mobile Clinic</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Mobile Clinic</span>
+                                </a>
+                                <a href="/smart-care-bundle.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Smart Care Bundle</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Smart Care Bundle</span>
+                                </a>
                             </div>
                         </div>
-
-                        <!-- Care Managers Section -->
                         <div
                             class="p-6 bg-gray-100 rounded-2xl backdrop-blur-sm border border-gray-100 hover:bg-violet-100 transition-colors group">
                             <h3 class="text-lg font-semibold text-violet-900 mb-6 flex items-center">
@@ -579,19 +540,25 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                                 </svg>
-                                Care Managers
+                                Support & Services
                             </h3>
                             <div class="space-y-4">
-                                <span class="tooltip">
+                                <a href="/diagnostic-devices.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Training</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>For Diagnostic Devices</span>
+                                </a>
+                                <a href="/clinics-kiosks.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
+                                    <span
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>For Clinincs/Kiosks</span>
+                                </a>
                             </div>
                         </div>
+
+
                     </div>
 
                     <!-- Additional Services -->
@@ -614,24 +581,22 @@
                                         <span class="w-2 h-0.5 bg-gray-400"></span>
                                         <span>Blogs</span>
                                     </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
-                                    <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Training & R&D</span>
-                                    </span>
                                     <span class="tooltiptext">Coming Soon</span>
                                 </span>
-                                <span class="tooltip">
+                                <a href="/r&d.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Support</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Training and R&D</span>
+                                </a>
+                                <!-- <span class="tooltip">
+                                        <span
+                                            class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
+                                            <span class="w-2 h-0.5 bg-gray-400"></span>
+                                            <span>Support</span>
+                                        </span>
+                                        <span class="tooltiptext">Under Development</span>
+                                    </span> -->
                             </div>
                         </div>
 
@@ -647,30 +612,24 @@
                                 Networks & Partnerships
                             </h3>
                             <div class="space-y-4 flex flex-col">
-                                <span class="tooltip">
+                                <a href="/franchise.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Franchise</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Franchise</span>
+                                </a>
+                                <a href="/partnership.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Partnership</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Partnerships</span>
+                                </a>
+                                <a href="/career.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Career</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Career</span>
+                                </a>
                                 <span class="tooltip">
                                     <span
                                         class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
@@ -681,40 +640,61 @@
                                 </span>
                             </div>
                         </div>
+
+                        <!-- Care Managers Section -->
+                        <div
+                            class="p-6 bg-gray-100 rounded-2xl backdrop-blur-sm border border-gray-100 hover:bg-violet-100 transition-colors group">
+                            <h3 class="text-lg font-semibold text-violet-900 mb-6 flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                                Care Managers
+                            </h3>
+                            <div class="space-y-4">
+                                <a href="/training.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
+                                    <span
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Training</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Quick Links -->
                 <div class="mt-12 pt-12 border-t border-gray-200">
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
+                    <div class="grid grid-cols-2 md:grid-cols-3  gap-8 text-center">
                         <a href="/privacy-policy.html"
-                            class="text-violet-700 hover:text-violet-900 text-sm transition-colors">
+                            class="text-violet-700 hover:text-violet-900 hover:underline text-sm transition-colors">
                             Privacy Policy
                         </a>
-                        <span class="tooltip">
-                            <span class="text-gray-400 text-sm transition-colors disabled-link">
-                                Financial Services
+                        <!-- <span class="tooltip">
+                                <span class="text-gray-400 text-sm transition-colors disabled-link">
+                                    Financial Services
+                                </span>
+                                <span class="tooltiptext">Under Development</span>
                             </span>
-                            <span class="tooltiptext">Under Development</span>
-                        </span>
-                        <span class="tooltip">
-                            <span class="text-gray-400 text-sm transition-colors disabled-link">
-                                Infrastructure
+                            <span class="tooltip">
+                                <span class="text-gray-400 text-sm transition-colors disabled-link">
+                                    Infrastructure
+                                </span>
+                                <span class="tooltiptext">Coming Soon</span>
                             </span>
-                            <span class="tooltiptext">Coming Soon</span>
-                        </span>
-                        <span class="tooltip">
-                            <span class="text-gray-400 text-sm transition-colors disabled-link">
-                                Education & Training
-                            </span>
-                            <span class="tooltiptext">Under Development</span>
-                        </span>
+                            <span class="tooltip">
+                                <span class="text-gray-400 text-sm transition-colors disabled-link">
+                                    Education & Training
+                                </span>
+                                <span class="tooltiptext">Under Development</span>
+                            </span> -->
                         <a href="/terms-conditions.html"
-                            class="text-violet-700 hover:text-violet-900 text-sm transition-colors">
+                            class="text-violet-700 hover:text-violet-900 hover:underline text-sm transition-colors">
                             Terms and Conditions
                         </a>
                         <a href="/contact-us.html"
-                            class="text-violet-700 hover:text-violet-900 text-sm transition-colors">
+                            class="text-violet-700 hover:text-violet-900 hover:underline text-sm transition-colors">
                             Contact
                         </a>
                     </div>
@@ -746,11 +726,12 @@
                     <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
                         <span class="gradient-highlight">Take Control of Your Healthcare Journey</span>
                     </h1>
-    
+
                     <p class="text-gray-600 mb-8 max-w-3xl text-lg leading-relaxed">
-                        Manage your healthcare expenses with ease through our innovative prepaid solutions designed to give you financial peace of mind and access to quality care when you need it most.
+                        Manage your healthcare expenses with ease through our innovative prepaid solutions designed to
+                        give you financial peace of mind and access to quality care when you need it most.
                     </p>
-    
+
                     <div class="flex flex-col sm:flex-row gap-4 z-50">
                         <button
                             class="px-6 py-3.5 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg font-medium hover:shadow-lg transition-all duration-300 hover:opacity-90">
@@ -758,11 +739,11 @@
                         </button>
                     </div>
                 </div>
-    
+
                 <!-- Visual content -->
                 <div class="lg:w-1/3 relative">
                     <div class="relative h-80 md:h-96 w-full healthcare-cutout"></div>
-    
+
                     <div class="absolute -bottom-6 -right-6 w-64 h-64 smart-clinic-card p-5 hidden md:block">
                         <div class="flex items-center mb-3">
                             <div
@@ -792,102 +773,106 @@
                     </div>
                 </div>
             </div>
-    
+
             <!-- Trust indicators (still hidden/commented) -->
             <div class="mt-16 pt-8 border-t border-gray-200">
                 <!-- Optional trust badges go here -->
             </div>
         </div>
     </section>
-    
-    
-  <!-- WHY CHOOOSE HEALTH -->
-  <div class="bg-white container mx-auto p-8 mb-20">
-    <div class="text-center mb-10">
-        <h3 class="text-2xl md:text-3xl font-bold mb-4">Why Patients Choose Telth Care Plans</h3>
+
+
+    <!-- WHY CHOOOSE HEALTH -->
+    <div class="bg-white container mx-auto p-8 mb-20">
+        <div class="text-center mb-10">
+            <h3 class="text-2xl md:text-3xl font-bold mb-4">Why Patients Choose Telth Care Plans</h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+            <!-- Card 1 -->
+            <div class="hes-card bg-white border border-gray-100 shadow-md">
+                <div class="h-28 gradient-bg flex items-center justify-center">
+                    <i class="fas fa-wallet text-white text-4xl"></i>
+                </div>
+                <div class="p-6">
+                    <h4 class="font-bold text-lg mb-3">Budget Your Healthcare</h4>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Set aside funds specifically for medical needs.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="hes-card bg-white border border-gray-100 shadow-md">
+                <div class="h-28 gradient-bg flex items-center justify-center">
+                    <i class="fas fa-credit-card text-white text-4xl"></i>
+                </div>
+                <div class="p-6">
+                    <h4 class="font-bold text-lg mb-3">Cashless Convenience</h4>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Pay for healthcare with a simple card swipe.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="hes-card bg-white border border-gray-100 shadow-md">
+                <div class="h-28 gradient-bg flex items-center justify-center">
+                    <i class="fas fa-heartbeat text-white text-4xl"></i>
+                </div>
+                <div class="p-6">
+                    <h4 class="font-bold text-lg mb-3">Free Health Benefits</h4>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Enjoy complimentary check-ups and home visits.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="hes-card bg-white border border-gray-100 shadow-md">
+                <div class="h-28 gradient-bg flex items-center justify-center">
+                    <i class="fas fa-users text-white text-4xl"></i>
+                </div>
+                <div class="p-6">
+                    <h4 class="font-bold text-lg mb-3">Family Protection</h4>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Ensure your loved ones have access to care.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="hes-card bg-white border border-gray-100 shadow-md">
+                <div class="h-28 gradient-bg flex items-center justify-center">
+                    <i class="fas fa-pills text-white text-4xl"></i>
+                </div>
+                <div class="p-6">
+                    <h4 class="font-bold text-lg mb-3">Pharmacy Discounts</h4>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Save on medications and medical supplies.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-        <!-- Card 1 -->
-        <div class="hes-card bg-white border border-gray-100 shadow-md">
-            <div class="h-28 gradient-bg flex items-center justify-center">
-                <i class="fas fa-wallet text-white text-4xl"></i>
-            </div>
-            <div class="p-6">
-                <h4 class="font-bold text-lg mb-3">Budget Your Healthcare</h4>
-                <p class="text-gray-600 text-sm mb-4">
-                    Set aside funds specifically for medical needs.
-                </p>
-            </div>
-        </div>
-
-        <!-- Card 2 -->
-        <div class="hes-card bg-white border border-gray-100 shadow-md">
-            <div class="h-28 gradient-bg flex items-center justify-center">
-                <i class="fas fa-credit-card text-white text-4xl"></i>
-            </div>
-            <div class="p-6">
-                <h4 class="font-bold text-lg mb-3">Cashless Convenience</h4>
-                <p class="text-gray-600 text-sm mb-4">
-                    Pay for healthcare with a simple card swipe.
-                </p>
-            </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="hes-card bg-white border border-gray-100 shadow-md">
-            <div class="h-28 gradient-bg flex items-center justify-center">
-                <i class="fas fa-heartbeat text-white text-4xl"></i>
-            </div>
-            <div class="p-6">
-                <h4 class="font-bold text-lg mb-3">Free Health Benefits</h4>
-                <p class="text-gray-600 text-sm mb-4">
-                    Enjoy complimentary check-ups and home visits.
-                </p>
-            </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="hes-card bg-white border border-gray-100 shadow-md">
-            <div class="h-28 gradient-bg flex items-center justify-center">
-                <i class="fas fa-users text-white text-4xl"></i>
-            </div>
-            <div class="p-6">
-                <h4 class="font-bold text-lg mb-3">Family Protection</h4>
-                <p class="text-gray-600 text-sm mb-4">
-                    Ensure your loved ones have access to care.
-                </p>
-            </div>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="hes-card bg-white border border-gray-100 shadow-md">
-            <div class="h-28 gradient-bg flex items-center justify-center">
-                <i class="fas fa-pills text-white text-4xl"></i>
-            </div>
-            <div class="p-6">
-                <h4 class="font-bold text-lg mb-3">Pharmacy Discounts</h4>
-                <p class="text-gray-600 text-sm mb-4">
-                    Save on medications and medical supplies.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
 
 
-      
     <!-- Main Solutions -->
 
-      <!-- Primary section -->
-      <section class="py-16 md:py-24 px-4 md:px-8 lg:px-16 relative overflow-hidden">
+    <!-- Primary section -->
+    <section class="py-16 md:py-24 px-4 md:px-8 lg:px-16 relative overflow-hidden">
         <!-- Background Elements -->
         <div class="absolute inset-0 z-0">
-            <div class="absolute top-1/3 left-0 w-64 h-64 bg-purple-50 rounded-full opacity-70 transform -translate-x-1/2"></div>
-            <div class="absolute bottom-0 right-0 w-96 h-96 bg-indigo-50 rounded-full opacity-70 transform translate-x-1/3 translate-y-1/3"></div>
+            <div
+                class="absolute top-1/3 left-0 w-64 h-64 bg-purple-50 rounded-full opacity-70 transform -translate-x-1/2">
+            </div>
+            <div
+                class="absolute bottom-0 right-0 w-96 h-96 bg-indigo-50 rounded-full opacity-70 transform translate-x-1/3 translate-y-1/3">
+            </div>
             <div class="absolute top-0 right-1/3 w-48 h-48 bg-violet-50 rounded-full opacity-70"></div>
         </div>
-    
+
         <div class="container mx-auto relative z-10">
             <!-- Section Header -->
             <div class="text-center mb-16 max-w-3xl mx-auto">
@@ -895,72 +880,86 @@
                     Our <span class="text-purple-600">Patient Care Plan Solutions</span>
                 </h2>
             </div>
-    
+
             <!-- Features Grid (Adjusted to 4 Cards) -->
             <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 gap-8 mb-16">
                 <!-- Card 1: Individual Care Plans -->
                 <div class="relative group">
-                    <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300 h-full border-t-4 border-purple-500">
+                    <div
+                        class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300 h-full border-t-4 border-purple-500">
                         <div class="absolute -top-5 left-8">
-                            <div class="bg-gradient-to-br from-purple-500 to-indigo-600 w-10 h-10 rounded-lg shadow-lg flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-300">
+                            <div
+                                class="bg-gradient-to-br from-purple-500 to-indigo-600 w-10 h-10 rounded-lg shadow-lg flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-300">
                                 <i class="fas fa-user-md text-white"></i>
                             </div>
                         </div>
                         <div class="pt-6">
                             <h3 class="text-xl font-bold text-gray-800 mb-4">Individual Care Plans</h3>
                             <p class="text-gray-600">
-                                Perfect for managing your personal healthcare expenses with a dedicated fund for doctor visits, medications, and routine check-ups, giving you control over your health spending.
+                                Perfect for managing your personal healthcare expenses with a dedicated fund for doctor
+                                visits, medications, and routine check-ups, giving you control over your health
+                                spending.
                             </p>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Card 2: Family Care Plans -->
                 <div class="relative group">
-                    <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300 h-full border-t-4 border-indigo-500">
+                    <div
+                        class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300 h-full border-t-4 border-indigo-500">
                         <div class="absolute -top-5 left-8">
-                            <div class="bg-gradient-to-br from-indigo-500 to-blue-600 w-10 h-10 rounded-lg shadow-lg flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-300">
+                            <div
+                                class="bg-gradient-to-br from-indigo-500 to-blue-600 w-10 h-10 rounded-lg shadow-lg flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-300">
                                 <i class="fas fa-users text-white"></i>
                             </div>
                         </div>
                         <div class="pt-6">
                             <h3 class="text-xl font-bold text-gray-800 mb-4">Family Care Plans</h3>
                             <p class="text-gray-600">
-                                Comprehensive coverage for your entire family with shared benefits, allowing parents to manage healthcare expenses for children and elderly dependents with ease and transparency.
+                                Comprehensive coverage for your entire family with shared benefits, allowing parents to
+                                manage healthcare expenses for children and elderly dependents with ease and
+                                transparency.
                             </p>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Card 3: Chronic Condition Care Plans -->
                 <div class="relative group">
-                    <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300 h-full border-t-4 border-violet-500">
+                    <div
+                        class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300 h-full border-t-4 border-violet-500">
                         <div class="absolute -top-5 left-8">
-                            <div class="bg-gradient-to-br from-violet-500 to-purple-600 w-10 h-10 rounded-lg shadow-lg flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-300">
+                            <div
+                                class="bg-gradient-to-br from-violet-500 to-purple-600 w-10 h-10 rounded-lg shadow-lg flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-300">
                                 <i class="fas fa-notes-medical text-white"></i>
                             </div>
                         </div>
                         <div class="pt-6">
                             <h3 class="text-xl font-bold text-gray-800 mb-4">Chronic Condition Care Plans</h3>
                             <p class="text-gray-600">
-                                Specialized plans for those managing ongoing health conditions, with automatic medication refills, regular check-up scheduling, and discounts on long-term treatments.
+                                Specialized plans for those managing ongoing health conditions, with automatic
+                                medication refills, regular check-up scheduling, and discounts on long-term treatments.
                             </p>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Card 4: Emergency Preparedness Plans -->
                 <div class="relative group">
-                    <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300 h-full border-t-4 border-blue-500">
+                    <div
+                        class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300 h-full border-t-4 border-blue-500">
                         <div class="absolute -top-5 left-8">
-                            <div class="bg-gradient-to-br from-blue-500 to-cyan-600 w-10 h-10 rounded-lg shadow-lg flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-300">
+                            <div
+                                class="bg-gradient-to-br from-blue-500 to-cyan-600 w-10 h-10 rounded-lg shadow-lg flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-300">
                                 <i class="fas fa-ambulance text-white"></i>
                             </div>
                         </div>
                         <div class="pt-6">
                             <h3 class="text-xl font-bold text-gray-800 mb-4">Emergency Preparedness Plans</h3>
                             <p class="text-gray-600">
-                                Peace of mind through dedicated funds set aside for unexpected medical needs, ensuring you're financially prepared for emergencies without disrupting your regular budget.
+                                Peace of mind through dedicated funds set aside for unexpected medical needs, ensuring
+                                you're financially prepared for emergencies without disrupting your regular budget.
                             </p>
                         </div>
                     </div>
@@ -968,456 +967,489 @@
             </div>
         </div>
     </section>
-    
-    
 
 
 
-  <!-- IMPLEMENTATION -->
-  <section class="py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-purple-50 to-blue-50">
-    <div class="container mx-auto">
+
+
+    <!-- IMPLEMENTATION -->
+    <section class="py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-purple-50 to-blue-50">
+        <div class="container mx-auto">
+            <!-- Section Header -->
+            <div class="mb-6">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mt-3 mb-6">
+                    How Patient Care Plans Work
+                </h2>
+                <div class="w-full h-px bg-gradient-to-r from-purple-400 to-blue-400 mt-6 mb-10"></div>
+            </div>
+
+            <!-- Steps Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                <!-- Step 1 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
+                    <div class="mb-5">
+                        <h3 class="text-xl font-bold text-gray-800 mt-2">Choose Your Plan</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Select a plan based on your healthcare needs and budget.
+                    </p>
+                    <div
+                        class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
+                        <i class="fas fa-list-alt text-purple-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
+                    <div class="mb-5">
+                        <h3 class="text-xl font-bold text-gray-800 mt-2">Receive Your Prepaid Card</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Get your Visa-powered healthcare card by mail.
+                    </p>
+                    <div
+                        class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
+                        <i
+                            class="fas fa-envelope-open-text text-purple-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
+                    <div class="mb-5">
+                        <h3 class="text-xl font-bold text-gray-800 mt-2">Load Funds</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Add money to your healthcare wallet through multiple convenient options.
+                    </p>
+                    <div
+                        class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
+                        <i class="fas fa-wallet text-purple-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
+                    <div class="mb-5">
+                        <h3 class="text-xl font-bold text-gray-800 mt-2">Access Healthcare</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Use your card at partner hospitals, clinics, and pharmacies.
+                    </p>
+                    <div
+                        class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
+                        <i class="fas fa-hospital text-purple-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                </div>
+
+                <!-- Step 5 -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
+                    <div class="mb-5">
+                        <h3 class="text-xl font-bold text-gray-800 mt-2">Track Your Spending</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Monitor your healthcare expenses through our mobile app.
+                    </p>
+                    <div
+                        class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
+                        <i class="fas fa-mobile-alt text-purple-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+    <!-- Table -->
+    <section class="py-8 px-4 container mx-auto">
         <!-- Section Header -->
-        <div class="mb-6">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mt-3 mb-6">
-                How Patient Care Plans Work
-            </h2>
-            <div class="w-full h-px bg-gradient-to-r from-purple-400 to-blue-400 mt-6 mb-10"></div>
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Care Plan Options</h2>
+            <div class="w-20 h-1 bg-purple-600 mx-auto mb-6"></div>
         </div>
 
-        <!-- Steps Grid -->
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
-            <!-- Step 1 -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
-                <div class="mb-5">
-                    <h3 class="text-xl font-bold text-gray-800 mt-2">Choose Your Plan</h3>
-                </div>
-                <p class="text-gray-600">
-                    Select a plan based on your healthcare needs and budget.
-                </p>
-                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
-                    <i class="fas fa-list-alt text-purple-600 group-hover:text-white transition-colors"></i>
-                </div>
+        <!-- Table-like Header Row -->
+        <div class="grid grid-cols-2 bg-purple-600 text-white rounded-t-lg overflow-hidden">
+            <div class="p-4 font-bold text-lg text-center">
+                Plan Type
             </div>
-
-            <!-- Step 2 -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
-                <div class="mb-5">
-                    <h3 class="text-xl font-bold text-gray-800 mt-2">Receive Your Prepaid Card</h3>
-                </div>
-                <p class="text-gray-600">
-                    Get your Visa-powered healthcare card by mail.
-                </p>
-                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
-                    <i class="fas fa-envelope-open-text text-purple-600 group-hover:text-white transition-colors"></i>
-                </div>
-            </div>
-
-            <!-- Step 3 -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
-                <div class="mb-5">
-                    <h3 class="text-xl font-bold text-gray-800 mt-2">Load Funds</h3>
-                </div>
-                <p class="text-gray-600">
-                    Add money to your healthcare wallet through multiple convenient options.
-                </p>
-                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
-                    <i class="fas fa-wallet text-purple-600 group-hover:text-white transition-colors"></i>
-                </div>
-            </div>
-
-            <!-- Step 4 -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
-                <div class="mb-5">
-                    <h3 class="text-xl font-bold text-gray-800 mt-2">Access Healthcare</h3>
-                </div>
-                <p class="text-gray-600">
-                    Use your card at partner hospitals, clinics, and pharmacies.
-                </p>
-                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
-                    <i class="fas fa-hospital text-purple-600 group-hover:text-white transition-colors"></i>
-                </div>
-            </div>
-
-            <!-- Step 5 -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
-                <div class="mb-5">
-                    <h3 class="text-xl font-bold text-gray-800 mt-2">Track Your Spending</h3>
-                </div>
-                <p class="text-gray-600">
-                    Monitor your healthcare expenses through our mobile app.
-                </p>
-                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
-                    <i class="fas fa-mobile-alt text-purple-600 group-hover:text-white transition-colors"></i>
-                </div>
+            <div class="p-4 font-bold text-lg text-center">
+                Best For
             </div>
         </div>
-    </div>
-</section>
 
-
-
-
-
-
-
-<!-- Table -->
-<section class="py-8 px-4 container mx-auto">
-    <!-- Section Header -->
-    <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Care Plan Options</h2>
-        <div class="w-20 h-1 bg-purple-600 mx-auto mb-6"></div>
-    </div>
-
-    <!-- Table-like Header Row -->
-    <div class="grid grid-cols-2 bg-purple-600 text-white rounded-t-lg overflow-hidden">
-        <div class="p-4 font-bold text-lg text-center">
-            Plan Type
-        </div>
-        <div class="p-4 font-bold text-lg text-center">
-            Best For
-        </div>
-    </div>
-
-    <!-- Row 1: Basic Care -->
-    <div class="grid grid-cols-2 bg-white border-l border-r border-gray-200 hover:bg-purple-50 transition-colors">
-        <div class="p-6 border-b border-r border-gray-200 flex items-center">
-            <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mr-4 flex-shrink-0">
-                <i class="fas fa-user text-purple-600"></i>
+        <!-- Row 1: Basic Care -->
+        <div class="grid grid-cols-2 bg-white border-l border-r border-gray-200 hover:bg-purple-50 transition-colors">
+            <div class="p-6 border-b border-r border-gray-200 flex items-center">
+                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mr-4 flex-shrink-0">
+                    <i class="fas fa-user text-purple-600"></i>
+                </div>
+                <h3 class="font-bold text-gray-800 text-lg">Basic Care</h3>
             </div>
-            <h3 class="font-bold text-gray-800 text-lg">Basic Care</h3>
-        </div>
-        <div class="p-6 border-b border-gray-200">
-            <p class="text-gray-600">Individuals seeking essential healthcare coverage</p>
-        </div>
-    </div>
-
-    <!-- Row 2: Family Care -->
-    <div class="grid grid-cols-2 bg-white border-l border-r border-gray-200 hover:bg-purple-50 transition-colors">
-        <div class="p-6 border-b border-r border-gray-200 flex items-center">
-            <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-4 flex-shrink-0">
-                <i class="fas fa-users text-green-600"></i>
+            <div class="p-6 border-b border-gray-200">
+                <p class="text-gray-600">Individuals seeking essential healthcare coverage</p>
             </div>
-            <h3 class="font-bold text-gray-800 text-lg">Family Care</h3>
         </div>
-        <div class="p-6 border-b border-gray-200">
-            <p class="text-gray-600">Families wanting comprehensive protection (2 adults + 2 children)</p>
-        </div>
-    </div>
 
-    <!-- Row 3: Chronic Care -->
-    <div class="grid grid-cols-2 bg-white border-l border-r border-gray-200 hover:bg-purple-50 transition-colors">
-        <div class="p-6 border-b border-r border-gray-200 flex items-center">
-            <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center mr-4 flex-shrink-0">
-                <i class="fas fa-heartbeat text-red-600"></i>
+        <!-- Row 2: Family Care -->
+        <div class="grid grid-cols-2 bg-white border-l border-r border-gray-200 hover:bg-purple-50 transition-colors">
+            <div class="p-6 border-b border-r border-gray-200 flex items-center">
+                <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-4 flex-shrink-0">
+                    <i class="fas fa-users text-green-600"></i>
+                </div>
+                <h3 class="font-bold text-gray-800 text-lg">Family Care</h3>
             </div>
-            <h3 class="font-bold text-gray-800 text-lg">Chronic Care</h3>
-        </div>
-        <div class="p-6 border-b border-gray-200">
-            <p class="text-gray-600">Patients with ongoing conditions requiring regular care</p>
-        </div>
-    </div>
-
-    <!-- Row 4: Senior Care -->
-    <div class="grid grid-cols-2 bg-white border-l border-r border-b border-gray-200 rounded-b-lg hover:bg-purple-50 transition-colors">
-        <div class="p-6 border-r border-gray-200 flex items-center">
-            <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4 flex-shrink-0">
-                <i class="fas fa-blind text-blue-600"></i>
+            <div class="p-6 border-b border-gray-200">
+                <p class="text-gray-600">Families wanting comprehensive protection (2 adults + 2 children)</p>
             </div>
-            <h3 class="font-bold text-gray-800 text-lg">Senior Care</h3>
         </div>
-        <div class="p-6">
-            <p class="text-gray-600">Elderly individuals with specialized healthcare needs</p>
+
+        <!-- Row 3: Chronic Care -->
+        <div class="grid grid-cols-2 bg-white border-l border-r border-gray-200 hover:bg-purple-50 transition-colors">
+            <div class="p-6 border-b border-r border-gray-200 flex items-center">
+                <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center mr-4 flex-shrink-0">
+                    <i class="fas fa-heartbeat text-red-600"></i>
+                </div>
+                <h3 class="font-bold text-gray-800 text-lg">Chronic Care</h3>
+            </div>
+            <div class="p-6 border-b border-gray-200">
+                <p class="text-gray-600">Patients with ongoing conditions requiring regular care</p>
+            </div>
         </div>
-    </div>
-</section>
+
+        <!-- Row 4: Senior Care -->
+        <div
+            class="grid grid-cols-2 bg-white border-l border-r border-b border-gray-200 rounded-b-lg hover:bg-purple-50 transition-colors">
+            <div class="p-6 border-r border-gray-200 flex items-center">
+                <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4 flex-shrink-0">
+                    <i class="fas fa-blind text-blue-600"></i>
+                </div>
+                <h3 class="font-bold text-gray-800 text-lg">Senior Care</h3>
+            </div>
+            <div class="p-6">
+                <p class="text-gray-600">Elderly individuals with specialized healthcare needs</p>
+            </div>
+        </div>
+    </section>
 
 
 
- 
-        
-        <div class="container mx-auto px-4 py-12 md:py-16">
-            <div class="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
-                <!-- Left Side - Features Content -->
-                <div class="w-full lg:w-1/2" x-data="{ activeTab: null }">
-                    <div class="mb-6">
-                        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mt-3">
-                            Key Benefits Included With Every Plan
-                        </h1>
+
+
+    <div class="container mx-auto px-4 py-12 md:py-16">
+        <div class="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
+            <!-- Left Side - Features Content -->
+            <div class="w-full lg:w-1/2" x-data="{ activeTab: null }">
+                <div class="mb-6">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mt-3">
+                        Key Benefits Included With Every Plan
+                    </h1>
+                </div>
+
+                <!-- Collapsible Features -->
+                <div class="space-y-4">
+                    <!-- Two Free Master Health Check-ups Per Year -->
+                    <div class="border border-gray-200 rounded-lg bg-white overflow-hidden">
+                        <div @click="activeTab = activeTab === 1 ? null : 1"
+                            class="features_accordion_header flex justify-between items-center p-5 bg-white">
+                            <h3 class="text-lg font-semibold text-gray-800">Two Free Master Health Check-ups Per Year
+                            </h3>
+                            <span class="features_chevron" :class="{'transform rotate-180': activeTab === 1}">
+                                <i class="fas fa-chevron-down text-gray-500"></i>
+                            </span>
+                        </div>
+                        <div x-show="activeTab === 1" x-collapse x-cloak>
+                            <div class="px-5 pb-5">
+                                <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                                    <li>Comprehensive annual assessments to monitor your wellbeing</li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-        
-                    <!-- Collapsible Features -->
-                    <div class="space-y-4">
-                        <!-- Two Free Master Health Check-ups Per Year -->
-                        <div class="border border-gray-200 rounded-lg bg-white overflow-hidden">
-                            <div @click="activeTab = activeTab === 1 ? null : 1" class="features_accordion_header flex justify-between items-center p-5 bg-white">
-                                <h3 class="text-lg font-semibold text-gray-800">Two Free Master Health Check-ups Per Year</h3>
-                                <span class="features_chevron" :class="{'transform rotate-180': activeTab === 1}">
-                                    <i class="fas fa-chevron-down text-gray-500"></i>
-                                </span>
-                            </div>
-                            <div x-show="activeTab === 1" x-collapse x-cloak>
-                                <div class="px-5 pb-5">
-                                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
-                                        <li>Comprehensive annual assessments to monitor your wellbeing</li>
-                                    </ul>
-                                </div>
+
+                    <!-- One Free Home Visit -->
+                    <div class="border border-gray-200 rounded-lg bg-white overflow-hidden">
+                        <div @click="activeTab = activeTab === 2 ? null : 2"
+                            class="features_accordion_header flex justify-between items-center p-5 bg-white">
+                            <h3 class="text-lg font-semibold text-gray-800">One Free Home Visit</h3>
+                            <span class="features_chevron" :class="{'transform rotate-180': activeTab === 2}">
+                                <i class="fas fa-chevron-down text-gray-500"></i>
+                            </span>
+                        </div>
+                        <div x-show="activeTab === 2" x-collapse x-cloak>
+                            <div class="px-5 pb-5">
+                                <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                                    <li>Medical care delivered to your doorstep when you need it</li>
+                                </ul>
                             </div>
                         </div>
-        
-                        <!-- One Free Home Visit -->
-                        <div class="border border-gray-200 rounded-lg bg-white overflow-hidden">
-                            <div @click="activeTab = activeTab === 2 ? null : 2" class="features_accordion_header flex justify-between items-center p-5 bg-white">
-                                <h3 class="text-lg font-semibold text-gray-800">One Free Home Visit</h3>
-                                <span class="features_chevron" :class="{'transform rotate-180': activeTab === 2}">
-                                    <i class="fas fa-chevron-down text-gray-500"></i>
-                                </span>
-                            </div>
-                            <div x-show="activeTab === 2" x-collapse x-cloak>
-                                <div class="px-5 pb-5">
-                                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
-                                        <li>Medical care delivered to your doorstep when you need it</li>
-                                    </ul>
-                                </div>
+                    </div>
+
+                    <!-- 25% Discount on Pharmacy Products -->
+                    <div class="border border-gray-200 rounded-lg bg-white overflow-hidden">
+                        <div @click="activeTab = activeTab === 3 ? null : 3"
+                            class="features_accordion_header flex justify-between items-center p-5 bg-white">
+                            <h3 class="text-lg font-semibold text-gray-800">25% Discount on Pharmacy Products</h3>
+                            <span class="features_chevron" :class="{'transform rotate-180': activeTab === 3}">
+                                <i class="fas fa-chevron-down text-gray-500"></i>
+                            </span>
+                        </div>
+                        <div x-show="activeTab === 3" x-collapse x-cloak>
+                            <div class="px-5 pb-5">
+                                <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                                    <li>Savings on medications with home delivery option</li>
+                                </ul>
                             </div>
                         </div>
-        
-                        <!-- 25% Discount on Pharmacy Products -->
-                        <div class="border border-gray-200 rounded-lg bg-white overflow-hidden">
-                            <div @click="activeTab = activeTab === 3 ? null : 3" class="features_accordion_header flex justify-between items-center p-5 bg-white">
-                                <h3 class="text-lg font-semibold text-gray-800">25% Discount on Pharmacy Products</h3>
-                                <span class="features_chevron" :class="{'transform rotate-180': activeTab === 3}">
-                                    <i class="fas fa-chevron-down text-gray-500"></i>
-                                </span>
-                            </div>
-                            <div x-show="activeTab === 3" x-collapse x-cloak>
-                                <div class="px-5 pb-5">
-                                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
-                                        <li>Savings on medications with home delivery option</li>
-                                    </ul>
-                                </div>
+                    </div>
+
+                    <!-- Health Data Sharing in Emergencies -->
+                    <div class="border border-gray-200 rounded-lg bg-white overflow-hidden">
+                        <div @click="activeTab = activeTab === 4 ? null : 4"
+                            class="features_accordion_header flex justify-between items-center p-5 bg-white">
+                            <h3 class="text-lg font-semibold text-gray-800">Health Data Sharing in Emergencies</h3>
+                            <span class="features_chevron" :class="{'transform rotate-180': activeTab === 4}">
+                                <i class="fas fa-chevron-down text-gray-500"></i>
+                            </span>
+                        </div>
+                        <div x-show="activeTab === 4" x-collapse x-cloak>
+                            <div class="px-5 pb-5">
+                                <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                                    <li>Critical medical information available to healthcare providers when necessary
+                                    </li>
+                                </ul>
                             </div>
                         </div>
-        
-                        <!-- Health Data Sharing in Emergencies -->
-                        <div class="border border-gray-200 rounded-lg bg-white overflow-hidden">
-                            <div @click="activeTab = activeTab === 4 ? null : 4" class="features_accordion_header flex justify-between items-center p-5 bg-white">
-                                <h3 class="text-lg font-semibold text-gray-800">Health Data Sharing in Emergencies</h3>
-                                <span class="features_chevron" :class="{'transform rotate-180': activeTab === 4}">
-                                    <i class="fas fa-chevron-down text-gray-500"></i>
-                                </span>
-                            </div>
-                            <div x-show="activeTab === 4" x-collapse x-cloak>
-                                <div class="px-5 pb-5">
-                                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
-                                        <li>Critical medical information available to healthcare providers when necessary</li>
-                                    </ul>
-                                </div>
-                            </div>
+                    </div>
+
+                    <!-- Hospitalization Assistance -->
+                    <div class="border border-gray-200 rounded-lg bg-white overflow-hidden">
+                        <div @click="activeTab = activeTab === 5 ? null : 5"
+                            class="features_accordion_header flex justify-between items-center p-5 bg-white">
+                            <h3 class="text-lg font-semibold text-gray-800">Hospitalization Assistance</h3>
+                            <span class="features_chevron" :class="{'transform rotate-180': activeTab === 5}">
+                                <i class="fas fa-chevron-down text-gray-500"></i>
+                            </span>
                         </div>
-        
-                        <!-- Hospitalization Assistance -->
-                        <div class="border border-gray-200 rounded-lg bg-white overflow-hidden">
-                            <div @click="activeTab = activeTab === 5 ? null : 5" class="features_accordion_header flex justify-between items-center p-5 bg-white">
-                                <h3 class="text-lg font-semibold text-gray-800">Hospitalization Assistance</h3>
-                                <span class="features_chevron" :class="{'transform rotate-180': activeTab === 5}">
-                                    <i class="fas fa-chevron-down text-gray-500"></i>
-                                </span>
-                            </div>
-                            <div x-show="activeTab === 5" x-collapse x-cloak>
-                                <div class="px-5 pb-5">
-                                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
-                                        <li>Support services when hospital care is required</li>
-                                    </ul>
-                                </div>
+                        <div x-show="activeTab === 5" x-collapse x-cloak>
+                            <div class="px-5 pb-5">
+                                <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                                    <li>Support services when hospital care is required</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-        
-                <!-- Right Side - Image (Fixed Height) -->
-                <div class="w-full lg:w-1/2 sticky top-8">
-                    <div class="bg-gray-200 rounded-lg flex items-center justify-center" style="height: 550px; min-height: 550px;">
-                        <div class="text-center">
-                            <p class="text-gray-500">Image Placeholder</p>
-                            <p class="text-gray-400 text-sm">(Your Care2Home process visualization will appear here)</p>
-                        </div>
+            </div>
+
+            <!-- Right Side - Image (Fixed Height) -->
+            <div class="w-full lg:w-1/2 sticky top-8">
+                <div class="bg-gray-200 rounded-lg flex items-center justify-center"
+                    style="height: 550px; min-height: 550px;">
+                    <div class="text-center">
+                        <p class="text-gray-500">Image Placeholder</p>
+                        <p class="text-gray-400 text-sm">(Your Care2Home process visualization will appear here)</p>
                     </div>
                 </div>
             </div>
         </div>
-        
-        
-
-        <section class="container mx-auto my-8 px-4 md:px-10 py-10 bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 sm:rounded-2xl shadow-2xl overflow-hidden relative">
-            <!-- Decorative elements -->
-            <div class="absolute top-0 left-0 w-full h-full overflow-hidden">
-                <div class="absolute top-0 right-0 w-32 h-32 bg-blue-500 rounded-full opacity-10 blur-xl transform translate-x-10 -translate-y-10"></div>
-                <div class="absolute bottom-0 left-0 w-40 h-40 bg-purple-500 rounded-full opacity-10 blur-xl transform -translate-x-10 translate-y-10"></div>
-                <div class="absolute top-1/3 left-1/4 w-24 h-24 bg-teal-500 rounded-full opacity-10 blur-xl"></div>
-            </div>
-        
-            <!-- Content -->
-            <div class="relative z-10">
-                <div class="flex items-center space-x-2 mb-6">
-                    <div class="h-1 w-10 bg-teal-400 rounded-full"></div>
-                    <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">
-                        Using Your Care Plan
-                    </h2>
-                </div>
-        
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8">
-                    <!-- At Hospitals & Clinics -->
-                    <div class="bg-gray-800 bg-opacity-70 p-6 rounded-xl border border-gray-700 hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-1 group">
-                        <div class="flex items-center mb-4">
-                            <div class="w-10 h-10 bg-gradient-to-r from-teal-400 to-teal-600 rounded-lg flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                <i class="fas fa-hospital"></i>
-                            </div>
-                            <h3 class="ml-3 font-semibold text-lg text-white">At Hospitals & Clinics</h3>
-                        </div>
-                        <p class="text-gray-300">Present your Telth Care card at reception for cashless payment of consultations, diagnostic tests, and treatments at our extensive network of partner healthcare facilities.</p>
-                    </div>
-        
-                    <!-- At Pharmacies -->
-                    <div class="bg-gray-800 bg-opacity-70 p-6 rounded-xl border border-gray-700 hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-1 group">
-                        <div class="flex items-center mb-4">
-                            <div class="w-10 h-10 bg-gradient-to-r from-blue-400 to-blue-600 rounded-lg flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                <i class="fas fa-pills"></i>
-                            </div>
-                            <h3 class="ml-3 font-semibold text-lg text-white">At Pharmacies</h3>
-                        </div>
-                        <p class="text-gray-300">Save 25% on prescriptions and healthcare products at partner pharmacies—simply swipe your card for instant discounts and automatic expense tracking.</p>
-                    </div>
-        
-                    <!-- For Home Care -->
-                    <div class="bg-gray-800 bg-opacity-70 p-6 rounded-xl border border-gray-700 hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-1 group">
-                        <div class="flex items-center mb-4">
-                            <div class="w-10 h-10 bg-gradient-to-r from-purple-400 to-purple-600 rounded-lg flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                <i class="fas fa-home"></i>
-                            </div>
-                            <h3 class="ml-3 font-semibold text-lg text-white">For Home Care</h3>
-                        </div>
-                        <p class="text-gray-300">Schedule home visits through our app when you're unable to travel, with payment automatically handled through your Care Plan funds.</p>
-                    </div>
-        
-                    <!-- For Emergency Care -->
-                    <div class="bg-gray-800 bg-opacity-70 p-6 rounded-xl border border-gray-700 hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-1 group md:col-span-2 lg:col-span-1">
-                        <div class="flex items-center mb-4">
-                            <div class="w-10 h-10 bg-gradient-to-r from-green-400 to-green-600 rounded-lg flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
-                                <i class="fas fa-ambulance"></i>
-                            </div>
-                            <h3 class="ml-3 font-semibold text-lg text-white">For Emergency Care</h3>
-                        </div>
-                        <p class="text-gray-300">Rest easy knowing your Care Plan provides financial coverage and expedited services during medical emergencies with dedicated funds for urgent needs.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        
-
-<section class="py-8 px-4 container mx-auto">
-    <!-- Section Header -->
-    <div class="text-center mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Special Features for Different Needs</h2>
-        <div class="w-20 h-1 bg-purple-600 mx-auto mb-6"></div>
     </div>
 
-    <!-- Features Grid -->
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-        <!-- For Young Professionals -->
-        <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:border-blue-300 transition-all">
-            <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-                <i class="fas fa-briefcase text-blue-600 text-xl"></i>
+
+    <section
+        class="container mx-auto my-8 px-4 md:px-10 py-10 bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 sm:rounded-2xl shadow-2xl overflow-hidden relative">
+        <!-- Decorative elements -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden">
+            <div
+                class="absolute top-0 right-0 w-32 h-32 bg-blue-500 rounded-full opacity-10 blur-xl transform translate-x-10 -translate-y-10">
             </div>
-            <h3 class="text-2xl font-bold mb-4 text-gray-900">For Young Professionals</h3>
-            <p class="text-gray-700 mb-4">Healthcare designed for the modern, busy lifestyle</p>
-            <ul class="space-y-3 text-gray-700">
-                <li class="flex items-start">
-                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
-                    <span>Subscription-Based Health Savings: Small automatic monthly contributions</span>
-                </li>
-                <li class="flex items-start">
-                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
-                    <span>Digital-First Experience: Manage everything through our intuitive app</span>
-                </li>
-                <li class="flex items-start">
-                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
-                    <span>Preventive Care Focus: Wellness programs and fitness integration</span>
-                </li>
-            </ul>
+            <div
+                class="absolute bottom-0 left-0 w-40 h-40 bg-purple-500 rounded-full opacity-10 blur-xl transform -translate-x-10 translate-y-10">
+            </div>
+            <div class="absolute top-1/3 left-1/4 w-24 h-24 bg-teal-500 rounded-full opacity-10 blur-xl"></div>
         </div>
 
-        <!-- For Families -->
-        <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:border-blue-300 transition-all">
-            <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-6">
-                <i class="fas fa-users text-green-600 text-xl"></i>
+        <!-- Content -->
+        <div class="relative z-10">
+            <div class="flex items-center space-x-2 mb-6">
+                <div class="h-1 w-10 bg-teal-400 rounded-full"></div>
+                <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">
+                    Using Your Care Plan
+                </h2>
             </div>
-            <h3 class="text-2xl font-bold mb-4 text-gray-900">For Families</h3>
-            <p class="text-gray-700 mb-4">Comprehensive care for the whole family</p>
-            <ul class="space-y-3 text-gray-700">
-                <li class="flex items-start">
-                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                    <span>Shared Benefits Pool: One account for all family members</span>
-                </li>
-                <li class="flex items-start">
-                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                    <span>Child Healthcare Management: Specialized pediatric services</span>
-                </li>
-                <li class="flex items-start">
-                    <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                    <span>Parental Controls: Manage healthcare funds for dependents</span>
-                </li>
-            </ul>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8">
+                <!-- At Hospitals & Clinics -->
+                <div
+                    class="bg-gray-800 bg-opacity-70 p-6 rounded-xl border border-gray-700 hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-1 group">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-r from-teal-400 to-teal-600 rounded-lg flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                        <h3 class="ml-3 font-semibold text-lg text-white">At Hospitals & Clinics</h3>
+                    </div>
+                    <p class="text-gray-300">Present your Telth Care card at reception for cashless payment of
+                        consultations, diagnostic tests, and treatments at our extensive network of partner healthcare
+                        facilities.</p>
+                </div>
+
+                <!-- At Pharmacies -->
+                <div
+                    class="bg-gray-800 bg-opacity-70 p-6 rounded-xl border border-gray-700 hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-1 group">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-r from-blue-400 to-blue-600 rounded-lg flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-pills"></i>
+                        </div>
+                        <h3 class="ml-3 font-semibold text-lg text-white">At Pharmacies</h3>
+                    </div>
+                    <p class="text-gray-300">Save 25% on prescriptions and healthcare products at partner
+                        pharmacies—simply swipe your card for instant discounts and automatic expense tracking.</p>
+                </div>
+
+                <!-- For Home Care -->
+                <div
+                    class="bg-gray-800 bg-opacity-70 p-6 rounded-xl border border-gray-700 hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-1 group">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-r from-purple-400 to-purple-600 rounded-lg flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3 class="ml-3 font-semibold text-lg text-white">For Home Care</h3>
+                    </div>
+                    <p class="text-gray-300">Schedule home visits through our app when you're unable to travel, with
+                        payment automatically handled through your Care Plan funds.</p>
+                </div>
+
+                <!-- For Emergency Care -->
+                <div
+                    class="bg-gray-800 bg-opacity-70 p-6 rounded-xl border border-gray-700 hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-1 group md:col-span-2 lg:col-span-1">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-r from-green-400 to-green-600 rounded-lg flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-ambulance"></i>
+                        </div>
+                        <h3 class="ml-3 font-semibold text-lg text-white">For Emergency Care</h3>
+                    </div>
+                    <p class="text-gray-300">Rest easy knowing your Care Plan provides financial coverage and expedited
+                        services during medical emergencies with dedicated funds for urgent needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="py-8 px-4 container mx-auto">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Special Features for Different Needs</h2>
+            <div class="w-20 h-1 bg-purple-600 mx-auto mb-6"></div>
         </div>
 
-        <!-- For Seniors -->
-        <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:border-blue-300 transition-all">
-            <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
-                <i class="fas fa-blind text-blue-600 text-xl"></i>
-            </div>
-            <h3 class="text-2xl font-bold mb-4 text-gray-900">For Seniors</h3>
-            <p class="text-gray-700 mb-4">Tailored healthcare for elderly individuals</p>
-            <ul class="space-y-3 text-gray-700">
-                <li class="flex items-start">
-                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
-                    <span>Remote Family Management: Adult children can fund parents' healthcare</span>
-                </li>
-                <li class="flex items-start">
-                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
-                    <span>Enhanced Home Services: Priority home visit scheduling</span>
-                </li>
-                <li class="flex items-start">
-                    <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
-                    <span>Chronic Care Savings: Higher discounts on long-term medications</span>
-                </li>
-            </ul>
-        </div>
+        <!-- Features Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
 
-        <!-- For Patients with Chronic Conditions -->
-        <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:border-blue-300 transition-all">
-            <div class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mb-6">
-                <i class="fas fa-heartbeat text-red-600 text-xl"></i>
+            <!-- For Young Professionals -->
+            <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:border-blue-300 transition-all">
+                <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-briefcase text-blue-600 text-xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 text-gray-900">For Young Professionals</h3>
+                <p class="text-gray-700 mb-4">Healthcare designed for the modern, busy lifestyle</p>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
+                        <span>Subscription-Based Health Savings: Small automatic monthly contributions</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
+                        <span>Digital-First Experience: Manage everything through our intuitive app</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
+                        <span>Preventive Care Focus: Wellness programs and fitness integration</span>
+                    </li>
+                </ul>
             </div>
-            <h3 class="text-2xl font-bold mb-4 text-gray-900">For Patients with Chronic Conditions</h3>
-            <p class="text-gray-700 mb-4">Convenient care for ongoing health needs</p>
-            <ul class="space-y-3 text-gray-700">
-                <li class="flex items-start">
-                    <i class="fas fa-check-circle text-red-500 mt-1 mr-2"></i>
-                    <span>Automatic Medication Refills: Never miss important medications</span>
-                </li>
-                <li class="flex items-start">
-                    <i class="fas fa-check-circle text-red-500 mt-1 mr-2"></i>
-                    <span>Condition-Specific Discounts: Save on specialized treatments</span>
-                </li>
-                <li class="flex items-start">
-                    <i class="fas fa-check-circle text-red-500 mt-1 mr-2"></i>
-                    <span>Care Coordination: Integrated management of multiple providers</span>
-                </li>
-            </ul>
-        </div>
 
-    </div>
-</section>
+            <!-- For Families -->
+            <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:border-blue-300 transition-all">
+                <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-users text-green-600 text-xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 text-gray-900">For Families</h3>
+                <p class="text-gray-700 mb-4">Comprehensive care for the whole family</p>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span>Shared Benefits Pool: One account for all family members</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span>Child Healthcare Management: Specialized pediatric services</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
+                        <span>Parental Controls: Manage healthcare funds for dependents</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- For Seniors -->
+            <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:border-blue-300 transition-all">
+                <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-blind text-blue-600 text-xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 text-gray-900">For Seniors</h3>
+                <p class="text-gray-700 mb-4">Tailored healthcare for elderly individuals</p>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
+                        <span>Remote Family Management: Adult children can fund parents' healthcare</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
+                        <span>Enhanced Home Services: Priority home visit scheduling</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
+                        <span>Chronic Care Savings: Higher discounts on long-term medications</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- For Patients with Chronic Conditions -->
+            <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:border-blue-300 transition-all">
+                <div class="w-14 h-14 bg-red-100 rounded-full flex items-center justify-center mb-6">
+                    <i class="fas fa-heartbeat text-red-600 text-xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold mb-4 text-gray-900">For Patients with Chronic Conditions</h3>
+                <p class="text-gray-700 mb-4">Convenient care for ongoing health needs</p>
+                <ul class="space-y-3 text-gray-700">
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-red-500 mt-1 mr-2"></i>
+                        <span>Automatic Medication Refills: Never miss important medications</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-red-500 mt-1 mr-2"></i>
+                        <span>Condition-Specific Discounts: Save on specialized treatments</span>
+                    </li>
+                    <li class="flex items-start">
+                        <i class="fas fa-check-circle text-red-500 mt-1 mr-2"></i>
+                        <span>Care Coordination: Integrated management of multiple providers</span>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
 
 
 
@@ -1439,7 +1471,8 @@
                         <div
                             class="bg-purple-100 text-purple-800 font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3 group-hover:bg-purple-600 group-hover:text-white transition-colors">
                             1</div>
-                        <h3 class="font-bold text-gray-800 group-hover:text-purple-700 transition-colors">Consultation</h3>
+                        <h3 class="font-bold text-gray-800 group-hover:text-purple-700 transition-colors">Consultation
+                        </h3>
                     </div>
                     <p class="text-sm text-gray-600">Share your needs via our 5-minute form.</p>
                 </div>

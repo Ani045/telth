@@ -318,10 +318,7 @@
             </div>
         </div>
     </nav>
-
     <div class="h-20 fixed z-20 w-full bg-gradient-to-b from-gray-100 to-transparent"></div>
-
-
     <!-- Full Screen Menu Overlay -->
     <div x-data="{ isOpen: false }" x-show="isOpen" x-transition:enter="transition ease-out duration-300"
         x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
@@ -338,11 +335,11 @@
             <div class="container mx-auto px-6 py-12">
                 <!-- Header -->
                 <div class="flex justify-between items-center mb-12">
-                    <div
+                    <a href="/index.html"
                         class="text-3xl font-bold bg-gradient-to-r from-violet-900 to-indigo-900 bg-clip-text text-transparent flex items-center">
                         <img src="assets/telth.png" alt="telth" class="w-10 h-10 mb-2 mr-2">
                         Telth.care
-                    </div>
+                    </a>
                     <button type="button" x-on:click="isOpen = false"
                         class="group p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg"
@@ -369,60 +366,48 @@
                                 Solutions
                             </h3>
                             <div class="space-y-4 flex flex-col">
-                                <span class="tooltip">
+                                <a href="/corporates.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Corporates</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Corporates</span>
+                                </a>
+                                <a href="/government-sector.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Government</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Government</span>
+                                </a>
                                 <a href="/care-provider.html"
                                     class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
                                         class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
                                     <span>Care Providers</span>
                                 </a>
-                                <span class="tooltip">
+                                <a href="/clinics-hospitals.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Clinics/Hospitals</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Clinics/Hospitals</span>
+                                </a>
+                                <a href="/NGOs.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>NGOs</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>NGOs</span>
+                                </a>
+                                <a href="/patients.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Patients</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Patients</span>
+                                </a>
+                                <a href="/insurance-providers.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Insurance Providers</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Insurance Providers</span>
+                                </a>
                             </div>
                         </div>
 
@@ -438,30 +423,24 @@
                                 Technologies
                             </h3>
                             <div class="space-y-4 flex flex-col">
-                                <span class="tooltip">
+                                <a href="/p3dsc.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>P3DSC</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Care Providers</span>
+                                </a>
+                                <a href="/digidoc.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Digidoc</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Digidoc</span>
+                                </a>
+                                <a href="/root-cloud.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Root Cloud</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Root Cloud</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -503,74 +482,56 @@
                                         class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
                                     <span>Compact Diagnostic Devices</span>
                                 </a>
-                                <span class="tooltip">
+                                <a href="/smart-wearables-and-iomt-solutions.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300 ml-4">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link ml-4">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Smart Wearables & IoMT</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Smart wearabables & IOMT Solutions</span>
+                                </a>
+                                <a href="/care2home.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Care2Home</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Care2home</span>
+                                </a>
+                                <a href="/care-plan.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Care Plans</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Care Plans</span>
+                                </a>
+                                <a href="/care-plans-for-hospitals.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300 ml-4">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link ml-4">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Hospitals</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>For Hospitals</span>
+                                </a>
+                                <a href="/care-plan-for-patients.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300 ml-4 ">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link ml-4">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Patients</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>For Patients</span>
+                                </a>
+                                <a href="/health-and-wealth-card.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Health and Wealth Card</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Health & Wealth Card</span>
+                                </a>
+                                <a href="/mobile-clinic.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Mobile Clinic</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Mobile Clinic</span>
+                                </a>
+                                <a href="/smart-care-bundle.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Smart Care Bundle</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Smart Care Bundle</span>
+                                </a>
                             </div>
                         </div>
-
-                        <!-- Care Managers Section -->
                         <div
                             class="p-6 bg-gray-100 rounded-2xl backdrop-blur-sm border border-gray-100 hover:bg-violet-100 transition-colors group">
                             <h3 class="text-lg font-semibold text-violet-900 mb-6 flex items-center">
@@ -579,19 +540,25 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                                 </svg>
-                                Care Managers
+                                Support & Services
                             </h3>
                             <div class="space-y-4">
-                                <span class="tooltip">
+                                <a href="/diagnostic-devices.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Training</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>For Diagnostic Devices</span>
+                                </a>
+                                <a href="/clinics-kiosks.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
+                                    <span
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>For Clinincs/Kiosks</span>
+                                </a>
                             </div>
                         </div>
+
+
                     </div>
 
                     <!-- Additional Services -->
@@ -614,24 +581,22 @@
                                         <span class="w-2 h-0.5 bg-gray-400"></span>
                                         <span>Blogs</span>
                                     </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
-                                    <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Training & R&D</span>
-                                    </span>
                                     <span class="tooltiptext">Coming Soon</span>
                                 </span>
-                                <span class="tooltip">
+                                <a href="/r&d.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Support</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Training and R&D</span>
+                                </a>
+                                <!-- <span class="tooltip">
+                                        <span
+                                            class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
+                                            <span class="w-2 h-0.5 bg-gray-400"></span>
+                                            <span>Support</span>
+                                        </span>
+                                        <span class="tooltiptext">Under Development</span>
+                                    </span> -->
                             </div>
                         </div>
 
@@ -647,30 +612,24 @@
                                 Networks & Partnerships
                             </h3>
                             <div class="space-y-4 flex flex-col">
-                                <span class="tooltip">
+                                <a href="/franchise.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Franchise</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Franchise</span>
+                                </a>
+                                <a href="/partnership.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Partnership</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Partnerships</span>
+                                </a>
+                                <a href="/career.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Career</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Career</span>
+                                </a>
                                 <span class="tooltip">
                                     <span
                                         class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
@@ -681,40 +640,61 @@
                                 </span>
                             </div>
                         </div>
+
+                        <!-- Care Managers Section -->
+                        <div
+                            class="p-6 bg-gray-100 rounded-2xl backdrop-blur-sm border border-gray-100 hover:bg-violet-100 transition-colors group">
+                            <h3 class="text-lg font-semibold text-violet-900 mb-6 flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                                Care Managers
+                            </h3>
+                            <div class="space-y-4">
+                                <a href="/training.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
+                                    <span
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Training</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Quick Links -->
                 <div class="mt-12 pt-12 border-t border-gray-200">
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
+                    <div class="grid grid-cols-2 md:grid-cols-3  gap-8 text-center">
                         <a href="/privacy-policy.html"
-                            class="text-violet-700 hover:text-violet-900 text-sm transition-colors">
+                            class="text-violet-700 hover:text-violet-900 hover:underline text-sm transition-colors">
                             Privacy Policy
                         </a>
-                        <span class="tooltip">
-                            <span class="text-gray-400 text-sm transition-colors disabled-link">
-                                Financial Services
+                        <!-- <span class="tooltip">
+                                <span class="text-gray-400 text-sm transition-colors disabled-link">
+                                    Financial Services
+                                </span>
+                                <span class="tooltiptext">Under Development</span>
                             </span>
-                            <span class="tooltiptext">Under Development</span>
-                        </span>
-                        <span class="tooltip">
-                            <span class="text-gray-400 text-sm transition-colors disabled-link">
-                                Infrastructure
+                            <span class="tooltip">
+                                <span class="text-gray-400 text-sm transition-colors disabled-link">
+                                    Infrastructure
+                                </span>
+                                <span class="tooltiptext">Coming Soon</span>
                             </span>
-                            <span class="tooltiptext">Coming Soon</span>
-                        </span>
-                        <span class="tooltip">
-                            <span class="text-gray-400 text-sm transition-colors disabled-link">
-                                Education & Training
-                            </span>
-                            <span class="tooltiptext">Under Development</span>
-                        </span>
+                            <span class="tooltip">
+                                <span class="text-gray-400 text-sm transition-colors disabled-link">
+                                    Education & Training
+                                </span>
+                                <span class="tooltiptext">Under Development</span>
+                            </span> -->
                         <a href="/terms-conditions.html"
-                            class="text-violet-700 hover:text-violet-900 text-sm transition-colors">
+                            class="text-violet-700 hover:text-violet-900 hover:underline text-sm transition-colors">
                             Terms and Conditions
                         </a>
                         <a href="/contact-us.html"
-                            class="text-violet-700 hover:text-violet-900 text-sm transition-colors">
+                            class="text-violet-700 hover:text-violet-900 hover:underline text-sm transition-colors">
                             Contact
                         </a>
                     </div>
@@ -747,11 +727,12 @@
                         <span class="gradient-highlight">Streamline Healthcare Financing.</span><br>
                         <span class="text-gray-800">Enhance Patient Experience.</span>
                     </h1>
-    
+
                     <p class="text-gray-600 mb-8 max-w-3xl text-lg leading-relaxed">
-                        Transform your hospital's payment systems and patient financial experience with innovative prepaid solutions designed specifically for healthcare providers.
+                        Transform your hospital's payment systems and patient financial experience with innovative
+                        prepaid solutions designed specifically for healthcare providers.
                     </p>
-    
+
                     <div class="flex flex-col sm:flex-row gap-4 z-50">
                         <button
                             class="px-6 py-3.5 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg font-medium hover:shadow-lg transition-all duration-300 hover:opacity-90">
@@ -759,11 +740,11 @@
                         </button>
                     </div>
                 </div>
-    
+
                 <!-- Visual content -->
                 <div class="lg:w-1/3 relative">
                     <div class="relative h-80 md:h-96 w-full healthcare-cutout"></div>
-    
+
                     <div class="absolute -bottom-6 -right-6 w-64 h-64 smart-clinic-card p-5 hidden md:block">
                         <div class="flex items-center mb-3">
                             <div
@@ -793,100 +774,104 @@
                     </div>
                 </div>
             </div>
-    
+
             <!-- Trust indicators (still hidden/commented) -->
             <div class="mt-16 pt-8 border-t border-gray-200">
                 <!-- Optional trust badges go here -->
             </div>
         </div>
     </section>
-    
-  <!-- WHY CHOOOSE HEALTH -->
-  <div class="bg-white container mx-auto p-8 mb-20">
-    <div class="text-center mb-10">
-        <h3 class="text-2xl md:text-3xl font-bold mb-4">Why Hospitals Choose Telth Care Plans</h3>
+
+    <!-- WHY CHOOOSE HEALTH -->
+    <div class="bg-white container mx-auto p-8 mb-20">
+        <div class="text-center mb-10">
+            <h3 class="text-2xl md:text-3xl font-bold mb-4">Why Hospitals Choose Telth Care Plans</h3>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+            <!-- Card 1 -->
+            <div class="hes-card bg-white border border-gray-100 shadow-md">
+                <div class="h-28 gradient-bg flex items-center justify-center">
+                    <i class="fas fa-coins text-white text-4xl"></i>
+                </div>
+                <div class="p-6">
+                    <h4 class="font-bold text-lg mb-3">Improve Cash Flow</h4>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Receive payments instantly without billing delays.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="hes-card bg-white border border-gray-100 shadow-md">
+                <div class="h-28 gradient-bg flex items-center justify-center">
+                    <i class="fas fa-file-invoice-dollar text-white text-4xl"></i>
+                </div>
+                <div class="p-6">
+                    <h4 class="font-bold text-lg mb-3">Reduce Administrative Costs</h4>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Minimize paperwork and payment processing expenses.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="hes-card bg-white border border-gray-100 shadow-md">
+                <div class="h-28 gradient-bg flex items-center justify-center">
+                    <i class="fas fa-smile-beam text-white text-4xl"></i>
+                </div>
+                <div class="p-6">
+                    <h4 class="font-bold text-lg mb-3">Enhance Patient Satisfaction</h4>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Offer simplified payment options for better experience.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="hes-card bg-white border border-gray-100 shadow-md">
+                <div class="h-28 gradient-bg flex items-center justify-center">
+                    <i class="fas fa-hand-holding-medical text-white text-4xl"></i>
+                </div>
+                <div class="p-6">
+                    <h4 class="font-bold text-lg mb-3">Expand Your Services</h4>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Attract more patients with flexible payment solutions.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="hes-card bg-white border border-gray-100 shadow-md">
+                <div class="h-28 gradient-bg flex items-center justify-center">
+                    <i class="fas fa-notes-medical text-white text-4xl"></i>
+                </div>
+                <div class="p-6">
+                    <h4 class="font-bold text-lg mb-3">Streamline Insurance Coordination</h4>
+                    <p class="text-gray-600 text-sm mb-4">
+                        Simplify claims processing and co-pay management.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-        <!-- Card 1 -->
-        <div class="hes-card bg-white border border-gray-100 shadow-md">
-            <div class="h-28 gradient-bg flex items-center justify-center">
-                <i class="fas fa-coins text-white text-4xl"></i>
-            </div>
-            <div class="p-6">
-                <h4 class="font-bold text-lg mb-3">Improve Cash Flow</h4>
-                <p class="text-gray-600 text-sm mb-4">
-                    Receive payments instantly without billing delays.
-                </p>
-            </div>
-        </div>
 
-        <!-- Card 2 -->
-        <div class="hes-card bg-white border border-gray-100 shadow-md">
-            <div class="h-28 gradient-bg flex items-center justify-center">
-                <i class="fas fa-file-invoice-dollar text-white text-4xl"></i>
-            </div>
-            <div class="p-6">
-                <h4 class="font-bold text-lg mb-3">Reduce Administrative Costs</h4>
-                <p class="text-gray-600 text-sm mb-4">
-                    Minimize paperwork and payment processing expenses.
-                </p>
-            </div>
-        </div>
-
-        <!-- Card 3 -->
-        <div class="hes-card bg-white border border-gray-100 shadow-md">
-            <div class="h-28 gradient-bg flex items-center justify-center">
-                <i class="fas fa-smile-beam text-white text-4xl"></i>
-            </div>
-            <div class="p-6">
-                <h4 class="font-bold text-lg mb-3">Enhance Patient Satisfaction</h4>
-                <p class="text-gray-600 text-sm mb-4">
-                    Offer simplified payment options for better experience.
-                </p>
-            </div>
-        </div>
-
-        <!-- Card 4 -->
-        <div class="hes-card bg-white border border-gray-100 shadow-md">
-            <div class="h-28 gradient-bg flex items-center justify-center">
-                <i class="fas fa-hand-holding-medical text-white text-4xl"></i>
-            </div>
-            <div class="p-6">
-                <h4 class="font-bold text-lg mb-3">Expand Your Services</h4>
-                <p class="text-gray-600 text-sm mb-4">
-                    Attract more patients with flexible payment solutions.
-                </p>
-            </div>
-        </div>
-
-        <!-- Card 5 -->
-        <div class="hes-card bg-white border border-gray-100 shadow-md">
-            <div class="h-28 gradient-bg flex items-center justify-center">
-                <i class="fas fa-notes-medical text-white text-4xl"></i>
-            </div>
-            <div class="p-6">
-                <h4 class="font-bold text-lg mb-3">Streamline Insurance Coordination</h4>
-                <p class="text-gray-600 text-sm mb-4">
-                    Simplify claims processing and co-pay management.
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-      
     <!-- Main Solutions -->
 
-      <!-- Primary section -->
-      <section class="py-16 md:py-24 px-4 md:px-8 lg:px-16 relative overflow-hidden">
+    <!-- Primary section -->
+    <section class="py-16 md:py-24 px-4 md:px-8 lg:px-16 relative overflow-hidden">
         <!-- Background Elements -->
         <div class="absolute inset-0 z-0">
-            <div class="absolute top-1/3 left-0 w-64 h-64 bg-purple-50 rounded-full opacity-70 transform -translate-x-1/2"></div>
-            <div class="absolute bottom-0 right-0 w-96 h-96 bg-indigo-50 rounded-full opacity-70 transform translate-x-1/3 translate-y-1/3"></div>
+            <div
+                class="absolute top-1/3 left-0 w-64 h-64 bg-purple-50 rounded-full opacity-70 transform -translate-x-1/2">
+            </div>
+            <div
+                class="absolute bottom-0 right-0 w-96 h-96 bg-indigo-50 rounded-full opacity-70 transform translate-x-1/3 translate-y-1/3">
+            </div>
             <div class="absolute top-0 right-1/3 w-48 h-48 bg-violet-50 rounded-full opacity-70"></div>
         </div>
-    
+
         <div class="container mx-auto relative z-10">
             <!-- Section Header -->
             <div class="text-center mb-16 max-w-3xl mx-auto">
@@ -894,109 +879,132 @@
                     Our <span class="text-purple-600">Hospital Care Plan Solutions</span>
                 </h2>
             </div>
-    
+
             <!-- Features Grid -->
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-    
+
                 <!-- Card 1: Cashless Payment System -->
                 <div class="relative group">
-                    <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300 h-full border-t-4 border-purple-500">
+                    <div
+                        class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300 h-full border-t-4 border-purple-500">
                         <div class="absolute -top-5 left-8">
-                            <div class="bg-gradient-to-br from-purple-500 to-indigo-600 w-10 h-10 rounded-lg shadow-lg flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-300">
+                            <div
+                                class="bg-gradient-to-br from-purple-500 to-indigo-600 w-10 h-10 rounded-lg shadow-lg flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-300">
                                 <i class="fas fa-credit-card text-white"></i>
                             </div>
                         </div>
                         <div class="pt-6">
                             <h3 class="text-xl font-bold text-gray-800 mb-4">Cashless Payment System</h3>
                             <p class="text-gray-600">
-                                Implement a seamless payment infrastructure that allows patients to use their Telth Care cards for all services, from consultations to hospital stays, eliminating payment delays and reducing administrative burden.
+                                Implement a seamless payment infrastructure that allows patients to use their Telth Care
+                                cards for all services, from consultations to hospital stays, eliminating payment delays
+                                and reducing administrative burden.
                             </p>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Card 2: Patient Financial Planning -->
                 <div class="relative group">
-                    <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300 h-full border-t-4 border-indigo-500">
+                    <div
+                        class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300 h-full border-t-4 border-indigo-500">
                         <div class="absolute -top-5 left-8">
-                            <div class="bg-gradient-to-br from-indigo-500 to-blue-600 w-10 h-10 rounded-lg shadow-lg flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-300">
+                            <div
+                                class="bg-gradient-to-br from-indigo-500 to-blue-600 w-10 h-10 rounded-lg shadow-lg flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-300">
                                 <i class="fas fa-piggy-bank text-white"></i>
                             </div>
                         </div>
                         <div class="pt-6">
                             <h3 class="text-xl font-bold text-gray-800 mb-4">Patient Financial Planning</h3>
                             <p class="text-gray-600">
-                                Help patients prepare for healthcare expenses with dedicated healthcare funds that can be pre-loaded for planned procedures or ongoing treatments, reducing financial stress and payment uncertainty.
+                                Help patients prepare for healthcare expenses with dedicated healthcare funds that can
+                                be pre-loaded for planned procedures or ongoing treatments, reducing financial stress
+                                and payment uncertainty.
                             </p>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Card 3: Insurance Integration Platform -->
                 <div class="relative group">
-                    <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300 h-full border-t-4 border-violet-500">
+                    <div
+                        class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300 h-full border-t-4 border-violet-500">
                         <div class="absolute -top-5 left-8">
-                            <div class="bg-gradient-to-br from-violet-500 to-purple-600 w-10 h-10 rounded-lg shadow-lg flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-300">
+                            <div
+                                class="bg-gradient-to-br from-violet-500 to-purple-600 w-10 h-10 rounded-lg shadow-lg flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-300">
                                 <i class="fas fa-file-medical text-white"></i>
                             </div>
                         </div>
                         <div class="pt-6">
                             <h3 class="text-xl font-bold text-gray-800 mb-4">Insurance Integration Platform</h3>
                             <p class="text-gray-600">
-                                Connect your billing systems with our prepaid care solutions that work alongside insurance plans, allowing for easy management of co-pays, deductibles, and out-of-pocket expenses.
+                                Connect your billing systems with our prepaid care solutions that work alongside
+                                insurance plans, allowing for easy management of co-pays, deductibles, and out-of-pocket
+                                expenses.
                             </p>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Card 4: Corporate Healthcare Partnerships -->
                 <div class="relative group">
-                    <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300 h-full border-t-4 border-blue-500">
+                    <div
+                        class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300 h-full border-t-4 border-blue-500">
                         <div class="absolute -top-5 left-8">
-                            <div class="bg-gradient-to-br from-blue-500 to-cyan-600 w-10 h-10 rounded-lg shadow-lg flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-300">
+                            <div
+                                class="bg-gradient-to-br from-blue-500 to-cyan-600 w-10 h-10 rounded-lg shadow-lg flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-300">
                                 <i class="fas fa-briefcase-medical text-white"></i>
                             </div>
                         </div>
                         <div class="pt-6">
                             <h3 class="text-xl font-bold text-gray-800 mb-4">Corporate Healthcare Partnerships</h3>
                             <p class="text-gray-600">
-                                Establish relationships with employers who use Telth's corporate care plans, creating a network of pre-approved patients with guaranteed payment systems for your services.
+                                Establish relationships with employers who use Telth's corporate care plans, creating a
+                                network of pre-approved patients with guaranteed payment systems for your services.
                             </p>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Card 5: Implementation Process - Part 1 -->
                 <div class="relative group md:col-span-2 lg:col-span-1">
-                    <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300 h-full border-t-4 border-indigo-500">
+                    <div
+                        class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300 h-full border-t-4 border-indigo-500">
                         <div class="absolute -top-5 left-8">
-                            <div class="bg-gradient-to-br from-indigo-500 to-purple-600 w-10 h-10 rounded-lg shadow-lg flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-300">
+                            <div
+                                class="bg-gradient-to-br from-indigo-500 to-purple-600 w-10 h-10 rounded-lg shadow-lg flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-300">
                                 <i class="fas fa-cogs text-white"></i>
                             </div>
                         </div>
                         <div class="pt-6">
                             <h3 class="text-xl font-bold text-gray-800 mb-4">Implementation Process</h3>
                             <p class="text-gray-600">
-                                <strong>Assessment:</strong> Evaluation of your current payment systems and patient financial pain points.<br>
-                                <strong>Integration Plan:</strong> Custom strategy to incorporate care plans into your existing infrastructure.
+                                <strong>Assessment:</strong> Evaluation of your current payment systems and patient
+                                financial pain points.<br>
+                                <strong>Integration Plan:</strong> Custom strategy to incorporate care plans into your
+                                existing infrastructure.
                             </p>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- Card 6: Implementation Process - Part 2 -->
                 <div class="relative group md:col-span-2 lg:col-span-1">
-                    <div class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300 h-full border-t-4 border-purple-500">
+                    <div
+                        class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300 h-full border-t-4 border-purple-500">
                         <div class="absolute -top-5 left-8">
-                            <div class="bg-gradient-to-br from-purple-500 to-pink-600 w-10 h-10 rounded-lg shadow-lg flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-300">
+                            <div
+                                class="bg-gradient-to-br from-purple-500 to-pink-600 w-10 h-10 rounded-lg shadow-lg flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-300">
                                 <i class="fas fa-chalkboard-teacher text-white"></i>
                             </div>
                         </div>
                         <div class="pt-6">
                             <h3 class="text-xl font-bold text-gray-800 mb-4">Training & Support</h3>
                             <p class="text-gray-600">
-                                <strong>Staff Training:</strong> Comprehensive education on the new payment systems and patient financial options.<br>
-                                <strong>Rollout & Support:</strong> Phased implementation with ongoing technical and operational assistance.
+                                <strong>Staff Training:</strong> Comprehensive education on the new payment systems and
+                                patient financial options.<br>
+                                <strong>Rollout & Support:</strong> Phased implementation with ongoing technical and
+                                operational assistance.
                             </p>
                         </div>
                     </div>
@@ -1004,91 +1012,96 @@
             </div>
         </div>
     </section>
-    
-    
 
 
 
-  <!-- IMPLEMENTATION -->
-  <section class="py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-purple-50 to-blue-50">
-    <div class="container mx-auto">
-        <!-- Section Header -->
-        <div class="mb-6">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mt-3 mb-6">
-                Implementation Process
-            </h2>
-            <div class="w-full h-px bg-gradient-to-r from-purple-400 to-blue-400 mt-6 mb-10"></div>
+
+
+    <!-- IMPLEMENTATION -->
+    <section class="py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-purple-50 to-blue-50">
+        <div class="container mx-auto">
+            <!-- Section Header -->
+            <div class="mb-6">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mt-3 mb-6">
+                    Implementation Process
+                </h2>
+                <div class="w-full h-px bg-gradient-to-r from-purple-400 to-blue-400 mt-6 mb-10"></div>
+            </div>
+
+            <!-- Steps Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Step 1: Assessment -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
+                    <div class="mb-5">
+                        <h3 class="text-xl font-bold text-gray-800 mt-2">Assessment</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Evaluation of your current payment systems and patient financial pain points.
+                    </p>
+                    <div
+                        class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
+                        <i class="fas fa-search-dollar text-purple-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                </div>
+
+                <!-- Step 2: Integration Plan -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
+                    <div class="mb-5">
+                        <h3 class="text-xl font-bold text-gray-800 mt-2">Integration Plan</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Custom strategy to incorporate care plans into your existing infrastructure.
+                    </p>
+                    <div
+                        class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
+                        <i class="fas fa-network-wired text-purple-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                </div>
+
+                <!-- Step 3: Staff Training -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
+                    <div class="mb-5">
+                        <h3 class="text-xl font-bold text-gray-800 mt-2">Staff Training</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Comprehensive education on the new payment systems and patient financial options.
+                    </p>
+                    <div
+                        class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
+                        <i
+                            class="fas fa-chalkboard-teacher text-purple-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                </div>
+
+                <!-- Step 4: Rollout & Support -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
+                    <div class="mb-5">
+                        <h3 class="text-xl font-bold text-gray-800 mt-2">Rollout & Support</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Phased implementation with ongoing technical and operational assistance.
+                    </p>
+                    <div
+                        class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
+                        <i class="fas fa-tools text-purple-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- Steps Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Step 1: Assessment -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
-                <div class="mb-5">
-                    <h3 class="text-xl font-bold text-gray-800 mt-2">Assessment</h3>
-                </div>
-                <p class="text-gray-600">
-                    Evaluation of your current payment systems and patient financial pain points.
-                </p>
-                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
-                    <i class="fas fa-search-dollar text-purple-600 group-hover:text-white transition-colors"></i>
-                </div>
-            </div>
-
-            <!-- Step 2: Integration Plan -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
-                <div class="mb-5">
-                    <h3 class="text-xl font-bold text-gray-800 mt-2">Integration Plan</h3>
-                </div>
-                <p class="text-gray-600">
-                    Custom strategy to incorporate care plans into your existing infrastructure.
-                </p>
-                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
-                    <i class="fas fa-network-wired text-purple-600 group-hover:text-white transition-colors"></i>
-                </div>
-            </div>
-
-            <!-- Step 3: Staff Training -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
-                <div class="mb-5">
-                    <h3 class="text-xl font-bold text-gray-800 mt-2">Staff Training</h3>
-                </div>
-                <p class="text-gray-600">
-                    Comprehensive education on the new payment systems and patient financial options.
-                </p>
-                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
-                    <i class="fas fa-chalkboard-teacher text-purple-600 group-hover:text-white transition-colors"></i>
-                </div>
-            </div>
-
-            <!-- Step 4: Rollout & Support -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
-                <div class="mb-5">
-                    <h3 class="text-xl font-bold text-gray-800 mt-2">Rollout & Support</h3>
-                </div>
-                <p class="text-gray-600">
-                    Phased implementation with ongoing technical and operational assistance.
-                </p>
-                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
-                    <i class="fas fa-tools text-purple-600 group-hover:text-white transition-colors"></i>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+    </section>
 
 
 
 
 
 
-<!-- Table -->
+    <!-- Table -->
     <section class="py-8 px-4  container mx-auto">
         <!-- Section Header -->
         <div class="text-center mb-12">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Key Benefits for Different Hospital Types</h2>
             <div class="w-20 h-1 bg-purple-600 mx-auto mb-6"></div>
-            
+
         </div>
 
         <!-- Table-like Header Row -->
@@ -1143,7 +1156,8 @@
                     <div class="mb-2 sm:mb-0 sm:mr-3 text-green-600">
                         <i class="fas fa-calendar-check"></i>
                     </div>
-                    <p class="text-gray-600">Simplified payment for high-cost procedures, treatment financing options.</p>
+                    <p class="text-gray-600">Simplified payment for high-cost procedures, treatment financing options.
+                    </p>
                 </div>
             </div>
         </div>
@@ -1198,380 +1212,406 @@
     </section>
 
 
-         <!--  ROI for Insurance Providers - Data Dashboard Style -->
-         <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-50 to-violet-50 relative overflow-hidden">
-            <!-- Decorative elements -->
-            <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-blue-100 to-transparent opacity-30"></div>
-            <div class="absolute bottom-0 left-0 w-32 h-32 rounded-full bg-indigo-200 filter blur-3xl opacity-40"></div>
-        
-            <div class="max-w-7xl mx-auto relative z-10">
-                <div class="text-center mb-16">
-                    <h2 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">
-                        <span class="block">Financial Impact for Your</span>
-                        <span class="block text-indigo-600">Hospital</span>
-                    </h2>
-                </div>
-        
-                <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-                    <!-- Financial Impact Metric 1 -->
-                    <div class="bg-white rounded-xl shadow-lg p-8 text-center border-t-4 border-indigo-500 transform transition-all duration-300">
-                        <div class="text-5xl font-bold text-indigo-600 mb-4">30%</div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Reduction in Billing Administration Costs</h3>
-                        <p class="text-gray-600">Streamlined processes lead to significant savings</p>
-                        <div class="mt-6">
-                            <div class="h-2 bg-gradient-to-r from-indigo-100 to-indigo-300 rounded-full overflow-hidden">
-                                <div class="h-full bg-indigo-500 rounded-full" style="width: 70%"></div>
-                            </div>
-                            <div class="flex justify-between text-xs text-gray-500 mt-1">
-                                <span>Before</span>
-                                <span>After</span>
-                            </div>
-                        </div>
-                    </div>
-        
-                    <!-- Financial Impact Metric 2 -->
-                    <div class="bg-white rounded-xl shadow-lg p-8 text-center border-t-4 border-blue-500 transform transition-all duration-300">
-                        <div class="text-5xl font-bold text-blue-600 mb-4">40%</div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Faster Payment Processing Time</h3>
-                        <p class="text-gray-600">Reduced time to process payments with improved systems</p>
-                        <div class="mt-6">
-                            <div class="radial-progress text-blue-500 mx-auto" style="--value:75; --size:5rem; --thickness: 6px;">75%</div>
-                            <div class="text-sm text-gray-500 mt-2">Of baseline processing time</div>
-                        </div>
-                    </div>
-        
-                    <!-- Financial Impact Metric 3 -->
-                    <div class="bg-white rounded-xl shadow-lg p-8 text-center border-t-4 border-purple-500 transform transition-all duration-300 md:col-span-2 lg:col-span-1">
-                        <div class="flex items-center justify-center mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-purple-500 mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
-                            </svg>
-                            <span class="text-3xl font-bold text-purple-600">↓ 25%</span>
-                        </div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Decrease in Payment Collection Efforts</h3>
-                        <p class="text-gray-600">More efficient collection processes result in fewer resources spent</p>
-                        <div class="mt-4 flex justify-center">
-                            <div class="text-xs bg-purple-100 text-purple-800 px-3 py-1 rounded-full">Improved Cash Flow</div>
-                        </div>
-                    </div>
-        
-                    <!-- Financial Impact Metric 4 (Adjusted) -->
-                    <div class="bg-white rounded-xl shadow-lg p-8 text-center border-t-4 border-green-500 transform transition-all duration-300 md:col-span-3">
-                        <div class="text-5xl font-bold text-green-600 mb-4">+15%</div>
-                        <h3 class="text-xl font-semibold text-gray-800 mb-3">Improvement in Patient Financial Satisfaction Scores</h3>
-                        <p class="text-gray-600">Increase in satisfaction with financial processes and billing transparency</p>
-                        <div class="mt-6">
-                            <div class="h-2 bg-gradient-to-r from-green-100 to-green-300 rounded-full overflow-hidden">
-                                <div class="h-full bg-green-500 rounded-full" style="width: 80%"></div>
-                            </div>
-                            <div class="flex justify-between text-xs text-gray-500 mt-1">
-                                <span>Before</span>
-                                <span>After</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        
-               
+    <!--  ROI for Insurance Providers - Data Dashboard Style -->
+    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-50 to-violet-50 relative overflow-hidden">
+        <!-- Decorative elements -->
+        <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-blue-100 to-transparent opacity-30"></div>
+        <div class="absolute bottom-0 left-0 w-32 h-32 rounded-full bg-indigo-200 filter blur-3xl opacity-40"></div>
+
+        <div class="max-w-7xl mx-auto relative z-10">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">
+                    <span class="block">Financial Impact for Your</span>
+                    <span class="block text-indigo-600">Hospital</span>
+                </h2>
             </div>
-        </section>
-        
-        <div class="container mx-auto px-4 py-12 md:py-16">
-            <div class="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
-                <!-- Left Side - Features Content -->
-                <div class="w-full lg:w-1/2" x-data="{ activeTab: null }">
-                    <div class="mb-6">
-                        <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mt-3">
-                            Hospital Operational Benefits
-                        </h1>
+
+            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+                <!-- Financial Impact Metric 1 -->
+                <div
+                    class="bg-white rounded-xl shadow-lg p-8 text-center border-t-4 border-indigo-500 transform transition-all duration-300">
+                    <div class="text-5xl font-bold text-indigo-600 mb-4">30%</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Reduction in Billing Administration Costs</h3>
+                    <p class="text-gray-600">Streamlined processes lead to significant savings</p>
+                    <div class="mt-6">
+                        <div class="h-2 bg-gradient-to-r from-indigo-100 to-indigo-300 rounded-full overflow-hidden">
+                            <div class="h-full bg-indigo-500 rounded-full" style="width: 70%"></div>
+                        </div>
+                        <div class="flex justify-between text-xs text-gray-500 mt-1">
+                            <span>Before</span>
+                            <span>After</span>
+                        </div>
                     </div>
-        
-                    <!-- Collapsible Features -->
-                    <div class="space-y-4">
-                        <!-- Predictable Revenue Streams -->
-                        <div class="border border-gray-200 rounded-lg bg-white overflow-hidden">
-                            <div @click="activeTab = activeTab === 1 ? null : 1"
-                                class="features_accordion_header flex justify-between items-center p-5 bg-white">
-                                <h3 class="text-lg font-semibold text-gray-800">Predictable Revenue Streams</h3>
-                                <span class="features_chevron" :class="{'transform rotate-180': activeTab === 1}">
-                                    <i class="fas fa-chevron-down text-gray-500"></i>
-                                </span>
-                            </div>
-                            <div x-show="activeTab === 1" x-collapse x-cloak>
-                                <div class="px-5 pb-5">
-                                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
-                                        <li>Better financial forecasting with pre-funded care</li>
-                                    </ul>
-                                </div>
+                </div>
+
+                <!-- Financial Impact Metric 2 -->
+                <div
+                    class="bg-white rounded-xl shadow-lg p-8 text-center border-t-4 border-blue-500 transform transition-all duration-300">
+                    <div class="text-5xl font-bold text-blue-600 mb-4">40%</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Faster Payment Processing Time</h3>
+                    <p class="text-gray-600">Reduced time to process payments with improved systems</p>
+                    <div class="mt-6">
+                        <div class="radial-progress text-blue-500 mx-auto"
+                            style="--value:75; --size:5rem; --thickness: 6px;">75%</div>
+                        <div class="text-sm text-gray-500 mt-2">Of baseline processing time</div>
+                    </div>
+                </div>
+
+                <!-- Financial Impact Metric 3 -->
+                <div
+                    class="bg-white rounded-xl shadow-lg p-8 text-center border-t-4 border-purple-500 transform transition-all duration-300 md:col-span-2 lg:col-span-1">
+                    <div class="flex items-center justify-center mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-purple-500 mr-3" fill="none"
+                            viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
+                        <span class="text-3xl font-bold text-purple-600">↓ 25%</span>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Decrease in Payment Collection Efforts</h3>
+                    <p class="text-gray-600">More efficient collection processes result in fewer resources spent</p>
+                    <div class="mt-4 flex justify-center">
+                        <div class="text-xs bg-purple-100 text-purple-800 px-3 py-1 rounded-full">Improved Cash Flow
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Financial Impact Metric 4 (Adjusted) -->
+                <div
+                    class="bg-white rounded-xl shadow-lg p-8 text-center border-t-4 border-green-500 transform transition-all duration-300 md:col-span-3">
+                    <div class="text-5xl font-bold text-green-600 mb-4">+15%</div>
+                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Improvement in Patient Financial Satisfaction
+                        Scores</h3>
+                    <p class="text-gray-600">Increase in satisfaction with financial processes and billing transparency
+                    </p>
+                    <div class="mt-6">
+                        <div class="h-2 bg-gradient-to-r from-green-100 to-green-300 rounded-full overflow-hidden">
+                            <div class="h-full bg-green-500 rounded-full" style="width: 80%"></div>
+                        </div>
+                        <div class="flex justify-between text-xs text-gray-500 mt-1">
+                            <span>Before</span>
+                            <span>After</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <div class="container mx-auto px-4 py-12 md:py-16">
+        <div class="flex flex-col lg:flex-row gap-8 lg:gap-16 items-start">
+            <!-- Left Side - Features Content -->
+            <div class="w-full lg:w-1/2" x-data="{ activeTab: null }">
+                <div class="mb-6">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mt-3">
+                        Hospital Operational Benefits
+                    </h1>
+                </div>
+
+                <!-- Collapsible Features -->
+                <div class="space-y-4">
+                    <!-- Predictable Revenue Streams -->
+                    <div class="border border-gray-200 rounded-lg bg-white overflow-hidden">
+                        <div @click="activeTab = activeTab === 1 ? null : 1"
+                            class="features_accordion_header flex justify-between items-center p-5 bg-white">
+                            <h3 class="text-lg font-semibold text-gray-800">Predictable Revenue Streams</h3>
+                            <span class="features_chevron" :class="{'transform rotate-180': activeTab === 1}">
+                                <i class="fas fa-chevron-down text-gray-500"></i>
+                            </span>
+                        </div>
+                        <div x-show="activeTab === 1" x-collapse x-cloak>
+                            <div class="px-5 pb-5">
+                                <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                                    <li>Better financial forecasting with pre-funded care</li>
+                                </ul>
                             </div>
                         </div>
-        
-                        <!-- Reduced Accounts Receivable -->
-                        <div class="border border-gray-200 rounded-lg bg-white overflow-hidden">
-                            <div @click="activeTab = activeTab === 2 ? null : 2"
-                                class="features_accordion_header flex justify-between items-center p-5 bg-white">
-                                <h3 class="text-lg font-semibold text-gray-800">Reduced Accounts Receivable</h3>
-                                <span class="features_chevron" :class="{'transform rotate-180': activeTab === 2}">
-                                    <i class="fas fa-chevron-down text-gray-500"></i>
-                                </span>
-                            </div>
-                            <div x-show="activeTab === 2" x-collapse x-cloak>
-                                <div class="px-5 pb-5">
-                                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
-                                        <li>Minimize outstanding patient balances</li>
-                                    </ul>
-                                </div>
+                    </div>
+
+                    <!-- Reduced Accounts Receivable -->
+                    <div class="border border-gray-200 rounded-lg bg-white overflow-hidden">
+                        <div @click="activeTab = activeTab === 2 ? null : 2"
+                            class="features_accordion_header flex justify-between items-center p-5 bg-white">
+                            <h3 class="text-lg font-semibold text-gray-800">Reduced Accounts Receivable</h3>
+                            <span class="features_chevron" :class="{'transform rotate-180': activeTab === 2}">
+                                <i class="fas fa-chevron-down text-gray-500"></i>
+                            </span>
+                        </div>
+                        <div x-show="activeTab === 2" x-collapse x-cloak>
+                            <div class="px-5 pb-5">
+                                <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                                    <li>Minimize outstanding patient balances</li>
+                                </ul>
                             </div>
                         </div>
-        
-                        <!-- Decreased Collection Costs -->
-                        <div class="border border-gray-200 rounded-lg bg-white overflow-hidden">
-                            <div @click="activeTab = activeTab === 3 ? null : 3"
-                                class="features_accordion_header flex justify-between items-center p-5 bg-white">
-                                <h3 class="text-lg font-semibold text-gray-800">Decreased Collection Costs</h3>
-                                <span class="features_chevron" :class="{'transform rotate-180': activeTab === 3}">
-                                    <i class="fas fa-chevron-down text-gray-500"></i>
-                                </span>
-                            </div>
-                            <div x-show="activeTab === 3" x-collapse x-cloak>
-                                <div class="px-5 pb-5">
-                                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
-                                        <li>Less need for follow-up billing and collections</li>
-                                    </ul>
-                                </div>
+                    </div>
+
+                    <!-- Decreased Collection Costs -->
+                    <div class="border border-gray-200 rounded-lg bg-white overflow-hidden">
+                        <div @click="activeTab = activeTab === 3 ? null : 3"
+                            class="features_accordion_header flex justify-between items-center p-5 bg-white">
+                            <h3 class="text-lg font-semibold text-gray-800">Decreased Collection Costs</h3>
+                            <span class="features_chevron" :class="{'transform rotate-180': activeTab === 3}">
+                                <i class="fas fa-chevron-down text-gray-500"></i>
+                            </span>
+                        </div>
+                        <div x-show="activeTab === 3" x-collapse x-cloak>
+                            <div class="px-5 pb-5">
+                                <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                                    <li>Less need for follow-up billing and collections</li>
+                                </ul>
                             </div>
                         </div>
-        
-                        <!-- Simplified Reconciliation -->
-                        <div class="border border-gray-200 rounded-lg bg-white overflow-hidden">
-                            <div @click="activeTab = activeTab === 4 ? null : 4"
-                                class="features_accordion_header flex justify-between items-center p-5 bg-white">
-                                <h3 class="text-lg font-semibold text-gray-800">Simplified Reconciliation</h3>
-                                <span class="features_chevron" :class="{'transform rotate-180': activeTab === 4}">
-                                    <i class="fas fa-chevron-down text-gray-500"></i>
-                                </span>
-                            </div>
-                            <div x-show="activeTab === 4" x-collapse x-cloak>
-                                <div class="px-5 pb-5">
-                                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
-                                        <li>Easier accounting with standardized payment processing</li>
-                                    </ul>
-                                </div>
+                    </div>
+
+                    <!-- Simplified Reconciliation -->
+                    <div class="border border-gray-200 rounded-lg bg-white overflow-hidden">
+                        <div @click="activeTab = activeTab === 4 ? null : 4"
+                            class="features_accordion_header flex justify-between items-center p-5 bg-white">
+                            <h3 class="text-lg font-semibold text-gray-800">Simplified Reconciliation</h3>
+                            <span class="features_chevron" :class="{'transform rotate-180': activeTab === 4}">
+                                <i class="fas fa-chevron-down text-gray-500"></i>
+                            </span>
+                        </div>
+                        <div x-show="activeTab === 4" x-collapse x-cloak>
+                            <div class="px-5 pb-5">
+                                <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                                    <li>Easier accounting with standardized payment processing</li>
+                                </ul>
                             </div>
                         </div>
-        
-                        <!-- Enhanced Reporting -->
-                        <div class="border border-gray-200 rounded-lg bg-white overflow-hidden">
-                            <div @click="activeTab = activeTab === 5 ? null : 5"
-                                class="features_accordion_header flex justify-between items-center p-5 bg-white">
-                                <h3 class="text-lg font-semibold text-gray-800">Enhanced Reporting</h3>
-                                <span class="features_chevron" :class="{'transform rotate-180': activeTab === 5}">
-                                    <i class="fas fa-chevron-down text-gray-500"></i>
-                                </span>
-                            </div>
-                            <div x-show="activeTab === 5" x-collapse x-cloak>
-                                <div class="px-5 pb-5">
-                                    <ul class="list-disc pl-5 space-y-2 text-gray-600">
-                                        <li>Better insights into service utilization and revenue patterns</li>
-                                    </ul>
-                                </div>
+                    </div>
+
+                    <!-- Enhanced Reporting -->
+                    <div class="border border-gray-200 rounded-lg bg-white overflow-hidden">
+                        <div @click="activeTab = activeTab === 5 ? null : 5"
+                            class="features_accordion_header flex justify-between items-center p-5 bg-white">
+                            <h3 class="text-lg font-semibold text-gray-800">Enhanced Reporting</h3>
+                            <span class="features_chevron" :class="{'transform rotate-180': activeTab === 5}">
+                                <i class="fas fa-chevron-down text-gray-500"></i>
+                            </span>
+                        </div>
+                        <div x-show="activeTab === 5" x-collapse x-cloak>
+                            <div class="px-5 pb-5">
+                                <ul class="list-disc pl-5 space-y-2 text-gray-600">
+                                    <li>Better insights into service utilization and revenue patterns</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
-        
-                <!-- Right Side - Image (Fixed Height) -->
-                <div class="w-full lg:w-1/2 sticky top-8">
-                    <div class="bg-gray-200 rounded-lg flex items-center justify-center"
-                        style="height: 550px; min-height: 550px;">
-                        <div class="text-center">
-                            <p class="text-gray-500">Image Placeholder</p>
-                            <p class="text-gray-400 text-sm">(Your Care2Home process visualization will appear here)</p>
-                        </div>
+            </div>
+
+            <!-- Right Side - Image (Fixed Height) -->
+            <div class="w-full lg:w-1/2 sticky top-8">
+                <div class="bg-gray-200 rounded-lg flex items-center justify-center"
+                    style="height: 550px; min-height: 550px;">
+                    <div class="text-center">
+                        <p class="text-gray-500">Image Placeholder</p>
+                        <p class="text-gray-400 text-sm">(Your Care2Home process visualization will appear here)</p>
                     </div>
                 </div>
             </div>
         </div>
-        
+    </div>
 
-        <section
+
+    <section
         class="container mx-auto my-8 px-4 md:px-10 py-10 bg-gradient-to-br from-blue-900 via-indigo-900 to-purple-900 sm:rounded-2xl shadow-2xl overflow-hidden relative">
 
-    <!-- Decorative elements -->
-    <div class="absolute top-0 left-0 w-full h-full overflow-hidden">
-        <div
-            class="absolute top-0 right-0 w-32 h-32 bg-blue-500 rounded-full opacity-10 blur-xl transform translate-x-10 -translate-y-10">
-        </div>
-        <div
-            class="absolute bottom-0 left-0 w-40 h-40 bg-purple-500 rounded-full opacity-10 blur-xl transform -translate-x-10 translate-y-10">
-        </div>
-        <div class="absolute top-1/3 left-1/4 w-24 h-24 bg-teal-500 rounded-full opacity-10 blur-xl"></div>
-    </div>
-
-    <!-- Content -->
-    <div class="relative z-10">
-        <div class="flex items-center space-x-2 mb-6">
-            <div class="h-1 w-10 bg-teal-400 rounded-full"></div>
-            <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">
-                Special Features for Hospitals</h2>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8">
-            <!-- Card 1 -->
+        <!-- Decorative elements -->
+        <div class="absolute top-0 left-0 w-full h-full overflow-hidden">
             <div
-                class="bg-gray-800 bg-opacity-70 p-6 rounded-xl border border-gray-700 hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-1 group">
-                <div class="flex items-center mb-4">
-                    <div
-                        class="w-10 h-10 bg-gradient-to-r from-teal-400 to-teal-600 rounded-lg flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
-                        <i class="fas fa-tachometer-alt"></i>
-                    </div>
-                    <h3 class="ml-3 font-semibold text-lg text-white">Advanced Analytics Dashboard</h3>
-                </div>
-                <p class="text-gray-300">Monitor payment patterns, service utilization, and financial performance with real-time analytics tools designed specifically for healthcare financial management.</p>
+                class="absolute top-0 right-0 w-32 h-32 bg-blue-500 rounded-full opacity-10 blur-xl transform translate-x-10 -translate-y-10">
             </div>
-
-            <!-- Card 2 -->
             <div
-                class="bg-gray-800 bg-opacity-70 p-6 rounded-xl border border-gray-700 hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-1 group">
-                <div class="flex items-center mb-4">
-                    <div
-                        class="w-10 h-10 bg-gradient-to-r from-blue-400 to-blue-600 rounded-lg flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
-                        <i class="fas fa-users-cog"></i>
-                    </div>
-                    <h3 class="ml-3 font-semibold text-lg text-white">Multi-Department Coordination</h3>
-                </div>
-                <p class="text-gray-300">Simplify internal billing across various hospital departments with a unified payment system that tracks patient care across the entire hospital journey.</p>
+                class="absolute bottom-0 left-0 w-40 h-40 bg-purple-500 rounded-full opacity-10 blur-xl transform -translate-x-10 translate-y-10">
             </div>
-
-            <!-- Card 3 -->
-            <div
-                class="bg-gray-800 bg-opacity-70 p-6 rounded-xl border border-gray-700 hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-1 group">
-                <div class="flex items-center mb-4">
-                    <div
-                        class="w-10 h-10 bg-gradient-to-r from-purple-400 to-purple-600 rounded-lg flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
-                        <i class="fas fa-hand-holding-heart"></i>
-                    </div>
-                    <h3 class="ml-3 font-semibold text-lg text-white">Patient Financial Counseling Tools</h3>
-                </div>
-                <p class="text-gray-300">Equip your staff with resources to help patients understand their payment options, including care plans that can help them budget for healthcare expenses.</p>
-            </div>
-
-            <!-- Card 4 -->
-            <div
-                class="bg-gray-800 bg-opacity-70 p-6 rounded-xl border border-gray-700 hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-1 group md:col-span-2 lg:col-span-1">
-                <div class="flex items-center mb-4">
-                    <div
-                        class="w-10 h-10 bg-gradient-to-r from-green-400 to-green-600 rounded-lg flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
-                        <i class="fas fa-globe-americas"></i>
-                    </div>
-                    <h3 class="ml-3 font-semibold text-lg text-white">International Patient Support</h3>
-                </div>
-                <p class="text-gray-300">Accept payments from international patients through our cross-border healthcare payment solutions, eliminating currency exchange complications.</p>
-            </div>
+            <div class="absolute top-1/3 left-1/4 w-24 h-24 bg-teal-500 rounded-full opacity-10 blur-xl"></div>
         </div>
 
-        <!-- Pulse animation -->
-        <div class="absolute bottom-4 right-4 w-16 h-16 flex items-center justify-center">
-            <span class="animate-ping absolute h-12 w-12 rounded-full bg-blue-400 opacity-20"></span>
-            <span
-                class="relative rounded-full h-8 w-8 bg-gradient-to-r from-blue-500 to-teal-400 flex items-center justify-center">
-                <i class="fas fa-brain text-white text-sm"></i>
-            </span>
-        </div>
-    </div>
-</section>
-
-
-    
-        
-<section class="py-10 px-4 sm:px-6 lg:px-8 bg-gray-50 relative">
-    <!-- Stage Platform -->
-    <div class="max-w-7xl mx-auto bg-white rounded-3xl border overflow-hidden relative z-10">
-        <!-- Stage Edge Lighting -->
-        <div class="absolute -inset-1 bg-gradient-to-r from-yellow-400 to-red-500 rounded-xl opacity-20 blur"></div>
-
-        <div class="relative bg-white rounded-xl p-8 sm:p-12">
-            <!-- Spotlight Effect -->
-            <div class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full bg-yellow-100 filter blur-3xl opacity-30"></div>
-
-            <div class="text-center mb-12 relative z-10">
-                <h2 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">
-                    <span class="block">Patient Experience Enhancement</span>
-                </h2>
-                <div class="mt-4 h-1 w-24 bg-violet-600 mx-auto rounded-full"></div>
+        <!-- Content -->
+        <div class="relative z-10">
+            <div class="flex items-center space-x-2 mb-6">
+                <div class="h-1 w-10 bg-teal-400 rounded-full"></div>
+                <h2 class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-teal-400 to-blue-500">
+                    Special Features for Hospitals</h2>
             </div>
 
-            <div class="grid gap-8 md:grid-cols-2">
-                <!-- Benefit 1 -->
-                <div class="flex items-start">
-                    <div class="flex-shrink-0 bg-violet-100 rounded-lg p-3 mr-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4" />
-                        </svg>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-8">
+                <!-- Card 1 -->
+                <div
+                    class="bg-gray-800 bg-opacity-70 p-6 rounded-xl border border-gray-700 hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-1 group">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-r from-teal-400 to-teal-600 rounded-lg flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-tachometer-alt"></i>
+                        </div>
+                        <h3 class="ml-3 font-semibold text-lg text-white">Advanced Analytics Dashboard</h3>
                     </div>
-                    <div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-1">Transparent Cost Structure</h3>
-                        <p class="text-gray-600">Clear presentation of healthcare expenses</p>
-                    </div>
+                    <p class="text-gray-300">Monitor payment patterns, service utilization, and financial performance
+                        with real-time analytics tools designed specifically for healthcare financial management.</p>
                 </div>
 
-                <!-- Benefit 2 -->
-                <div class="flex items-start">
-                    <div class="flex-shrink-0 bg-violet-100 rounded-lg p-3 mr-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12" />
-                        </svg>
+                <!-- Card 2 -->
+                <div
+                    class="bg-gray-800 bg-opacity-70 p-6 rounded-xl border border-gray-700 hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-1 group">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-r from-blue-400 to-blue-600 rounded-lg flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-users-cog"></i>
+                        </div>
+                        <h3 class="ml-3 font-semibold text-lg text-white">Multi-Department Coordination</h3>
                     </div>
-                    <div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-1">Financial Peace of Mind</h3>
-                        <p class="text-gray-600">Patients know their care is pre-funded</p>
-                    </div>
+                    <p class="text-gray-300">Simplify internal billing across various hospital departments with a
+                        unified payment system that tracks patient care across the entire hospital journey.</p>
                 </div>
 
-                <!-- Benefit 3 -->
-                <div class="flex items-start">
-                    <div class="flex-shrink-0 bg-violet-100 rounded-lg p-3 mr-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
+                <!-- Card 3 -->
+                <div
+                    class="bg-gray-800 bg-opacity-70 p-6 rounded-xl border border-gray-700 hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-1 group">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-r from-purple-400 to-purple-600 rounded-lg flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-hand-holding-heart"></i>
+                        </div>
+                        <h3 class="ml-3 font-semibold text-lg text-white">Patient Financial Counseling Tools</h3>
                     </div>
-                    <div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-1">Simplified Check-in/Check-out</h3>
-                        <p class="text-gray-600">No complex billing procedures at discharge</p>
-                    </div>
+                    <p class="text-gray-300">Equip your staff with resources to help patients understand their payment
+                        options, including care plans that can help them budget for healthcare expenses.</p>
                 </div>
 
-                <!-- Benefit 4 -->
-                <div class="flex items-start">
-                    <div class="flex-shrink-0 bg-violet-100 rounded-lg p-3 mr-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m2-4h.01" />
-                        </svg>
+                <!-- Card 4 -->
+                <div
+                    class="bg-gray-800 bg-opacity-70 p-6 rounded-xl border border-gray-700 hover:border-blue-400 transition-all duration-300 transform hover:-translate-y-1 group md:col-span-2 lg:col-span-1">
+                    <div class="flex items-center mb-4">
+                        <div
+                            class="w-10 h-10 bg-gradient-to-r from-green-400 to-green-600 rounded-lg flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform duration-300">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <h3 class="ml-3 font-semibold text-lg text-white">International Patient Support</h3>
                     </div>
-                    <div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-1">Reduced Financial Stress</h3>
-                        <p class="text-gray-600">Less anxiety about unexpected healthcare costs</p>
-                    </div>
+                    <p class="text-gray-300">Accept payments from international patients through our cross-border
+                        healthcare payment solutions, eliminating currency exchange complications.</p>
+                </div>
+            </div>
+
+            <!-- Pulse animation -->
+            <div class="absolute bottom-4 right-4 w-16 h-16 flex items-center justify-center">
+                <span class="animate-ping absolute h-12 w-12 rounded-full bg-blue-400 opacity-20"></span>
+                <span
+                    class="relative rounded-full h-8 w-8 bg-gradient-to-r from-blue-500 to-teal-400 flex items-center justify-center">
+                    <i class="fas fa-brain text-white text-sm"></i>
+                </span>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="py-10 px-4 sm:px-6 lg:px-8 bg-gray-50 relative">
+        <!-- Stage Platform -->
+        <div class="max-w-7xl mx-auto bg-white rounded-3xl border overflow-hidden relative z-10">
+            <!-- Stage Edge Lighting -->
+            <div class="absolute -inset-1 bg-gradient-to-r from-yellow-400 to-red-500 rounded-xl opacity-20 blur"></div>
+
+            <div class="relative bg-white rounded-xl p-8 sm:p-12">
+                <!-- Spotlight Effect -->
+                <div
+                    class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full bg-yellow-100 filter blur-3xl opacity-30">
                 </div>
 
-                <!-- Benefit 5 -->
-                <div class="flex items-start">
-                    <div class="flex-shrink-0 bg-violet-100 rounded-lg p-3 mr-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                        </svg>
+                <div class="text-center mb-12 relative z-10">
+                    <h2 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">
+                        <span class="block">Patient Experience Enhancement</span>
+                    </h2>
+                    <div class="mt-4 h-1 w-24 bg-violet-600 mx-auto rounded-full"></div>
+                </div>
+
+                <div class="grid gap-8 md:grid-cols-2">
+                    <!-- Benefit 1 -->
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 bg-violet-100 rounded-lg p-3 mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-1">Transparent Cost Structure</h3>
+                            <p class="text-gray-600">Clear presentation of healthcare expenses</p>
+                        </div>
                     </div>
-                    <div>
-                        <h3 class="text-lg font-bold text-gray-900 mb-1">Flexible Payment Options</h3>
-                        <p class="text-gray-600">Various ways to fund healthcare needs</p>
+
+                    <!-- Benefit 2 -->
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 bg-violet-100 rounded-lg p-3 mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 15v2m-6 4h12" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-1">Financial Peace of Mind</h3>
+                            <p class="text-gray-600">Patients know their care is pre-funded</p>
+                        </div>
+                    </div>
+
+                    <!-- Benefit 3 -->
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 bg-violet-100 rounded-lg p-3 mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-1">Simplified Check-in/Check-out</h3>
+                            <p class="text-gray-600">No complex billing procedures at discharge</p>
+                        </div>
+                    </div>
+
+                    <!-- Benefit 4 -->
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 bg-violet-100 rounded-lg p-3 mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 16h-1v-4h-1m2-4h.01" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-1">Reduced Financial Stress</h3>
+                            <p class="text-gray-600">Less anxiety about unexpected healthcare costs</p>
+                        </div>
+                    </div>
+
+                    <!-- Benefit 5 -->
+                    <div class="flex items-start">
+                        <div class="flex-shrink-0 bg-violet-100 rounded-lg p-3 mr-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none"
+                                viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h16M4 18h16" />
+                            </svg>
+                        </div>
+                        <div>
+                            <h3 class="text-lg font-bold text-gray-900 mb-1">Flexible Payment Options</h3>
+                            <p class="text-gray-600">Various ways to fund healthcare needs</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-        
+
 
 
     <section class="w-full bg-white py-12">
@@ -1592,7 +1632,8 @@
                         <div
                             class="bg-purple-100 text-purple-800 font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3 group-hover:bg-purple-600 group-hover:text-white transition-colors">
                             1</div>
-                        <h3 class="font-bold text-gray-800 group-hover:text-purple-700 transition-colors">Consultation</h3>
+                        <h3 class="font-bold text-gray-800 group-hover:text-purple-700 transition-colors">Consultation
+                        </h3>
                     </div>
                     <p class="text-sm text-gray-600">Share your needs via our 5-minute form.</p>
                 </div>

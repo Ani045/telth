@@ -388,10 +388,7 @@
             </div>
         </div>
     </nav>
-
     <div class="h-20 fixed z-20 w-full bg-gradient-to-b from-gray-100 to-transparent"></div>
-
-
     <!-- Full Screen Menu Overlay -->
     <div x-data="{ isOpen: false }" x-show="isOpen" x-transition:enter="transition ease-out duration-300"
         x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
@@ -408,11 +405,11 @@
             <div class="container mx-auto px-6 py-12">
                 <!-- Header -->
                 <div class="flex justify-between items-center mb-12">
-                    <div
+                    <a href="/index.html"
                         class="text-3xl font-bold bg-gradient-to-r from-violet-900 to-indigo-900 bg-clip-text text-transparent flex items-center">
                         <img src="assets/telth.png" alt="telth" class="w-10 h-10 mb-2 mr-2">
                         Telth.care
-                    </div>
+                    </a>
                     <button type="button" x-on:click="isOpen = false"
                         class="group p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg"
@@ -439,60 +436,48 @@
                                 Solutions
                             </h3>
                             <div class="space-y-4 flex flex-col">
-                                <span class="tooltip">
+                                <a href="/corporates.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Corporates</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Corporates</span>
+                                </a>
+                                <a href="/government-sector.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Government</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Government</span>
+                                </a>
                                 <a href="/care-provider.html"
                                     class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
                                         class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
                                     <span>Care Providers</span>
                                 </a>
-                                <span class="tooltip">
+                                <a href="/clinics-hospitals.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Clinics/Hospitals</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Clinics/Hospitals</span>
+                                </a>
+                                <a href="/NGOs.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>NGOs</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>NGOs</span>
+                                </a>
+                                <a href="/patients.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Patients</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Patients</span>
+                                </a>
+                                <a href="/insurance-providers.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Insurance Providers</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Insurance Providers</span>
+                                </a>
                             </div>
                         </div>
 
@@ -508,30 +493,24 @@
                                 Technologies
                             </h3>
                             <div class="space-y-4 flex flex-col">
-                                <span class="tooltip">
+                                <a href="/p3dsc.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>P3DSC</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Care Providers</span>
+                                </a>
+                                <a href="/digidoc.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Digidoc</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Digidoc</span>
+                                </a>
+                                <a href="/root-cloud.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Root Cloud</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Root Cloud</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -573,74 +552,56 @@
                                         class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
                                     <span>Compact Diagnostic Devices</span>
                                 </a>
-                                <span class="tooltip">
+                                <a href="/smart-wearables-and-iomt-solutions.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300 ml-4">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link ml-4">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Smart Wearables & IoMT</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Smart wearabables & IOMT Solutions</span>
+                                </a>
+                                <a href="/care2home.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Care2Home</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Care2home</span>
+                                </a>
+                                <a href="/care-plan.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Care Plans</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Care Plans</span>
+                                </a>
+                                <a href="/care-plans-for-hospitals.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300 ml-4">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link ml-4">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Hospitals</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>For Hospitals</span>
+                                </a>
+                                <a href="/care-plan-for-patients.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300 ml-4 ">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link ml-4">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Patients</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>For Patients</span>
+                                </a>
+                                <a href="/health-and-wealth-card.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Health and Wealth Card</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Health & Wealth Card</span>
+                                </a>
+                                <a href="/mobile-clinic.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Mobile Clinic</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Mobile Clinic</span>
+                                </a>
+                                <a href="/smart-care-bundle.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Smart Care Bundle</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Smart Care Bundle</span>
+                                </a>
                             </div>
                         </div>
-
-                        <!-- Care Managers Section -->
                         <div
                             class="p-6 bg-gray-100 rounded-2xl backdrop-blur-sm border border-gray-100 hover:bg-violet-100 transition-colors group">
                             <h3 class="text-lg font-semibold text-violet-900 mb-6 flex items-center">
@@ -649,19 +610,25 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                                 </svg>
-                                Care Managers
+                                Support & Services
                             </h3>
                             <div class="space-y-4">
-                                <span class="tooltip">
+                                <a href="/diagnostic-devices.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Training</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>For Diagnostic Devices</span>
+                                </a>
+                                <a href="/clinics-kiosks.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
+                                    <span
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>For Clinincs/Kiosks</span>
+                                </a>
                             </div>
                         </div>
+
+
                     </div>
 
                     <!-- Additional Services -->
@@ -684,24 +651,22 @@
                                         <span class="w-2 h-0.5 bg-gray-400"></span>
                                         <span>Blogs</span>
                                     </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
-                                    <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Training & R&D</span>
-                                    </span>
                                     <span class="tooltiptext">Coming Soon</span>
                                 </span>
-                                <span class="tooltip">
+                                <a href="/r&d.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Support</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Training and R&D</span>
+                                </a>
+                                <!-- <span class="tooltip">
+                                        <span
+                                            class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
+                                            <span class="w-2 h-0.5 bg-gray-400"></span>
+                                            <span>Support</span>
+                                        </span>
+                                        <span class="tooltiptext">Under Development</span>
+                                    </span> -->
                             </div>
                         </div>
 
@@ -717,30 +682,24 @@
                                 Networks & Partnerships
                             </h3>
                             <div class="space-y-4 flex flex-col">
-                                <span class="tooltip">
+                                <a href="/franchise.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Franchise</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Franchise</span>
+                                </a>
+                                <a href="/partnership.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Partnership</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Partnerships</span>
+                                </a>
+                                <a href="/career.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Career</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Career</span>
+                                </a>
                                 <span class="tooltip">
                                     <span
                                         class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
@@ -751,40 +710,61 @@
                                 </span>
                             </div>
                         </div>
+
+                        <!-- Care Managers Section -->
+                        <div
+                            class="p-6 bg-gray-100 rounded-2xl backdrop-blur-sm border border-gray-100 hover:bg-violet-100 transition-colors group">
+                            <h3 class="text-lg font-semibold text-violet-900 mb-6 flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                                Care Managers
+                            </h3>
+                            <div class="space-y-4">
+                                <a href="/training.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
+                                    <span
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Training</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Quick Links -->
                 <div class="mt-12 pt-12 border-t border-gray-200">
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
+                    <div class="grid grid-cols-2 md:grid-cols-3  gap-8 text-center">
                         <a href="/privacy-policy.html"
-                            class="text-violet-700 hover:text-violet-900 text-sm transition-colors">
+                            class="text-violet-700 hover:text-violet-900 hover:underline text-sm transition-colors">
                             Privacy Policy
                         </a>
-                        <span class="tooltip">
-                            <span class="text-gray-400 text-sm transition-colors disabled-link">
-                                Financial Services
+                        <!-- <span class="tooltip">
+                                <span class="text-gray-400 text-sm transition-colors disabled-link">
+                                    Financial Services
+                                </span>
+                                <span class="tooltiptext">Under Development</span>
                             </span>
-                            <span class="tooltiptext">Under Development</span>
-                        </span>
-                        <span class="tooltip">
-                            <span class="text-gray-400 text-sm transition-colors disabled-link">
-                                Infrastructure
+                            <span class="tooltip">
+                                <span class="text-gray-400 text-sm transition-colors disabled-link">
+                                    Infrastructure
+                                </span>
+                                <span class="tooltiptext">Coming Soon</span>
                             </span>
-                            <span class="tooltiptext">Coming Soon</span>
-                        </span>
-                        <span class="tooltip">
-                            <span class="text-gray-400 text-sm transition-colors disabled-link">
-                                Education & Training
-                            </span>
-                            <span class="tooltiptext">Under Development</span>
-                        </span>
+                            <span class="tooltip">
+                                <span class="text-gray-400 text-sm transition-colors disabled-link">
+                                    Education & Training
+                                </span>
+                                <span class="tooltiptext">Under Development</span>
+                            </span> -->
                         <a href="/terms-conditions.html"
-                            class="text-violet-700 hover:text-violet-900 text-sm transition-colors">
+                            class="text-violet-700 hover:text-violet-900 hover:underline text-sm transition-colors">
                             Terms and Conditions
                         </a>
                         <a href="/contact-us.html"
-                            class="text-violet-700 hover:text-violet-900 text-sm transition-colors">
+                            class="text-violet-700 hover:text-violet-900 hover:underline text-sm transition-colors">
                             Contact
                         </a>
                     </div>
@@ -807,8 +787,8 @@
     </div>
     <div class="h-20"></div>
 
-       <!-- Hero section -->
-       <section class="py-6 md:py-8 lg:py-12">
+    <!-- Hero section -->
+    <section class="py-6 md:py-8 lg:py-12">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
                 <!-- Content -->
@@ -819,15 +799,16 @@
                     </div>
 
                     <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
-                        Keeping Your Healthcare  <span class="text-blue-600">Facilities Running Smoothly
+                        Keeping Your Healthcare <span class="text-blue-600">Facilities Running Smoothly
                         </span>
                     </h1>
 
                     <p class="text-lg text-gray-600 max-w-lg">
-                        Dedicated support services for your Telth clinics and kiosks, ensuring they continue to provide essential healthcare services to your communities without interruption.
-            
+                        Dedicated support services for your Telth clinics and kiosks, ensuring they continue to provide
+                        essential healthcare services to your communities without interruption.
 
-                  
+
+
                 </div>
 
                 <!-- Image -->
@@ -879,14 +860,16 @@
                             ABOUT CLINICS/KISOKS
                         </div>
                         <h2 class="text-3xl md:text-4xl font-bold mb-6 leading-tight text-gray-900">
-                          Complete Support Ecosystem
+                            Complete Support Ecosystem
                         </h2>
                         <p class="text-gray-600 text-lg mb-8 leading-relaxed">
-                            We understand that the reliable operation of your healthcare facilities is critical to the communities you serve. Our comprehensive support system addresses technical, operational, and clinical aspects of your Telth clinics and kiosks.
+                            We understand that the reliable operation of your healthcare facilities is critical to the
+                            communities you serve. Our comprehensive support system addresses technical, operational,
+                            and clinical aspects of your Telth clinics and kiosks.
 
                         </p>
 
-                     
+
                     </div>
                 </div>
 
@@ -906,9 +889,9 @@
             </div>
         </div>
     </section>
-   
 
- <!-- Tab Section  -->
+
+    <!-- Tab Section  -->
 
     <section class="py-10 px-4 sm:px-6 lg:px-8 container mx-auto">
         <!-- Section Header -->
@@ -923,11 +906,12 @@
                 Explore how we collaborate to deliver innovative healthcare solutions.
             </p>
         </div>
-    
+
         <!-- Rounded Navigation Bar -->
         <div class="flex overflow-x-auto pb-2 mb-12 hide-scrollbar">
             <div class="flex mx-auto space-x-2 bg-gray-100 p-1 rounded-full">
-                <button class="nav-pill active px-6 py-3 rounded-full font-medium whitespace-nowrap" data-tab="clinical">
+                <button class="nav-pill active px-6 py-3 rounded-full font-medium whitespace-nowrap"
+                    data-tab="clinical">
                     Clinical Integration Partnership
                 </button>
                 <button class="nav-pill px-6 py-3 rounded-full font-medium whitespace-nowrap" data-tab="innovation">
@@ -938,7 +922,7 @@
                 </button>
             </div>
         </div>
-    
+
         <!-- Partnership Models Container -->
         <div class="relative">
             <!-- Clinical Integration Partnership -->
@@ -948,7 +932,9 @@
                         <div class="relative rounded-3xl overflow-hidden shadow-2xl h-96 w-full">
                             <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
                                 alt="Clinical Integration Partnership" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/40 via-gray-900/10 to-transparent"></div>
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-gray-900/40 via-gray-900/10 to-transparent">
+                            </div>
                         </div>
                     </div>
                     <div class="lg:w-1/2">
@@ -960,13 +946,14 @@
                             Clinical Integration Partnership
                         </h3>
                         <p class="text-lg text-gray-600 mb-4">
-                           <span class="font-bold">Timeline:</span>  3-6 months implementation
+                            <span class="font-bold">Timeline:</span> 3-6 months implementation
                         </p>
                         <p class="text-lg text-gray-600 mb-4">
                             <span class="font-bold">Investment Level:</span> Moderate technology integration costs
                         </p>
                         <p class="text-lg text-gray-600 mb-8">
-                            Integrate your clinical services with Telth's digital healthcare ecosystem to extend your reach,
+                            Integrate your clinical services with Telth's digital healthcare ecosystem to extend your
+                            reach,
                             enhance care coordination, and create new service delivery models.
                         </p>
                         <ul class="space-y-4">
@@ -976,7 +963,8 @@
                                         <i class="fas fa-check text-purple-600"></i>
                                     </div>
                                 </div>
-                                <span class="ml-3 text-gray-700">Systems integration with your existing clinical platforms</span>
+                                <span class="ml-3 text-gray-700">Systems integration with your existing clinical
+                                    platforms</span>
                             </li>
                             <li class="flex items-start">
                                 <div class="flex-shrink-0 mt-1">
@@ -1014,7 +1002,7 @@
                     </div>
                 </div>
             </div>
-    
+
             <!-- Innovation Collaboration Partnership -->
             <div class="service-content" id="innovation-content">
                 <div class="flex flex-col lg:flex-row gap-12 items-center">
@@ -1022,7 +1010,9 @@
                         <div class="relative rounded-3xl overflow-hidden shadow-2xl h-96 w-full">
                             <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
                                 alt="Innovation Collaboration Partnership" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/40 via-gray-900/10 to-transparent"></div>
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-gray-900/40 via-gray-900/10 to-transparent">
+                            </div>
                         </div>
                     </div>
                     <div class="lg:w-1/2 order-1">
@@ -1034,13 +1024,14 @@
                             Innovation Collaboration Partnership
                         </h3>
                         <p class="text-lg text-gray-600 mb-4">
-                            <span class="font-bold">Timeline:</span>  6-12 months development cycle
+                            <span class="font-bold">Timeline:</span> 6-12 months development cycle
                         </p>
                         <p class="text-lg text-gray-600 mb-4">
                             <span class="font-bold">Investment Level:</span> Co-development resource allocation
                         </p>
                         <p class="text-lg text-gray-600 mb-8">
-                            Collaborate on next-generation healthcare technologies through joint development initiatives, pilot
+                            Collaborate on next-generation healthcare technologies through joint development
+                            initiatives, pilot
                             implementations, and market access strategies.
                         </p>
                         <ul class="space-y-4">
@@ -1082,13 +1073,14 @@
                                         <i class="fas fa-check text-purple-600"></i>
                                     </div>
                                 </div>
-                                <span class="ml-3 text-gray-700">Revenue-sharing models for successful innovations</span>
+                                <span class="ml-3 text-gray-700">Revenue-sharing models for successful
+                                    innovations</span>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-    
+
             <!-- Corporate Wellness Partnership -->
             <div class="service-content" id="wellness-content">
                 <div class="flex flex-col lg:flex-row gap-12 items-center">
@@ -1096,7 +1088,9 @@
                         <div class="relative rounded-3xl overflow-hidden shadow-2xl h-96 w-full">
                             <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
                                 alt="Corporate Wellness Partnership" class="w-full h-full object-cover">
-                            <div class="absolute inset-0 bg-gradient-to-t from-gray-900/40 via-gray-900/10 to-transparent"></div>
+                            <div
+                                class="absolute inset-0 bg-gradient-to-t from-gray-900/40 via-gray-900/10 to-transparent">
+                            </div>
                         </div>
                     </div>
                     <div class="lg:w-1/2">
@@ -1108,13 +1102,14 @@
                             Corporate Wellness Partnership
                         </h3>
                         <p class="text-lg text-gray-600 mb-4">
-                            <span class="font-bold">Timeline:</span>  2-4 months setup
+                            <span class="font-bold">Timeline:</span> 2-4 months setup
                         </p>
                         <p class="text-lg text-gray-600 mb-4">
                             <span class="font-bold">Investment Level:</span> Per-employee program costs
                         </p>
                         <p class="text-lg text-gray-600 mb-8">
-                            Create comprehensive employee wellness programs combining Telth's technology platform with customized
+                            Create comprehensive employee wellness programs combining Telth's technology platform with
+                            customized
                             health services designed for workplace implementation.
                         </p>
                         <ul class="space-y-4">
@@ -1164,10 +1159,10 @@
             </div>
         </div>
     </section>
-    
-    
-    
-        
+
+
+
+
     <section class="container mx-auto px-4 py-8 ">
         <div class="text-center mb-16">
             <h2 class="text-4xl font-bold text-gray-800 mb-4">The Partnership Advantage</h2>
@@ -1187,7 +1182,8 @@
                         <h3 class="text-xl font-bold ml-4 text-gray-800">Market Expansion</h3>
                     </div>
                     <p class="text-gray-600 leading-relaxed">
-                        Access new patient populations and geographic regions through our established healthcare delivery network.
+                        Access new patient populations and geographic regions through our established healthcare
+                        delivery network.
                     </p>
                 </div>
             </div>
@@ -1238,7 +1234,8 @@
                         <h3 class="text-xl font-bold ml-4 text-gray-800">Operational Efficiency</h3>
                     </div>
                     <p class="text-gray-600 leading-relaxed">
-                        Benefit from established workflows and systems that streamline healthcare delivery and administration.
+                        Benefit from established workflows and systems that streamline healthcare delivery and
+                        administration.
                     </p>
                 </div>
             </div>
@@ -1261,37 +1258,37 @@
             </div>
 
             <div
-            class="bg-white rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border border-gray-100">
-            <div class="p-8">
-                <div class="flex items-center mb-6">
-                    <div
-                        class="w-16 h-16 bg-purple-500 text-white rounded-full flex items-center justify-center shadow-md">
-                        <i class="fas fa-briefcase text-2xl"></i>
+                class="bg-white rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border border-gray-100">
+                <div class="p-8">
+                    <div class="flex items-center mb-6">
+                        <div
+                            class="w-16 h-16 bg-purple-500 text-white rounded-full flex items-center justify-center shadow-md">
+                            <i class="fas fa-briefcase text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold ml-4 text-gray-800">Shared Resources</h3>
                     </div>
-                    <h3 class="text-xl font-bold ml-4 text-gray-800">Shared Resources</h3>
+                    <p class="text-gray-600 leading-relaxed">
+                        Access specialized equipment, facilities, and expertise through shared investment models.
+                    </p>
                 </div>
-                <p class="text-gray-600 leading-relaxed">
-                    Access specialized equipment, facilities, and expertise through shared investment models.
-                </p>
             </div>
-        </div>
         </div>
     </section>
 
 
-     
-     <!-- OPERATIONAL SUPPORT    -->
 
-     <section class="py-8 px-4 container mx-auto">
+    <!-- OPERATIONAL SUPPORT    -->
+
+    <section class="py-8 px-4 container mx-auto">
         <!-- Section Header -->
         <div class="text-center mb-12">
             <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Ideal Partnership Organizations</h2>
             <div class="w-20 h-1 bg-purple-600 mx-auto mb-6"></div>
         </div>
-    
+
         <!-- Features Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-    
+
             <!-- Healthcare Providers -->
             <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:border-blue-300 transition-all">
                 <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
@@ -1301,11 +1298,12 @@
                 <ul class="space-y-3 text-gray-700">
                     <li class="flex items-start">
                         <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
-                        <span>Hospitals, clinics, and specialist practices looking to expand digital capabilities, extend geographic reach, or enhance service offerings.</span>
+                        <span>Hospitals, clinics, and specialist practices looking to expand digital capabilities,
+                            extend geographic reach, or enhance service offerings.</span>
                     </li>
                 </ul>
             </div>
-    
+
             <!-- Technology Innovators -->
             <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:border-blue-300 transition-all">
                 <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-6">
@@ -1315,11 +1313,12 @@
                 <ul class="space-y-3 text-gray-700">
                     <li class="flex items-start">
                         <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                        <span>Health tech companies, device manufacturers, and digital health startups seeking clinical validation, market access, and scale for innovative solutions.</span>
+                        <span>Health tech companies, device manufacturers, and digital health startups seeking clinical
+                            validation, market access, and scale for innovative solutions.</span>
                     </li>
                 </ul>
             </div>
-    
+
             <!-- Payer Organizations -->
             <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:border-blue-300 transition-all">
                 <div class="w-14 h-14 bg-blue-100 rounded-full flex items-center justify-center mb-6">
@@ -1329,11 +1328,12 @@
                 <ul class="space-y-3 text-gray-700">
                     <li class="flex items-start">
                         <i class="fas fa-check-circle text-blue-500 mt-1 mr-2"></i>
-                        <span>Insurance companies and third-party administrators are interested in creating differentiated health benefits and value-based care programs.</span>
+                        <span>Insurance companies and third-party administrators are interested in creating
+                            differentiated health benefits and value-based care programs.</span>
                     </li>
                 </ul>
             </div>
-    
+
             <!-- Academic Institutions -->
             <div class="bg-gray-50 rounded-xl p-8 border border-gray-200 hover:border-blue-300 transition-all">
                 <div class="w-14 h-14 bg-green-100 rounded-full flex items-center justify-center mb-6">
@@ -1343,393 +1343,463 @@
                 <ul class="space-y-3 text-gray-700">
                     <li class="flex items-start">
                         <i class="fas fa-check-circle text-green-500 mt-1 mr-2"></i>
-                        <span>Medical schools, research organizations, and teaching hospitals want to collaborate on healthcare innovation, training, and implementation.</span>
+                        <span>Medical schools, research organizations, and teaching hospitals want to collaborate on
+                            healthcare innovation, training, and implementation.</span>
                     </li>
                 </ul>
             </div>
-    
+
         </div>
     </section>
-    
-
-<!-- SERVICE LeVELS -->
-<section class="py-8 px-4 container mx-auto">
-    <!-- Section Header -->
-    <div class="text-center mb-12">
-        <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Service Levels</h2>
-    </div>
-
-    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
-        <!-- Standard Support -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl">
-            <div class="p-6 bg-gradient-to-r from-purple-50 to-purple-100 border-b">
-                <h3 class="text-2xl font-bold text-gray-800">Standard Support</h3>
-                <p class="text-gray-700 mb-4 mt-2">Included with all Telth clinics and kiosks</p>
-            </div>
-            <div class="p-6">
-                <ul class="space-y-3">
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span class="text-gray-700">Business hours technical support</span>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span class="text-gray-700">Remote troubleshooting assistance</span>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span class="text-gray-700">Access to the online knowledge base</span>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span class="text-gray-700">Standard software and protocol updates</span>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span class="text-gray-700">Quarterly preventive maintenance</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Premium Support -->
-        <div class="bg-white rounded-lg shadow-md overflow-visible transition-all duration-300 hover:shadow-xl relative">
-            <div class="absolute -top-2 right-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">
-                Most Popular
-            </div>
-            <div class="p-6 bg-gradient-to-r from-purple-50 to-purple-100 border-b">
-                <h3 class="text-2xl font-bold text-gray-800">Premium Support</h3>
-                <p class="text-gray-700 mb-4 mt-2">Enhanced services for locations with high patient volumes:</p>
-            </div>
-            <div class="p-6">
-                <ul class="space-y-3">
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span class="text-gray-700">24/7 priority technical support</span>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span class="text-gray-700">Faster on-site response times</span>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span class="text-gray-700">Monthly preventive maintenance</span>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span class="text-gray-700">Staff training sessions</span>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span class="text-gray-700">Performance optimization consultations</span>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span class="text-gray-700">Dedicated support specialist</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
 
 
-
-<!-- CLINICAL ASSISTANCE -->
-<section class="py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-purple-50 to-blue-50">
-    <div class="container mx-auto">
+    <!-- SERVICE LeVELS -->
+    <section class="py-8 px-4 container mx-auto">
         <!-- Section Header -->
-        <div class="mb-6">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mt-3 mb-6">
-               Partnership Development Process
-            </h2>
-            <div class="w-full h-px bg-gradient-to-r from-purple-400 to-blue-400 mt-6 mb-10"></div>
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Service Levels</h2>
         </div>
 
-        <!-- Steps Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Step 1: Initial Consultation -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
-                <div class="mb-5">
-                    <h3 class="text-xl font-bold text-gray-800 mt-2">Initial Consultation</h3>
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
+            <!-- Standard Support -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl">
+                <div class="p-6 bg-gradient-to-r from-purple-50 to-purple-100 border-b">
+                    <h3 class="text-2xl font-bold text-gray-800">Standard Support</h3>
+                    <p class="text-gray-700 mb-4 mt-2">Included with all Telth clinics and kiosks</p>
                 </div>
-                <p class="text-gray-600">
-                    Explore strategic alignment and partnership vision.
-                </p>
-                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
-                    <i class="fas fa-comments text-purple-600 group-hover:text-white transition-colors"></i>
-                </div>
-            </div>
-
-            <!-- Step 2: Opportunity Assessment -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
-                <div class="mb-5">
-                    <h3 class="text-xl font-bold text-gray-800 mt-2">Opportunity Assessment</h3>
-                </div>
-                <p class="text-gray-600">
-                    Detailed analysis of collaboration potential and value creation.
-                </p>
-                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
-                    <i class="fas fa-search text-purple-600 group-hover:text-white transition-colors"></i>
-                </div>
-            </div>
-
-            <!-- Step 3: Partnership Design -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
-                <div class="mb-5">
-                    <h3 class="text-xl font-bold text-gray-800 mt-2">Partnership Design</h3>
-                </div>
-                <p class="text-gray-600">
-                    Creation of customized partnership structure and objectives.
-                </p>
-                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
-                    <i class="fas fa-puzzle-piece text-purple-600 group-hover:text-white transition-colors"></i>
-                </div>
-            </div>
-
-            <!-- Step 4: Agreement Development -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
-                <div class="mb-5">
-                    <h3 class="text-xl font-bold text-gray-800 mt-2">Agreement Development</h3>
-                </div>
-                <p class="text-gray-600">
-                    Formalization of terms, responsibilities, and success metrics.
-                </p>
-                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
-                    <i class="fas fa-file-contract text-purple-600 group-hover:text-white transition-colors"></i>
-                </div>
-            </div>
-
-            <!-- Step 5: Implementation Planning -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
-                <div class="mb-5">
-                    <h3 class="text-xl font-bold text-gray-800 mt-2">Implementation Planning</h3>
-                </div>
-                <p class="text-gray-600">
-                    Detailed roadmap for operational integration.
-                </p>
-                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
-                    <i class="fas fa-map-signs text-purple-600 group-hover:text-white transition-colors"></i>
+                <div class="p-6">
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Business hours technical support</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Remote troubleshooting assistance</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Access to the online knowledge base</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Standard software and protocol updates</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Quarterly preventive maintenance</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- Step 6: Launch & Execution -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
-                <div class="mb-5">
-                    <h3 class="text-xl font-bold text-gray-800 mt-2">Launch & Execution</h3>
+            <!-- Premium Support -->
+            <div
+                class="bg-white rounded-lg shadow-md overflow-visible transition-all duration-300 hover:shadow-xl relative">
+                <div class="absolute -top-2 right-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+                    Most Popular
                 </div>
-                <p class="text-gray-600">
-                    Coordinated rollout with dedicated partnership management.
-                </p>
-                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
-                    <i class="fas fa-rocket text-purple-600 group-hover:text-white transition-colors"></i>
+                <div class="p-6 bg-gradient-to-r from-purple-50 to-purple-100 border-b">
+                    <h3 class="text-2xl font-bold text-gray-800">Premium Support</h3>
+                    <p class="text-gray-700 mb-4 mt-2">Enhanced services for locations with high patient volumes:</p>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">24/7 priority technical support</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Faster on-site response times</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Monthly preventive maintenance</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Staff training sessions</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Performance optimization consultations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Dedicated support specialist</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
-
-            <!-- Step 7: Continuous Optimization -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
-                <div class="mb-5">
-                    <h3 class="text-xl font-bold text-gray-800 mt-2">Continuous Optimization</h3>
-                </div>
-                <p class="text-gray-600">
-                    Regular performance reviews and enhancement initiatives.
-                </p>
-                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
-                    <i class="fas fa-sync-alt text-purple-600 group-hover:text-white transition-colors"></i>
-                </div>
-            </div>
-
         </div>
-    </div>
-</section>
+    </section>
 
 
-  <!-- Facility management Dashboard -->
-  <section class="py-8 px-4 container mx-auto">
-    <!-- Section Header -->
-    <div class="text-center mb-12">
-        <h2 class="text-4xl font-bold text-gray-800 mb-4">Focus Areas for Partnerships</h2>
-        <p class="text-gray-600 max-w-2xl mx-auto">
-            We are currently prioritizing partnerships in these strategic areas:
-        </p>
-        <div class="w-24 h-1 bg-purple-600 mx-auto rounded-full mt-4"></div>
-    </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <!-- Card 1: Specialized Clinical Services -->
-        <div class="bg-white rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border border-gray-100">
-            <div class="p-8">
-                <div class="flex items-center mb-6">
-                    <div class="w-16 h-16 bg-purple-500 text-white rounded-full flex items-center justify-center shadow-md">
-                        <i class="fas fa-cogs text-2xl"></i>
+    <!-- CLINICAL ASSISTANCE -->
+    <section class="py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-purple-50 to-blue-50">
+        <div class="container mx-auto">
+            <!-- Section Header -->
+            <div class="mb-6">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mt-3 mb-6">
+                    Partnership Development Process
+                </h2>
+                <div class="w-full h-px bg-gradient-to-r from-purple-400 to-blue-400 mt-6 mb-10"></div>
+            </div>
+
+            <!-- Steps Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Step 1: Initial Consultation -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
+                    <div class="mb-5">
+                        <h3 class="text-xl font-bold text-gray-800 mt-2">Initial Consultation</h3>
                     </div>
-                    <h3 class="text-xl font-bold ml-4 text-gray-800">Specialized Clinical Services</h3>
-                </div>
-                <p class="text-gray-600 leading-relaxed">
-                    Oncology, Cardiology, Mental Health, Maternal Care.
-                </p>
-            </div>
-        </div>
-
-        <!-- Card 2: Technology Innovation -->
-        <div class="bg-white rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border border-gray-100">
-            <div class="p-8">
-                <div class="flex items-center mb-6">
-                    <div class="w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center shadow-md">
-                        <i class="fas fa-laptop-code text-2xl"></i>
+                    <p class="text-gray-600">
+                        Explore strategic alignment and partnership vision.
+                    </p>
+                    <div
+                        class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
+                        <i class="fas fa-comments text-purple-600 group-hover:text-white transition-colors"></i>
                     </div>
-                    <h3 class="text-xl font-bold ml-4 text-gray-800">Technology Innovation</h3>
                 </div>
-                <p class="text-gray-600 leading-relaxed">
-                    AI Diagnostics, Remote Monitoring, Predictive Analytics.
-                </p>
-            </div>
-        </div>
 
-        <!-- Card 3: Geographic Expansion -->
-        <div class="bg-white rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border border-gray-100">
-            <div class="p-8">
-                <div class="flex items-center mb-6">
-                    <div class="w-16 h-16 bg-blue-500 text-white rounded-full flex items-center justify-center shadow-md">
-                        <i class="fas fa-globe text-2xl"></i>
+                <!-- Step 2: Opportunity Assessment -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
+                    <div class="mb-5">
+                        <h3 class="text-xl font-bold text-gray-800 mt-2">Opportunity Assessment</h3>
                     </div>
-                    <h3 class="text-xl font-bold ml-4 text-gray-800">Geographic Expansion</h3>
-                </div>
-                <p class="text-gray-600 leading-relaxed">
-                    Tier 2 and 3 Cities, Rural Healthcare Models.
-                </p>
-            </div>
-        </div>
-
-        <!-- Card 4: Population Health -->
-        <div class="bg-white rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border border-gray-100">
-            <div class="p-8">
-                <div class="flex items-center mb-6">
-                    <div class="w-16 h-16 bg-red-500 text-white rounded-full flex items-center justify-center shadow-md">
-                        <i class="fas fa-users text-2xl"></i>
+                    <p class="text-gray-600">
+                        Detailed analysis of collaboration potential and value creation.
+                    </p>
+                    <div
+                        class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
+                        <i class="fas fa-search text-purple-600 group-hover:text-white transition-colors"></i>
                     </div>
-                    <h3 class="text-xl font-bold ml-4 text-gray-800">Population Health</h3>
                 </div>
-                <p class="text-gray-600 leading-relaxed">
-                    Chronic Disease Management, Preventive Care Programs.
-                </p>
-            </div>
-        </div>
 
-        <!-- Card 5: Education & Training -->
-        <div class="bg-white rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border border-gray-100">
-            <div class="p-8">
-                <div class="flex items-center mb-6">
-                    <div class="w-16 h-16 bg-orange-500 text-white rounded-full flex items-center justify-center shadow-md">
-                        <i class="fas fa-graduation-cap text-2xl"></i>
+                <!-- Step 3: Partnership Design -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
+                    <div class="mb-5">
+                        <h3 class="text-xl font-bold text-gray-800 mt-2">Partnership Design</h3>
                     </div>
-                    <h3 class="text-xl font-bold ml-4 text-gray-800">Education & Training</h3>
+                    <p class="text-gray-600">
+                        Creation of customized partnership structure and objectives.
+                    </p>
+                    <div
+                        class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
+                        <i class="fas fa-puzzle-piece text-purple-600 group-hover:text-white transition-colors"></i>
+                    </div>
                 </div>
-                <p class="text-gray-600 leading-relaxed">
-                    Healthcare Workforce Development, Clinical Skill Enhancement.
-                </p>
+
+                <!-- Step 4: Agreement Development -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
+                    <div class="mb-5">
+                        <h3 class="text-xl font-bold text-gray-800 mt-2">Agreement Development</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Formalization of terms, responsibilities, and success metrics.
+                    </p>
+                    <div
+                        class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
+                        <i class="fas fa-file-contract text-purple-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                </div>
+
+                <!-- Step 5: Implementation Planning -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
+                    <div class="mb-5">
+                        <h3 class="text-xl font-bold text-gray-800 mt-2">Implementation Planning</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Detailed roadmap for operational integration.
+                    </p>
+                    <div
+                        class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
+                        <i class="fas fa-map-signs text-purple-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                </div>
+
+                <!-- Step 6: Launch & Execution -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
+                    <div class="mb-5">
+                        <h3 class="text-xl font-bold text-gray-800 mt-2">Launch & Execution</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Coordinated rollout with dedicated partnership management.
+                    </p>
+                    <div
+                        class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
+                        <i class="fas fa-rocket text-purple-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                </div>
+
+                <!-- Step 7: Continuous Optimization -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
+                    <div class="mb-5">
+                        <h3 class="text-xl font-bold text-gray-800 mt-2">Continuous Optimization</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Regular performance reviews and enhancement initiatives.
+                    </p>
+                    <div
+                        class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
+                        <i class="fas fa-sync-alt text-purple-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                </div>
+
             </div>
         </div>
-    </div>
-</section>
+    </section>
+
+
+    <!-- Facility management Dashboard -->
+    <section class="py-8 px-4 container mx-auto">
+        <!-- Section Header -->
+        <div class="text-center mb-12">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Focus Areas for Partnerships</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                We are currently prioritizing partnerships in these strategic areas:
+            </p>
+            <div class="w-24 h-1 bg-purple-600 mx-auto rounded-full mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Card 1: Specialized Clinical Services -->
+            <div
+                class="bg-white rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border border-gray-100">
+                <div class="p-8">
+                    <div class="flex items-center mb-6">
+                        <div
+                            class="w-16 h-16 bg-purple-500 text-white rounded-full flex items-center justify-center shadow-md">
+                            <i class="fas fa-cogs text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold ml-4 text-gray-800">Specialized Clinical Services</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        Oncology, Cardiology, Mental Health, Maternal Care.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 2: Technology Innovation -->
+            <div
+                class="bg-white rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border border-gray-100">
+                <div class="p-8">
+                    <div class="flex items-center mb-6">
+                        <div
+                            class="w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center shadow-md">
+                            <i class="fas fa-laptop-code text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold ml-4 text-gray-800">Technology Innovation</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        AI Diagnostics, Remote Monitoring, Predictive Analytics.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 3: Geographic Expansion -->
+            <div
+                class="bg-white rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border border-gray-100">
+                <div class="p-8">
+                    <div class="flex items-center mb-6">
+                        <div
+                            class="w-16 h-16 bg-blue-500 text-white rounded-full flex items-center justify-center shadow-md">
+                            <i class="fas fa-globe text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold ml-4 text-gray-800">Geographic Expansion</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        Tier 2 and 3 Cities, Rural Healthcare Models.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 4: Population Health -->
+            <div
+                class="bg-white rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border border-gray-100">
+                <div class="p-8">
+                    <div class="flex items-center mb-6">
+                        <div
+                            class="w-16 h-16 bg-red-500 text-white rounded-full flex items-center justify-center shadow-md">
+                            <i class="fas fa-users text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold ml-4 text-gray-800">Population Health</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        Chronic Disease Management, Preventive Care Programs.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Card 5: Education & Training -->
+            <div
+                class="bg-white rounded-2xl shadow-lg transform transition-all duration-300 hover:scale-105 hover:shadow-xl border border-gray-100">
+                <div class="p-8">
+                    <div class="flex items-center mb-6">
+                        <div
+                            class="w-16 h-16 bg-orange-500 text-white rounded-full flex items-center justify-center shadow-md">
+                            <i class="fas fa-graduation-cap text-2xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold ml-4 text-gray-800">Education & Training</h3>
+                    </div>
+                    <p class="text-gray-600 leading-relaxed">
+                        Healthcare Workforce Development, Clinical Skill Enhancement.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
 
- 
+
 
     <div class="bg-pattern w-full py-8">
         <div class="max-w-4xl mx-auto bg-white/80 backdrop-blur-sm p-8 rounded-2xl shadow-xl">
             <h1 class="text-3xl font-bold text-center mb-6 text-indigo-700">Frequently Asked Questions</h1>
-            <p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto">Find answers to the most common questions about our services and features.</p>
-    
+            <p class="text-center text-gray-600 mb-10 max-w-2xl mx-auto">Find answers to the most common questions about
+                our services and features.</p>
+
             <div class="space-y-4">
                 <!-- FAQ Item 1 -->
-                <div class="faq-item bg-white border-2 border-gray-200 rounded-lg overflow-hidden transition-all duration-200 shadow-sm">
-                    <button class="faq-toggle w-full px-6 py-4 text-left bg-white flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-50">
-                        <span class="text-lg font-medium text-gray-800">What is the typical duration of a Telth partnership agreement?</span>
-                        <svg class="faq-icon w-5 h-5 text-indigo-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                <div
+                    class="faq-item bg-white border-2 border-gray-200 rounded-lg overflow-hidden transition-all duration-200 shadow-sm">
+                    <button
+                        class="faq-toggle w-full px-6 py-4 text-left bg-white flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-50">
+                        <span class="text-lg font-medium text-gray-800">What is the typical duration of a Telth
+                            partnership agreement?</span>
+                        <svg class="faq-icon w-5 h-5 text-indigo-500 transform transition-transform duration-200"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
                         </svg>
                     </button>
                     <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
                         <div class="px-6 py-4 bg-white border-t border-gray-100">
-                            <p class="text-gray-600">While our standard agreements range from 3-5 years, we customize partnership durations based on specific objectives, investment parameters, and development timelines.</p>
+                            <p class="text-gray-600">While our standard agreements range from 3-5 years, we customize
+                                partnership durations based on specific objectives, investment parameters, and
+                                development timelines.</p>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- FAQ Item 2 -->
-                <div class="faq-item bg-white border-2 border-gray-200 rounded-lg overflow-hidden transition-all duration-200 shadow-sm">
-                    <button class="faq-toggle w-full px-6 py-4 text-left bg-white flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-50">
-                        <span class="text-lg font-medium text-gray-800">How do you handle data sharing and patient privacy in partnerships?</span>
-                        <svg class="faq-icon w-5 h-5 text-indigo-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                <div
+                    class="faq-item bg-white border-2 border-gray-200 rounded-lg overflow-hidden transition-all duration-200 shadow-sm">
+                    <button
+                        class="faq-toggle w-full px-6 py-4 text-left bg-white flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-50">
+                        <span class="text-lg font-medium text-gray-800">How do you handle data sharing and patient
+                            privacy in partnerships?</span>
+                        <svg class="faq-icon w-5 h-5 text-indigo-500 transform transition-transform duration-200"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
                         </svg>
                     </button>
                     <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
                         <div class="px-6 py-4 bg-white border-t border-gray-100">
-                            <p class="text-gray-600">All partnerships operate under comprehensive data governance frameworks with strict adherence to healthcare privacy regulations, with clear protocols for consent, access controls, and information use.</p>
+                            <p class="text-gray-600">All partnerships operate under comprehensive data governance
+                                frameworks with strict adherence to healthcare privacy regulations, with clear protocols
+                                for consent, access controls, and information use.</p>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- FAQ Item 3 -->
-                <div class="faq-item bg-white border-2 border-gray-200 rounded-lg overflow-hidden transition-all duration-200 shadow-sm">
-                    <button class="faq-toggle w-full px-6 py-4 text-left bg-white flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-50">
-                        <span class="text-lg font-medium text-gray-800">Can partnerships be exclusive for certain geographies or services?</span>
-                        <svg class="faq-icon w-5 h-5 text-indigo-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                <div
+                    class="faq-item bg-white border-2 border-gray-200 rounded-lg overflow-hidden transition-all duration-200 shadow-sm">
+                    <button
+                        class="faq-toggle w-full px-6 py-4 text-left bg-white flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-50">
+                        <span class="text-lg font-medium text-gray-800">Can partnerships be exclusive for certain
+                            geographies or services?</span>
+                        <svg class="faq-icon w-5 h-5 text-indigo-500 transform transition-transform duration-200"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
                         </svg>
                     </button>
                     <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
                         <div class="px-6 py-4 bg-white border-t border-gray-100">
-                            <p class="text-gray-600">Yes, we offer various exclusivity options based on partnership investment, strategic alignment, and market dynamics, customized to meet mutual objectives.</p>
+                            <p class="text-gray-600">Yes, we offer various exclusivity options based on partnership
+                                investment, strategic alignment, and market dynamics, customized to meet mutual
+                                objectives.</p>
                         </div>
                     </div>
                 </div>
-    
+
                 <!-- FAQ Item 4 -->
-                <div class="faq-item bg-white border-2 border-gray-200 rounded-lg overflow-hidden transition-all duration-200 shadow-sm">
-                    <button class="faq-toggle w-full px-6 py-4 text-left bg-white flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-50">
-                        <span class="text-lg font-medium text-gray-800">What resources does Telth commit to partnerships?</span>
-                        <svg class="faq-icon w-5 h-5 text-indigo-500 transform transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                <div
+                    class="faq-item bg-white border-2 border-gray-200 rounded-lg overflow-hidden transition-all duration-200 shadow-sm">
+                    <button
+                        class="faq-toggle w-full px-6 py-4 text-left bg-white flex justify-between items-center focus:outline-none focus:ring-2 focus:ring-indigo-400 focus:ring-opacity-50">
+                        <span class="text-lg font-medium text-gray-800">What resources does Telth commit to
+                            partnerships?</span>
+                        <svg class="faq-icon w-5 h-5 text-indigo-500 transform transition-transform duration-200"
+                            fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7">
+                            </path>
                         </svg>
                     </button>
                     <div class="faq-content max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
                         <div class="px-6 py-4 bg-white border-t border-gray-100">
-                            <p class="text-gray-600">Each partnership receives dedicated relationship management, technical integration support, and access to relevant Telth platforms and networks as defined in the partnership agreement.</p>
+                            <p class="text-gray-600">Each partnership receives dedicated relationship management,
+                                technical integration support, and access to relevant Telth platforms and networks as
+                                defined in the partnership agreement.</p>
                         </div>
                     </div>
                 </div>
-    
+
             </div>
         </div>
     </div>
-    
+
     <section class="w-full bg-white py-12">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Header -->
@@ -1748,7 +1818,8 @@
                         <div
                             class="bg-purple-100 text-purple-800 font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3 group-hover:bg-purple-600 group-hover:text-white transition-colors">
                             1</div>
-                        <h3 class="font-bold text-gray-800 group-hover:text-purple-700 transition-colors">Consultation</h3>
+                        <h3 class="font-bold text-gray-800 group-hover:text-purple-700 transition-colors">Consultation
+                        </h3>
                     </div>
                     <p class="text-sm text-gray-600">Share your needs via our 5-minute form.</p>
                 </div>
@@ -2082,7 +2153,7 @@
             });
         });
     </script>
-      <script>
+    <script>
         document.addEventListener('DOMContentLoaded', function () {
             const tabs = document.querySelectorAll('.nav-pill');
             const contents = document.querySelectorAll('.service-content');
@@ -2110,33 +2181,33 @@
         });
     </script>
 
-<script>
-    document.addEventListener('DOMContentLoaded', function () {
-        // Get all FAQ toggle buttons
-        const faqToggles = document.querySelectorAll('.faq-toggle');
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get all FAQ toggle buttons
+            const faqToggles = document.querySelectorAll('.faq-toggle');
 
-        // Add click event to each toggle button
-        faqToggles.forEach(toggle => {
-            toggle.addEventListener('click', function () {
-                // Get the parent FAQ item
-                const faqItem = this.parentElement;
+            // Add click event to each toggle button
+            faqToggles.forEach(toggle => {
+                toggle.addEventListener('click', function () {
+                    // Get the parent FAQ item
+                    const faqItem = this.parentElement;
 
-                // Get the content container
-                const content = this.nextElementSibling;
+                    // Get the content container
+                    const content = this.nextElementSibling;
 
-                // Toggle the active class
-                faqItem.classList.toggle('active');
+                    // Toggle the active class
+                    faqItem.classList.toggle('active');
 
-                // If the content is open, close it, otherwise open it
-                if (content.style.maxHeight) {
-                    content.style.maxHeight = null;
-                } else {
-                    content.style.maxHeight = content.scrollHeight + 'px';
-                }
+                    // If the content is open, close it, otherwise open it
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + 'px';
+                    }
+                });
             });
         });
-    });
-</script>
+    </script>
 </body>
 
 </html>

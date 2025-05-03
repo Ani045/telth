@@ -318,10 +318,7 @@
             </div>
         </div>
     </nav>
-
     <div class="h-20 fixed z-20 w-full bg-gradient-to-b from-gray-100 to-transparent"></div>
-
-
     <!-- Full Screen Menu Overlay -->
     <div x-data="{ isOpen: false }" x-show="isOpen" x-transition:enter="transition ease-out duration-300"
         x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
@@ -338,11 +335,11 @@
             <div class="container mx-auto px-6 py-12">
                 <!-- Header -->
                 <div class="flex justify-between items-center mb-12">
-                    <div
+                    <a href="/index.html"
                         class="text-3xl font-bold bg-gradient-to-r from-violet-900 to-indigo-900 bg-clip-text text-transparent flex items-center">
                         <img src="assets/telth.png" alt="telth" class="w-10 h-10 mb-2 mr-2">
                         Telth.care
-                    </div>
+                    </a>
                     <button type="button" x-on:click="isOpen = false"
                         class="group p-2 rounded-full bg-gray-100 hover:bg-gray-200 transition-colors">
                         <svg xmlns="http://www.w3.org/2000/svg"
@@ -369,60 +366,48 @@
                                 Solutions
                             </h3>
                             <div class="space-y-4 flex flex-col">
-                                <span class="tooltip">
+                                <a href="/corporates.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Corporates</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Corporates</span>
+                                </a>
+                                <a href="/government-sector.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Government</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Government</span>
+                                </a>
                                 <a href="/care-provider.html"
                                     class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
                                         class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
                                     <span>Care Providers</span>
                                 </a>
-                                <span class="tooltip">
+                                <a href="/clinics-hospitals.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Clinics/Hospitals</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Clinics/Hospitals</span>
+                                </a>
+                                <a href="/NGOs.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>NGOs</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>NGOs</span>
+                                </a>
+                                <a href="/patients.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Patients</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Patients</span>
+                                </a>
+                                <a href="/insurance-providers.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Insurance Providers</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Insurance Providers</span>
+                                </a>
                             </div>
                         </div>
 
@@ -438,30 +423,24 @@
                                 Technologies
                             </h3>
                             <div class="space-y-4 flex flex-col">
-                                <span class="tooltip">
+                                <a href="/p3dsc.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>P3DSC</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Care Providers</span>
+                                </a>
+                                <a href="/digidoc.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Digidoc</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Digidoc</span>
+                                </a>
+                                <a href="/root-cloud.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Root Cloud</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Root Cloud</span>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -503,74 +482,56 @@
                                         class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
                                     <span>Compact Diagnostic Devices</span>
                                 </a>
-                                <span class="tooltip">
+                                <a href="/smart-wearables-and-iomt-solutions.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300 ml-4">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link ml-4">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Smart Wearables & IoMT</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Smart wearabables & IOMT Solutions</span>
+                                </a>
+                                <a href="/care2home.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Care2Home</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Care2home</span>
+                                </a>
+                                <a href="/care-plan.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Care Plans</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Care Plans</span>
+                                </a>
+                                <a href="/care-plans-for-hospitals.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300 ml-4">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link ml-4">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Hospitals</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>For Hospitals</span>
+                                </a>
+                                <a href="/care-plan-for-patients.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300 ml-4 ">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link ml-4">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Patients</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>For Patients</span>
+                                </a>
+                                <a href="/health-and-wealth-card.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Health and Wealth Card</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Health & Wealth Card</span>
+                                </a>
+                                <a href="/mobile-clinic.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Mobile Clinic</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Mobile Clinic</span>
+                                </a>
+                                <a href="/smart-care-bundle.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Smart Care Bundle</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Smart Care Bundle</span>
+                                </a>
                             </div>
                         </div>
-
-                        <!-- Care Managers Section -->
                         <div
                             class="p-6 bg-gray-100 rounded-2xl backdrop-blur-sm border border-gray-100 hover:bg-violet-100 transition-colors group">
                             <h3 class="text-lg font-semibold text-violet-900 mb-6 flex items-center">
@@ -579,19 +540,25 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
                                 </svg>
-                                Care Managers
+                                Support & Services
                             </h3>
                             <div class="space-y-4">
-                                <span class="tooltip">
+                                <a href="/diagnostic-devices.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Training</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>For Diagnostic Devices</span>
+                                </a>
+                                <a href="/clinics-kiosks.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
+                                    <span
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>For Clinincs/Kiosks</span>
+                                </a>
                             </div>
                         </div>
+
+
                     </div>
 
                     <!-- Additional Services -->
@@ -614,24 +581,22 @@
                                         <span class="w-2 h-0.5 bg-gray-400"></span>
                                         <span>Blogs</span>
                                     </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
-                                    <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Training & R&D</span>
-                                    </span>
                                     <span class="tooltiptext">Coming Soon</span>
                                 </span>
-                                <span class="tooltip">
+                                <a href="/r&d.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Support</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Training and R&D</span>
+                                </a>
+                                <!-- <span class="tooltip">
+                                        <span
+                                            class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
+                                            <span class="w-2 h-0.5 bg-gray-400"></span>
+                                            <span>Support</span>
+                                        </span>
+                                        <span class="tooltiptext">Under Development</span>
+                                    </span> -->
                             </div>
                         </div>
 
@@ -647,30 +612,24 @@
                                 Networks & Partnerships
                             </h3>
                             <div class="space-y-4 flex flex-col">
-                                <span class="tooltip">
+                                <a href="/franchise.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Franchise</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Franchise</span>
+                                </a>
+                                <a href="/partnership.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Partnership</span>
-                                    </span>
-                                    <span class="tooltiptext">Under Development</span>
-                                </span>
-                                <span class="tooltip">
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Partnerships</span>
+                                </a>
+                                <a href="/career.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
                                     <span
-                                        class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
-                                        <span class="w-2 h-0.5 bg-gray-400"></span>
-                                        <span>Career</span>
-                                    </span>
-                                    <span class="tooltiptext">Coming Soon</span>
-                                </span>
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Career</span>
+                                </a>
                                 <span class="tooltip">
                                     <span
                                         class="flex items-center gap-3 text-gray-400 group-hover:translate-x-2 transition-all duration-300 disabled-link">
@@ -681,40 +640,61 @@
                                 </span>
                             </div>
                         </div>
+
+                        <!-- Care Managers Section -->
+                        <div
+                            class="p-6 bg-gray-100 rounded-2xl backdrop-blur-sm border border-gray-100 hover:bg-violet-100 transition-colors group">
+                            <h3 class="text-lg font-semibold text-violet-900 mb-6 flex items-center">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 mr-2" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                                </svg>
+                                Care Managers
+                            </h3>
+                            <div class="space-y-4">
+                                <a href="/training.html"
+                                    class="flex items-center gap-3 text-violet-700 hover:text-violet-900 hover:underline group-hover:translate-x-2 transition-all duration-300">
+                                    <span
+                                        class="w-2 h-0.5 bg-violet-800 group-hover:w-3 transition-all duration-300"></span>
+                                    <span>Training</span>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Quick Links -->
                 <div class="mt-12 pt-12 border-t border-gray-200">
-                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-8 text-center">
+                    <div class="grid grid-cols-2 md:grid-cols-3  gap-8 text-center">
                         <a href="/privacy-policy.html"
-                            class="text-violet-700 hover:text-violet-900 text-sm transition-colors">
+                            class="text-violet-700 hover:text-violet-900 hover:underline text-sm transition-colors">
                             Privacy Policy
                         </a>
-                        <span class="tooltip">
-                            <span class="text-gray-400 text-sm transition-colors disabled-link">
-                                Financial Services
+                        <!-- <span class="tooltip">
+                                <span class="text-gray-400 text-sm transition-colors disabled-link">
+                                    Financial Services
+                                </span>
+                                <span class="tooltiptext">Under Development</span>
                             </span>
-                            <span class="tooltiptext">Under Development</span>
-                        </span>
-                        <span class="tooltip">
-                            <span class="text-gray-400 text-sm transition-colors disabled-link">
-                                Infrastructure
+                            <span class="tooltip">
+                                <span class="text-gray-400 text-sm transition-colors disabled-link">
+                                    Infrastructure
+                                </span>
+                                <span class="tooltiptext">Coming Soon</span>
                             </span>
-                            <span class="tooltiptext">Coming Soon</span>
-                        </span>
-                        <span class="tooltip">
-                            <span class="text-gray-400 text-sm transition-colors disabled-link">
-                                Education & Training
-                            </span>
-                            <span class="tooltiptext">Under Development</span>
-                        </span>
+                            <span class="tooltip">
+                                <span class="text-gray-400 text-sm transition-colors disabled-link">
+                                    Education & Training
+                                </span>
+                                <span class="tooltiptext">Under Development</span>
+                            </span> -->
                         <a href="/terms-conditions.html"
-                            class="text-violet-700 hover:text-violet-900 text-sm transition-colors">
+                            class="text-violet-700 hover:text-violet-900 hover:underline text-sm transition-colors">
                             Terms and Conditions
                         </a>
                         <a href="/contact-us.html"
-                            class="text-violet-700 hover:text-violet-900 text-sm transition-colors">
+                            class="text-violet-700 hover:text-violet-900 hover:underline text-sm transition-colors">
                             Contact
                         </a>
                     </div>
@@ -754,12 +734,13 @@
                     </h1>
 
                     <p class="text-lg text-gray-600 max-w-lg">
-                        We provide comprehensive support to keep your Telth diagnostic devices running at peak performance, ensuring reliable healthcare delivery wherever you operate.
+                        We provide comprehensive support to keep your Telth diagnostic devices running at peak
+                        performance, ensuring reliable healthcare delivery wherever you operate.
                     </p>
 
-            
 
-                  
+
+
                 </div>
 
                 <!-- Image -->
@@ -814,12 +795,14 @@
                             Always By Your Side
                         </h2>
                         <p class="text-gray-600 text-lg mb-8 leading-relaxed">
-                            When you choose Telth diagnostic devices, you gain more than advanced healthcare technology—you receive ongoing support from a team dedicated to your success.
-                             Our support ecosystem ensures your devices operate at peak performance, minimizing downtime and maximizing patient care capabilities.
+                            When you choose Telth diagnostic devices, you gain more than advanced healthcare
+                            technology—you receive ongoing support from a team dedicated to your success.
+                            Our support ecosystem ensures your devices operate at peak performance, minimizing downtime
+                            and maximizing patient care capabilities.
 
                         </p>
 
-                     
+
                     </div>
                 </div>
 
@@ -839,291 +822,335 @@
             </div>
         </div>
     </section>
-    
-
- <!-- Support services -->
- <section class="py-8 px-4 container mx-auto">
-    <!-- Section Header -->
-    <div class="text-center mb-12">
-        <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Support Services</h2>
-    </div>
-
-    <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
-        <!-- Basic Home Visit -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl">
-            <div class="p-6 bg-gradient-to-r from-purple-50 to-purple-100 border-b">
-                <h3 class="text-2xl font-bold text-gray-800">Technical Troubleshooting</h3>
-            </div>
-            <div class="p-6">
-                <ul class="space-y-3">
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span class="text-gray-700">Our experts quickly resolve operational issues through remote diagnostics and guidance, minimizing disruption to your healthcare services.</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Comprehensive Care -->
-        <div class="bg-white rounded-lg shadow-md overflow-visible transition-all duration-300 hover:shadow-xl relative">
-           
-            <div class="p-6 bg-gradient-to-r from-purple-50 to-purple-100 border-b">
-                <h3 class="text-2xl font-bold text-gray-800">Maintenance & Calibration</h3>
-            </div>
-            <div class="p-6">
-                <ul class="space-y-3">
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span class="text-gray-700">Regular servicing ensures continued accuracy and reliability, with scheduled preventive maintenance visits keeping your devices in optimal condition.</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Specialized Care -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl">
-            <div class="p-6 bg-gradient-to-r from-purple-50 to-purple-100 border-b">
-                <h3 class="text-2xl font-bold text-gray-800">Software Updates</h3>
-            </div>
-            <div class="p-6">
-                <ul class="space-y-3">
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span class="text-gray-700">We seamlessly deploy the latest features and improvements to enhance your device capabilities and maintain security.</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Family Care Package -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl">
-            <div class="p-6 bg-gradient-to-r from-purple-50 to-purple-100 border-b">
-                <h3 class="text-2xl font-bold text-gray-800">User Training</h3>
-            </div>
-            <div class="p-6">
-                <ul class="space-y-3">
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span class="text-gray-700">Ongoing education for your staff maximizes device utilization through both in-person sessions and digital learning resources.</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </div>
-</section>
 
 
-<!-- support plans -->
-<section class="container mx-auto px-4 py-8 ">
-    <div class="text-center mb-16">
-        <h2 class="text-4xl font-bold text-gray-800 mb-4">Support Plans</h2>
-        <p class="text-gray-600 max-w-2xl mx-auto">
-            Choose the level of support that best meets the needs of your healthcare organization.
-        </p>
-        <div class="w-24 h-1 bg-purple-600 mx-auto rounded-full mt-4"></div>
-    </div>
-
-    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <!-- Essential Support -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl">
-            <div class="p-6 bg-gray-50 border-b">
-                <h3 class="text-2xl font-bold text-gray-800">Essential Support</h3>
-            </div>
-            <div class="p-6">
-                <ul class="space-y-3">
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span class="text-gray-700">Business hours technical assistance</span>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span class="text-gray-700">Basic troubleshooting help</span>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span class="text-gray-700">Online knowledge base access</span>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span class="text-gray-700">Standard software updates</span>
-                    </li>
-                </ul>
-            </div>
-       
-        </div>
-
-        <!-- Enhanced Support -->
-        <div class="bg-white rounded-lg shadow-md overflow-visible transition-all duration-300 hover:shadow-xl relative">
-            <div class="absolute -top-2 right-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">
-                Most Popular
-            </div>
-            <div class="p-6 bg-gradient-to-r from-blue-50 to-blue-100 border-b">
-                <h3 class="text-2xl font-bold text-gray-800">Enhanced Support</h3>
-            </div>
-            <div class="p-6">
-                <ul class="space-y-3">
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span class="text-gray-700">24/7 priority technical support</span>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span class="text-gray-700">Next-business-day on-site service</span>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span class="text-gray-700">Biannual preventive maintenance</span>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span class="text-gray-700">Expedited parts replacement</span>
-                    </li>
-                </ul>
-            </div>
-          
-        </div>
-
-        <!-- Premium Support -->
-        <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl">
-            <div class="p-6 bg-gray-50 border-b">
-                <h3 class="text-2xl font-bold text-gray-800">Premium Support</h3>
-            </div>
-            <div class="p-6">
-                <ul class="space-y-3">
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span class="text-gray-700">4-hour on-site emergency response</span>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span class="text-gray-700">Quarterly preventive maintenance</span>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span class="text-gray-700">Loaner devices during repairs</span>
-                    </li>
-                    <li class="flex items-start">
-                        <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
-                        </svg>
-                        <span class="text-gray-700">Staff training sessions</span>
-                    </li>
-                </ul>
-            </div>
-        
-        </div>
-    </div>
-</section>
-
-
-
-
-
-
- <!-- Device Management portal -->
-        
- <section class="py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-purple-50 to-blue-50">
-    <div class="container mx-auto">
+    <!-- Support services -->
+    <section class="py-8 px-4 container mx-auto">
         <!-- Section Header -->
-        <div class="mb-6">
-            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mt-3 mb-6">
-                Device Management Portal
-            </h2>
-            <div class="w-full h-px bg-gradient-to-r from-purple-400 to-blue-400 mt-6 mb-10"></div>
+        <div class="text-center mb-12">
+            <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">Support Services</h2>
         </div>
 
-        <!-- Steps Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Step 1: Device Dashboard -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
-                <div class="mb-5">
-                    <h3 class="text-xl font-bold text-gray-800 mt-2">Device Dashboard</h3>
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-2">
+            <!-- Basic Home Visit -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl">
+                <div class="p-6 bg-gradient-to-r from-purple-50 to-purple-100 border-b">
+                    <h3 class="text-2xl font-bold text-gray-800">Technical Troubleshooting</h3>
                 </div>
-                <p class="text-gray-600">
-                    Monitor the status, usage patterns, and maintenance history of all your devices in one place.
-                </p>
-                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
-                    <i class="fas fa-tv text-purple-600 group-hover:text-white transition-colors"></i>
-                </div>
-            </div>
-
-            <!-- Step 2: Service Scheduling -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
-                <div class="mb-5">
-                    <h3 class="text-xl font-bold text-gray-800 mt-2">Service Scheduling</h3>
-                </div>
-                <p class="text-gray-600">
-                    Book maintenance visits, request on-site support, or arrange calibration services with a few clicks.
-                </p>
-                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
-                    <i class="fas fa-calendar-alt text-purple-600 group-hover:text-white transition-colors"></i>
+                <div class="p-6">
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Our experts quickly resolve operational issues through remote
+                                diagnostics and guidance, minimizing disruption to your healthcare services.</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- Step 3: Training Resources -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
-                <div class="mb-5">
-                    <h3 class="text-xl font-bold text-gray-800 mt-2">Training Resources</h3>
+            <!-- Comprehensive Care -->
+            <div
+                class="bg-white rounded-lg shadow-md overflow-visible transition-all duration-300 hover:shadow-xl relative">
+
+                <div class="p-6 bg-gradient-to-r from-purple-50 to-purple-100 border-b">
+                    <h3 class="text-2xl font-bold text-gray-800">Maintenance & Calibration</h3>
                 </div>
-                <p class="text-gray-600">
-                    Access on-demand videos, certification courses, and webinars to build staff proficiency.
-                </p>
-                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
-                    <i class="fas fa-video text-purple-600 group-hover:text-white transition-colors"></i>
+                <div class="p-6">
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Regular servicing ensures continued accuracy and reliability,
+                                with scheduled preventive maintenance visits keeping your devices in optimal
+                                condition.</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- Step 4: Supply Management -->
-            <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
-                <div class="mb-5">
-                    <h3 class="text-xl font-bold text-gray-800 mt-2">Supply Management</h3>
+            <!-- Specialized Care -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl">
+                <div class="p-6 bg-gradient-to-r from-purple-50 to-purple-100 border-b">
+                    <h3 class="text-2xl font-bold text-gray-800">Software Updates</h3>
                 </div>
-                <p class="text-gray-600">
-                    Order replacement parts and track shipments of essential supplies for uninterrupted operation.
-                </p>
-                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
-                    <i class="fas fa-boxes text-purple-600 group-hover:text-white transition-colors"></i>
+                <div class="p-6">
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">We seamlessly deploy the latest features and improvements to
+                                enhance your device capabilities and maintain security.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Family Care Package -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl">
+                <div class="p-6 bg-gradient-to-r from-purple-50 to-purple-100 border-b">
+                    <h3 class="text-2xl font-bold text-gray-800">User Training</h3>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Ongoing education for your staff maximizes device utilization
+                                through both in-person sessions and digital learning resources.</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-        
-        
 
-  
-        
+    <!-- support plans -->
+    <section class="container mx-auto px-4 py-8 ">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold text-gray-800 mb-4">Support Plans</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">
+                Choose the level of support that best meets the needs of your healthcare organization.
+            </p>
+            <div class="w-24 h-1 bg-purple-600 mx-auto rounded-full mt-4"></div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Essential Support -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl">
+                <div class="p-6 bg-gray-50 border-b">
+                    <h3 class="text-2xl font-bold text-gray-800">Essential Support</h3>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Business hours technical assistance</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Basic troubleshooting help</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Online knowledge base access</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Standard software updates</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Enhanced Support -->
+            <div
+                class="bg-white rounded-lg shadow-md overflow-visible transition-all duration-300 hover:shadow-xl relative">
+                <div class="absolute -top-2 right-4 bg-blue-600 text-white text-xs font-bold px-3 py-1 rounded-full">
+                    Most Popular
+                </div>
+                <div class="p-6 bg-gradient-to-r from-blue-50 to-blue-100 border-b">
+                    <h3 class="text-2xl font-bold text-gray-800">Enhanced Support</h3>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">24/7 priority technical support</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Next-business-day on-site service</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Biannual preventive maintenance</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Expedited parts replacement</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- Premium Support -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-xl">
+                <div class="p-6 bg-gray-50 border-b">
+                    <h3 class="text-2xl font-bold text-gray-800">Premium Support</h3>
+                </div>
+                <div class="p-6">
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">4-hour on-site emergency response</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Quarterly preventive maintenance</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Loaner devices during repairs</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="h-6 w-6 text-green-500 mr-2" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 13l4 4L19 7" />
+                            </svg>
+                            <span class="text-gray-700">Staff training sessions</span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    <!-- Device Management portal -->
+
+    <section class="py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-purple-50 to-blue-50">
+        <div class="container mx-auto">
+            <!-- Section Header -->
+            <div class="mb-6">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mt-3 mb-6">
+                    Device Management Portal
+                </h2>
+                <div class="w-full h-px bg-gradient-to-r from-purple-400 to-blue-400 mt-6 mb-10"></div>
+            </div>
+
+            <!-- Steps Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Step 1: Device Dashboard -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
+                    <div class="mb-5">
+                        <h3 class="text-xl font-bold text-gray-800 mt-2">Device Dashboard</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Monitor the status, usage patterns, and maintenance history of all your devices in one place.
+                    </p>
+                    <div
+                        class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
+                        <i class="fas fa-tv text-purple-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                </div>
+
+                <!-- Step 2: Service Scheduling -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
+                    <div class="mb-5">
+                        <h3 class="text-xl font-bold text-gray-800 mt-2">Service Scheduling</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Book maintenance visits, request on-site support, or arrange calibration services with a few
+                        clicks.
+                    </p>
+                    <div
+                        class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
+                        <i class="fas fa-calendar-alt text-purple-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                </div>
+
+                <!-- Step 3: Training Resources -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
+                    <div class="mb-5">
+                        <h3 class="text-xl font-bold text-gray-800 mt-2">Training Resources</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Access on-demand videos, certification courses, and webinars to build staff proficiency.
+                    </p>
+                    <div
+                        class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
+                        <i class="fas fa-video text-purple-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                </div>
+
+                <!-- Step 4: Supply Management -->
+                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
+                    <div class="mb-5">
+                        <h3 class="text-xl font-bold text-gray-800 mt-2">Supply Management</h3>
+                    </div>
+                    <p class="text-gray-600">
+                        Order replacement parts and track shipments of essential supplies for uninterrupted operation.
+                    </p>
+                    <div
+                        class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
+                        <i class="fas fa-boxes text-purple-600 group-hover:text-white transition-colors"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
 
 
 
@@ -1146,7 +1173,8 @@
                         <div
                             class="bg-purple-100 text-purple-800 font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3 group-hover:bg-purple-600 group-hover:text-white transition-colors">
                             1</div>
-                        <h3 class="font-bold text-gray-800 group-hover:text-purple-700 transition-colors">Consultation</h3>
+                        <h3 class="font-bold text-gray-800 group-hover:text-purple-700 transition-colors">Consultation
+                        </h3>
                     </div>
                     <p class="text-sm text-gray-600">Share your needs via our 5-minute form.</p>
                 </div>

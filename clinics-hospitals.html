@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/js/all.min.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+    <link href="./output.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
@@ -199,6 +200,128 @@
             100% {
                 box-shadow: 0 0 0 0 rgba(139, 92, 246, 0);
             }
+        }
+    </style>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-2px);
+            transition: transform 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+
+    <style>
+        .solution-card {
+            transition: all 0.3s ease;
+        }
+
+        .solution-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+
+        .feature-item {
+            transition: all 0.2s ease;
+        }
+
+        .feature-item:hover {
+            background-color: #f8fafc;
+        }
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .cta-gradient {
+            background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.4);
+        }
+
+        .btn-secondary {
+            transition: all 0.3s ease;
+        }
+
+        .btn-secondary:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+            transform: translateY(-2px);
+        }
+
+        .floating-element {
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .floating-element:nth-child(2) {
+            animation-delay: 2s;
+        }
+
+        .floating-element:nth-child(3) {
+            animation-delay: 4s;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0px) rotate(0deg);
+            }
+
+            33% {
+                transform: translateY(-10px) rotate(1deg);
+            }
+
+            66% {
+                transform: translateY(5px) rotate(-1deg);
+            }
+        }
+
+        .feature-badge {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .stats-card {
+            backdrop-filter: blur(10px);
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .stats-card:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
         }
     </style>
 
@@ -718,732 +841,722 @@
     <div class="h-20"></div>
 
     <!-- Hero section -->
-    <section class="relative overflow-hidden pt-12 md:pt-16">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col lg:flex-row items-center gap-10">
-                <!-- Text content -->
-                <div class="lg:w-2/3 ">
-                    <!-- <div
-                        class="inline-flex items-center mb-6 px-3 py-1.5 rounded-full bg-white text-purple-700 text-xs font-medium tracking-wider shadow-sm border border-purple-100">
-                        <span class="w-2 h-2 mr-2 bg-purple-500 rounded-full"></span>
-                        AI Healthcare Solutions
-                    </div> -->
+    <section class="hero-gradient flex items-center py-10">
+        <div class="container mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-16 items-center flex flex-col-reverse md:flex-col">
+                <!-- Content Column -->
+                <div class="fade-in space-y-4">
+                    <!-- Tagline -->
+                    <div class="text-slate-600 font-semibold text-lg tracking-wide mb-4">
+                        Great Care. Growing Revenue. Grateful Patients.
+                    </div>
 
-                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
-                        <span class="gradient-highlight">Expand Your Reach.</span><br>
-                        <span class="text-gray-800">Enhance Patient Satisfaction.</span><br>
-                        <span class="text-gray-800">Boost Revenue.</span>
+                    <div class="space-y-6">
+                        <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 leading-tight">
+                            Connected Care
+                            <span
+                                class="bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">Systems</span>
+                        </h1>
+                    </div>
 
-                    </h1>
-
-                    <p class="text-gray-600 mb-8 max-w-3xl text-lg leading-relaxed">
-                        Enhance your healthcare facility's capabilities with patent-pending advanced diagnostic tools,
-                        remote monitoring solutions, and AI-powered systems. These innovations are designed to improve
-                        patient outcomes, streamline clinical workflows, and offer personalized care, all while ensuring
-                        efficient, high-quality service at your convenience.
+                    <p class="text-md lg:text-lg text-gray-600 leading-relaxed max-w-2xl">
+                        Upgrade your clinic or hospital with Telth's connected care systems, built to deliver smarter,
+                        faster, and more accessible healthcare.
                     </p>
 
-                    <div class="flex flex-col sm:flex-row gap-4 z-50">
-                        <button
-                            class="px-6 py-3.5 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg font-medium hover:shadow-lg transition-all duration-300 hover:opacity-90">
-                            Transform Your Healthcare Delivery
-                        </button>
+                    <!-- Feature Cards -->
+                    <div class="space-y-4 pt-4">
+                        <!-- New Entrants Card -->
+                        <div
+                            class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow duration-300">
+                            <h3 class="text-md font-semibold text-slate-900 mb-2">
+                                For new entrants
+                            </h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Telth lowers entry barriers with AI-powered tools and modular solutions tailored for
+                                primary
+                                and secondary care delivery—helping you launch faster, scale smarter, and serve with
+                                clinical excellence from day one.
+                            </p>
+                        </div>
 
+                        <!-- Established Providers Card -->
+                        <div
+                            class="bg-white border border-slate-200 rounded-xl p-4 shadow-sm hover:shadow-md transition-shadow duration-300">
+                            <h3 class="text-md font-semibold text-slate-900 mb-2">
+                                For established providers
+                            </h3>
+                            <p class="text-slate-600 text-sm leading-relaxed">
+                                Our systems help expand your catchment area, boost patient retention, improve
+                                operational
+                                efficiency, and unlock new revenue streams—driving growth while elevating care quality.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 pt-3">
+                        <button
+                            class="hover-lift bg-gradient-to-r from-blue-600 to-indigo-600 text-white px-8 py-2 rounded-lg font-semibold text-md shadow-lg">
+                            Get Started Today
+                        </button>
+                        <button
+                            class="hover-lift bg-white text-gray-700 px-8 py-2 rounded-lg font-semibold text-md border-2 border-gray-200 shadow-md">
+                            Schedule Demo
+                        </button>
+                    </div>
+
+                    <!-- Trust Indicators -->
+                    <div class="flex items-center gap-8 pt-8 text-sm text-gray-500">
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-green-500 rounded-full"></div>
+                            <span>AI-Powered</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-blue-500 rounded-full"></div>
+                            <span>HIPAA Compliant</span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <div class="w-2 h-2 bg-purple-500 rounded-full"></div>
+                            <span>24/7 Support</span>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Visual content -->
-                <div class="lg:w-1/3 relative">
-                    <div class="relative h-80 md:h-96 w-full healthcare-cutout"></div>
+                <!-- Image Column -->
+                <div class="fade-in lg:order-last">
+                    <div class="relative">
+                        <!-- Main Image -->
+                        <div
+                            class="aspect-[4/3] rounded-2xl shadow-2xl flex items-center justify-center overflow-hidden">
+                            <img src="assets/solutions/clinics-hospitals/clinic.jpg"
+                                alt="Modern healthcare technology and digital medical systems"
+                                class="w-full h-full object-cover rounded-2xl">
+                        </div>
 
-                    <div class="absolute -bottom-6 -right-6 w-64 h-64 smart-clinic-card p-5 hidden md:block">
-                        <div class="flex items-center mb-3">
-                            <div
-                                class="w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 flex items-center justify-center text-white">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
-                                    fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
-                                        clip-rule="evenodd" />
+                        <!-- Floating Cards -->
+                        <!-- <div class="absolute -top-6 -left-6 bg-white rounded-xl shadow-xl p-4 border border-gray-100">
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 bg-green-100 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M5 13l4 4L19 7"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-semibold text-gray-800">Care Quality</p>
+                                    <p class="text-xs text-gray-500">Excellence Assured</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div
+                            class="absolute -bottom-6 -right-6 bg-white rounded-xl shadow-xl p-4 border border-gray-100">
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                                    <svg class="w-4 h-4 text-blue-600" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-semibold text-gray-800">Analytics</p>
+                                    <p class="text-xs text-gray-500">Real-time Data</p>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-16 bg-gradient-to-br from-slate-50 to-gray-100">
+        <div class="container mx-auto px-6 lg:px-8 ">
+
+            <!-- Header -->
+            <div class="text-center mb-12">
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                    For the Next-Gen Providers: Launch Smarter with
+                    <span class="text-blue-600">AI-Powered Primary & Secondary Care</span>
+                </h2>
+                <p class="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                    Launching or expanding healthcare services doesn't have to be complex or costly. Telth's AI-powered
+                    tools and connected care solutions make it easier to deliver high-quality primary and secondary
+                    care,
+                    streamline operations, and scale with confidence—while keeping barriers to entry low for modern
+                    healthcare providers.
+                </p>
+            </div>
+
+            <!-- Our Solution -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-gray-900 text-center mb-12">Our Solution</h3>
+
+                <!-- Fast, Ready, Scalable -->
+                <div class="bg-white rounded-2xl shadow-lg p-8 mb-12 border border-gray-200">
+                    <h4 class="text-2xl font-semibold text-gray-900 text-center mb-8">Fast, Ready, Scalable</h4>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-blue-50 rounded-xl flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                                 </svg>
                             </div>
-                            <div class="ml-3">
-                                <h3 class="font-semibold text-gray-800">AI Diagnostics</h3>
-                                <p class="text-xs text-gray-500">Real-time analysis</p>
-                            </div>
+                            <h5 class="font-semibold text-gray-900 mb-2">Set up in under 7 days</h5>
                         </div>
-                        <div class="space-y-2">
-                            <div class="flex justify-between text-sm">
-                                <span class="text-gray-500">Accuracy</span>
-                                <span class="font-medium text-purple-600">98.7%</span>
+                        <div class="text-center">
+                            <div class="w-16 h-16 bg-green-50 rounded-xl flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
                             </div>
-                            <div class="w-full bg-gray-200 rounded-full h-1.5">
-                                <div class="bg-gradient-to-r from-purple-500 to-blue-500 h-1.5 rounded-full"
-                                    style="width: 98%"></div>
-                            </div>
+                            <h5 class="font-semibold text-gray-900 mb-2">30+ turnkey diagnostic modules</h5>
                         </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Trust indicators -->
-            <div class="mt-16 pt-8 border-t border-gray-200">
-                <!-- <p class="text-center text-gray-500 text-sm mb-6">TRUSTED BY LEADING HEALTHCARE PROVIDERS</p>
-                <div class="flex flex-wrap justify-center gap-8 md:gap-12 opacity-70">
-                    <div class="text-gray-700 font-medium">Mayo Clinic</div>
-                    <div class="text-gray-700 font-medium">Kaiser Permanente</div>
-                    <div class="text-gray-700 font-medium">Cleveland Clinic</div>
-                    <div class="text-gray-700 font-medium">Johns Hopkins</div>
-                </div> -->
-            </div>
-        </div>
-    </section>
-
-    <div class="bg-white container mx-auto  p-8 mb-20">
-        <div class="text-center mb-10">
-            <h3 class="text-2xl md:text-3xl font-bold mb-4">Why Choose Telth for Your Healthcare Facility</h3>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Scenario 1 -->
-            <div class="hes-card bg-white border border-gray-100 shadow-md">
-                <div class="h-28 gradient-bg flex items-center justify-center">
-                    <i class="fas fa-home text-white text-4xl"></i>
-                </div>
-                <div class="p-6">
-                    <h4 class="font-bold text-lg mb-3">Expand Your Reach</h4>
-                    <p class="text-gray-600 text-sm mb-4">
-                        Extend care beyond facility walls with remote monitoring, telehealth, and freelance care
-                        managers, ensuring convenience without the overhead of permanent staff.
-                    </p>
-
-                </div>
-            </div>
-
-            <!-- Scenario 2 -->
-            <div class="hes-card bg-white border border-gray-100 shadow-md">
-                <div class="h-28 gradient-bg flex items-center justify-center">
-                    <i class="fas fa-clinic-medical text-white text-4xl"></i>
-                </div>
-                <div class="p-6">
-                    <h4 class="font-bold text-lg mb-3">Improve Diagnostic Accuracy</h4>
-                    <p class="text-gray-600 text-sm mb-4">
-                        Access hospital-grade diagnostics in compact, affordable formats for precise results delivered
-                        directly to patients.
-
-
-                    </p>
-
-                </div>
-            </div>
-
-            <!-- Scenario 3 -->
-            <div class="hes-card bg-white border border-gray-100 shadow-md">
-                <div class="h-28 gradient-bg flex items-center justify-center">
-                    <i class="fas fa-users text-white text-4xl"></i>
-                </div>
-                <div class="p-6">
-                    <h4 class="font-bold text-lg mb-3">Enhance Patient Experience</h4>
-                    <p class="text-gray-600 text-sm mb-4">
-                        Reduce wait times and increase satisfaction by utilizing freelance care managers who provide
-                        efficient, patient-centered care.
-
-
-                    </p>
-
-                </div>
-            </div>
-
-            <!-- Scenario 4 -->
-            <div class="hes-card bg-white border border-gray-100 shadow-md">
-                <div class="h-28 gradient-bg flex items-center justify-center">
-                    <i class="fas fa-ambulance text-white text-4xl"></i>
-                </div>
-                <div class="p-6">
-                    <h4 class="font-bold text-lg mb-3">Optimize Resource Utilization</h4>
-                    <p class="text-gray-600 text-sm mb-4">
-                        Maximize staff efficiency and reduce operational costs by leveraging flexible care models with
-                        freelance professionals.
-
-                    </p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Main Solutions -->
-
-    <!-- Primary section -->
-    <section class="py-16 md:py-24 px-4 md:px-8 lg:px-16 relative overflow-hidden">
-        <!-- Background Elements -->
-        <div class="absolute inset-0 z-0">
-            <div
-                class="absolute top-1/3 left-0 w-64 h-64 bg-purple-50 rounded-full opacity-70 transform -translate-x-1/2">
-            </div>
-            <div
-                class="absolute bottom-0 right-0 w-96 h-96 bg-indigo-50 rounded-full opacity-70 transform translate-x-1/3 translate-y-1/3">
-            </div>
-            <div class="absolute top-0 right-1/3 w-48 h-48 bg-violet-50 rounded-full opacity-70"></div>
-        </div>
-
-        <div class="container mx-auto relative z-10">
-            <!-- Section Header -->
-            <div class="text-center mb-16 max-w-3xl mx-auto">
-                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
-                    Our <span class="text-purple-600">Healthcare Facility Solutions</span>
-                </h2>
-
-            </div>
-
-            <!-- Features with Hexagon Design -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-                <!-- Feature 1 -->
-                <div class="relative group">
-                    <div
-                        class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300 h-full border-t-4 border-purple-500">
-                        <div class="absolute -top-5 left-8">
+                        <div class="text-center">
                             <div
-                                class="bg-gradient-to-br from-purple-500 to-indigo-600 w-10 h-10 rounded-lg shadow-lg flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-300">
-                                <i class="fas fa-hospital text-white"></i>
+                                class="w-16 h-16 bg-purple-50 rounded-xl flex items-center justify-center mx-auto mb-4">
+                                <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
                             </div>
-                        </div>
-                        <div class="pt-6">
-                            <h3 class="text-xl font-bold text-gray-800 mb-4">Smart Clinic Integration</h3>
-                            <p class="text-gray-600">
-                                Transform your existing practice with our AI-powered clinical systems, combining
-                                diagnostic devices, telehealth platforms, and intelligent workflow management for
-                                comprehensive care delivery.
-                            </p>
+                            <h5 class="font-semibold text-gray-900 mb-2">Zero technical expertise required</h5>
                         </div>
                     </div>
                 </div>
 
-                <!-- Feature 2 -->
-                <div class="relative group">
-                    <div
-                        class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300 h-full border-t-4 border-indigo-500">
-                        <div class="absolute -top-5 left-8">
+                <!-- Solution Cards Grid -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+                    <!-- AI Diagnostics -->
+                    <a href="/ai-diagnostics"
+                        class="solution-card bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden block group">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="assets/solutions/corporates/Real-time.png" alt="AI Diagnostics"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">AI Diagnostics</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                                Accelerate your diagnostic capabilities with real-time, accurate, and cost-effective AI
+                                tools designed for clinical ease and speed.
+                            </p>
+                            <div class="flex items-center text-blue-600 text-sm font-medium">
+                                Learn More
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Smart Clinics -->
+                    <a href="/smart-clinics"
+                        class="solution-card bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden block group">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="assets/solutions/corporates/Smart Satellite Clinics.png" alt="Smart Clinics"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Smart Clinics</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                                Launch co-branded or white-labeled smart clinics powered by Telth's
+                                technology—customized to
+                                reflect your brand while delivering seamless care, diagnostics, and virtual
+                                consultations.
+                            </p>
+                            <div class="flex items-center text-blue-600 text-sm font-medium">
+                                Learn More
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Health Examination Systems -->
+                    <a href="/health-examination-systems"
+                        class="solution-card bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden block group">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="assets/solutions/HES at Point of Care.png" alt="Health Examination Systems"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Health Examination Systems (HES)</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                                Access real-time patient data and advanced health parameters to power faster, smarter
+                                clinical decisions.
+                            </p>
+                            <div class="flex items-center text-blue-600 text-sm font-medium">
+                                Learn More
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Collaborative Care Network -->
+                    <a href="/collaborative-care"
+                        class="solution-card bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden block group">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="assets/solutions/clinics-hospitals/collaborative-care.jpg"
+                                alt="Collaborative Care Network"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Freelance Collaborative Care Delivery
+                                Network</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                                Plug into a flexible pool of licensed doctors and nurses, available on demand to match
+                                your
+                                clinic's evolving needs.
+                            </p>
+                            <div class="flex items-center text-blue-600 text-sm font-medium">
+                                Learn More
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Additional Features -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
+                    <div class="feature-item bg-white rounded-xl p-6 shadow-md border border-gray-200">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900 mb-2">Seamless Integration</h4>
+                                <p class="text-gray-600">Easily integrate AI solutions with your existing systems for
+                                    smooth
+                                    operations from day one.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feature-item bg-white rounded-xl p-6 shadow-md border border-gray-200">
+                        <div class="flex items-start space-x-4">
                             <div
-                                class="bg-gradient-to-br from-indigo-500 to-blue-600 w-10 h-10 rounded-lg shadow-lg flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-300">
-                                <i class="fas fa-microscope text-white"></i>
+                                class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900 mb-2">Real-time Monitoring</h4>
+                                <p class="text-gray-600">Track patient health data and get actionable insights to make
+                                    informed decisions.</p>
                             </div>
                         </div>
-                        <div class="pt-6">
-                            <h3 class="text-xl font-bold text-gray-800 mb-4">Advanced Diagnostic Suite</h3>
-                            <p class="text-gray-600">
-                                Equip your facility with compact, high-precision diagnostic tools that deliver
-                                laboratory-quality results at the point of care, including portable ultrasound, ECG,
-                                biochemistry analyzers, and rapid test capabilities.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Feature 3 -->
-                <div class="relative group">
-                    <div
-                        class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300 h-full border-t-4 border-violet-500">
-                        <div class="absolute -top-5 left-8">
-                            <div
-                                class="bg-gradient-to-br from-violet-500 to-purple-600 w-10 h-10 rounded-lg shadow-lg flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-300">
-                                <i class="fas fa-heartbeat text-white"></i>
-                            </div>
-                        </div>
-                        <div class="pt-6">
-                            <h3 class="text-xl font-bold text-gray-800 mb-4">Remote Patient Monitoring</h3>
-                            <p class="text-gray-600">
-                                Extend care beyond your facility with our IoMT wearables and monitoring solutions,
-                                including smart watches for real-time health tracking, Continuous Glucose Monitors (CGM)
-                                for diabetes management, and more. These devices enable continuous patient monitoring,
-                                addressing specific use cases while reducing unnecessary in-person visits and
-                                readmissions. Please discuss with Shivam to finalize how to structure the use cases and
-                                device details.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Feature 4 -->
-                <div class="relative group">
-                    <div
-                        class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300 h-full border-t-4 border-blue-500">
-                        <div class="absolute -top-5 left-8">
-                            <div
-                                class="bg-gradient-to-br from-blue-500 to-cyan-600 w-10 h-10 rounded-lg shadow-lg flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-300">
-                                <i class="fas fa-notes-medical text-white"></i>
-                            </div>
-                        </div>
-                        <div class="pt-6">
-                            <h3 class="text-xl font-bold text-gray-800 mb-4">Custom Care Plans</h3>
-                            <p class="text-gray-600">
-                                Tailor personalized care plans to meet the unique needs of each patient.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Feature 5 -->
-                <div class="relative group md:col-span-2 lg:col-span-1">
-                    <div
-                        class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300 h-full border-t-4 border-indigo-500">
-                        <div class="absolute -top-5 left-8">
-                            <div
-                                class="bg-gradient-to-br from-indigo-500 to-purple-600 w-10 h-10 rounded-lg shadow-lg flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-300">
-                                <i class="fas fa-network-wired text-white"></i>
-                            </div>
-                        </div>
-                        <div class="pt-6">
-                            <h3 class="text-xl font-bold text-gray-800 mb-4">Accept Payments via Existing Care Plan
-                                Network</h3>
-                            <p class="text-gray-600">
-                                Seamlessly accept payments through your established care plan network.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="relative group md:col-span-2 lg:col-span-1">
-                    <div
-                        class="bg-white rounded-xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300 h-full border-t-4 border-purple-500">
-                        <div class="absolute -top-5 left-8">
-                            <div
-                                class="bg-gradient-to-br from-purple-500 to-pink-600 w-10 h-10 rounded-lg shadow-lg flex items-center justify-center transform -rotate-6 group-hover:rotate-0 transition-transform duration-300">
-                                <i class="fas fa-credit-card text-white"></i>
-                            </div>
-                        </div>
-                        <div class="pt-6">
-                            <h3 class="text-xl font-bold text-gray-800 mb-4">Telth Pay & Telth Visa Card</h3>
-                            <p class="text-gray-600">Accept payments using Telth Pay or Telth Visa Card, and become a
-                                network partner for enhanced payment solutions.
-                            </p>
-                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-
-
-
-    <!-- IMPLEMENTATION -->
-    <section class="py-16 px-4 md:px-8 lg:px-16 bg-gradient-to-br from-purple-50 to-blue-50">
-        <div class="container mx-auto">
-            <!-- Section Header -->
-            <div class="mb-6">
-                <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-gray-800 mt-3 mb-6">
-                    Implementation Designed for Healthcare Facilities
-                </h2>
-                <div class="w-full h-px bg-gradient-to-r from-purple-400 to-blue-400 mt-6 mb-10"></div>
-            </div>
-
-            <!-- Steps Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Step 1: Practice Assessment -->
-                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
-                    <div class="mb-5">
-                        <h3 class="text-xl font-bold text-gray-800 mt-2">Practice Assessment</h3>
-                    </div>
-                    <p class="text-gray-600">
-                        Analysis of your current workflows, patient needs, and facility limitations.
-                    </p>
-                    <div
-                        class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
-                        <i class="fas fa-stethoscope text-purple-600 group-hover:text-white transition-colors"></i>
-                    </div>
-                </div>
-
-                <!-- Step 2: Customized Integration -->
-                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
-                    <div class="mb-5">
-                        <h3 class="text-xl font-bold text-gray-800 mt-2">Customized Integration</h3>
-                    </div>
-                    <p class="text-gray-600">
-                        Solutions tailored to work with your existing systems and processes.
-                    </p>
-                    <div
-                        class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
-                        <i class="fas fa-cogs text-purple-600 group-hover:text-white transition-colors"></i>
-                    </div>
-                </div>
-
-                <!-- Step 3: Staff Training -->
-                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
-                    <div class="mb-5">
-                        <h3 class="text-xl font-bold text-gray-800 mt-2">Staff Training</h3>
-                    </div>
-                    <p class="text-gray-600">
-                        Comprehensive education on new technologies with minimal disruption.
-                    </p>
-                    <div
-                        class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
-                        <i
-                            class="fas fa-chalkboard-teacher text-purple-600 group-hover:text-white transition-colors"></i>
-                    </div>
-                </div>
-
-                <!-- Step 4: Outcome Measurement -->
-                <div class="bg-white rounded-xl shadow-md hover:shadow-lg transition-shadow p-6 group">
-                    <div class="mb-5">
-                        <h3 class="text-xl font-bold text-gray-800 mt-2">Outcome Measurement</h3>
-                    </div>
-                    <p class="text-gray-600">
-                        Track key metrics, including patient outcomes and operational efficiency.
-                    </p>
-                    <div
-                        class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mt-6 group-hover:bg-purple-600 transition-colors">
-                        <i class="fas fa-chart-bar text-purple-600 group-hover:text-white transition-colors"></i>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-
-
-
-    <!-- Table -->
-    <section class="py-8 px-4  container mx-auto">
-        <!-- Section Header -->
-        <div class="text-center mb-12">
-            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Solutions for Every Healthcare Setting</h2>
-            <div class="w-20 h-1 bg-purple-600 mx-auto mb-6"></div>
-
-        </div>
-
-        <!-- Table-like Header Row -->
-        <div class="grid grid-cols-2 bg-purple-600 text-white rounded-t-lg overflow-hidden">
-            <div class="p-4 font-bold text-lg text-center">
-                <span class="hidden md:inline">Key Solutions</span>
-            </div>
-            <div class="p-4 font-bold text-lg text-center">
-                Facility Type
-            </div>
-        </div>
-
-        <!-- Row 1: Chronic Conditions -->
-        <div class="grid grid-cols-2 bg-white border-l border-r border-gray-200 hover:bg-purple-50 transition-colors">
-            <!-- Left column -->
-            <div class="p-6 border-b border-r border-gray-200 flex items-center">
-                <div class="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center mr-4 flex-shrink-0">
-                    <i class="fas fa-heartbeat text-purple-600"></i>
-                </div>
-                <div>
-                    <h3 class="font-bold text-gray-800 text-lg">Compact Diagnostic Devices & Chronic Care Monitoring
-                    </h3>
-                </div>
-            </div>
-
-            <!-- Right column -->
-            <div class="p-6 border-b border-gray-200">
-                <div class="flex flex-col sm:flex-row sm:items-center">
-                    <div class="mb-2 sm:mb-0 sm:mr-3 text-purple-600">
-                        <i class="fas fa-chart-line"></i>
-                    </div>
-                    <p class="text-gray-600">Efficient, accessible patient care with POCT, basic diagnostics, and
-                        chronic care solutions.
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Row 2: Preventive Care -->
-        <div class="grid grid-cols-2 bg-white border-l border-r border-gray-200 hover:bg-purple-50 transition-colors">
-            <!-- Left column -->
-            <div class="p-6 border-b border-r border-gray-200 flex items-center">
-                <div class="w-10 h-10 rounded-full bg-green-100 flex items-center justify-center mr-4 flex-shrink-0">
-                    <i class="fas fa-shield-alt text-green-600"></i>
-                </div>
-                <div>
-                    <h3 class="font-bold text-gray-800 text-lg">Telth Advanced Diagnostic Systems</h3>
-                </div>
-            </div>
-
-            <!-- Right column -->
-            <div class="p-6 border-b border-gray-200">
-                <div class="flex flex-col sm:flex-row sm:items-center">
-                    <div class="mb-2 sm:mb-0 sm:mr-3 text-green-600">
-                        <i class="fas fa-calendar-check"></i>
-                    </div>
-                    <p class="text-gray-600">Comprehensive diagnostic solutions with HES for accurate results,
-                        telehealth consultations for remote care, and condition-specific monitoring through integrated
-                        devices.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Row 3: Urgent Care Needs -->
-        <div class="grid grid-cols-2 bg-white border-l border-r border-gray-200 hover:bg-purple-50 transition-colors">
-            <!-- Left column -->
-            <div class="p-6 border-b border-r border-gray-200 flex items-center">
-                <div class="w-10 h-10 rounded-full bg-red-100 flex items-center justify-center mr-4 flex-shrink-0">
-                    <i class="fas fa-first-aid text-red-600"></i>
-                </div>
-                <div>
-                    <h3 class="font-bold text-gray-800 text-lg">Telth Department Integration & Data Analytics</h3>
-                </div>
-            </div>
-
-            <!-- Right column -->
-            <div class="p-6 border-b border-gray-200">
-                <div class="flex flex-col sm:flex-row sm:items-center">
-                    <div class="mb-2 sm:mb-0 sm:mr-3 text-red-600">
-                        <i class="fas fa-stopwatch"></i>
-                    </div>
-                    <p class="text-gray-600">Seamlessly integrate Telth HES with hospital departments and use data
-                        analytics platforms to optimize patient care and decision-making.</p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Row 4: Ongoing Wellness -->
-        <div
-            class="grid grid-cols-2 bg-white border-l border-r border-b border-gray-200 rounded-b-lg hover:bg-purple-50 transition-colors">
-            <!-- Left column -->
-            <div class="p-6 border-r border-gray-200 flex items-center">
-                <div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center mr-4 flex-shrink-0">
-                    <i class="fas fa-running text-blue-600"></i>
-                </div>
-                <div>
-                    <h3 class="font-bold text-gray-800 text-lg">Telth Portable Diagnostic Devices</h3>
-                </div>
-            </div>
-
-            <!-- Right column -->
-            <div class="p-6">
-                <div class="flex flex-col sm:flex-row sm:items-center">
-                    <div class="mb-2 sm:mb-0 sm:mr-3 text-blue-600">
-                        <i class="fas fa-tasks"></i>
-                    </div>
-                    <p class="text-gray-600">Bring high-quality healthcare to any location with Telth portable ECGs,
-                        ultrasound probes, and specialist telehealth access for remote consultation and efficient care
-                        delivery.</p>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-
-    <!--  ROI for Insurance Providers - Data Dashboard Style -->
-    <section class="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-purple-50 to-violet-50 relative overflow-hidden">
-        <!-- Decorative elements -->
-        <div class="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-blue-100 to-transparent opacity-30"></div>
-        <div class="absolute bottom-0 left-0 w-32 h-32 rounded-full bg-indigo-200 filter blur-3xl opacity-40"></div>
-
-        <div class="max-w-7xl mx-auto relative z-10">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">
-                    <span class="block">Proven ROI for</span>
-                    <span class="block text-indigo-600">Healthcare Providers</span>
-                </h2>
-            </div>
-
-            <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
-                <!-- ROI 1 -->
-                <div
-                    class="bg-white rounded-xl shadow-lg p-8 text-center border-t-4 border-indigo-500 transform transition-all duration-300">
-                    <div class="text-5xl font-bold text-indigo-600 mb-4">↑</div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Increased Patient Volume</h3>
-                    <p class="text-gray-600">Serve more patients with streamlined workflows, extending your reach
-                        without overhead.</p>
-
-                </div>
-
-                <!-- ROI 2 -->
-                <div
-                    class="bg-white rounded-xl shadow-lg p-8 text-center border-t-4 border-blue-500 transform transition-all duration-300">
-                    <div class="text-5xl font-bold text-blue-600 mb-4">+</div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Expanded Service Offerings</h3>
-                    <p class="text-gray-600">Add diagnostic and specialist services, reaching more patients without
-                        major investment.</p>
-
-                </div>
-
-                <!-- ROI 3 -->
-                <div
-                    class="bg-white rounded-xl shadow-lg p-8 text-center border-t-4 border-purple-500 transform transition-all duration-300">
-                    <div class="flex items-center justify-center mb-4">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12 text-purple-500 mr-3" fill="none"
-                            viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M13 17h8m0 0V9m0 8l-8-8-4 4-6-6" />
-                        </svg>
-                        <span class="text-3xl font-bold text-purple-600">↓</span>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">Reduced Operational Costs</h3>
-                    <p class="text-gray-600">Optimize staff time and resource allocation, extending care capabilities
-                        with minimal overhead.</p>
-
-                </div>
-
-                <!-- ROI 4 -->
-                <div
-                    class="bg-white rounded-xl shadow-lg p-8 text-center border-t-4 border-green-500 transform transition-all duration-300">
-                    <div class="flex items-center justify-center mb-4">
-                        <i class="fas fa-signal text-green-600 text-4xl mr-2"></i>
-                        <span class="text-3xl font-bold text-green-600">+</span>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-800 mb-3">New Revenue Streams</h3>
-                    <p class="text-gray-600">Open telehealth and remote monitoring service opportunities, reaching a
-                        wider audience without the need for additional staffing.</p>
-
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-10 px-4 sm:px-6 lg:px-8 bg-gray-50 relative">
-        <!-- Stage Platform -->
-        <div class="max-w-7xl mx-auto bg-white rounded-3xl border overflow-hidden relative z-10">
-            <!-- Stage Edge Lighting -->
-            <div class="absolute -inset-1 bg-gradient-to-r from-yellow-400 to-red-500 rounded-xl opacity-20 blur"></div>
-
-            <div class="relative bg-white rounded-xl p-8 sm:p-12">
-                <!-- Spotlight Effect -->
-                <div
-                    class="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 rounded-full bg-yellow-100 filter blur-3xl opacity-30">
-                </div>
-
-                <div class="text-center mb-12 relative z-10">
-                    <h2 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">
-                        <span class="block">Clinical Benefits</span>
-                    </h2>
-                    <div class="mt-4 h-1 w-24 bg-violet-600 mx-auto rounded-full"></div>
-                </div>
-
-                <div class="grid gap-8 md:grid-cols-2">
-                    <!-- Benefit 1 -->
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0 bg-violet-100 rounded-lg p-3 mr-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
+            <!-- Impact Section -->
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-200 p-8">
+                <h3 class="text-3xl font-bold text-gray-900 text-center mb-8">Impact</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-green-50 rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1">
+                                </path>
                             </svg>
                         </div>
-                        <div>
-                            <h3 class="text-lg font-bold text-gray-900 mb-1">Faster Diagnosis</h3>
-                            <p class="text-gray-600">On-site testing with rapid results for immediate clinical decisions
-                            </p>
-                        </div>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-3">Lower Costs</h4>
+                        <p class="text-gray-600 text-sm">Reduce the need for expensive, manual processes and invest in
+                            AI
+                            tools that provide better, faster results.</p>
                     </div>
 
-                    <!-- Benefit 2 -->
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0 bg-violet-100 rounded-lg p-3 mr-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-blue-50 rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
                             </svg>
                         </div>
-                        <div>
-                            <h3 class="text-lg font-bold text-gray-900 mb-1">Comprehensive Patient View</h3>
-                            <p class="text-gray-600">Integrated data from multiple diagnostic sources in one interface
-                            </p>
-                        </div>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-3">Faster Setup</h4>
+                        <p class="text-gray-600 text-sm">Quickly set up and scale your healthcare facility with
+                            ready-to-deploy smart solutions.</p>
                     </div>
 
-                    <!-- Benefit 3 -->
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0 bg-violet-100 rounded-lg p-3 mr-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-purple-50 rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                </path>
                             </svg>
                         </div>
-                        <div>
-                            <h3 class="text-lg font-bold text-gray-900 mb-1">Evidence-Based Protocols</h3>
-                            <p class="text-gray-600">AI-assisted clinical decision support based on the latest
-                                guidelines</p>
-                        </div>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-3">Quality Care</h4>
+                        <p class="text-gray-600 text-sm">Deliver high-quality primary and secondary care, even in the
+                            early
+                            stages of your operations.</p>
                     </div>
 
-                    <!-- Benefit 4 -->
-                    <div class="flex items-start">
-                        <div class="flex-shrink-0 bg-violet-100 rounded-lg p-3 mr-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-purple-600" fill="none"
-                                viewBox="0 0 24 24" stroke="currentColor">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-indigo-50 rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M15 10l4.553-2.276A1 1 0 0121 8.618v6.764a1 1 0 01-1.447.894L15 14M5 18h8a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z" />
+                                    d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z">
+                                </path>
                             </svg>
                         </div>
-                        <div>
-                            <h3 class="text-lg font-bold text-gray-900 mb-1">Continuity of Care</h3>
-                            <p class="text-gray-600">Seamless information flow between in-person and remote interactions
-                            </p>
-                        </div>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-3">Increased Reach</h4>
+                        <p class="text-gray-600 text-sm">Launch smart kiosks and franchise models to expand your
+                            facility's
+                            footprint and increase patient access.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <section class="py-16 bg-gradient-to-br from-slate-50 to-gray-100">
+        <div class="container mx-auto px-6 lg:px-8">
 
-
-    <section class="w-full bg-white py-12">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
             <!-- Header -->
-            <div class="text-center mb-10">
-                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Your Journey Starts Here</h2>
-                <p class="text-purple-600 font-medium">Get Started in 3 Steps</p>
-                <div class="mx-auto w-16 h-1 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full mt-3"></div>
+            <div class="text-center mb-12">
+                <h2 class="text-4xl lg:text-5xl font-bold text-gray-900 mb-6 leading-tight">
+                    For Existing Clinics and Hospitals:
+                    <span class="text-blue-600">Boosting Efficiency, Expanding Reach</span>
+                </h2>
+                <p class="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
+                    For established facilities, Telth's solutions help enhance the quality of care, improve patient
+                    retention, and increase operational efficiency. With our cutting-edge AI tools and connected
+                    systems,
+                    your hospital or clinic can offer more services, expand your catchment area, and even create new
+                    revenue
+                    streams—all while improving patient outcomes.
+                </p>
             </div>
 
-            <!-- Steps Cards -->
-            <div class="grid md:grid-cols-3 gap-5">
-                <!-- Step 1 -->
-                <div
-                    class="group bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 hover:border-purple-200 hover:bg-purple-50 transform hover:-translate-y-1">
-                    <div class="flex items-center mb-4">
-                        <div
-                            class="bg-purple-100 text-purple-800 font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3 group-hover:bg-purple-600 group-hover:text-white transition-colors">
-                            1</div>
-                        <h3 class="font-bold text-gray-800 group-hover:text-purple-700 transition-colors">Consultation
-                        </h3>
-                    </div>
-                    <p class="text-sm text-gray-600">Share your needs via our 5-minute form.</p>
+            <!-- Our Solution -->
+            <div class="mb-16">
+                <h3 class="text-3xl font-bold text-gray-900 text-center mb-12">Our Solution</h3>
+
+                <!-- Main Solution Cards with Images -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+                    <!-- P3DSC -->
+                    <a href="/p3dsc"
+                        class="solution-card bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden block group">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="assets/solutions/P3DSC –.png" alt="P3DSC Care Pathways"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">P3DSC</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                                Optimize your referral and care pathways to increase patient throughput and reduce wait
+                                times.
+                            </p>
+                            <div class="flex items-center text-blue-600 text-sm font-medium">
+                                Learn More
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Smart Kiosks & Franchise Models -->
+                    <a href="/smart-kiosks"
+                        class="solution-card bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden block group">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="assets/solutions/Walk-in AI kiosks.png" alt="Smart Kiosks & Franchise Models"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Smart Kiosks & Franchise Models</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                                Launch scalable health hubs in underserved or high-traffic areas to increase access and
+                                drive patient engagement.
+                            </p>
+                            <div class="flex items-center text-blue-600 text-sm font-medium">
+                                Learn More
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Customizable Care Plans -->
+                    <a href="/customizable-care-plans"
+                        class="solution-card bg-white rounded-xl shadow-md border border-gray-200 overflow-hidden block group">
+                        <div class="relative h-48 overflow-hidden">
+                            <img src="assets/solutions/clinics-hospitals/care-plan.jpg" alt="Customizable Care Plans"
+                                class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+                        </div>
+                        <div class="p-6">
+                            <h4 class="text-lg font-semibold text-gray-900 mb-2">Customizable Care Plans</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed mb-4">
+                                Offer tailored health packages and services to meet the diverse needs of your community.
+                            </p>
+                            <div class="flex items-center text-blue-600 text-sm font-medium">
+                                Learn More
+                                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 5l7 7-7 7">
+                                    </path>
+                                </svg>
+                            </div>
+                        </div>
+                    </a>
                 </div>
 
-                <!-- Step 2 -->
-                <div
-                    class="group bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 hover:border-purple-200 hover:bg-purple-50 transform hover:-translate-y-1">
-                    <div class="flex items-center mb-4">
-                        <div
-                            class="bg-purple-100 text-purple-800 font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3 group-hover:bg-purple-600 group-hover:text-white transition-colors">
-                            2</div>
-                        <h3 class="font-bold text-gray-800 group-hover:text-purple-700 transition-colors">Customization
-                        </h3>
+                <!-- Additional Features -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+                    <div class="feature-item bg-white rounded-xl p-6 shadow-md border border-gray-200">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-blue-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900 mb-2">Expanded Diagnostics</h4>
+                                <p class="text-gray-600 text-sm">Enhance your diagnostic capabilities with AI-powered
+                                    tools
+                                    that enable faster and more accurate results.</p>
+                            </div>
+                        </div>
                     </div>
-                    <p class="text-sm text-gray-600">Tailor hardware/software with our engineers.</p>
-                </div>
-
-                <!-- Step 3 -->
-                <div
-                    class="group bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 hover:border-purple-200 hover:bg-purple-50 transform hover:-translate-y-1">
-                    <div class="flex items-center mb-4">
-                        <div
-                            class="bg-purple-100 text-purple-800 font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3 group-hover:bg-purple-600 group-hover:text-white transition-colors">
-                            3</div>
-                        <h3 class="font-bold text-gray-800 group-hover:text-purple-700 transition-colors">Launch</h3>
+                    <div class="feature-item bg-white rounded-xl p-6 shadow-md border border-gray-200">
+                        <div class="flex items-start space-x-4">
+                            <div
+                                class="w-12 h-12 bg-green-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900 mb-2">Revenue Streams</h4>
+                                <p class="text-gray-600 text-sm">Introduce new services like medical tourism, remote
+                                    consultations, and wellness programs to diversify income.</p>
+                            </div>
+                        </div>
                     </div>
-                    <p class="text-sm text-gray-600">Train your team and go live.</p>
+                    <div class="feature-item bg-white rounded-xl p-6 shadow-md border border-gray-200">
+                        <div class="flex items-start space-x-4">
+                            <div
+                                class="w-12 h-12 bg-purple-50 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <svg class="w-6 h-6 text-purple-600" fill="none" stroke="currentColor"
+                                    viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4">
+                                    </path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-lg font-semibold text-gray-900 mb-2">Integrated E-Pharmacy & Insurance
+                                    Plans
+                                </h4>
+                                <p class="text-gray-600 text-sm">Provide seamless access to medications and care through
+                                    digital platforms, boosting both convenience and revenue.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- CTA Button -->
-            <div class="text-center mt-10">
-                <button
-                    class="px-8 py-3 bg-gradient-to-r from-purple-600 to-purple-800 text-white font-medium rounded-full shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2">
-                    Request a Free Demo →
-                </button>
+            <!-- Impact Section -->
+            <div class="bg-white rounded-2xl shadow-lg border border-gray-200 p-8 mb-12">
+                <h3 class="text-3xl font-bold text-gray-900 text-center mb-8">Impact</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-blue-50 rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 16.09 5.777 17.656 7.343A7.975 7.975 0 0120 13a7.975 7.975 0 01-2.343 5.657z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-3">Increased Catchment Area</h4>
+                        <p class="text-gray-600 text-sm">Expand your patient base by offering cutting-edge, AI-driven
+                            services that attract new clients.</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-green-50 rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-3">Improved Efficiency</h4>
+                        <p class="text-gray-600 text-sm">Streamline workflows and reduce overhead costs, allowing you to
+                            serve more patients without sacrificing quality.</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-purple-50 rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-3">Better Patient Retention</h4>
+                        <p class="text-gray-600 text-sm">Offer personalized care that keeps patients coming
+                            back—creating
+                            loyalty through exceptional service.</p>
+                    </div>
+
+                    <div class="text-center">
+                        <div class="w-16 h-16 bg-indigo-50 rounded-xl flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1">
+                                </path>
+                            </svg>
+                        </div>
+                        <h4 class="text-lg font-semibold text-gray-900 mb-3">New Revenue Opportunities</h4>
+                        <p class="text-gray-600 text-sm">Generate additional income with new services like telemedicine,
+                            wellness packages, and diagnostics that appeal to a wider range of patients.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Our Impact at a Glance -->
+            <div class="bg-slate-900 rounded-2xl shadow-lg p-8">
+                <h3 class="text-3xl font-bold text-white text-center mb-8">Our Impact at a Glance</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+                    <div class="text-center bg-white bg-opacity-10 rounded-xl p-6 backdrop-blur-sm">
+                        <div class="text-3xl font-bold text-white mb-2">50%</div>
+                        <p class="text-white text-opacity-80 text-sm">reduction in patient wait times through AI-powered
+                            diagnostics and streamlined workflows</p>
+                    </div>
+
+                    <div class="text-center bg-white bg-opacity-10 rounded-xl p-6 backdrop-blur-sm">
+                        <div class="text-3xl font-bold text-white mb-2">20%</div>
+                        <p class="text-white text-opacity-80 text-sm">increase in patient retention due to personalized
+                            care
+                            plans and continuous health monitoring</p>
+                    </div>
+
+                    <div class="text-center bg-white bg-opacity-10 rounded-xl p-6 backdrop-blur-sm">
+                        <div class="text-3xl font-bold text-white mb-2">35%</div>
+                        <p class="text-white text-opacity-80 text-sm">improvement in operational efficiency by
+                            integrating
+                            digital tools and real-time patient data</p>
+                    </div>
+
+                    <div class="text-center bg-white bg-opacity-10 rounded-xl p-6 backdrop-blur-sm">
+                        <div class="text-3xl font-bold text-white mb-2">2X</div>
+                        <p class="text-white text-opacity-80 text-sm">increase in diagnostic accuracy with advanced
+                            AI-driven tools and real-time data integration</p>
+                    </div>
+
+                    <div class="text-center bg-white bg-opacity-10 rounded-xl p-6 backdrop-blur-sm">
+                        <div class="text-3xl font-bold text-white mb-2">5X</div>
+                        <p class="text-white text-opacity-80 text-sm">growth in service capacity by deploying smart
+                            clinics
+                            and health kiosks in underserved areas</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+    <section class="cta-gradient py-10 relative overflow-hidden">
+        <!-- Floating Background Elements -->
+        <div class="absolute inset-0 overflow-hidden pointer-events-none">
+            <div class="floating-element absolute top-20 left-10 w-32 h-32 bg-white opacity-5 rounded-full"></div>
+            <div class="floating-element absolute bottom-20 right-10 w-24 h-24 bg-white opacity-5 rounded-full"></div>
+            <div class="floating-element absolute top-1/2 left-1/4 w-16 h-16 bg-white opacity-5 rounded-full"></div>
+            <div class="floating-element absolute top-1/3 right-1/3 w-20 h-20 bg-white opacity-5 rounded-full"></div>
+        </div>
+
+        <div class="container mx-auto px-6 lg:px-8 max-w-6xl relative z-10">
+            <!-- Main CTA Content -->
+            <div class="text-center mb-16">
+                <div class="inline-block feature-badge rounded-full px-6 py-2 text-white text-sm font-semibold mb-6">
+                    Ready to Transform Healthcare?
+                </div>
+
+                <h2 class="text-4xl lg:text-6xl font-bold text-white mb-8 leading-tight">
+                    Transform Your Healthcare Facility with
+                    <span class="bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">Telth</span>
+                </h2>
+
+                <p class="text-xl text-white text-opacity-90 leading-relaxed max-w-4xl mx-auto mb-4">
+                    Whether you're new to healthcare or looking to expand, Telth helps you achieve more with less. Our
+                    connected care solutions empower you to deliver smarter services, streamline operations, and improve
+                    patient outcomes across the board.
+                </p>
+
+                <p class="text-lg text-white text-opacity-80 font-medium mb-12">
+                    Let's build smarter facilities and deliver stronger outcomes—together.
+                </p>
+
+                <!-- CTA Buttons -->
+                <div class="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
+                    <a href="contact-us.html"
+                        class="btn-primary text-white px-10 py-3 rounded-xl font-semibold text-lg shadow-lg flex items-center space-x-3">
+                        <span>Get Started Today</span>
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                        </svg>
+                    </a>
+
+                    <a href="career.html"
+                        class="btn-secondary bg-white bg-opacity-10 text-white px-10 py-3 rounded-xl font-semibold text-lg border-2 border-white border-opacity-30 flex items-center space-x-3">
+
+                        <span>Join Us</span>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <!-- Bottom gradient overlay -->
+        <div
+            class="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-slate-900 to-transparent pointer-events-none">
+        </div>
+    </section>
+
+
 
     <!-- Footer -->
     <footer class="relative bg-[#F4F4F8] overflow-hidden">

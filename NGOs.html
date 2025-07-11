@@ -17,6 +17,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.3/particles.min.js"></script>
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="main.css" type="text/css">
     <style>
         .healthcare-cutout {
@@ -719,461 +722,1506 @@
     <div class="h-20"></div>
 
     <!-- Hero section -->
-    <section class="relative overflow-hidden pt-12 md:pt-16">
-        <div class="container mx-auto px-6">
-            <div class="flex flex-col lg:flex-row items-center gap-10">
-                <!-- Text content -->
-                <div class="lg:w-2/3 ">
-                    <!-- <div
-                        class="inline-flex items-center mb-6 px-3 py-1.5 rounded-full bg-white text-purple-700 text-xs font-medium tracking-wider shadow-sm border border-purple-100">
-                        <span class="w-2 h-2 mr-2 bg-purple-500 rounded-full"></span>
-                        AI Healthcare Solutions
-                    </div> -->
-
-                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">
-                        <span class="gradient-highlight">Expand Your Impact.</span><br>
-                        <span class="text-gray-800">Reach More Communities.</span>
+    <section class="py-6 md:py-8 lg:py-12">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-12">
+                <!-- Content -->
+                <div class="lg:w-1/2 space-y-6">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold text-violet-900 leading-tight">
+                        Empowering NGOs with Scalable Healthcare Solutions
                     </h1>
 
-                    <p class="text-gray-600 mb-8 max-w-3xl text-lg leading-relaxed">
-                        Maximize your mission effectiveness with affordable, portable healthcare solutions designed to
-                        bring quality medical services to underserved populations and remote communities.
+                    <p class="text-lg text-gray-600 max-w-XL">
+                        Telth supports NGOs with a unified platform to tackle healthcare access and livelihood
+                        development
+                        at scale.
+                        Deliver quality healthcare through smart kiosks, Health Examination Systems (HES), and mobile
+                        medical units—designed
+                        for last-mile reach and community-first care.
                     </p>
 
-                    <div class="flex flex-col sm:flex-row gap-4 z-50">
-                        <button
-                            class="px-6 py-3.5 bg-gradient-to-r from-purple-600 to-blue-600 text-white rounded-lg font-medium hover:shadow-lg transition-all duration-300 hover:opacity-90">
-                            Enhance Your Healthcare Mission
-                        </button>
-
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <a href="contact-us.html"
+                            class="px-8 py-3.5 bg-purple-600 hover:bg-indigo-700 text-white font-medium rounded-lg shadow-lg shadow-blue-200 transition-all duration-300 transform hover:-translate-y-1">
+                            Enhance Your Impact
+                        </a>
                     </div>
                 </div>
 
-                <!-- Visual content -->
-                <div class="lg:w-1/3 relative">
-                    <div class="relative h-80 md:h-96 w-full healthcare-cutout"></div>
+                <!-- Image -->
+                <div class="lg:w-1/2 relative">
+                    <div class="relative rounded-xl overflow-hidden border border-gray-300">
+                        <img class="w-full h-auto object-cover" src="assets/solutions/ngo/ngo-banner.png"
+                            alt="Community healthcare workers using Telth solutions">
+                    </div>
 
-                    <div class="absolute -bottom-6 -right-6 w-64 h-64 smart-clinic-card p-5 hidden md:block">
-                        <div class="flex items-center mb-3">
-                            <div
-                                class="w-10 h-10 rounded-full bg-gradient-to-r from-purple-500 to-blue-500 flex items-center justify-center text-white">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20"
-                                    fill="currentColor">
-                                    <path fill-rule="evenodd"
-                                        d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z"
-                                        clip-rule="evenodd" />
+                    <!-- Floating card could be added here if needed -->
+                    <!-- <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl border border-gray-100 w-64">
+                            <div class="flex items-center mb-3">
+                                <div class="p-2 bg-blue-100 rounded-lg mr-3">
+                                    <svg class="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M12 6v6m0 0v6m0-6h6m-6 0H6"></path>
+                                    </svg>
+                                </div>
+                                <h3 class="font-bold text-gray-900">Community Care</h3>
+                            </div>
+                            <p class="text-sm text-gray-600">Empowering local care managers with entrepreneurship models.</p>
+                        </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-8 bg-purple-50 border border-purple-100 rounded-2xl px-6 container mx-auto">
+        <!-- Header -->
+        <div class="  w-full  mb-12">
+            <div class="mb-8 lg:mb-0">
+                <!-- <p class="text-red-600 text-sm font-medium mb-2">/ Our Healthcare Services</p> -->
+                <h2 class="text-3xl text-center lg:text-4xl font-bold text-gray-900 leading-tight">
+                    Comprehensive
+                    <span class="text-gray-800">Care Solutions</span>
+                </h2>
+                <p class="text-lg mt-2 text-center w-full font-regular text-gray-700">Comprehensive care solutions
+                    tailored to your needs.
+                    Choose quality, choose healthcare excellence.</p>
+            </div>
+
+        </div>
+
+        <!-- Services Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+            <!-- Smart Health Access & Community Care -->
+            <a href="#smart-health" class="service-card group block">
+                <div class="relative h-80 bg-gray-200 rounded-2xl overflow-hidden">
+                    <img src="assets/misx/primary-care.jpg" alt="Smart Health Access & Community Care"
+                        class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/20 bg-opacity-20"></div>
+                    <div class="absolute bottom-6 left-6 right-6 flex flex-row justify-between items-center">
+                        <h3 class="text-white font-semibold text-lg ">Smart Health Access & Community Care</h3>
+                        <div class="flex justify-end">
+                            <div class="service-arrow bg-purple-500 rounded-full p-2">
+                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M7 17L17 7M17 7H7M17 7V17"></path>
                                 </svg>
                             </div>
-                            <div class="ml-3">
-                                <h3 class="font-semibold text-gray-800">AI Diagnostics</h3>
-                                <p class="text-xs text-gray-500">Real-time analysis</p>
-                            </div>
                         </div>
-                        <div class="space-y-2">
-                            <div class="flex justify-between text-sm">
-                                <span class="text-gray-500">Accuracy</span>
-                                <span class="font-medium text-purple-600">98.7%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-1.5">
-                                <div class="bg-gradient-to-r from-purple-500 to-blue-500 h-1.5 rounded-full"
-                                    style="width: 98%"></div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Skill Training & Livelihood Generation -->
+            <a href="#skill-training" class="service-card group block">
+                <div class="relative h-80 bg-gray-200 rounded-2xl overflow-hidden">
+                    <img src="assets/misx/secondary-care.jpg" alt="Skill Training & Livelihood Generation"
+                        class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/20 bg-opacity-20"></div>
+                    <div class="absolute bottom-6 left-6 right-6 flex flex-row justify-between items-center">
+                        <h3 class="text-white font-semibold text-lg ">Skill Training & Livelihood Generation</h3>
+                        <div class="flex justify-end">
+                            <div class="service-arrow bg-purple-500 rounded-full p-2">
+                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M7 17L17 7M17 7H7M17 7V17"></path>
+                                </svg>
                             </div>
                         </div>
                     </div>
                 </div>
+            </a>
+
+            <!-- Volunteer & Benefactor Tools -->
+            <a href="#volunteer-tools" class="service-card group block">
+                <div class="relative h-80 bg-gray-200 rounded-2xl overflow-hidden">
+                    <img src="assets/solutions/ngo/volunteer.png" alt="Volunteer & Benefactor Tools"
+                        class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/20 bg-opacity-20"></div>
+                    <div class="absolute bottom-6 left-6 right-6 flex flex-row justify-between items-center">
+                        <h3 class="text-white font-semibold text-lg ">Volunteer & Benefactor Tools</h3>
+                        <div class="flex justify-end">
+                            <div class="service-arrow bg-purple-500 rounded-full p-2">
+                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M7 17L17 7M17 7H7M17 7V17"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Telth Mart & Financial Access -->
+            <a href="#telth-mart" class="service-card group block">
+                <div class="relative h-80 bg-gray-200 rounded-2xl overflow-hidden">
+                    <img src="assets/solutions/ngo/financial-access.png" alt="Telth Mart & Financial Access"
+                        class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/20 bg-opacity-20"></div>
+                    <div class="absolute bottom-6 left-6 right-6 flex flex-row justify-between items-center">
+                        <h3 class="text-white font-semibold text-lg ">Telth Mart & Financial Access</h3>
+                        <div class="flex justify-end">
+                            <div class="service-arrow bg-purple-500 rounded-full p-2">
+                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M7 17L17 7M17 7H7M17 7V17"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- DigiDoc: NGO Operations Command Center -->
+            <a href="#digidoc" class="service-card group block">
+                <div class="relative h-80 bg-gray-200 rounded-2xl overflow-hidden">
+                    <img src="assets/solutions/corporates/digidoc.jpg" alt="DigiDoc: NGO Operations Command Center"
+                        class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/20 bg-opacity-20"></div>
+                    <div class="absolute bottom-6 left-6 right-6 flex flex-row justify-between items-center">
+                        <h3 class="text-white font-semibold text-lg ">DigiDoc: NGO Operations Command Center</h3>
+                        <div class="flex justify-end">
+                            <div class="service-arrow bg-purple-500 rounded-full p-2">
+                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M7 17L17 7M17 7H7M17 7V17"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 mt-6 gap-6">
+            <!-- NGO Smart Care Hubs -->
+            <a href="#smart-care" class="service-card group block">
+                <div class="relative h-80 bg-gray-200 rounded-2xl overflow-hidden">
+                    <img src="assets/smart-clinic.jpg" alt="NGO Smart Care Hubs" class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/20 "></div>
+                    <div class="absolute bottom-6 left-6 right-6 flex flex-row justify-between items-center">
+                        <h3 class="text-white font-semibold text-lg ">NGO Smart Care Hubs</h3>
+                        <div class="flex justify-end">
+                            <div class="service-arrow bg-purple-500 rounded-full p-2">
+                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M7 17L17 7M17 7H7M17 7V17"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Global Volunteer & Benefactor Platform -->
+            <a href="#global-volunteer" class="service-card  group block">
+                <div class="relative h-80 bg-gray-200 rounded-2xl overflow-hidden">
+                    <img src="assets/solutions/ngo/benefactor.png" alt="Global Volunteer & Benefactor Platform"
+                        class="w-full h-full object-cover">
+                    <div class="absolute inset-0 bg-black/20 bg-opacity-20"></div>
+                    <div class="absolute bottom-6 left-6 right-6 flex flex-row justify-between items-center">
+                        <h3 class="text-white font-semibold text-lg ">Global Volunteer & Benefactor Platform</h3>
+                        <div class="flex justify-end">
+                            <div class="service-arrow bg-purple-500 rounded-full p-2">
+                                <svg class="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M7 17L17 7M17 7H7M17 7V17"></path>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+
+
+
+    <section id="smart-health" class="relative py-12 bg-gray-50">
+        <!-- Subtle background pattern -->
+        <div
+            class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSkiPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyMDQsMjIxLDIzNSwwLjMpIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI3BhdHRlcm4pIi8+PC9zdmc+')] opacity-5">
+        </div>
+
+        <div class="container mx-auto px-4 relative">
+            <!-- Header Section -->
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Smart Health Access & Community Care</h2>
+                <p class="text-lg text-gray-600">
+                    Telth helps NGOs take healthcare to the last mile with smart kiosks, mobile clinics, and on-ground
+                    care
+                    teams.
+                    Our tools make it easy for your teams to deliver quick, quality care right where it's needed most.
+                </p>
             </div>
 
-            <!-- Trust indicators -->
-            <div class="mt-16 pt-8 border-t border-gray-200">
-                <!-- <p class="text-center text-gray-500 text-sm mb-6">TRUSTED BY LEADING HEALTHCARE PROVIDERS</p>
-                <div class="flex flex-wrap justify-center gap-8 md:gap-12 opacity-70">
-                    <div class="text-gray-700 font-medium">Mayo Clinic</div>
-                    <div class="text-gray-700 font-medium">Kaiser Permanente</div>
-                    <div class="text-gray-700 font-medium">Cleveland Clinic</div>
-                    <div class="text-gray-700 font-medium">Johns Hopkins</div>
-                </div> -->
+            <!-- Solutions Grid -->
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Card 1 -->
+                <a href="/diagnostic-devices.html"
+                    class="group h-full flex flex-col bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="assets/solutions/HES.png"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            alt="Health Examination Kiosk">
+                        <div class="absolute bottom-0 left-0 w-full bg-black/50 text-white p-4">
+                            <h3 class="text-lg font-semibold">Smart Health Examination Systems (HES)</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-50 text-blue-600 p-2 rounded-lg mr-4">
+                                <i class="fas fa-clinic-medical text-xl"></i>
+                            </div>
+                            <h4 class="font-medium text-gray-800">Portable Diagnostics</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">Real-time vitals, screenings, and triage—ideal for outreach and
+                            field
+                            clinics.</p>
+                        <div class="text-blue-600 font-medium inline-flex items-center">
+                            Learn more <i
+                                class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 2 -->
+                <a href="/care-provider.html"
+                    class="group h-full flex flex-col bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="assets/Care manager.png"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            alt="Freelance Care Workers">
+                        <div class="absolute bottom-0 left-0 w-full bg-black/50 text-white p-4">
+                            <h3 class="text-lg font-semibold">Freelance Care Workers</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-50 text-green-600 p-2 rounded-lg mr-4">
+                                <i class="fas fa-user-md text-xl"></i>
+                            </div>
+                            <h4 class="font-medium text-gray-800">Trained Professionals</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">A flexible pool of trained health workers to support last-mile
+                            delivery.</p>
+                        <div class="text-green-600 font-medium inline-flex items-center">
+                            Learn more <i
+                                class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Card 3 -->
+                <a href="/diagnostic-devices.html"
+                    class="group h-full flex flex-col bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            alt="Health Experience Stations">
+                        <div class="absolute bottom-0 left-0 w-full bg-black/50 text-white p-4">
+                            <h3 class="text-lg font-semibold">Health Experience Stations (HES)</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-cyan-50 text-cyan-600 p-2 rounded-lg mr-4">
+                                <i class="fas fa-hospital text-xl"></i>
+                            </div>
+                            <h4 class="font-medium text-gray-800">Modular Care Hubs</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">Quick-to-deploy care hubs designed for remote and underserved
+                            areas.
+                        </p>
+                        <div class="text-cyan-600 font-medium inline-flex items-center">
+                            Learn more <i
+                                class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Impact Section -->
+            <div class="mt-8 bg-white rounded-xl shadow-sm p-4 pt-8 container mx-auto border border-gray-100">
+                <div class="text-center mb-10">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Our Impact</h3>
+                    <p class="text-gray-600">Transforming healthcare delivery in underserved communities</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <!-- Impact 1 -->
+                    <div class="flex p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="text-purple-500 mr-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-2">Primary Care Delivery</h4>
+                            <p class="text-gray-600">Deliver primary and preventive care at the grassroots level with
+                                our
+                                portable solutions.</p>
+                        </div>
+                    </div>
+
+                    <!-- Impact 2 -->
+                    <div class="flex p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="text-purple-500 mr-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-2">Remote Diagnostics</h4>
+                            <p class="text-gray-600">Reach remote communities with reliable diagnostics and screening
+                                tools.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Impact 3 -->
+                    <div class="flex p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="text-purple-500 mr-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-2">Comprehensive Programs</h4>
+                            <p class="text-gray-600">Support chronic care, maternal health, and vaccination drives
+                                effectively.</p>
+                        </div>
+                    </div>
+
+                    <!-- Impact 4 -->
+                    <div class="flex p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="text-purple-500 mr-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-2">Scalable Solutions</h4>
+                            <p class="text-gray-600">Modular systems that grow with your community's needs.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <div class="bg-white container mx-auto  p-8 mb-20">
-        <div class="text-center mb-10">
-            <h3 class="text-2xl md:text-3xl font-bold mb-4">Why Choose Telth for Your Humanitarian Work
-            </h3>
+    <section id="skill-training" class="relative py-12 bg-gray-50">
+        <div
+            class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSk iPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyMDQsMjIxLDIzNSwwLjMpIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI3BhdHRlcm4pIi8+PC9zdmc+')] opacity-5">
         </div>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Scenario 1 -->
-            <div class="hes-card bg-white border border-gray-100 shadow-md">
-                <div class="h-28 gradient-bg flex items-center justify-center">
-                    <i class="fas fa-home text-white text-4xl"></i>
-                </div>
-                <div class="p-6">
-                    <h4 class="font-bold text-lg mb-3">Reach Underserved Areas</h4>
-                    <p class="text-gray-600 text-sm mb-4">
-                        Deliver healthcare in regions with limited infrastructure
-                    </p>
-
-                </div>
+        <div class="container mx-auto px-4 relative">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Skill Training & Livelihood Generation
+                </h2>
+                <p class="text-lg text-gray-600">
+                    Empowering communities begins with building local capacity. Telth’s training programs transform
+                    motivated
+                    individuals into skilled Community Managers (CM) and Community Care Managers (CCM)—equipping them
+                    with
+                    tools, certifications, and earning potential to lead change from within.
+                </p>
             </div>
 
-            <!-- Scenario 2 -->
-            <div class="hes-card bg-white border border-gray-100 shadow-md">
-                <div class="h-28 gradient-bg flex items-center justify-center">
-                    <i class="fas fa-clinic-medical text-white text-4xl"></i>
-                </div>
-                <div class="p-6">
-                    <h4 class="font-bold text-lg mb-3">Maximize Limited Resources</h4>
-                    <p class="text-gray-600 text-sm mb-4">
-                        Do more with constrained budgets and staff
-
-                    </p>
-
-                </div>
-            </div>
-
-            <!-- Scenario 3 -->
-            <div class="hes-card bg-white border border-gray-100 shadow-md">
-                <div class="h-28 gradient-bg flex items-center justify-center">
-                    <i class="fas fa-users text-white text-4xl"></i>
-                </div>
-                <div class="p-6">
-                    <h4 class="font-bold text-lg mb-3">Gather Valuable Data</h4>
-                    <p class="text-gray-600 text-sm mb-4">
-                        Document health impacts for donors and program improvement
-
-                    </p>
-
-                </div>
-            </div>
-
-            <!-- Scenario 4 -->
-            <div class="hes-card bg-white border border-gray-100 shadow-md">
-                <div class="h-28 gradient-bg flex items-center justify-center">
-                    <i class="fas fa-ambulance text-white text-4xl"></i>
-                </div>
-                <div class="p-6">
-                    <h4 class="font-bold text-lg mb-3">Quickly Deploy Solutions</h4>
-                    <p class="text-gray-600 text-sm mb-4">
-                        Set up healthcare services in days, not months
-
-                    </p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <section class="pb-16 pt-8 px-4 md:px-8 lg:px-16 container mx-auto">
-        <!-- Header -->
-        <h3 class="text-3xl md:text-4xl font-bold leading-tight">
-            <span class="text-gray-800">Solutions for Every NGO’s</span>
-        </h3>
-
-        <!-- Cards Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-12">
-            <!-- Rural Development Card -->
-            <div class="solution-card rounded-xl overflow-hidden shadow-lg bg-white border border-gray-100">
-                <div class="purple-bg px-6 pt-4">
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center mr-3">
-                            <i class="fas fa-tree text-2xl text-purple-600"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-700">Rural Development</h3>
-                    </div>
-                </div>
-                <div class="p-6">
-                    <div class="flex items-start mb-4">
-                        <div class="bg-purple-100 rounded-full p-2 px-3 mr-3">
-                            <i class="fas fa-clinic-medical text-purple-600"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-gray-800 pt-1.5">Community Health Kiosks</h4>
-                            <!-- <p class="text-gray-600 mt-1">Self-contained medical stations that provide basic diagnostics
-                                    and
-                                    health education in remote areas.</p> -->
+            <div class="grid md:grid-cols-3 gap-6">
+                <a href="/care-provider.html"
+                    class="group h-full flex flex-col bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="assets/Collab Care manager.png"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            alt="Community Manager Training">
+                        <div class="absolute bottom-0 left-0 w-full bg-black/50 text-white p-4">
+                            <h3 class="text-lg font-semibold">CM / CCM Programs</h3>
                         </div>
                     </div>
-                    <div class="flex items-start">
-                        <div class="bg-purple-100 rounded-full p-2 px-3 mr-3">
-                            <i class="fas fa-heartbeat text-purple-600"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-gray-800 pt-1.5">Preventive Screening</h4>
-                            <!-- <p class="text-gray-600 mt-1">Early detection programs for common rural health issues,
-                                    reducing
-                                    long-term healthcare burdens.</p> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Disaster Response Card -->
-            <div class="solution-card rounded-xl overflow-hidden shadow-lg bg-white border border-gray-100">
-                <div class="purple-light-bg px-6 pt-4">
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center mr-3">
-                            <i class="fas fa-first-aid text-2xl text-purple-600"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-700">Disaster Response</h3>
-                    </div>
-                </div>
-                <div class="p-6">
-                    <div class="flex items-start mb-4">
-                        <div class="bg-purple-100 rounded-full p-2 px-3 mr-3">
-                            <i class="fas fa-vial text-purple-600"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-gray-800 pt-1.5">Rapid-deploy Diagnostic Kits</h4>
-                            <!-- <p class="text-gray-600 mt-1">Portable testing equipment that can be quickly deployed to
-                                    disaster zones for immediate health assessments.</p> -->
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="bg-purple-100 rounded-full p-2 px-3 mr-3">
-                            <i class="fas fa-procedures text-purple-600"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-gray-800 pt-1.5">Triage Systems</h4>
-                            <!-- <p class="text-gray-600 mt-1">Efficient patient sorting protocols to maximize limited
-                                    medical
-                                    resources during emergencies.</p> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Refugee Support Card -->
-            <div class="solution-card rounded-xl overflow-hidden shadow-lg bg-white border border-gray-100">
-                <div class="purple-bg px-6 pt-4">
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center mr-3">
-                            <i class="fas fa-hands-helping text-2xl text-purple-600"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-700">Refugee Support</h3>
-                    </div>
-                </div>
-                <div class="p-6">
-                    <div class="flex items-start mb-4">
-                        <div class="bg-purple-100 rounded-full p-2  px-3 mr-3">
-                            <i class="fas fa-hospital-user text-purple-600"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-gray-800 pt-1.5">Portable Clinics</h4>
-                            <!-- <p class="text-gray-600 mt-1">Mobile medical facilities that can be established in temporary
-                                    settlements to provide essential healthcare.</p> -->
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="bg-purple-100 rounded-full p-2 px-3 mr-3">
-                            <i class="fas fa-baby text-purple-600"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-gray-800 pt-1.5">Maternal-Child Health Tools</h4>
-                            <!-- <p class="text-gray-600 mt-1">Specialized equipment and protocols for maternal and pediatric
-                                    care in displacement settings.</p> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Disease Outbreaks Card -->
-            <div class="solution-card rounded-xl overflow-hidden shadow-lg bg-white border border-gray-100">
-                <div class="purple-light-bg px-6 pt-4">
-                    <div class="flex items-center">
-                        <div class="w-12 h-12 rounded-full bg-white flex items-center justify-center mr-3">
-                            <i class="fas fa-virus text-2xl text-purple-600"></i>
-                        </div>
-                        <h3 class="text-xl font-bold text-gray-700">Disease Outbreaks</h3>
-                    </div>
-                </div>
-                <div class="p-6">
-                    <div class="flex items-start mb-4">
-                        <div class="bg-purple-100 rounded-full p-2 px-3 mr-3">
-                            <i class="fas fa-chart-line text-purple-600"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-gray-800 pt-1.5">Surveillance Systems</h4>
-                            <!-- <p class="text-gray-600 mt-1">Digital monitoring networks that track disease spread and
-                                    alert
-                                    authorities to emerging hotspots.</p> -->
-                        </div>
-                    </div>
-                    <div class="flex items-start">
-                        <div class="bg-purple-100 rounded-full p-2 px-3 mr-3">
-                            <i class="fas fa-syringe text-purple-600"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-semibold text-gray-800 pt-1.5">Rapid Testing</h4>
-                            <!-- <p class="text-gray-600 mt-1">Point-of-care diagnostics that provide quick results, allowing
-                                    for
-                                    immediate isolation and treatment decisions.</p> -->
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </section>
-
-    <div class="w-full my-20 overflow-hidden max-w-[1500px] mx-auto px-4">
-        <div class="selection_card w-full rounded-2xl overflow-hidden relative">
-            <!-- Background Design Elements -->
-            <div class="selection_dots top-10 right-10">
-                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <pattern id="dots" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
-                        <circle fill="white" cx="5" cy="5" r="1"></circle>
-                    </pattern>
-                    <rect x="0" y="0" width="100" height="100" fill="url(#dots)"></rect>
-                </svg>
-            </div>
-
-            <div class="selection_blob bottom-0 left-0 bg-white"></div>
-            <div class="selection_blob top-0 right-0 bg-white"></div>
-
-            <!-- Content -->
-            <div class="relative z-10 py-14 px-8 md:px-16">
-                <div class="flex flex-col md:flex-row items-start md:items-center gap-6 mb-10">
-                    <div class="selection_icon_glow">
-                        <i class="fas fa-chess-king text-white text-5xl"></i>
-                    </div>
-                    <h2 class="text-3xl md:text-4xl font-bold text-white tracking-tight">Our NGO Solutions</h2>
-                </div>
-
-                <div class="grid md:grid-cols-2 lg:grid-cols-2 gap-x-12 gap-y-8">
-                    <!-- Physical Setting Analysis -->
-                    <div class="selection_item p-4 rounded-lg">
-                        <div class="flex items-start gap-4">
-                            <div
-                                class="selection_item_icon flex-shrink-0 w-12 h-12 bg-indigo-300 bg-opacity-30 rounded-full flex items-center justify-center">
-                                <i class="fas fa-building text-white text-xl"></i>
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-50 text-blue-600 p-2 rounded-lg mr-4">
+                                <i class="fas fa-users text-xl"></i>
                             </div>
-                            <div>
-                                <h3 class="font-bold text-white text-lg mb-2">Mobile Health Units</h3>
-                                <p class="text-indigo-100">Deploy rapidly assembled healthcare stations in rural
-                                    villages, refugee camps, or disaster zones, providing essential care where it's
-                                    needed most.</p>
-                            </div>
+                            <h4 class="font-medium text-gray-800">Trained Community Leaders</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">Enable individuals to earn and grow through Skill India-certified
+                            training and impactful field roles.</p>
+                        <div class="text-blue-600 font-medium inline-flex items-center">
+                            Learn more <i
+                                class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
                         </div>
                     </div>
+                </a>
 
-                    <!-- Patient Demographics Assessment -->
-                    <div class="selection_item p-4 rounded-lg">
-                        <div class="flex items-start gap-4">
-                            <div
-                                class="selection_item_icon flex-shrink-0 w-12 h-12 bg-indigo-300 bg-opacity-30 rounded-full flex items-center justify-center">
-                                <i class="fas fa-users text-white text-xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-white text-lg mb-2">Portable Diagnostic Kits</h3>
-                                <p class="text-indigo-100">Equip your field workers with compact, durable diagnostic
-                                    tools that deliver accurate results even in challenging environments.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Community Health Profile -->
-                    <div class="selection_item p-4 rounded-lg">
-                        <div class="flex items-start gap-4">
-                            <div
-                                class="selection_item_icon flex-shrink-0 w-12 h-12 bg-indigo-300 bg-opacity-30 rounded-full flex items-center justify-center">
-                                <i class="fas fa-chart-pie text-white text-xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-white text-lg mb-2">Community Health Worker Support</h3>
-                                <p class="text-indigo-100">Enhance the effectiveness of local health workers with
-                                    intuitive medical devices and telehealth connections to remote physicians.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Business Objectives Alignment -->
-                    <div class="selection_item p-4 rounded-lg">
-                        <div class="flex items-start gap-4">
-                            <div
-                                class="selection_item_icon flex-shrink-0 w-12 h-12 bg-indigo-300 bg-opacity-30 rounded-full flex items-center justify-center">
-                                <i class="fas fa-bullseye text-white text-xl"></i>
-                            </div>
-                            <div>
-                                <h3 class="font-bold text-white text-lg mb-2">Health Data Collection Systems</h3>
-                                <p class="text-indigo-100">Document your impact with easy-to-use digital systems that
-                                    work offline and sync when connectivity is available.</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-
-
-                    <!-- Additional visual element -->
-                    <!-- <div class="selection_item p-4 rounded-lg md:col-span-1 flex items-center justify-center">
-                        <img src="/api/placeholder/400/320" alt="Selection methodology illustration"
-                            class="rounded-lg max-w-full h-auto opacity-80" />
-                    </div> -->
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <section class="w-full bg-white py-12">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Header -->
-            <div class="text-center mb-10">
-                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-2">Your Journey Starts Here</h2>
-                <p class="text-purple-600 font-medium">Get Started in 3 Steps</p>
-                <div class="mx-auto w-16 h-1 bg-gradient-to-r from-purple-400 to-purple-600 rounded-full mt-3"></div>
-            </div>
-
-            <!-- Steps Cards -->
-            <div class="grid md:grid-cols-3 gap-5">
-                <!-- Step 1 -->
                 <div
-                    class="group bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 hover:border-purple-200 hover:bg-purple-50 transform hover:-translate-y-1">
-                    <div class="flex items-center mb-4">
+                    class="group h-full flex flex-col bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            alt="Skill Building Tools">
+                        <div class="absolute bottom-0 left-0 w-full bg-black/50 text-white p-4">
+                            <h3 class="text-lg font-semibold">Skill-building Tools</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-50 text-green-600 p-2 rounded-lg mr-4">
+                                <i class="fas fa-tools text-xl"></i>
+                            </div>
+                            <h4 class="font-medium text-gray-800">Continuous Development</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">Access digital training modules and mentorship programs for
+                            ongoing
+                            professional growth.</p>
+                        <!-- <div class="text-green-600 font-medium inline-flex items-center">
+                            Learn more <i
+                                class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                        </div> -->
+                    </div>
+                </div>
+
+                <a href="/career.html"
+                    class="group h-full flex flex-col bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1505751172876-fa1923c5c528?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&h=400&q=80"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            alt="Impact of Training">
+                        <div class="absolute bottom-0 left-0 w-full bg-black/50 text-white p-4">
+                            <h3 class="text-lg font-semibold">Livelihood Generation</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-cyan-50 text-cyan-600 p-2 rounded-lg mr-4">
+                                <i class="fas fa-handshake text-xl"></i>
+                            </div>
+                            <h4 class="font-medium text-gray-800">Sustainable Job Pathways</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">Create dignified job pathways and build local leadership in health
+                            delivery and education.</p>
+                        <div class="text-cyan-600 font-medium inline-flex items-center">
+                            Learn more <i
+                                class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="mt-8 bg-white rounded-xl shadow-sm p-4 pt-8 container mx-auto border border-gray-100">
+                <div class="text-center mb-10">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Our Impact</h3>
+                    <p class="text-gray-600">Empowering individuals and strengthening communities</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="flex p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="text-purple-500 mr-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-2">Address Local Skill Gaps</h4>
+                            <p class="text-gray-600">Our programs directly address critical skill shortages in
+                                healthcare
+                                and outreach within communities.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="text-purple-500 mr-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-2">Create Dignified Job Pathways</h4>
+                            <p class="text-gray-600">We open up meaningful and sustainable employment opportunities for
+                                youth and women.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="text-purple-500 mr-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-2">Build Local Leadership</h4>
+                            <p class="text-gray-600">Foster strong local leadership in health delivery, education, and
+                                community development.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="text-purple-500 mr-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-2">Empowerment & Growth</h4>
+                            <p class="text-gray-600">Provide tools and certifications that empower individuals to earn
+                                and
+                                grow.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="volunteer-tools" class="relative py-12 bg-gray-50">
+        <div
+            class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaWdodD0iMTAwJSI+PGRlZnM+PHBhdHRlcm4gaWQ9InBhdHRlcm4iIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgcGF0dGVybkRyYW5zZm9ybT0icm90YXRlKDQ1KSI+PHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBmaWxsPSJyZ2JhKDIwNCwyMjEsMjM1LDAuMykiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjcGF0dGVybikiLz48L3N2Zz4=')] opacity-5">
+        </div>
+
+        <div class="container mx-auto px-4 relative">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Volunteer & Benefactor Tools</h2>
+                <p class="text-lg text-gray-600">
+                    Transparency and coordination are key to scaling impact. Telth equips volunteers with smart tools to
+                    manage fieldwork efficiently while enabling donors and CSR partners to track outcomes in real
+                    time—building trust and accountability across every level.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <a href="/diagnostic-devices.html"
+                    class="group h-full flex flex-col bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="assets/solutions/ngo/dashboard.png"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            alt="Volunteer Dashboard">
+                        <div class="absolute bottom-0 left-0 w-full bg-black/50 text-white p-4">
+                            <h3 class="text-lg font-semibold">Volunteer & Community Empowerment Dashboard</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-50 text-blue-600 p-2 rounded-lg mr-4">
+                                <i class="fas fa-mobile-alt text-xl"></i>
+                            </div>
+                            <h4 class="font-medium text-gray-800">Mobile Field Management</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">Mobile tools for volunteers to track programs, log interventions,
+                            and
+                            sync with central operations seamlessly.</p>
+                        <div class="text-blue-600 font-medium inline-flex items-center">
+                            Learn more <i
+                                class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <div
+                    class="group h-full flex flex-col bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="assets/solutions/ngo/donor-reporting.png"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            alt="Donor Reporting">
+                        <div class="absolute bottom-0 left-0 w-full bg-black/50 text-white p-4">
+                            <h3 class="text-lg font-semibold">Donor Reporting</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-50 text-green-600 p-2 rounded-lg mr-4">
+                                <i class="fas fa-chart-line text-xl"></i>
+                            </div>
+                            <h4 class="font-medium text-gray-800">Real-time Impact Tracking</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">Real-time dashboards for donors and CSR partners to view program
+                            impact with complete transparency.</p>
+                        <!-- <div class="text-green-600 font-medium inline-flex items-center">
+                            Learn more <i
+                                class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div
+                    class="group h-full flex flex-col bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="assets/solutions/ngo/data-center.png"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            alt="Data-Driven Decisions">
+                        <div class="absolute bottom-0 left-0 w-full bg-black/50 text-white p-4">
+                            <h3 class="text-lg font-semibold">Data-Driven Decisions</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-cyan-50 text-cyan-600 p-2 rounded-lg mr-4">
+                                <i class="fas fa-cogs text-xl"></i>
+                            </div>
+                            <h4 class="font-medium text-gray-800">Optimized Operations</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">Leverage real-time data to make informed decisions and optimize
+                            program
+                            effectiveness instantly.</p>
+                        <!-- <div class="text-cyan-600 font-medium inline-flex items-center">
+                            Learn more <i
+                                class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-white rounded-xl shadow-sm p-4 pt-8 container mx-auto border border-gray-100">
+                <div class="text-center mb-10">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Our Impact</h3>
+                    <p class="text-gray-600">Building trust and maximizing effectiveness</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="flex p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="text-purple-500 mr-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-2">Streamline Field Coordination</h4>
+                            <p class="text-gray-600">Our tools simplify and improve the efficiency of on-the-ground
+                                volunteer
+                                activities.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="text-purple-500 mr-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-2">Increase Donor Trust and Funding Retention
+                            </h4>
+                            <p class="text-gray-600">Transparent reporting fosters confidence, leading to continued
+                                support
+                                from benefactors.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="text-purple-500 mr-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-2">Make Data-Driven Decisions in Real-Time</h4>
+                            <p class="text-gray-600">Empower organizations to react quickly and strategically based
+                                on
+                                live
+                                impact data.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="text-purple-500 mr-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-2">Enhanced Accountability Across All Levels
+                            </h4>
+                            <p class="text-gray-600">Our solutions ensure greater responsibility and transparency
+                                from
+                                field
+                                to funders.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="telth-mart" class="relative py-12 bg-gray-50">
+        <div
+            class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPGRlZnM+PHBhdHRlcm4gaWQ9InBhdHRlcm4iIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgcGF0dGVyblRyYW5zZm9ybT0icm90YXRlKDQ1KSI+PHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBmaWxsPSJyZ2JhKDIwNCwyMjEsMjM1LDAuMykiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjcGF0dGVybikiLz48L3N2Zz4=')] opacity-5">
+        </div>
+
+        <div class="container mx-auto px-4 relative">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Telth Mart & Financial Access</h2>
+                <p class="text-lg text-gray-600">
+                    Economic empowerment is essential for lasting change. Telth Mart and our integrated financial tools
+                    enable community workers to earn through product sales, access micro-loans, and receive
+                    donations—turning
+                    service into sustainable self-employment.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div
+                    class="group h-full flex flex-col bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="assets/solutions/ngo/mart.png"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            alt="Telth Mart">
+                        <div class="absolute bottom-0 left-0 w-full bg-black/50 text-white p-4">
+                            <h3 class="text-lg font-semibold">Telth Mart</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-50 text-blue-600 p-2 rounded-lg mr-4">
+                                <i class="fas fa-store text-xl"></i>
+                            </div>
+                            <h4 class="font-medium text-gray-800">Micro-Commerce Platform</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">A dedicated micro-commerce platform for Community Care Managers
+                            (CCMs)
+                            and volunteers to sell health and wellness kits.</p>
+                        <!-- <div class="text-blue-600 font-medium inline-flex items-center">
+                            Learn more <i
+                                class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div
+                    class="group h-full flex flex-col bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="assets/solutions/ngo/microfinance.png"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            alt="Microfinance & Donation Access">
+                        <div class="absolute bottom-0 left-0 w-full bg-black/50 text-white p-4">
+                            <h3 class="text-lg font-semibold">Microfinance & Donation Access</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-50 text-green-600 p-2 rounded-lg mr-4">
+                                <i class="fas fa-hand-holding-usd text-xl"></i>
+                            </div>
+                            <h4 class="font-medium text-gray-800">Integrated Financial Tools</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">Built-in tools allowing community workers to apply for small
+                            loans,
+                            receive CSR funds, and manage donor aid efficiently.</p>
+                        <!-- <div class="text-green-600 font-medium inline-flex items-center">
+                            Learn more <i
+                                class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div
+                    class="group h-full flex flex-col bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="assets/solutions/ngo/self-sustain.png"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            alt="Sustainable Self-Employment">
+                        <div class="absolute bottom-0 left-0 w-full bg-black/50 text-white p-4">
+                            <h3 class="text-lg font-semibold">Sustainable Self-Employment</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-cyan-50 text-cyan-600 p-2 rounded-lg mr-4">
+                                <i class="fas fa-briefcase text-xl"></i>
+                            </div>
+                            <h4 class="font-medium text-gray-800">Empowering Livelihoods</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">Turning community service into sustainable self-employment by
+                            providing
+                            earning opportunities and financial independence.</p>
+                        <!-- <div class="text-cyan-600 font-medium inline-flex items-center">
+                            Learn more <i
+                                class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-white rounded-xl shadow-sm p-4 pt-8 container mx-auto border border-gray-100">
+                <div class="text-center mb-10">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Our Impact</h3>
+                    <p class="text-gray-600">Fostering financial independence and community well-being</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="flex p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="text-purple-500 mr-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-2">Create Self-Employment Opportunities</h4>
+                            <p class="text-gray-600">Empowering individuals to generate their own income through
+                                valuable
+                                community services.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="text-purple-500 mr-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-2">Provide Access to Essential Tools and Products
+                            </h4>
+                            <p class="text-gray-600">Ensuring community workers have the resources needed for both
+                                service
+                                delivery and income generation.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="text-purple-500 mr-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-2">Improve Financial Resilience in Low-Income
+                                Communities</h4>
+                            <p class="text-gray-600">Building stronger economic foundations for individuals and families
+                                in
+                                underserved areas.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="text-purple-500 mr-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-2">Enable Direct Donation Management</h4>
+                            <p class="text-gray-600">Facilitating the seamless receipt and management of donor funds by
+                                community workers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="digidoc" class="relative py-12 bg-gray-50">
+        <div
+            class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPGRlZnM+PHBhdHRlcm4gaWQ9InBhdHRlcm4iIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgcGF0dGVyblRyYW5zZm9ybT0icm90YXRlKDQ1KSI+PHJlY3Qgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiBmaWxsPSJyZ2JhKDIwNCwyMjEsMjM1LDAuMykiLz48L3BhdHRlcm4+PC9kZWZzPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjcGF0dGVybikiLz48L3N2Zz4=')] opacity-5">
+        </div>
+
+        <div class="container mx-auto px-4 relative">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">DigiDoc: NGO Operations Command Center
+                </h2>
+                <p class="text-lg text-gray-600">
+                    Managing programs shouldn’t mean managing chaos. Telth’s DigiDoc gives NGOs a centralized command
+                    center
+                    to track beneficiaries, services, and outcomes—while ensuring compliance and reporting are
+                    streamlined,
+                    accurate, and SDG-aligned.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <a href="/digidoc.html"
+                    class="group h-full flex flex-col bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="assets/solutions/corporates/digidoc.jpg"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            alt="DigiDoc Dashboard">
+                        <div class="absolute bottom-0 left-0 w-full bg-black/50 text-white p-4">
+                            <h3 class="text-lg font-semibold">DigiDoc Dashboard</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-50 text-blue-600 p-2 rounded-lg mr-4">
+                                <i class="fas fa-tachometer-alt text-xl"></i>
+                            </div>
+                            <h4 class="font-medium text-gray-800">Centralized Program Management</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">Manage services, beneficiaries, training, medicines, and outcomes
+                            from
+                            a single, intuitive dashboard.</p>
+                        <div class="text-blue-600 font-medium inline-flex items-center">
+                            Learn more <i
+                                class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                        </div>
+                    </div>
+                </a>
+
+                <div
+                    class="group h-full flex flex-col bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="assets/solutions/G Med ID.png"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            alt="G-MED Integration">
+                        <div class="absolute bottom-0 left-0 w-full bg-black/50 text-white p-4">
+                            <h3 class="text-lg font-semibold">G-MED Integration</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-50 text-green-600 p-2 rounded-lg mr-4">
+                                <i class="fas fa-notes-medical text-xl"></i>
+                            </div>
+                            <h4 class="font-medium text-gray-800">Unified Patient and Service Records</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">Seamlessly integrate and unify patient and service records for a
+                            comprehensive overview.</p>
+                        <!-- <div class="text-green-600 font-medium inline-flex items-center">
+                            Learn more <i
+                                class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div
+                    class="group h-full flex flex-col bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="assets/solutions/smart mobile.png"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            alt="Compliance Tools">
+                        <div class="absolute bottom-0 left-0 w-full bg-black/50 text-white p-4">
+                            <h3 class="text-lg font-semibold">Compliance Tools</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-cyan-50 text-cyan-600 p-2 rounded-lg mr-4">
+                                <i class="fas fa-clipboard-check text-xl"></i>
+                            </div>
+                            <h4 class="font-medium text-gray-800">Automated Reporting & SDG Alignment</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">Generate auto-reports linked to Sustainable Development Goal (SDG)
+                            metrics, ensuring accuracy and alignment.</p>
+                        <!-- <div class="text-cyan-600 font-medium inline-flex items-center">
+                            Learn more <i
+                                class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-white rounded-xl shadow-sm p-4 pt-8 container mx-auto border border-gray-100">
+                <div class="text-center mb-10">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Our Impact</h3>
+                    <p class="text-gray-600">Transforming NGO operations with efficiency and accountability</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="flex p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="text-purple-500 mr-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-2">Increase Operational Efficiency</h4>
+                            <p class="text-gray-600">Streamline workflows and reduce administrative burden for your NGO
+                                teams.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="text-purple-500 mr-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-2">Align All Activities to Measurable Outcomes</h4>
+                            <p class="text-gray-600">Ensure every action contributes to clear, trackable, and impactful
+                                results.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="text-purple-500 mr-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-2">Save Time on Manual Reporting and Compliance</h4>
+                            <p class="text-gray-600">Automate tedious tasks, freeing up valuable time for direct
+                                community
+                                engagement.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="text-purple-500 mr-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-2">Enhanced Data Accuracy and Integrity</h4>
+                            <p class="text-gray-600">Ensure your program data is reliable and consistent for better
+                                decision-making.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ngo-smart-care" class="relative py-12 bg-gray-50">
+        <div
+            class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSk iPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyMDQsMjIxLDIzNSwwLjMpIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI3BhdHRlcm4pIi8+PC9zdmc+')] opacity-5">
+        </div>
+
+        <div class="container mx-auto px-4 relative">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">NGO Smart Care Hubs</h2>
+                <p class="text-lg text-gray-600">
+                    One hub. Many solutions. Telth’s Smart Care Hubs bring together healthcare, training, and livelihood
+                    tools in a modular, co-branded setup—designed for rapid deployment in underserved and high-need
+                    communities.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div
+                    class="group h-full flex flex-col bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="assets/smart-care-hub.jpg"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            alt="Modular Hubs">
+                        <div class="absolute bottom-0 left-0 w-full bg-black/50 text-white p-4">
+                            <h3 class="text-lg font-semibold">Co-branded Modular Hubs</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-50 text-blue-600 p-2 rounded-lg mr-4">
+                                <i class="fas fa-hand-holding-medical text-xl"></i>
+                            </div>
+                            <h4 class="font-medium text-gray-800">Integrated Community Support</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">Deliver comprehensive care, training, and micro-enterprise support
+                            all
+                            within one flexible setup.</p>
+                        <!-- <div class="text-blue-600 font-medium inline-flex items-center">
+                            Learn more <i
+                                class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div
+                    class="group h-full flex flex-col bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="assets/solutions/Telth Hubs.png"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            alt="Mobile Med Units">
+                        <div class="absolute bottom-0 left-0 w-full bg-black/50 text-white p-4">
+                            <h3 class="text-lg font-semibold">Mobile Med Units</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-50 text-green-600 p-2 rounded-lg mr-4">
+                                <i class="fas fa-truck-medical text-xl"></i>
+                            </div>
+                            <h4 class="font-medium text-gray-800">Doorstep Diagnostics & Care</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">Field-ready mobile clinics designed to bring essential healthcare
+                            services directly to remote and underserved areas.</p>
+                        <!-- <div class="text-green-600 font-medium inline-flex items-center">
+                            Learn more <i
+                                class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div
+                    class="group h-full flex flex-col bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="assets/misx/mobile-clinic.jpg"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            alt="Rapid Deployment">
+                        <div class="absolute bottom-0 left-0 w-full bg-black/50 text-white p-4">
+                            <h3 class="text-lg font-semibold">Rapid Deployment & Integrated Tools</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-cyan-50 text-cyan-600 p-2 rounded-lg mr-4">
+                                <i class="fas fa-fast-forward text-xl"></i>
+                            </div>
+                            <h4 class="font-medium text-gray-800">Quick Setup, Comprehensive Services</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">Suitable for urban slums, rural villages, and conflict-affected
+                            regions, with integrated diagnostics, insurance, Telth Mart, and more.</p>
+                        <div class="text-cyan-600 font-medium inline-flex items-center">
+                            Learn more <i
+                                class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-white rounded-xl shadow-sm p-4 pt-8 container mx-auto border border-gray-100">
+                <div class="text-center mb-10">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Our Impact</h3>
+                    <p class="text-gray-600">Delivering holistic solutions to underserved communities</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="flex p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="text-purple-500 mr-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-2">Provide 360-Degree Community Services in One Hub
+                            </h4>
+                            <p class="text-gray-600">Offer a complete suite of healthcare, training, and livelihood
+                                support
+                                from a single point of access.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="text-purple-500 mr-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-2">Improve Access to Care, Income, and Information
+                            </h4>
+                            <p class="text-gray-600">Bridge critical gaps by bringing essential services and
+                                opportunities
+                                closer to communities.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="text-purple-500 mr-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-2">Scale Fast with Minimum Setup Time</h4>
+                            <p class="text-gray-600">Enable quick deployment of vital services where and when they are
+                                needed
+                                most, without extensive delays.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="text-purple-500 mr-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-2">Adaptable to Diverse Environments</h4>
+                            <p class="text-gray-600">Our modular design ensures effective operation in various
+                                challenging
+                                settings.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="global-volunteer" class="relative py-12 bg-gray-50">
+        <div
+            class="absolute inset-0 bg-[url('data:image:svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxkZWZzPjxwYXR0ZXJuIGlkPSJwYXR0ZXJuIiB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHBhdHRlcm5Vbml0cz0idXNlclNwYWNlT25Vc2UiIHBhdHRlcm5UcmFuc2Zvcm09InJvdGF0ZSg0NSk iPjxyZWN0IHdpZHRoPSIyMCIgaGVpZ2h0PSIyMCIgZmlsbD0icmdiYSgyMDQsMjIxLDIzNSwwLjMpIi8+PC9wYXR0ZXJuPjwvZGVmcz48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiBmaWxsPSJ1cmwoI3BhdHRlcm4pIi8+PC9zdmc+')] opacity-5">
+        </div>
+
+        <div class="container mx-auto px-4 relative">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Global Volunteer & Benefactor Platform
+                </h2>
+                <p class="text-lg text-gray-600">
+                    Connect local efforts with global support. Telth’s platform brings together verified volunteers,
+                    donors, and partners—enabling transparent recognition, income opportunities, and access to funding
+                    that
+                    fuels sustainable, community-led growth.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div
+                    class="group h-full flex flex-col bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="assets/solutions/ngo/verified-volunteer.png"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            alt="Verified Volunteer Profiles">
+                        <div class="absolute bottom-0 left-0 w-full bg-black/50 text-white p-4">
+                            <h3 class="text-lg font-semibold">Verified Volunteer Profiles</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-blue-50 text-blue-600 p-2 rounded-lg mr-4">
+                                <i class="fas fa-user-check text-xl"></i>
+                            </div>
+                            <h4 class="font-medium text-gray-800">Showcase Impact & Progress</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">Each volunteer gets a verified profile to showcase their roles,
+                            progress, and real-world impact.</p>
+                        <!-- <div class="text-blue-600 font-medium inline-flex items-center">
+                            Learn more <i
+                                class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div
+                    class="group h-full flex flex-col bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="assets/solutions/ngo/marketplace-tool.png"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            alt="Marketplace Tools">
+                        <div class="absolute bottom-0 left-0 w-full bg-black/50 text-white p-4">
+                            <h3 class="text-lg font-semibold">Marketplace Tools</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-green-50 text-green-600 p-2 rounded-lg mr-4">
+                                <i class="fas fa-cash-register text-xl"></i>
+                            </div>
+                            <h4 class="font-medium text-gray-800">Direct Sales & Services</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">Enable volunteers to sell their services and products directly
+                            within
+                            the Telth ecosystem, creating income opportunities.</p>
+                        <!-- <div class="text-green-600 font-medium inline-flex items-center">
+                            Learn more <i
+                                class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div
+                    class="group h-full flex flex-col bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow border border-gray-100">
+                    <div class="relative h-64 overflow-hidden">
+                        <img src="assets/solutions/ngo/funding.png"
+                            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                            alt="Funding Gateway">
+                        <div class="absolute bottom-0 left-0 w-full bg-black/50 text-white p-4">
+                            <h3 class="text-lg font-semibold">Funding Gateway</h3>
+                        </div>
+                    </div>
+                    <div class="p-6 flex-grow">
+                        <div class="flex items-center mb-4">
+                            <div class="bg-cyan-50 text-cyan-600 p-2 rounded-lg mr-4">
+                                <i class="fas fa-dollar-sign text-xl"></i>
+                            </div>
+                            <h4 class="font-medium text-gray-800">Centralized Funding Access</h4>
+                        </div>
+                        <p class="text-gray-600 mb-4">Access government schemes, CSR grants, and track donations all in
+                            one
+                            centralized and transparent platform.</p>
+                        <!-- <div class="text-cyan-600 font-medium inline-flex items-center">
+                            Learn more <i
+                                class="fas fa-arrow-right ml-2 text-sm transition-transform group-hover:translate-x-1"></i>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-8 bg-white rounded-xl shadow-sm p-4 pt-8 container mx-auto border border-gray-100">
+                <div class="text-center mb-10">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-2">Our Impact</h3>
+                    <p class="text-gray-600">Fostering connections and sustainable community growth</p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="flex p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="text-purple-500 mr-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-2">Close Skill and Employment Gaps</h4>
+                            <p class="text-gray-600">Connecting individuals with opportunities to develop skills and
+                                earn
+                                income.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="text-purple-500 mr-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-2">Scale Outreach and Program Visibility</h4>
+                            <p class="text-gray-600">Expand the reach of local initiatives and attract broader support
+                                through increased transparency.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="text-purple-500 mr-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-2">Drive Long-Term Community Sustainability</h4>
+                            <p class="text-gray-600">Empower communities to achieve lasting growth through financial
+                                access
+                                and self-sufficiency.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex p-4 hover:bg-gray-50 rounded-lg transition-colors">
+                        <div class="text-purple-500 mr-4">
+                            <i class="fas fa-check-circle text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-medium text-gray-800 mb-2">Foster Transparent Recognition</h4>
+                            <p class="text-gray-600">Ensure the contributions of volunteers and partners are clearly
+                                recognized and valued.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative py-20 bg-white overflow-hidden">
+        <!-- Decorative elements -->
+        <div class="absolute top-0 left-0 w-full h-full opacity-5">
+            <div class="absolute top-20 right-0 w-64 h-64 bg-blue-200 rounded-full blur-3xl"></div>
+            <div class="absolute bottom-10 left-10 w-80 h-80 bg-teal-200 rounded-full blur-3xl"></div>
+        </div>
+
+        <div class="container mx-auto px-4 relative z-10">
+            <!-- Section header -->
+            <div class="text-center max-w-4xl mx-auto mb-16" data-aos="fade-up">
+                <span
+                    class="inline-block px-5 py-2 bg-gradient-to-r from-purple-100 to-purple-100 text-purple-800 rounded-full text-sm font-medium mb-4 shadow-xs">
+                    Sustainable Development Alignment
+                </span>
+                <h2 class="text-4xl font-bold text-purple-900 mb-4 bg-clip-text ">
+                    Driving Real Impact with the SDGs
+                </h2>
+                <p class="text-xl text-gray-600 leading-relaxed">
+                    Telth's solutions align directly with key Sustainable Development Goals, helping NGOs serve better,
+                    grow faster, and create deeper impact from health to livelihoods.
+                </p>
+            </div>
+
+            <!-- SDG Cards - Enhanced Design -->
+            <div class="grid md:grid-cols-5 gap-8 mb-20">
+                <!-- SDG 3 -->
+                <div class="group relative" data-aos="fade-up" data-aos-delay="100">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-green-50 to-white rounded-2xl shadow-md transform group-hover:-translate-y-2 transition-transform duration-300">
+                    </div>
+                    <div class="relative h-full p-6">
                         <div
-                            class="bg-purple-100 text-purple-800 font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3 group-hover:bg-purple-600 group-hover:text-white transition-colors">
-                            1</div>
-                        <h3 class="font-bold text-gray-800 group-hover:text-purple-700 transition-colors">Consultation
+                            class="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-to-br from-green-500 to-green-600 flex items-center justify-center shadow-lg">
+                            <span class="text-white font-bold text-xl">SDG 3</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 text-center mb-3">Good Health & Well-Being</h3>
+                        <p class="text-gray-600 text-center text-sm leading-relaxed">
+                            Last-mile care, diagnostics, and chronic disease management
+                        </p>
+                        <div
+                            class="absolute bottom-6 left-0 right-0 flex justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <div class="w-8 h-1 bg-green-500 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SDG 8 -->
+                <div class="group relative" data-aos="fade-up" data-aos-delay="150">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-yellow-50 to-white rounded-2xl shadow-md transform group-hover:-translate-y-2 transition-transform duration-300">
+                    </div>
+                    <div class="relative h-full p-6">
+                        <div
+                            class="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-to-br from-yellow-500 to-yellow-600 flex items-center justify-center shadow-lg">
+                            <span class="text-white font-bold text-xl">SDG 8</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 text-center mb-3">Decent Work & Economic Growth</h3>
+                        <p class="text-gray-600 text-center text-sm leading-relaxed">
+                            Job creation via CM/CCM models and local enterprises
+                        </p>
+                        <div
+                            class="absolute bottom-6 left-0 right-0 flex justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <div class="w-8 h-1 bg-yellow-500 rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SDG 9 -->
+                <div class="group relative" data-aos="fade-up" data-aos-delay="200">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-orange-50 to-white rounded-2xl shadow-md transform group-hover:-translate-y-2 transition-transform duration-300">
+                    </div>
+                    <div class="relative h-full p-6">
+                        <div
+                            class="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-to-br from-orange-500 to-orange-600 flex items-center justify-center shadow-lg">
+                            <span class="text-white font-bold text-xl">SDG 9</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 text-center mb-3">Industry, Innovation &
+                            Infrastructure
                         </h3>
+                        <p class="text-gray-600 text-center text-sm leading-relaxed">
+                            Modular care and commerce platforms
+                        </p>
+                        <div
+                            class="absolute bottom-6 left-0 right-0 flex justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <div class="w-8 h-1 bg-orange-500 rounded-full"></div>
+                        </div>
                     </div>
-                    <p class="text-sm text-gray-600">Share your needs via our 5-minute form.</p>
                 </div>
 
-                <!-- Step 2 -->
-                <div
-                    class="group bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 hover:border-purple-200 hover:bg-purple-50 transform hover:-translate-y-1">
-                    <div class="flex items-center mb-4">
+                <!-- SDG 11 -->
+                <div class="group relative" data-aos="fade-up" data-aos-delay="250">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-red-50 to-white rounded-2xl shadow-md transform group-hover:-translate-y-2 transition-transform duration-300">
+                    </div>
+                    <div class="relative h-full p-6">
                         <div
-                            class="bg-purple-100 text-purple-800 font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3 group-hover:bg-purple-600 group-hover:text-white transition-colors">
-                            2</div>
-                        <h3 class="font-bold text-gray-800 group-hover:text-purple-700 transition-colors">Customization
+                            class="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-to-br from-red-500 to-red-600 flex items-center justify-center shadow-lg">
+                            <span class="text-white font-bold text-xl">SDG 11</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 text-center mb-3">Sustainable Cities & Communities
                         </h3>
+                        <p class="text-gray-600 text-center text-sm leading-relaxed">
+                            Urban and rural care hubs
+                        </p>
+                        <div
+                            class="absolute bottom-6 left-0 right-0 flex justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <div class="w-8 h-1 bg-red-500 rounded-full"></div>
+                        </div>
                     </div>
-                    <p class="text-sm text-gray-600">Tailor hardware/software with our engineers.</p>
                 </div>
 
-                <!-- Step 3 -->
-                <div
-                    class="group bg-white p-6 rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition-all duration-300 hover:border-purple-200 hover:bg-purple-50 transform hover:-translate-y-1">
-                    <div class="flex items-center mb-4">
-                        <div
-                            class="bg-purple-100 text-purple-800 font-bold rounded-full w-8 h-8 flex items-center justify-center mr-3 group-hover:bg-purple-600 group-hover:text-white transition-colors">
-                            3</div>
-                        <h3 class="font-bold text-gray-800 group-hover:text-purple-700 transition-colors">Launch</h3>
+                <!-- SDG 17 -->
+                <div class="group relative" data-aos="fade-up" data-aos-delay="300">
+                    <div
+                        class="absolute inset-0 bg-gradient-to-br from-blue-50 to-white rounded-2xl shadow-md transform group-hover:-translate-y-2 transition-transform duration-300">
                     </div>
-                    <p class="text-sm text-gray-600">Train your team and go live.</p>
+                    <div class="relative h-full p-6">
+                        <div
+                            class="w-24 h-24 mx-auto mb-6 rounded-full bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg">
+                            <span class="text-white font-bold text-xl">SGD 17</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 text-center mb-3">Partnerships for the Goals</h3>
+                        <p class="text-gray-600 text-center text-sm leading-relaxed">
+                            Cross-sector collaboration through tech and transparency
+                        </p>
+                        <div
+                            class="absolute bottom-6 left-0 right-0 flex justify-center opacity-0 group-hover:opacity-100 transition-opacity">
+                            <div class="w-8 h-1 bg-blue-500 rounded-full"></div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <!-- CTA Button -->
-            <div class="text-center mt-10">
-                <button
-                    class="px-8 py-3 bg-gradient-to-r from-purple-600 to-purple-800 text-white font-medium rounded-full shadow-md hover:shadow-lg transform hover:scale-105 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2">
-                    Request a Free Demo →
-                </button>
+            <!-- Impact Statement -->
+            <div class="container mx-auto bg-gradient-to-r from-blue-50 to-teal-50 rounded-2xl p-0.5"
+                data-aos="fade-up">
+                <div class="bg-white rounded-[15px] p-8 md:p-10 relative overflow-hidden">
+                    <div class="absolute -right-20 -top-20 w-64 h-64 bg-blue-100 rounded-full opacity-20"></div>
+                    <div class="relative z-10">
+                        <div class="flex flex-col md:flex-row items-start">
+                            <div class="flex-shrink-0 mb-6 md:mb-0 md:mr-8">
+                                <div
+                                    class="w-16 h-16 bg-gradient-to-br from-blue-500 to-teal-500 rounded-xl flex items-center justify-center shadow-md">
+                                    <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor"
+                                        viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-semibold text-gray-900 mb-4">From health to livelihoods</h3>
+                                <p class="text-gray-600 text-lg leading-relaxed">
+                                    Telth helps NGOs serve better, grow faster, and create deeper impact across multiple
+                                    Sustainable Development Goals through integrated technology solutions and community
+                                    partnerships.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
+    <!-- AOS Animation Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true
+        });
+    </script>
+
+
 
     <!-- Footer -->
     <footer class="relative bg-[#F4F4F8] overflow-hidden">

@@ -64,17 +64,17 @@ const Footer = () => {
               Pioneering the future of healthcare through innovative technology solutions, bringing exceptional care directly to your doorstep.
             </p>
             <div className="flex items-center gap-4">
-              <a href="https://linkedin.com/company/telthcare" className="group p-2 rounded-lg bg-black/5 hover:bg-black/10 transition-colors">
+              <a href="/" className="group p-2 rounded-lg bg-black/5 hover:bg-black/10 transition-colors">
                 <svg className="w-5 h-5 text-black/60 group-hover:text-black transition-colors" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z" />
                 </svg>
               </a>
-              <a href="https://twitter.com/telthcare" className="group p-2 rounded-lg bg-black/5 hover:bg-black/10 transition-colors">
+              <a href="/" className="group p-2 rounded-lg bg-black/5 hover:bg-black/10 transition-colors">
                 <svg className="w-5 h-5 text-black/60 group-hover:text-black transition-colors" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z" />
                 </svg>
               </a>
-              <a href="https://facebook.com/telthcare" className="group p-2 rounded-lg bg-black/5 hover:bg-black/10 transition-colors">
+              <a href="/" className="group p-2 rounded-lg bg-black/5 hover:bg-black/10 transition-colors">
                 <svg className="w-5 h-5 text-black/60 group-hover:text-black transition-colors" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" />
                 </svg>
@@ -87,39 +87,39 @@ const Footer = () => {
             <div>
               <h3 className="text-black font-semibold mb-6">Solutions</h3>
               <ul className="space-y-4">
-                <li><a href="/corporates" className="text-black/60 hover:text-black transition-colors text-sm">Corporates</a></li>
-                <li><a href="/government-sector" className="text-black/60 hover:text-black transition-colors text-sm">Government</a></li>
-                <li><a href="/clinics-hospitals" className="text-black/60 hover:text-black transition-colors text-sm">Clinics/Hospitals</a></li>
-                <li><a href="/patients" className="text-black/60 hover:text-black transition-colors text-sm">Patients</a></li>
+                <li><a href="/" className="text-black/60 hover:text-black transition-colors text-sm">Corporates</a></li>
+                <li><a href="/" className="text-black/60 hover:text-black transition-colors text-sm">Government</a></li>
+                <li><a href="/" className="text-black/60 hover:text-black transition-colors text-sm">Clinics/Hospitals</a></li>
+                <li><a href="/" className="text-black/60 hover:text-black transition-colors text-sm">Patients</a></li>
               </ul>
             </div>
             
             <div>
               <h3 className="text-black font-semibold mb-6">Products</h3>
               <ul className="space-y-4">
-                <li><a href="/smart-care-bundle" className="text-black/60 hover:text-black transition-colors text-sm">Smart Care Bundle</a></li>
-                <li><a href="/diagnostic-devices" className="text-black/60 hover:text-black transition-colors text-sm">Diagnostic Devices</a></li>
-                <li><a href="/smart-wearables" className="text-black/60 hover:text-black transition-colors text-sm">Smart Wearables</a></li>
-                <li><a href="/mobile-clinic" className="text-black/60 hover:text-black transition-colors text-sm">Mobile Clinic</a></li>
+                <li><a href="/" className="text-black/60 hover:text-black transition-colors text-sm">Smart Care Bundle</a></li>
+                <li><a href="/" className="text-black/60 hover:text-black transition-colors text-sm">Diagnostic Devices</a></li>
+                <li><a href="/" className="text-black/60 hover:text-black transition-colors text-sm">Smart Wearables</a></li>
+                <li><a href="/" className="text-black/60 hover:text-black transition-colors text-sm">Mobile Clinic</a></li>
               </ul>
             </div>
             
             <div>
               <h3 className="text-black font-semibold mb-6">Services</h3>
               <ul className="space-y-4">
-                <li><a href="/care-provider" className="text-black/60 hover:text-black transition-colors text-sm">Care Provider</a></li>
-                <li><a href="/training" className="text-black/60 hover:text-black transition-colors text-sm">Training</a></li>
-                <li><a href="/franchise" className="text-black/60 hover:text-black transition-colors text-sm">Franchise</a></li>
-                <li><a href="/partnership" className="text-black/60 hover:text-black transition-colors text-sm">Partnership</a></li>
+                <li><a href="/" className="text-black/60 hover:text-black transition-colors text-sm">Care Provider</a></li>
+                <li><a href="/" className="text-black/60 hover:text-black transition-colors text-sm">Training</a></li>
+                <li><a href="/" className="text-black/60 hover:text-black transition-colors text-sm">Franchise</a></li>
+                <li><a href="/" className="text-black/60 hover:text-black transition-colors text-sm">Partnership</a></li>
               </ul>
             </div>
             
             <div>
               <h3 className="text-black font-semibold mb-6">Legal</h3>
               <ul className="space-y-4">
-                <li><a href="/privacy-policy" className="text-black/60 hover:text-black transition-colors text-sm">Privacy Policy</a></li>
-                <li><a href="/terms-conditions" className="text-black/60 hover:text-black transition-colors text-sm">Terms & Conditions</a></li>
-                <li><a href="/cancellation-and-refund-policy" className="text-black/60 hover:text-black transition-colors text-sm">Cancellation & Refund</a></li>
+                <li><a href="/" className="text-black/60 hover:text-black transition-colors text-sm">Privacy Policy</a></li>
+                <li><a href="/" className="text-black/60 hover:text-black transition-colors text-sm">Terms & Conditions</a></li>
+                <li><a href="/" className="text-black/60 hover:text-black transition-colors text-sm">Cancellation & Refund</a></li>
               </ul>
             </div>
           </div>

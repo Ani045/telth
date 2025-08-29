@@ -207,13 +207,13 @@ export const blogPosts = [
     },
     publishedAt: '2024-03-15',
     readTime: 8,
-    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=1200&h=600&fit=crop',
+    image: 'assets/Advanced diagnostic device.png',
     tags: ['telemedicine', 'digital-health', 'healthcare-technology', 'remote-care', 'patient-care', 'medical-innovation'],
     seo: {
       title: 'The Future of Telemedicine: How Remote Healthcare is Transforming Patient Care in 2024 | Telth',
       description: 'Discover how telemedicine is revolutionizing healthcare delivery in 2024. Learn about AI-powered diagnostics, IoMT devices, and the benefits of remote patient care.',
       keywords: 'telemedicine, remote healthcare, digital health, patient care, healthcare technology, medical innovation, telehealth, virtual consultations',
-      ogImage: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=1200&h=630&fit=crop',
+      ogImage: 'https://unsplash.com/photos/a-futuristic-lab-with-technology-and-robotics-FaP7jIwgoE0?utm_source=chatgpt.com',
       canonicalUrl: '/blog/healthcare-technology/future-of-telemedicine-2024'
     },
     featured: true,
